@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/xmylog/2025/07/24/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>评测</title>
-    <url>/mylog/2025/07/24/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+    <url>/xmylog/2025/07/24/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h2><p>Bee King AI 评估框架是一个专为智能客服场景设计的AI模型评测工具集，用于全面评估模型在各种业务场景下的表现。该框架支持多维度评测，包括意图识别、线索提取、内容质量、对话能力等，并能生成详细的评测报告。</p>
 <h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/Users/xulanzhong/Desktop/fw_eval/test_fw_evaluation/</span><br><span class="line">├── __init__.py                      # 包初始化文件</span><br><span class="line">├── eval_fw_summary_report/          # 评估框架汇总报告目录</span><br><span class="line">├── eval_summary_report/             # 评估汇总报告目录</span><br><span class="line">│   ├── generate_summary_report.py   # 生成汇总报告的工具</span><br><span class="line">│   └── report_data.md               # 报告数据说明</span><br><span class="line">├── eval_summary_report_analysis/    # 评估报告分析工具目录</span><br><span class="line">├── test_fw_ai_assistant/           # AI助手评估模块</span><br><span class="line">├── test_fw_chat_content/           # 聊天内容评估模块</span><br><span class="line">├── test_fw_chat_intent/            # 聊天意图识别评估模块</span><br><span class="line">│   ├── backup/                      # 备份文件</span><br><span class="line">│   ├── conftest.py                  # pytest配置文件</span><br><span class="line">│   ├── eval_dataset/                # 评估数据集</span><br><span class="line">│   ├── eval_dataset_report/         # 评估报告输出目录</span><br><span class="line">│   ├── eval_dataset_result/         # 评估结果输出目录</span><br><span class="line">│   ├── log/                         # 日志目录</span><br><span class="line">│   ├── main.py                      # 主程序入口</span><br><span class="line">│   ├── test_fw_chat_intent_handle.py # 意图识别测试处理程序</span><br><span class="line">│   └── tools/                       # 工具函数目录</span><br><span class="line">├── test_fw_clue_extract/           # 线索提取评估模块</span><br><span class="line">├── test_fw_conversations_content/  # 对话内容评估模块</span><br><span class="line">└── test_fw_diff_content/           # 内容差异评估模块</span><br></pre></td></tr></table></figure>
 
@@ -152,23 +170,5 @@
       <tags>
         <tag>测试技术</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/mylog/2025/07/24/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
 </search>

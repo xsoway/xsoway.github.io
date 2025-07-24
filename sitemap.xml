@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xsoway.github.io/mylog/tags/index.html</loc>
+    <loc>https://xsoway.github.io/xmylog/tags/index.html</loc>
     
     <lastmod>2025-07-24</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://xsoway.github.io/mylog/categories/index.html</loc>
+    <loc>https://xsoway.github.io/xmylog/categories/index.html</loc>
     
     <lastmod>2025-07-24</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://xsoway.github.io/mylog/about/index.html</loc>
+    <loc>https://xsoway.github.io/xmylog/about/index.html</loc>
     
     <lastmod>2025-07-24</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://xsoway.github.io/mylog/photos/index.html</loc>
+    <loc>https://xsoway.github.io/xmylog/photos/index.html</loc>
     
     <lastmod>2025-07-24</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://xsoway.github.io/mylog/2025/07/24/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
+    <loc>https://xsoway.github.io/xmylog/2025/07/24/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
     
     <lastmod>2025-07-24</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://xsoway.github.io/mylog/2025/07/24/hello-world/</loc>
+    <loc>https://xsoway.github.io/xmylog/2025/07/24/hello-world/</loc>
     
     <lastmod>2025-07-24</lastmod>
     
@@ -57,7 +57,7 @@
   
 
   <url>
-    <loc>https://xsoway.github.io/mylog</loc>
+    <loc>https://xsoway.github.io/xmylog</loc>
     <lastmod>2025-07-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -65,7 +65,7 @@
 
   
   <url>
-    <loc>https://xsoway.github.io/mylog/tags/%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://xsoway.github.io/xmylog/tags/%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2025-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
