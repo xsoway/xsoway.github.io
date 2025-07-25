@@ -25,6 +25,17 @@
       </tags>
   </entry>
   <entry>
+    <title>评测方案</title>
+    <url>/xmylog/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>模型</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>评测</title>
     <url>/xmylog/2025/07/24/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h2><p>Bee King AI 评估框架是一个专为智能客服场景设计的AI模型评测工具集，用于全面评估模型在各种业务场景下的表现。该框架支持多维度评测，包括意图识别、线索提取、内容质量、对话能力等，并能生成详细的评测报告。</p>
@@ -178,17 +189,6 @@
       </categories>
       <tags>
         <tag>测试技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>评测方案</title>
-    <url>/xmylog/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>模型</tag>
       </tags>
   </entry>
 </search>
