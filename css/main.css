@@ -1356,7 +1356,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff7708;
+    background: #b33b9e;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3035,7 +3035,7 @@ header.header {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-inner .post-block:not(:first-child):not(:first-child) {
-    margin-top: 5px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -3056,7 +3056,7 @@ header.header {
   .main-inner > .comments,
   .main-inner .comment-position .comments,
   .main-inner .pagination {
-    margin-top: 5px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -3087,16 +3087,16 @@ header.header {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-inner {
-    padding: 5px;
-  }
-  .posts-expand .post-button {
-    margin-top: 10px;
-  }
-  .post-block {
     padding: 10px;
   }
+  .posts-expand .post-button {
+    margin-top: 20px;
+  }
+  .post-block {
+    padding: 20px;
+  }
   .comments {
-    padding: 5px 10px;
+    padding: 10px 20px;
   }
 }
 @media (max-width: 767px) {
