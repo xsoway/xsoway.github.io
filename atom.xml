@@ -6,7 +6,7 @@
   <link href="https://xmylog.com/atom.xml" rel="self"/>
   
   <link href="https://xmylog.com/"/>
-  <updated>2025-07-26T04:18:29.893Z</updated>
+  <updated>2025-07-26T04:35:33.236Z</updated>
   <id>https://xmylog.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://xmylog.com/2025/07/26/ai/"/>
     <id>https://xmylog.com/2025/07/26/ai/</id>
     <published>2025-07-26T04:16:51.000Z</published>
-    <updated>2025-07-26T04:18:29.893Z</updated>
+    <updated>2025-07-26T04:35:33.236Z</updated>
     
     
       
@@ -86,25 +86,6 @@
   </entry>
   
   <entry>
-    <title>评测方案</title>
-    <link href="https://xmylog.com/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/"/>
-    <id>https://xmylog.com/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</id>
-    <published>2025-07-24T14:20:46.000Z</published>
-    <updated>2025-07-24T14:42:39.662Z</updated>
-    
-    
-    <summary type="html">评测方案评测方案评测方案评测方案评测方案评测方案评测方案评测方案评测方案评测方案</summary>
-    
-    
-    
-    <category term="学习" scheme="https://xmylog.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="模型" scheme="https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="https://xmylog.com/2025/07/24/hello-world/"/>
     <id>https://xmylog.com/2025/07/24/hello-world/</id>
@@ -120,6 +101,25 @@
     
     
     <category term="World" scheme="https://xmylog.com/tags/World/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>评测方案</title>
+    <link href="https://xmylog.com/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/"/>
+    <id>https://xmylog.com/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</id>
+    <published>2025-07-24T14:20:46.000Z</published>
+    <updated>2025-07-24T14:42:39.662Z</updated>
+    
+    
+    <summary type="html">评测方案评测方案评测方案评测方案评测方案评测方案评测方案评测方案评测方案评测方案</summary>
+    
+    
+    
+    <category term="学习" scheme="https://xmylog.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="模型" scheme="https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B/"/>
     
   </entry>
   
