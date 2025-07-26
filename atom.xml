@@ -32,11 +32,7 @@
 
 
 
-&lt;pre class=&quot;mermaid&quot;&gt;flowchart TD
-    subgraph 用户层
-        A[用户输入：5-10万代步车推荐]
-        A1[用户后续提问&lt;br&gt;如：有省油点的吗？]
-  </summary>
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
