@@ -5,7 +5,20 @@
     <url>/2025/07/26/%E9%97%A8%E5%BA%97%E8%BD%A6%E8%BE%86AI%E6%90%9C%E7%B4%A2-%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<span id="more"></span>
 
-<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="一、评测对象"><a href="#一、评测对象" class="headerlink" title="一、评测对象"></a>一、评测对象</h2><h3 id="1-业务实现流程"><a href="#1-业务实现流程" class="headerlink" title="1. 业务实现流程"></a>1. 业务实现流程</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    A[用户查询问题] --&gt;|自然语言输入| B[模型解析与条件提取]</span><br><span class="line">    B --&gt;|结构化参数| C[查询接口调用]</span><br><span class="line">    C --&gt;|API请求| D[车源数据库]</span><br><span class="line">    D --&gt;|JSON响应| E[返回结果]</span><br><span class="line">    E --&gt; F(用户界面展示)</span><br><span class="line">    </span><br><span class="line">    style A fill:#f9f,stroke:#333</span><br><span class="line">    style B fill:#bbf,stroke:#333</span><br><span class="line">    style B stroke:#ff0000,stroke-width:2px</span><br><span class="line">    style C fill:#9bf,stroke:#333</span><br><span class="line">    style D fill:#6cf,stroke:#333</span><br><span class="line">    style E fill:#9f9,stroke:#333</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="一、评测对象"><a href="#一、评测对象" class="headerlink" title="一、评测对象"></a>一、评测对象</h2><h3 id="1-业务实现流程"><a href="#1-业务实现流程" class="headerlink" title="1. 业务实现流程"></a>1. 业务实现流程</h3><pre><code class="highlight mermaid">graph LR
+    A[用户查询问题] --&gt;|自然语言输入| B[模型解析与条件提取]
+    B --&gt;|结构化参数| C[查询接口调用]
+    C --&gt;|API请求| D[车源数据库]
+    D --&gt;|JSON响应| E[返回结果]
+    E --&gt; F(用户界面展示)
+    
+    style A fill:#f9f,stroke:#333
+    style B fill:#bbf,stroke:#333
+    style B stroke:#ff0000,stroke-width:2px
+    style C fill:#9bf,stroke:#333
+    style D fill:#6cf,stroke:#333
+    style E fill:#9f9,stroke:#333
+</code></pre>
 
 <ul>
 <li>待测类型：<ul>
@@ -621,7 +634,36 @@
 
 
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart TD</span><br><span class="line">    subgraph 用户层</span><br><span class="line">        A[用户输入：5-10万代步车推荐]</span><br><span class="line">        A1[用户后续提问&lt;br&gt;如：有省油点的吗？]</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    subgraph LLM处理层</span><br><span class="line">        B[意图识别&lt;br&gt;llm+prompt：识别用户意图]</span><br><span class="line">        B1[轮次管理与上下文跟踪]</span><br><span class="line">        C[条件提取（实体识别）&lt;br&gt;llm+prompt：提取价格区间、车型类型、油耗等]</span><br><span class="line">        C1[补全参数，如未明确价格或车型]</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    subgraph 数据层</span><br><span class="line">        D[API 查询车源推荐&lt;br&gt;车型数据库：日产轩逸、卡罗拉等]</span><br><span class="line">        D1[多维排序：热度、性价比、口碑、省油]</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    subgraph 内容生成层</span><br><span class="line">        E[llm+prompt：根据车源生成推荐摘要&lt;br&gt;如：日产轩逸，省油舒适，保有量高]</span><br><span class="line">        F[多轮响应：结合上下文推荐新车型或补充建议]</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    subgraph 输出层</span><br><span class="line">        G[最终输出&lt;br&gt;结构化推荐列表 + 自然语言总结 + 引导提问]</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; G</span><br><span class="line">    A1 --&gt; B1 --&gt; C --&gt;|上下文融合| D1 --&gt; E</span><br><span class="line">    G --&gt;|继续提问| A1</span><br></pre></td></tr></table></figure>
+<pre><code class="highlight mermaid">flowchart TD
+    subgraph 用户层
+        A[用户输入：5-10万代步车推荐]
+        A1[用户后续提问&lt;br&gt;如：有省油点的吗？]
+    end
+
+    subgraph LLM处理层
+        B[意图识别&lt;br&gt;llm+prompt：识别用户意图]
+        B1[轮次管理与上下文跟踪]
+        C[条件提取（实体识别）&lt;br&gt;llm+prompt：提取价格区间、车型类型、油耗等]
+        C1[补全参数，如未明确价格或车型]
+    end
+
+    subgraph 数据层
+        D[API 查询车源推荐&lt;br&gt;车型数据库：日产轩逸、卡罗拉等]
+        D1[多维排序：热度、性价比、口碑、省油]
+    end
+
+    subgraph 内容生成层
+        E[llm+prompt：根据车源生成推荐摘要&lt;br&gt;如：日产轩逸，省油舒适，保有量高]
+        F[多轮响应：结合上下文推荐新车型或补充建议]
+    end
+
+    subgraph 输出层
+        G[最终输出&lt;br&gt;结构化推荐列表 + 自然语言总结 + 引导提问]
+    end
+
+    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; G
+    A1 --&gt; B1 --&gt; C --&gt;|上下文融合| D1 --&gt; E
+    G --&gt;|继续提问| A1</code></pre>
 
 
 
@@ -637,7 +679,36 @@
 
 
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart TD</span><br><span class="line">    subgraph 用户层</span><br><span class="line">        A[用户输入：5-10万代步车推荐]</span><br><span class="line">        A1[用户后续提问&lt;br&gt;如：有省油点的吗？]</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    subgraph LLM处理层</span><br><span class="line">        B[意图识别&lt;br&gt;llm+prompt：识别用户意图]</span><br><span class="line">        B1[轮次管理与上下文跟踪]</span><br><span class="line">        C[条件提取（实体识别）&lt;br&gt;llm+prompt：提取价格区间、车型类型、油耗等]</span><br><span class="line">        C1[补全参数，如未明确价格或车型]</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    subgraph 数据层</span><br><span class="line">        D[API 查询车源推荐&lt;br&gt;车型数据库：日产轩逸、卡罗拉等]</span><br><span class="line">        D1[多维排序：热度、性价比、口碑、省油]</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    subgraph 内容生成层</span><br><span class="line">        E[llm+prompt：根据车源生成推荐摘要&lt;br&gt;如：日产轩逸，省油舒适，保有量高]</span><br><span class="line">        F[多轮响应：结合上下文推荐新车型或补充建议]</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    subgraph 输出层</span><br><span class="line">        G[最终输出&lt;br&gt;结构化推荐列表 + 自然语言总结 + 引导提问]</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; G</span><br><span class="line">    A1 --&gt; B1 --&gt; C --&gt;|上下文融合| D1 --&gt; E</span><br><span class="line">    G --&gt;|继续提问| A1</span><br></pre></td></tr></table></figure>
+<pre><code class="highlight mermaid">flowchart TD
+    subgraph 用户层
+        A[用户输入：5-10万代步车推荐]
+        A1[用户后续提问&lt;br&gt;如：有省油点的吗？]
+    end
+
+    subgraph LLM处理层
+        B[意图识别&lt;br&gt;llm+prompt：识别用户意图]
+        B1[轮次管理与上下文跟踪]
+        C[条件提取（实体识别）&lt;br&gt;llm+prompt：提取价格区间、车型类型、油耗等]
+        C1[补全参数，如未明确价格或车型]
+    end
+
+    subgraph 数据层
+        D[API 查询车源推荐&lt;br&gt;车型数据库：日产轩逸、卡罗拉等]
+        D1[多维排序：热度、性价比、口碑、省油]
+    end
+
+    subgraph 内容生成层
+        E[llm+prompt：根据车源生成推荐摘要&lt;br&gt;如：日产轩逸，省油舒适，保有量高]
+        F[多轮响应：结合上下文推荐新车型或补充建议]
+    end
+
+    subgraph 输出层
+        G[最终输出&lt;br&gt;结构化推荐列表 + 自然语言总结 + 引导提问]
+    end
+
+    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; G
+    A1 --&gt; B1 --&gt; C --&gt;|上下文融合| D1 --&gt; E
+    G --&gt;|继续提问| A1</code></pre>
 
 
 
@@ -647,7 +718,11 @@
 
 
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br></pre></td></tr></table></figure>
+<pre><code class="highlight mermaid">graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;</code></pre>
 ]]></content>
       <categories>
         <category>ai</category>
