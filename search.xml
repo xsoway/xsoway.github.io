@@ -1,925 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>ai</title>
-    <url>/2025/07/26/ai/</url>
-    <content><![CDATA[<span id="more"></span>
+    <title>hexo_写作技巧_01</title>
+    <url>/2025/07/26/hexo-technique-01/</url>
+    <content><![CDATA[<p><strong>常用技巧</strong></p>
+<ul>
+<li>阅读更多： <code>&lt;!-- more--&gt;</code></li>
+<li>空格： 1 个空格字符 <code> </code>  1 个中文宽度 <code> </code></li>
+<li>换 行： <code>&lt;/br&gt;</code></li>
+<li>插入图片： <code>&lt;img src=&quot; &quot; width=&quot;600&quot; hegiht=&quot;400&quot; &gt;</code></li>
+<li>居中： <code>&lt;center&gt; &lt;/center&gt;</code></li>
+</ul>
+<h2 id="文本居中标签"><a href="#文本居中标签" class="headerlink" title="文本居中标签"></a>文本居中标签</h2><p>参考 <a href="https://theme-next.iissnan.com/tag-plugins.html">内置标签 文本居中的引用</a></p>
+<p>文本居中标签有以下三种写法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;</span><br><span class="line">&lt;!-- 其中 class=&quot;blockquote-center&quot; 是必须的 --&gt;</span><br><span class="line">&lt;blockquote class=&quot;blockquote-center&quot;&gt;时光荏苒，珍惜当下&lt;/blockquote&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 标签方式 --&gt;</span><br><span class="line">&#123;% centerquote %&#125;时光荏苒，珍惜当下&#123;% endcenterquote %&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- 标签别名 --&gt;</span><br><span class="line">&#123;% cq %&#125;时光荏苒，珍惜当下&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>举例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;blockquote class=&quot;blockquote-center&quot;&gt;时光荏苒，珍惜当下&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong></p>
+<!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 -->
+<!-- 其中 class="blockquote-center" 是必须的 -->
+
+<blockquote class="blockquote-center">时光荏苒，珍惜当下</blockquote>
+
+<!-- 标签方式 -->
+
+<blockquote class="blockquote-center">
+<p>时光荏苒，珍惜当下</p>
+
+</blockquote>
+
+<!-- 标签别名 -->
+
+<blockquote class="blockquote-center">
+<p>时光荏苒，珍惜当下</p>
+
+</blockquote>
+
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>书写方式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// ``` [language] [title] [url] [link text]</span><br><span class="line">// code snippet</span><br><span class="line">// ```</span><br></pre></td></tr></table></figure>
+
+<p>其中，各参数意义如下：</p>
+<ul>
+<li>langugae：语言名称，引导渲染引擎正确解析并高亮显示关键字</li>
+<li>title：代码块标题，将会显示在左上角</li>
+<li>url：链接地址，如果没有指定 link text 则会在右上角显示 link</li>
+<li>link text：链接名称，指定 url 后有效，将会显示在右上角</li>
+</ul>
+<p>如果不想填写 title，可以在 language 和 url 之间添加至少三个空格。</p>
+<h2 id="note-标签"><a href="#note-标签" class="headerlink" title="note 标签"></a>note 标签</h2><h3 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h3><ul>
+<li>打开主题配置文件 <code>config.yml</code>, 修改 note 标签 。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">config.yml</span><br><span class="line"># note 标签</span><br><span class="line"># Note tag (bs-callout)</span><br><span class="line">note:</span><br><span class="line">  # Note tag style values:</span><br><span class="line">  #  - simple    bs-callout old alert style. Default.</span><br><span class="line">  #  - modern    bs-callout new (v2-v3) alert style.</span><br><span class="line">  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span><br><span class="line">  #  - disabled  disable all CSS styles import of note tag.</span><br><span class="line">  style: flat</span><br><span class="line">  icons: true</span><br><span class="line">  border_radius: 3</span><br><span class="line">  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span><br><span class="line">  # Offset also applied to label tag variables. This option can work with disabled note tag.</span><br><span class="line">  light_bg_offset: 20%  # 默认背景减淡效果，以百分比计算</span><br></pre></td></tr></table></figure>
+
+<h3 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h3><p>通过 note 标签可以为段落添加背景色，语法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] %&#125;</span><br><span class="line">文本内容 (支持行内标签)</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>支持的 class 种类包括 <code>default</code> <code>primary</code> <code>success</code> <code>info</code> <code>warning</code> <code>danger</code>，也可以不指定 class。</p>
+<p><strong>举例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">路是自己走出来的；机会是自己创造出来的。人不能创造时机，但是它可以抓住那些已经出现的时机。累了，才放慢脚步。错了，才想到最后。苦了，才知道满足。伤了，才明白坚强。</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary %&#125;</span><br><span class="line">尝试后可能会放弃，但千万不能放弃尝试。</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">每天给自己一个希望，试着不为明天而烦恼，不为昨天而叹息，只为今天更美好！人生没有对错，只有选择后的坚持，不后悔，走下去，就是对的。走着走着，花就开了。</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">如果把我们能做到的都做了，最终连我们自己都会被吓到。</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line"> 今日的事情，尽心、尽意、尽力去做了，无论成绩如何，都应该高高兴兴地上床恬睡。</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">生活其实很简单，过了今天就是明天。</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong>（按顺序，加上小图标）</p>
+<div class="note default"><p>路是自己走出来的；机会是自己创造出来的。人不能创造时机，但是它可以抓住那些已经出现的时机。累了，才放慢脚步。错了，才想到最后。苦了，才知道满足。伤了，才明白坚强。</p>
+</div>
 
 
 
-<pre><code class="highlight mermaid">flowchart TD
-    subgraph 用户层
-        A[用户输入：5-10万代步车推荐]
-        A1[用户后续提问&lt;br&gt;如：有省油点的吗？]
-    end
+<div class="note primary"><p>尝试后可能会放弃，但千万不能放弃尝试。</p>
+</div>
 
-    subgraph LLM处理层
-        B[意图识别&lt;br&gt;llm+prompt：识别用户意图]
-        B1[轮次管理与上下文跟踪]
-        C[条件提取（实体识别）&lt;br&gt;llm+prompt：提取价格区间、车型类型、油耗等]
-        C1[补全参数，如未明确价格或车型]
-    end
+<div class="note success"><p>每天给自己一个希望，试着不为明天而烦恼，不为昨天而叹息，只为今天更美好！人生没有对错，只有选择后的坚持，不后悔，走下去，就是对的。走着走着，花就开了。</p>
+</div>
 
-    subgraph 数据层
-        D[API 查询车源推荐&lt;br&gt;车型数据库：日产轩逸、卡罗拉等]
-        D1[多维排序：热度、性价比、口碑、省油]
-    end
+<div class="note info"><p>如果把我们能做到的都做了，最终连我们自己都会被吓到。</p>
+</div>
 
-    subgraph 内容生成层
-        E[llm+prompt：根据车源生成推荐摘要&lt;br&gt;如：日产轩逸，省油舒适，保有量高]
-        F[多轮响应：结合上下文推荐新车型或补充建议]
-    end
+<div class="note warning"><p>今日的事情，尽心、尽意、尽力去做了，无论成绩如何，都应该高高兴兴地上床恬睡。</p>
+</div>
 
-    subgraph 输出层
-        G[最终输出&lt;br&gt;结构化推荐列表 + 自然语言总结 + 引导提问]
-    end
-
-    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; G
-    A1 --&gt; B1 --&gt; C --&gt;|上下文融合| D1 --&gt; E
-    G --&gt;|继续提问| A1</code></pre>
+<div class="note danger"><p>生活其实很简单，过了今天就是明天。</p>
+</div>
 
 
 
+<h2 id="button-按钮"><a href="#button-按钮" class="headerlink" title="button 按钮"></a>button 按钮</h2><p>通过 button 标签可以快速添加带有主题样式的按钮，语法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% button /path/to/url/, text, icon [class], title %&#125;</span><br><span class="line">也可简写为：</span><br><span class="line">&#123;% btn /path/to/url/, text, icon [class], title %&#125;</span><br></pre></td></tr></table></figure>
 
+<p><strong>举例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% btn #, 文本 %&#125;</span><br><span class="line">&#123;% btn #, 文本 &amp; 标题, 标题 %&#125;</span><br><span class="line">&#123;% btn #, 文本 &amp; 图标, home %&#125;</span><br><span class="line">&#123;% btn #, 文本 &amp; 大图标 (固定宽度), home fa-fw fa-lg %&#125;</span><br></pre></td></tr></table></figure>
 
+<p><strong>效果：</strong></p>
+<a class="btn" href="/path/to/url/" title="title"><i class="fa fa-icon [class]"></i>text</a>
 
+<a class="btn" href="#">文本</a>
+<a class="btn" href="#"><i class="fa fa-标题"></i>文本 & 标题</a>
+<a class="btn" href="#"><i class="fa fa-home"></i>文本 & 图标</a>
+<a class="btn" href="#"><i class="fa fa-home fa-fw fa-lg"></i>文本 & 大图标 (固定宽度)</a>
 
+<h2 id="tab-标签"><a href="#tab-标签" class="headerlink" title="tab 标签"></a>tab 标签</h2><p>tab 标签用于快速创建 tab 选项卡，语法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs [Unique name], [index] %&#125;</span><br><span class="line">  &lt;!-- tab [Tab caption]@[icon] --&gt;</span><br><span class="line">  标签页内容（支持行内标签）</span><br><span class="line">  &lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-<pre><code class="highlight mermaid">flowchart TD
-    subgraph 用户层
-        A[用户输入：5-10万代步车推荐]
-        A1[用户后续提问&lt;br&gt;如：有省油点的吗？]
-    end
-
-    subgraph LLM处理层
-        B[意图识别&lt;br&gt;llm+prompt：识别用户意图]
-        B1[轮次管理与上下文跟踪]
-        C[条件提取（实体识别）&lt;br&gt;llm+prompt：提取价格区间、车型类型、油耗等]
-        C1[补全参数，如未明确价格或车型]
-    end
-
-    subgraph 数据层
-        D[API 查询车源推荐&lt;br&gt;车型数据库：日产轩逸、卡罗拉等]
-        D1[多维排序：热度、性价比、口碑、省油]
-    end
-
-    subgraph 内容生成层
-        E[llm+prompt：根据车源生成推荐摘要&lt;br&gt;如：日产轩逸，省油舒适，保有量高]
-        F[多轮响应：结合上下文推荐新车型或补充建议]
-    end
-
-    subgraph 输出层
-        G[最终输出&lt;br&gt;结构化推荐列表 + 自然语言总结 + 引导提问]
-    end
-
-    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; G
-    A1 --&gt; B1 --&gt; C --&gt;|上下文融合| D1 --&gt; E
-    G --&gt;|继续提问| A1</code></pre>
-
-
-
-
-
-
-
-
-
-<pre><code class="highlight mermaid">graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;</code></pre>
+<p>其中，各参数意义如下：</p>
+<ul>
+<li>Unique name: 全局唯一的 Tab 名称，将作为各个标签页的 id 属性前缀</li>
+<li>index: 当前激活的标签页索引，如果未定义则默认选中显示第一个标签页，如果设为 - 1 则默认隐藏所有标签页</li>
+<li>Tab caption: 当前标签页的标题，如果不指定则会以 Unique name 加上索引作为标题</li>
+<li>icon: 在标签页标题中添加 Font awesome 图标</li>
+</ul>
+<p><strong>举例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs Tab标签列表 %&#125;</span><br><span class="line">  &lt;!-- tab 王祖贤1 --&gt;</span><br><span class="line">    标签页1文本内容</span><br><span class="line">	&lt;img src=&quot;https://hexo-1257031621.cos.ap-chengdu.myqcloud.com/%E5%8D%9A%E5%AE%A2%E9%85%8D%E5%9B%BE/hexo%20blog%20%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A7/1.jpg&quot; width=&quot;600&quot; hegiht=&quot;400&quot; &gt;</span><br><span class="line">  &lt;!-- endtab --&gt;</span><br><span class="line">  &lt;!-- tab 王祖贤2 --&gt;</span><br><span class="line">    标签页2文本内容</span><br><span class="line">	&lt;img src=&quot;https://hexo-1257031621.cos.ap-chengdu.myqcloud.com/%E5%8D%9A%E5%AE%A2%E9%85%8D%E5%9B%BE/hexo%20blog%20%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A7/2.jpg&quot; width=&quot;600&quot; hegiht=&quot;400&quot; &gt;</span><br><span class="line">  &lt;!-- endtab --&gt;</span><br><span class="line">  &lt;!-- tab 王祖贤3 --&gt;</span><br><span class="line">    标签页3文本内容</span><br><span class="line">	&lt;img src=&quot;https://hexo-1257031621.cos.ap-chengdu.myqcloud.com/%E5%8D%9A%E5%AE%A2%E9%85%8D%E5%9B%BE/hexo%20blog%20%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A7/3.jpg&quot; width=&quot;600&quot; hegiht=&quot;400&quot; &gt;</span><br><span class="line">  &lt;!-- endtab --&gt;</span><br><span class="line">  &lt;!-- tab 王祖贤4 --&gt;</span><br><span class="line">    标签页4文本内容</span><br><span class="line">	&lt;img src=&quot;https://hexo-1257031621.cos.ap-chengdu.myqcloud.com/%E5%8D%9A%E5%AE%A2%E9%85%8D%E5%9B%BE/hexo%20blog%20%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A7/4.jpg&quot; width=&quot;600&quot; hegiht=&quot;400&quot; &gt;</span><br><span class="line">  &lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>ai</category>
+        <category>技术整理</category>
       </categories>
       <tags>
-        <tag>ai-query</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2025/07/24/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>hello</category>
-      </categories>
-      <tags>
-        <tag>World</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于业务场景下的模型评测流程</title>
-    <url>/2025/07/26/%E5%9F%BA%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="基于业务场景下的模型评测流程"><a href="#基于业务场景下的模型评测流程" class="headerlink" title="基于业务场景下的模型评测流程"></a>基于业务场景下的模型评测流程</h1><h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>本文旨在系统性地介绍如何在实际业务场景中开展大模型评测工作，帮助读者理解并掌握从需求分析、评测集设计与生成、评测维度设定、评测任务执行到评测报告输出的完整流程。</p>
-<span id="more"></span>
-
-<p><strong>定义</strong></p>
-<p>大模型评测的目标是通过设计合理的测试任务和数据集来对大模型的能力进行全面、量化的评估。</p>
-<p>本文主要聚焦对大模型业务效果方面的评测，不包含大模型的性能测试。</p>
-<p>性能测试通过压测实现。</p>
-<p>区别于基础模型的Benchmark(基准测试)，本文更加聚焦在针对具体业务场景下大模型的效果。在基础模型发布时，模型厂商提供的测试报告无法覆盖用户实际业务场景。用户需要通过针对自己业务场景设计的评测来评估大模型的实际表现。同时大模型评测除了针对模型本身，也可以面向整个模型应用进行评测，覆盖RAG、MCP、工作流等构成的统一整体进行端到端的测试。</p>
-<p><strong>场景</strong></p>
-<p>大模型评测在模型应用中的作用，类似于功能测试在业务应用中的作用——两者均是确保系统或大模型在实际部署前达到预期性能与可靠性的关键验证环节。以下是几种典型的评测场景：</p>
-<ul>
-<li><strong>大模型上线</strong>：在大模型应用上线前，通过评测了解大模型的能力，判断大模型应用是否具备上线条件。</li>
-<li><strong>大模型升级切换</strong>：因为需要切换模型厂商、更换模型尺寸、模型微调或模型版本升级等原因，用户需要通过评测对新旧模型的效果进行比对，从而决策是否进行切换。</li>
-<li><strong>大模型优化</strong>：通过评测发现的bad case，持续提升大模型效果。通过分析bad case的原因，可以进行诸如优化知识库、优化提示词、优化工作流、引入或优化MCP以及对模型进行微调等方式优化效果。</li>
-</ul>
-<p><strong>挑战</strong></p>
-<p>大模型评测相关工具平台随着各大模型平台厂商的持续投入以及开源社区的火爆，相关功能也在持续完善，目前已经不是主要的困难点。目前的主要困难更多聚焦在如何结合自己的业务场景开展大模型评测。</p>
-<ul>
-<li>**评测维度 **：评测维度如何设计才能更好的衡量大模型效果，并推动大模型优化？</li>
-<li><strong>评测集</strong>：如何设计评测集才能更好地仿真实际的线上场景。如何平衡不同场景的比例失衡的问题，确保不同场景的覆盖？</li>
-<li><strong>标注</strong>：标注人员质量参差不齐，不同人对标准的理解不一致。同一个人不同时间标注，也会导致结果不同，最终导致标注准确性稳定性差。除了标注效果外，人工标注非常耗时且需要投入额外的人工成本，导致无法开展大规模评测。</li>
-<li><strong>业务变化</strong>：随着技术方案和业务场景的变化，大模型本身也在持续迭代演进。不同大模型特点不同，评测标准和评测集的构成也各不相同。</li>
-</ul>
-<p>大模型评测方法</p>
-<h1 id="评测流程"><a href="#评测流程" class="headerlink" title="评测流程"></a><strong>评测流程</strong></h1><p>大模型评测流程，整体可以分为4个阶段共9个动作。前7个为模型评测本身的动作，以输出评测报告为目标。后续2个动作为通过持续优化模型与模型评测本身，以达到最后的模型上线切换等目标。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naLvNcABFoAwPLUyia9gdSwFRKEP0hvd6cTxjbRsyVe6BAaIIA4ficjQU043O6rWctibeW195FdeJz3lg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
-<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a><strong>需求分析</strong></h2><p>通过需求分析了解关键信息，作为后续设计的依据。以下是一些典型的问题。</p>
-<h3 id="业务场景"><a href="#业务场景" class="headerlink" title="业务场景"></a>业务场景</h3><ul>
-<li>大模型被使用在什么业务里？</li>
-<li>这个业务都有哪些业务流程，大模型在其中哪个流程中，起到什么样的作用？</li>
-<li>在这个业务场景里，大模型的使用者是谁。是否包含C端用户。</li>
-<li>用户使用大模型需要解决什么问题。用户会提供什么信息，并期望大模型输出什么？</li>
-<li>目前大模型是否已经投产了？还是处于测试阶段？</li>
-</ul>
-<h3 id="评测对象"><a href="#评测对象" class="headerlink" title="评测对象"></a>评测对象</h3><ul>
-<li>我们要评测的对象是模型（基础模型&#x2F;微调模型），还是大模型应用。</li>
-<li>对象&#x3D;基础模型：具体的模型名称，是否是经过微调。</li>
-<li>对象&#x3D;模型应用：请提供大模型的技术架构。</li>
-<li>如果是基于百炼调用，请提供测试账号方便了解技术细节。</li>
-<li>是需要对单一大模型对象进行评测，还是需要和其他的大模型进行比较评测结果。如果是需要比较的话，对比对象是什么？</li>
-</ul>
-<h3 id="评测集"><a href="#评测集" class="headerlink" title="评测集"></a>评测集</h3><ul>
-<li>用户最常见的使用大模型都会分哪几种场景，这些场景的调用量分布是怎么样的？</li>
-<li>每个场景里大模型的输入输出是怎么样的，请分别提供一些示例。</li>
-<li>本次评测的目标是什么？是希望评估模型对实际场景的业务效果，还是需要评测特定子场景的效果，或是希望能对历史bad case做回归？</li>
-</ul>
-<h3 id="评价维度"><a href="#评价维度" class="headerlink" title="评价维度"></a>评价维度</h3><ul>
-<li>如何判断大模型效果好不好？业务人员会关注哪些维度？</li>
-<li>针对其中的每个维度，是如何评估的，是定性的对错，还是有打分的机制。如果是打分，分别打几分。每个档次之间的评分标准是什么。</li>
-<li>对于多维度的评价，是否可以通过一个公式（比如通过加权）将结果量化成一个数字，还是必须每个维度分别分析？</li>
-</ul>
-<h3 id="模型效果"><a href="#模型效果" class="headerlink" title="模型效果"></a>模型效果</h3><ul>
-<li>当前大模型的实际效果表现如何？这些效果评估是来自哪里？是感性的反馈还是有数字支撑。</li>
-<li>当前系统如何收集用户的bad case，是否有日志可以分析？</li>
-<li>当前都有哪些原因可能导致bad case，都是什么样的原因？</li>
-<li>是否分析过bad case，都是哪些原因导致结果不满意，分布如何。</li>
-</ul>
-<h3 id="技术实现"><a href="#技术实现" class="headerlink" title="技术实现"></a>技术实现</h3><ul>
-<li>企业内部是否有评测平台，还是计划使用百炼进行评测？</li>
-<li>是否有人工评测团队，还是希望通过“AI评测器”（指通过大模型进行评测）或“自动化指标”自动完成评分（自动化指标仅适用于文本分类等客观性任务）？</li>
-<li>自动评测：自动对于推理完成的时效性是否有要求，是否可以接受离线的推理方式？使用这种方式的模型不执行在线推理，因此可以显著降低推理成本。</li>
-</ul>
-<h2 id="评测集设计与生成"><a href="#评测集设计与生成" class="headerlink" title="评测集设计与生成"></a><strong>评测集设计与生成</strong></h2><h4 id="基于评测目标确认数据来源"><a href="#基于评测目标确认数据来源" class="headerlink" title="基于评测目标确认数据来源"></a>基于评测目标确认数据来源</h4><p>大模型的评测集根据评测目的最常见的有以下三种：</p>
-<ul>
-<li><strong>端到端评测集：</strong><ul>
-<li>**实际场景效果：**为了实现实际场景效果评估的目标，需要选择评测集尽量接近选择实际线上数据。这里典型的有两种方法。一种是选择历史某天的历史记录。另外一种是选择接入线上流量进行“双跑”，仅仅是结果只做记录分析但是不输出给线上环境。区别在于接入历史数据更方便做分析统计，“双跑”方案方便后续做灰度以及切换。</li>
-<li>**特定子场景效果：**为了实现特定子场景的评估目标，需要定义特定场景并设计对应的评测集。比如让大模型做小学生数学题，五年级的题目、奥数题、压轴题就是其中的一个子场景。从具体的需求出发，选择整体的评测集中的子集。</li>
-</ul>
-</li>
-<li><strong>分层评测集</strong>：<ul>
-<li>**bad case回归：**使用线上问题中的用户的负面反馈，或者在测试、质检等环节形成的案例，经过标注形成Bad Case作为评测集。目的是为了验证优化工作对bad case的优化效果。</li>
-<li><strong>功能模块评测</strong>：比如评测模型应用中的意图识别模块的准确率、知识库部分的召回准确率等。通过评测识别各功能的效果方便后续进一步优化。这种情况下可以针对评测对象的各种功能针对性设计评测集。</li>
-</ul>
-</li>
-<li>**安全评测集：**专注于科技伦理、数据安全和内容安全的各项指标，确保模型满足安全合规要求。建议由安全或风控团队提供。</li>
-</ul>
-<h4 id="确认评测集场景范围"><a href="#确认评测集场景范围" class="headerlink" title="确认评测集场景范围"></a>确认评测集场景范围</h4><p>确认评测集场景范围的原因主要是为了保证测试内容的完整性，避免测试内容遗漏。评测集场景的梳理方式主要有以下方式结合分析：</p>
-<ul>
-<li><strong>结合业务场景分析</strong>：从业务场景出发来设计评测场景是最基本的做法。大模型在不同场景下可能有不同的表现，模型评测需要覆盖不同业务以获得完整的评测结果。假设阿里云售后支持大模型可以在提供云产品异常问题诊断的能力的同时，也提供协助售后支持小二回答服务流程规范、服务排班的问题。实际评测的时候就不能遗漏对应的功能。而且应用服务异常诊断也需要针对不同云产品的故障诊断能力准备评测集。</li>
-<li><strong>结合技术架构分析</strong>：不同的业务场景下可能在技术实现上会有不同。比如通过意图识别针对不同的情况走不同的技术链路的，可能是不同的场景。或者使用了不同的组件、MCP或知识库，或者有不同的工作流的，很可能是不同的场景。</li>
-</ul>
-<h4 id="确认评测集数量"><a href="#确认评测集数量" class="headerlink" title="确认评测集数量"></a>确认评测集数量</h4><p>对于来自线上请求“双跑”的在线数据集和离线数据集，采用不同的数量规划方式：</p>
-<ul>
-<li><strong>在线评测集</strong>：需要考虑“双跑”持续的时间。双跑的时间取决于业务人员觉得多久足够证明业务效果。一方面考虑评测集样本数量；另外一方面考虑是否覆盖业务周期（比如是否覆盖常态和大促态、覆盖工作日和周末等）。一般建议可以评测3-7天。为了更准确评估，可以提前统计单日的调用量。</li>
-<li><strong>离线评测集</strong>：<strong>离线数据集的数量主要考虑</strong>场景覆盖度、样本数量足够以及与成本性能的均衡。场景覆盖度需要不存在某个场景没有评测集样本的情况。样本数量足够包括总体样本数量足够，也包括各评测场景的样本也需要有足够的样本数量。成本性能的均衡主要考虑样本数量不能太大，以免评测需要消耗过多的时间、人力和算力成本。为了更准确评估，可以提前统计单日的总调用量及分场景的数量。</li>
-</ul>
-<p>这里有个难点：<strong>如何解决各场景样本数量分布不均衡的问题</strong>？比如假设某质检场景里差评投诉的案例只占全部案例的1%，那如果完全按照实际请求生成评测集，可能导致差评占比偏少。而如果提升差评样本数量又会导致整体样本失真。</p>
-<p>一般的解决方法有：</p>
-<ul>
-<li><strong>增加样本数量</strong>。通过提升样本数量（即增加时间范围）来获得更多负样本。<ul>
-<li>适用场景：评测目标是为了实现“以XX日到XX日实际案例评测结果”，评测集需要尽可能接近真实数据。</li>
-<li>注意事项：无法实际规避样本分布不均衡的问题，只是通过提升总体样本数量来确保小场景有最低数量的样本。而且过度的增加样本会导致大场景的样本过多浪费资源。此外需要关注某段时间范围是否已覆盖所有场景（比如要考虑业务场景下工作日和周末是否存在不同），而不是单纯只考虑数量。这不是一个特别好的方法，只是在特定场景下约束下的选择。</li>
-</ul>
-</li>
-<li><strong>调整权重比例</strong>。比如每个场景按需要生成足够数量的样本进行评测，分场景计算平均分，分析各个场景的模型表现。<ul>
-<li>适用场景：需要用数字量化总体效果，但是又存在样本分布不均匀的情况。</li>
-</ul>
-</li>
-<li><strong>调整损失函数</strong>。引入诸如召回率、F1分数等指标，选择更加符合业务需求的指标。<ul>
-<li>适用场景：在样本分布不均衡时关注小场景的效果。另外小样本数量过小时数据也可能失真。</li>
-</ul>
-</li>
-</ul>
-<h4 id="评测集初稿生成"><a href="#评测集初稿生成" class="headerlink" title="评测集初稿生成"></a>评测集初稿生成</h4><p>在线评测集只需要接入线上数据接入，生成方式主要指离线数据集。生成方式主要有</p>
-<ul>
-<li><strong>历史请求</strong>：通过解析一段时间内的历史访问日志等方式，获得历史访问请求。<ul>
-<li><strong>优点</strong>：接近真实数据，样本数量充足。</li>
-<li><strong>缺点</strong>：数据可能同质化严重。特定日期&#x2F;业务场景等无法控制。不支持冷启动。</li>
-</ul>
-</li>
-<li><strong>bad case日志</strong>：需要模型输出给用户使用时，收集用户的反馈。比较典型的做法是在模型输出时让用户反馈。如果用户点踩，可以进行分析后纳入bad case案例库。<ul>
-<li><strong>优点</strong>：在有埋点时获取难度接近历史请求。</li>
-<li><strong>缺点</strong>：主要适用于问题回归场景，需要对用户反馈做埋点。不支持冷启动。</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naLvNcABFoAwPLUyia9gdSwFRBHrQTPrNwF0oDx9JianasuPTso7zQy7kPDNvjKanZlnpZiacnMCohdFQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
-<ul>
-<li>**人工生成：**人工生成评测集在有专家经验输入的情况下可能可以获得比较好的效果，但是缺点在于成本过高，一般无法获得特别多的评测集样本。<ul>
-<li><strong>优点</strong>：数据质量高，可以考虑到多种异常场景。支持无用户使用下的冷启动。</li>
-<li><strong>缺点</strong>：耗费人力，对人员的要求高。无法进行高频率更新。</li>
-</ul>
-</li>
-<li>**历史请求+人工调整：**通过对特定问题进行调整，比如减少简单问题的比例甚至直接过滤，针对bad case做重点补充等。<ul>
-<li>**优点：**重点问题突出。</li>
-<li>**缺点：**破坏了线上的比例，无法通过评测集的测试效果验证推出线上效果。</li>
-</ul>
-</li>
-<li><strong>大模型自动生成</strong>：在冷启动场景里，可能无法足够的线上真实案例作为评测集，除了人工去造之外，通过大模型自动生成评测集也是比较好的做法。<ul>
-<li><strong>优点</strong>：样本数量充足。在没有线上实际使用时冷启动方便。</li>
-<li><strong>缺点</strong>：效果最差，需要人工筛选，并且需要基于效果不好的部分优化生成提示词。</li>
-</ul>
-</li>
-<li><strong>人工生成+大模型自动生成</strong>：在实际的冷启动场景里，为了能同时保障评测集的质量和数量，一般的做法是由人工生成一部分评测集后，以few-shot的方式作为prompt的一部分，进行大模型自动生成。</li>
-</ul>
-<h4 id="评测集优化"><a href="#评测集优化" class="headerlink" title="评测集优化"></a>评测集优化</h4><p>当完成评测集后，可以根据需要进行一些优化。这里列出主几个常见的方面：</p>
-<ul>
-<li><strong>数据安全脱敏</strong>：针对评测集里有涉及数据安全信息时，根据需要进行脱敏。如用户的个人身份敏感信息，公司内部诸如密钥信息等内部数据，都需要根据公司的要求进行处理。</li>
-<li><strong>数据集分布不合理</strong>：比如生成的评测集正负样本比例、各场景样本分布等不符合评测集的预定设计，则需要通过删除过多的样本或补充缺少场景的样本的方式进行调整。</li>
-<li><strong>持续迭代优化</strong>：评测集需要结合实际的业务场景持续优化迭代的。基于过程中的bad case持续优化评测集，通过删除过程中发现的低质量的评测集样本，补充优质样本，或对业务的新增场景以及评测集数量比较少的小场景补充样本等方式，持续完善评测集。需要注意的是，如果是通过大模型自动生成的评测集，则不只是优化评测集，也需要根据不合理的部分优化提示词，以生成更高质量的评测集。</li>
-</ul>
-<h4 id="案例参考"><a href="#案例参考" class="headerlink" title="案例参考"></a>案例参考</h4><p>**蚂蚁集团：**蚂蚁金服 FinEva金融评测集</p>
-<p>蚂蚁集团、上海财经大学联合推出金融评测集Fin-Eva Version 1.0。根据对金融业务大模型的使用场景的拆分，分金融认知、金融知识、金融逻辑、内容生成以及安全合规五大类场景33个子场景共设计了上万个评测用例。</p>
-<p>详细可以参考Github：<a href="https://github.com/alipay/financial_evaluation_dataset/tree/main">https://github.com/alipay/financial_evaluation_dataset/tree/main</a></p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naLvNcABFoAwPLUyia9gdSwFRiaLWVl2agsGqCXK6Kq8NkFOibHU8udW0NViawPH4TRO9XzEAGoiaGYicebQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
-<p><strong>评测集生成：集团某业务使用人工造数结合大模型生成高质量评测集</strong></p>
-<p>该业务通过使用大模型去托管电销BD做自动回复和流程流转，实现让商家报名活动流程的自动化，提升活动的覆盖度。在该场景中，大模型先进行意图识别，驱动北极星任务的流转。针对回答不相关、要求转人工、同意开通、有意向&#x2F;不明确等不同的情况，使用不同的策略进行推进。</p>
-<p>由于商家和BD的聊天内容多种多样，场景无法穷举，意图识别的准确率和回复商家的话术，又直接影响到销售的效果。从质量的角度，如何全面地评测“AI销售模型”的能力水位，如何评测AI销售的准确率和话术体验，如何通过评测去挖掘异常场景和能力缺失点，从而反哺算法提升，都有一定的挑战。因此需要一个能“看得见”、“看得清”、“可持续”的评测方式，对AI销售进行持续全面的评估。</p>
-<p>采用人工造数+大模型生成的方式，不仅实现了评测集的冷启动，同时又保障了评测集数量和质量的双重要求：</p>
-<ol>
-<li>人工造数。通过产运技提供了若干条数据，覆盖所有意图；</li>
-<li>大模型生成，使用LLM+Few-shot做补充，每个意图写单独的prompt，准确率更高。</li>
-</ol>
-<p><strong>评测维度设计</strong></p>
-<h4 id="设计方法"><a href="#设计方法" class="headerlink" title="设计方法"></a>设计方法</h4><p>评测维度用于评价模型输出的效果，涉及三个设计点：</p>
-<ul>
-<li>模型是否有统一的评价维度，还是需要从多个维度去判断模型的能力。</li>
-<li>对于具体的某个维度，分几档（量级）。</li>
-<li>每个量级的定义，以及区分不同量级的标准。</li>
-</ul>
-<p>具体的评测维度是根据业务人员对模型期望达到的效果来设计的。</p>
-<ul>
-<li>对于选择题或判断题，业务人员的期望就是“选得准”。那一般可以设计维度数量&#x3D;1，评测量级&#x3D;2，分别为正确和错误。</li>
-<li>对于生成类场景，由于没有标准答案，需要业务人员根据场景设计评测维度。比如翻译场景，“信、达、雅”是最经典的三个标准。</li>
-</ul>
-<p>最后要提到的是，业务人员可能也无法一次性给出最准确的评测维度，可能需要结合实际的bad case去优化。对于某些业务人员或用户觉得生成效果不好的案例，如果根据现有的评测维度给出的评价是正向的，那就需要寻找原因调整评价维度。举个例子，比如在“AI试衣”场景里，我们预先定义了“清晰度与分辨率”、“色彩准确性”、“人体与服饰的自然融合”、“姿势与角度匹配”、“光影与背景一致性”共5个评测维度。但是实际消费者使用时反馈部分场景的bad case在评测时给出好的评价。了解分析后发现消费者表示“我的体型穿这种衣服根本不是这个效果”。那基于消费者的这个反馈，我们就需要增加评测维度“人体比例与体型适配”。</p>
-<h4 id="模型效果量化"><a href="#模型效果量化" class="headerlink" title="模型效果量化"></a>模型效果量化</h4><p>在完成分维度的设计后有一个最终的问题是，如何将各个维度的效果汇总成模型的整体效果的度量，从而评估模型是变好还是变坏，是否达到了上线等后续动作的标准。不同维度的优先级是不同的，安全类、客户投诉类一般都高于其他的业务指标。</p>
-<p>通过权重调整各个维度的重要性，最终通过加权后的得分来量化模型的最终效果，是一种相对比较简单的实现方案。对于总分，通过加权<img src="https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naLvNcABFoAwPLUyia9gdSwFRMohIdicJSOicqyOuBq9skibq8ZIQm48QC5AVAbBZHsQYa8wOemEnK27Qw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1" alt="图片">计算总体效果。其中n表示场景数量，<img src="https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naLvNcABFoAwPLUyia9gdSwFROgVa41OOiaa1kxyN5oaXCqdzCib0JLmiaN66Eib8IBmygO9ljeJXMsR6ug/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1" alt="图片">表示某个场景的平均分，<img src="https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naLvNcABFoAwPLUyia9gdSwFRiceUpN6ricBZb9UNSH4wGrjP7vkepnrspib2nYXragEMKe8via8f1Hjib5Q/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1" alt="图片">表示该场景样本的权重，可以设置为该场景样本的占比，也可以都是1，或者业务人员根据业务需求设定。</p>
-<p><strong>评测任务设计与执行</strong></p>
-<h4 id="评测配置设计"><a href="#评测配置设计" class="headerlink" title="评测配置设计"></a>评测配置设计</h4><p>对于模型评测，在开始具体的评测动作前，还有一些评测设置需要确定：</p>
-<ul>
-<li><strong>评测方式</strong><ul>
-<li><strong>人工评测</strong>**：**通过人员手工评测的方式进行评测。一般用于评测集数量较少或评测准确性要求较高或者不具备自动评测条件的场景。</li>
-<li><strong>自动评测</strong>**：**自动评测分AI评测和自动化评测，可以极大提升评测效率。其中AI评测为使用大模型进行评测的方式。自动化评测适用于文本分类等客观性任务，通过自动计算BLEU、Rouge、F1等自动化指标评估模型效果。</li>
-<li><strong>基线评测</strong>**：**针对基础模型的评测，使用基线评测集进行测试。</li>
-</ul>
-</li>
-<li><strong>评测类型</strong>**：**单个评测VS对比评测。评测对象只有1个模型还是多个模型。</li>
-</ul>
-<h4 id="AI评测"><a href="#AI评测" class="headerlink" title="AI评测"></a>AI评测</h4><p>针对模型评测，可以使用大模型进行评测以提升效率。这里以百炼为例介绍如何进行AI评测。其他产品原理也是一致。AI评测的关键点在于评测Prompt的编写。</p>
-<p>为了获得比较好的评测效果，百炼固定了Prompt框架，让用户按框架补充<strong>场景定义</strong>、评测维度（评分标准、评分档位、最大得分）。</p>
-<p><strong>完整的百炼的Pormpt如下</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">你的任务是对AI智能助手回复进行质量评分。</span><br><span class="line">你非常清晰地认识到当用户提出一个关于【$&#123;scene&#125;】场景的指令时（该场景的定义为：$&#123;scene_desc&#125;），一个AI智能助手的回复应当符合以下标准（按标准重要性程度从高到低依次给出）：[标准开始]$&#123;metric&#125;[标准结束]</span><br><span class="line">评分采取$&#123;max_score&#125;档制（1-$&#123;max_score&#125;），各分数档位含义如下：[档位含义开始]$&#123;score_desc&#125;[档位含义结束]</span><br><span class="line">针对用户指令，我们搜集到一个AI智能助手的如下回复。请根据你所知的当前场景下智能助手的回复标准，综合评估该回复并提供评价。以下是用户指令和助手回复数据：[数据开始] ***[用户指令]: $&#123;question&#125;***[回复]: $&#123;answer&#125;***[参考答案]: $&#123;ref_answer&#125;***[数据结束]</span><br><span class="line">你需要按照以下流程评估以上回复：$&#123;steps&#125;</span><br><span class="line">仔细思考一会，然后给出你的结论。你返回的模版如下，注意输出需保留模版中的&#x27;[[&#x27;和&#x27;]]&#x27;：***我认为该回复的综合评分为[[一个1-$&#123;max_score&#125;之间的评分]]，理由如下。当前回复的优点：1.（请依次列举你认为当前回复做得好的点，每个点同时给出[[一个1-$&#123;max_score&#125;之间的评分]]...）当前回复的不足：1.（请依次列举你认为当前回复欠缺的点，每个点同时给出[[一个1-$&#123;max_score&#125;之间的评分]]...）***</span><br></pre></td></tr></table></figure>
-
-<h4 id="案例参考-1"><a href="#案例参考-1" class="headerlink" title="案例参考"></a>案例参考</h4><h5 id="集团某业务自动化评测"><a href="#集团某业务自动化评测" class="headerlink" title="集团某业务自动化评测"></a><strong>集团某业务自动化评测</strong></h5><p>该业务在每个月&#x2F;每次重要实验后需要从搜索曝光日志中抽取数万条记录进行评测，日志包含曝光的品、店以及对应的query，评测规则较为简单，众包对query和品店评分0、1、2，代表相关程度，2分（完全相关）、1分（部分相关、可以接受）、0分（不相关），通过对比实验桶和测试桶评测结果统计相关性效果。</p>
-<p><strong>阶段一：使用通用模型，使用</strong>few-shot的方式让prompt理解</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">你现在的角色是XX领域的相关性打分模型,主要功能是判断用户搜索的关键词和商户名称或商品名称之间是否具有相关性,我会给你任务和要求,请按要求返回结果。任务: 第一步:XXX第二步:XXX要求:1.按照以下格式输出回答,不要回答其他内容,输出格式: XXX2.一共只有三个得分选项即2分、1分、0分,不要给出其他的得分。3.我会给出具体的打分规则并给出对应的例子,给出的规则顺序不代表最终得分的权重,请参考完所有例子并仔细理解后给出答案,打分规则和示例如下:(1)对于商品名或商户名和关键词完全一致且意图也完全一致的,得2分例如:XXXX(2)对于商品名或商户名包含部分关键词,但意图完全一致的,得2分例如:XXXX</span><br></pre></td></tr></table></figure>
-
-<p><strong>阶段二：基于微调后的模型进行自动评测</strong></p>
-<p>基于Qwen大模型模型，通过使用历史人工评测数据不断的微调后，新模型在搜索相关性评测领域的理解能力已经超过通用模型。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">你现在的角色是XX领域的query-shop相关性打分模型。</span><br><span class="line">query:XXshop_name:XX店</span><br><span class="line">打分规则:0分：query与shop_name不相关。1分：query与shop_name弱相关。2分：query与shop_name强相关。……</span><br><span class="line">query和shop之间的相关性分数是少？</span><br></pre></td></tr></table></figure>
-
-<p><strong>评测报告</strong></p>
-<h4 id="评测数据分析"><a href="#评测数据分析" class="headerlink" title="评测数据分析"></a>评测数据分析</h4><p>百炼等评测平台会提供基础的评测结果展示的功能。为了提供通用能力，评测平台一般无法满足业务人员对于评测报告的要求，通过柱状图、表格等方式提供评测结果的展示和分析。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naLvNcABFoAwPLUyia9gdSwFR0lOJmMG9Szz2nicl5WVMBrrWABOEldgCwAw2G5HfUMHKYGp2Cgnjiaxw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
-<h4 id="评测报告编写"><a href="#评测报告编写" class="headerlink" title="评测报告编写"></a>评测报告编写</h4><p>评测报告是评测人员输出，便于后续决策（如判断是否具备上线切换条件等）使用的报告，所以需要根据阅读人员的习惯按格式输出。以下是一些案例：</p>
-<h5 id="集团某业务qwen-max评测"><a href="#集团某业务qwen-max评测" class="headerlink" title="集团某业务qwen-max评测"></a><strong>集团某业务qwen-max评测</strong></h5><p><strong>评测环境</strong></p>
-<ol>
-<li>目前Qwen-max在xx环境中进行灰度测试，灰度比例15%。</li>
-<li>xx环境目前主要是xx和xx业务使用。</li>
-</ol>
-<p><strong>评测结果</strong></p>
-<p>具体评测维度和分数如下表所示：</p>
-<p>![图片](data:image&#x2F;svg+xml,&lt;%3Fxml version&#x3D;’1.0’ encoding&#x3D;’UTF-8’%3F&gt;<svg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>)</p>
-<p>![图片](data:image&#x2F;svg+xml,&lt;%3Fxml version&#x3D;’1.0’ encoding&#x3D;’UTF-8’%3F&gt;<svg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>)</p>
-<p><strong>结论</strong></p>
-<ol>
-<li>Qwen-max整体评分超过XX模型，但在NL2SQL、代码编写、上下文理解和数学计算方面还是有差距。</li>
-<li>对比老版本Qwen-max，整体评分有较大提升。</li>
-</ol>
-<ul>
-<li>增强项：NL2Frame、NL2SQL、上下文理解、摘要总结、CoT、谜题解惑、数学和工具</li>
-<li>减弱项：代码编写</li>
-</ul>
-<p><strong>后续动作</strong></p>
-<p>输出评测报告后，评测的部分已经完成了。基于评测报告的结果以及评测过程中发现的问题，后续的动作有：</p>
-<ul>
-<li><strong>评测方案优化</strong><ul>
-<li>持续优化评测集</li>
-<li>优化评测维度</li>
-<li>优化AI评测Prompt</li>
-</ul>
-</li>
-<li><strong>bad case优化</strong></li>
-<li><strong>决策模型上线或者切换</strong></li>
-</ul>
-<p><strong>向量检索与通义千问搭建专属问答服务</strong></p>
-<p>本方案介绍如何使用向量检索服务（DashVector）结合通义千问大模型来打造基于垂直领域专属知识等问答服务。   </p>
-]]></content>
-      <categories>
-        <category>模型评测</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
-        <tag>LLM-eval</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>评测</title>
-    <url>/2025/07/24/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h2><p>Bee King AI 评估框架是一个专为智能客服场景设计的AI模型评测工具集，用于全面评估模型在各种业务场景下的表现。该框架支持多维度评测，包括意图识别、线索提取、内容质量、对话能力等，并能生成详细的评测报告。</p>
-<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/Users/xulanzhong/Desktop/fw_eval/test_fw_evaluation/</span><br><span class="line">├── __init__.py                      # 包初始化文件</span><br><span class="line">├── eval_fw_summary_report/          # 评估框架汇总报告目录</span><br><span class="line">├── eval_summary_report/             # 评估汇总报告目录</span><br><span class="line">│   ├── generate_summary_report.py   # 生成汇总报告的工具</span><br><span class="line">│   └── report_data.md               # 报告数据说明</span><br><span class="line">├── eval_summary_report_analysis/    # 评估报告分析工具目录</span><br><span class="line">├── test_fw_ai_assistant/           # AI助手评估模块</span><br><span class="line">├── test_fw_chat_content/           # 聊天内容评估模块</span><br><span class="line">├── test_fw_chat_intent/            # 聊天意图识别评估模块</span><br><span class="line">│   ├── backup/                      # 备份文件</span><br><span class="line">│   ├── conftest.py                  # pytest配置文件</span><br><span class="line">│   ├── eval_dataset/                # 评估数据集</span><br><span class="line">│   ├── eval_dataset_report/         # 评估报告输出目录</span><br><span class="line">│   ├── eval_dataset_result/         # 评估结果输出目录</span><br><span class="line">│   ├── log/                         # 日志目录</span><br><span class="line">│   ├── main.py                      # 主程序入口</span><br><span class="line">│   ├── test_fw_chat_intent_handle.py # 意图识别测试处理程序</span><br><span class="line">│   └── tools/                       # 工具函数目录</span><br><span class="line">├── test_fw_clue_extract/           # 线索提取评估模块</span><br><span class="line">├── test_fw_conversations_content/  # 对话内容评估模块</span><br><span class="line">└── test_fw_diff_content/           # 内容差异评估模块</span><br></pre></td></tr></table></figure>
-
-<h2 id="模块说明"><a href="#模块说明" class="headerlink" title="模块说明"></a>模块说明</h2><h3 id="1-评估汇总报告模块-eval-fw-summary-report"><a href="#1-评估汇总报告模块-eval-fw-summary-report" class="headerlink" title="1. 评估汇总报告模块 (eval_fw_summary_report)"></a>1. 评估汇总报告模块 (eval_fw_summary_report)</h3><ul>
-<li>负责汇总所有评估模块的结果，生成最终的综合评估报告。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>simple_report/</code> - 包含各个模块的简化报告</li>
-<li><code>summary_report_*.html</code> - 汇总报告HTML文件</li>
-</ul>
-<h3 id="2-评估报告生成模块-eval-summary-report"><a href="#2-评估报告生成模块-eval-summary-report" class="headerlink" title="2. 评估报告生成模块 (eval_summary_report)"></a>2. 评估报告生成模块 (eval_summary_report)</h3><p>提供评估报告生成的核心功能，将评估结果转换为可视化的HTML报告。</p>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>generate_summary_report.py</code> - 报告生成主函数</li>
-<li><code>report_data.md</code> - 报告数据模板</li>
-<li><code>simple_report/</code> - 简化报告目录</li>
-</ul>
-<h3 id="3-评估报告分析模块-eval-summary-report-analysis"><a href="#3-评估报告分析模块-eval-summary-report-analysis" class="headerlink" title="3. 评估报告分析模块 (eval_summary_report_analysis)"></a>3. 评估报告分析模块 (eval_summary_report_analysis)</h3><ul>
-<li>对评估结果进行深入分析，提供数据洞察和改进建议。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>agno_agent_analysis.py</code> - 基于Agent的分析工具</li>
-<li><code>report_analysis_tool.py</code> - 报告分析工具</li>
-<li><code>summary_report_data.json</code> - 汇总数据</li>
-</ul>
-<h3 id="4-AI助手评估模块-test-fw-ai-assistant"><a href="#4-AI助手评估模块-test-fw-ai-assistant" class="headerlink" title="4. AI助手评估模块 (test_fw_ai_assistant)"></a>4. AI助手评估模块 (test_fw_ai_assistant)</h3><ul>
-<li>评估AI助手的回答质量、准确性和用户体验。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>eval_ai_assistant_handle.py</code> - 评估处理主函数</li>
-<li><code>eval_dataset/</code> - 评估数据集</li>
-<li><code>eval_dataset_report/</code> - 评估报告</li>
-<li><code>eval_dataset_result/</code> - 评估结果</li>
-<li><code>tools/</code> - 评估工具</li>
-</ul>
-<h3 id="5-对话内容评估模块-test-fw-chat-content"><a href="#5-对话内容评估模块-test-fw-chat-content" class="headerlink" title="5. 对话内容评估模块 (test_fw_chat_content)"></a>5. 对话内容评估模块 (test_fw_chat_content)</h3><ul>
-<li>评估对话内容的合规性、安全性和用户体验。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>conftest.py</code> - 测试配置</li>
-<li><code>test_judge_model_content.py</code> - 内容评判模型测试</li>
-<li><code>test_judge_model_content_pro.py</code> - 高级内容评判模型测试</li>
-<li><code>tools/</code> - 评估工具<ul>
-<li><code>judge_model_handle.py</code> - 评判模型处理器</li>
-<li><code>load_rules_tool.py</code> - 规则加载工具</li>
-</ul>
-</li>
-</ul>
-<p><strong>评估维度</strong>：</p>
-<ul>
-<li>业务规则检查 - 检查是否遵循业务规则和逻辑要求</li>
-<li>会话能力评估 - 评估多轮对话的流畅性与连贯性</li>
-<li>鲁棒性测试 - 测试在异常输入或边界情况下的稳定性</li>
-<li>安全与合规验证 - 检验内容是否符合安全与合规标准</li>
-<li>用户体验评价 - 评估整体交互体验的自然性和友好性</li>
-</ul>
-<h3 id="6-对话意图识别评估模块-test-fw-chat-intent"><a href="#6-对话意图识别评估模块-test-fw-chat-intent" class="headerlink" title="6. 对话意图识别评估模块 (test_fw_chat_intent)"></a>6. 对话意图识别评估模块 (test_fw_chat_intent)</h3><p>该模块用于评估模型对用户意图的识别准确性，主要功能包括：</p>
-<ul>
-<li>测试模型对各类用户意图的识别能力</li>
-<li>生成意图识别评分结果</li>
-<li>生成HTML格式的评估报告</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>main.py</code> - 主函数</li>
-<li><code>test_fw_chat_intent_handle.py</code> - 意图识别测试处理</li>
-<li><code>test_fw_chat_intent_handle_prod.py</code> - 生产环境意图识别测试</li>
-<li><code>tools/</code> - 评估工具<ul>
-<li><code>intent_eval_analysis.py</code> - 意图评估分析</li>
-<li><code>intent_generate_report_html.py</code> - 报告生成</li>
-</ul>
-</li>
-</ul>
-<h3 id="7-线索提取能力评估模块-test-fw-clue-extract"><a href="#7-线索提取能力评估模块-test-fw-clue-extract" class="headerlink" title="7. 线索提取能力评估模块 (test_fw_clue_extract)"></a>7. 线索提取能力评估模块 (test_fw_clue_extract)</h3><ul>
-<li>评估模型从对话中提取关键信息的能力。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>main.py</code> - 主函数</li>
-<li><code>test_fw_clue_extract_handle.py</code> - 线索提取测试处理</li>
-<li><code>test_fw_clue_extract_handle_prod.py</code> - 生产环境线索提取测试</li>
-</ul>
-<h3 id="8-多轮对话内容评估模块-test-fw-conversations-content"><a href="#8-多轮对话内容评估模块-test-fw-conversations-content" class="headerlink" title="8. 多轮对话内容评估模块 (test_fw_conversations_content)"></a>8. 多轮对话内容评估模块 (test_fw_conversations_content)</h3><ul>
-<li>评估多轮对话中的内容质量和连贯性。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>tools/</code> - 评估工具<ul>
-<li><code>conversation_new_chat_handle.py</code> - 对话处理</li>
-<li><code>fw_chat_api.py</code> - 聊天API接口</li>
-</ul>
-</li>
-</ul>
-<h3 id="9-对话内容差异比较评估模块-test-fw-diff-content"><a href="#9-对话内容差异比较评估模块-test-fw-diff-content" class="headerlink" title="9. 对话内容差异比较评估模块 (test_fw_diff_content)"></a>9. 对话内容差异比较评估模块 (test_fw_diff_content)</h3><ul>
-<li>比较不同模型或版本的对话内容差异，评估改进效果。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>test_fw_diff_content_handle.py</code> - 差异比较测试处理</li>
-<li><code>tools/</code> - 评估工具<ul>
-<li><code>eval_qa_content_model.py</code> - 内容评估模型</li>
-<li><code>eval_processor.py</code> - 评估处理器</li>
-<li><code>eval_summary_result.py</code> - 结果汇总</li>
-<li><code>diff_generate_report_html.py</code> - 差异报告生成</li>
-</ul>
-</li>
-</ul>
-<h2 id="评估维度"><a href="#评估维度" class="headerlink" title="评估维度"></a>评估维度</h2><ul>
-<li>该框架从以下维度对AI模型进行评估：</li>
-</ul>
-<ol>
-<li><strong>业务规则检查</strong> - 检查是否遵循业务规则和逻辑要求</li>
-<li><strong>会话能力评估</strong> - 评估多轮对话的流畅性与连贯性</li>
-<li><strong>鲁棒性测试</strong> - 测试在异常输入或边界情况下的稳定性</li>
-<li><strong>安全与合规验证</strong> - 检验内容是否符合安全与合规标准</li>
-<li><strong>用户体验评价</strong> - 评估整体交互体验的自然性和友好性</li>
-<li><strong>意图识别准确性</strong> - 测试系统对用户意图的识别准确性</li>
-<li><strong>系统性能</strong> - 评估系统响应时间和吞吐率</li>
-</ol>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="运行评估测试"><a href="#运行评估测试" class="headerlink" title="运行评估测试"></a>运行评估测试</h3><p>各模块可以独立运行，通常使用以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m test_fw_evaluation.test_fw_chat_intent.main</span><br></pre></td></tr></table></figure>
-
-<p>或直接运行测试文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pytest test_fw_evaluation/test_fw_chat_intent/test_fw_chat_intent_handle.py -v</span><br></pre></td></tr></table></figure>
-
-<h3 id="生成评估报告"><a href="#生成评估报告" class="headerlink" title="生成评估报告"></a>生成评估报告</h3><p>评估完成后，可以生成HTML格式的评估报告：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m test_fw_evaluation.eval_summary_report.generate_summary_report</span><br></pre></td></tr></table></figure>
-
-<h2 id="数据流程"><a href="#数据流程" class="headerlink" title="数据流程"></a>数据流程</h2><ol>
-<li><strong>数据准备</strong> - 在各模块的<code>eval_dataset/</code>目录中准备测试数据</li>
-<li><strong>执行测试</strong> - 运行测试脚本，评估模型性能</li>
-<li><strong>结果收集</strong> - 测试结果保存在<code>eval_dataset_result/</code>目录</li>
-<li><strong>报告生成</strong> - 基于结果生成HTML报告，保存在<code>eval_dataset_report/</code>目录</li>
-<li><strong>结果分析</strong> - 使用分析工具对结果进行深入分析</li>
-<li><strong>汇总报告</strong> - 生成包含所有模块评估结果的汇总报告</li>
-</ol>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li>确保在运行测试前已正确配置环境和依赖</li>
-<li>测试数据应符合实际业务场景，以获得更准确的评估结果</li>
-<li>评估报告中的指标和分数可用于模型迭代和优化的参考</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>测试技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>评测方案</title>
-    <url>/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>模型</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>门店车辆AI搜索_模型评测方案</title>
-    <url>/2025/07/26/%E9%97%A8%E5%BA%97%E8%BD%A6%E8%BE%86AI%E6%90%9C%E7%B4%A2-%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="一、评测对象"><a href="#一、评测对象" class="headerlink" title="一、评测对象"></a>一、评测对象</h2><h3 id="1-业务实现流程"><a href="#1-业务实现流程" class="headerlink" title="1. 业务实现流程"></a>1. 业务实现流程</h3><pre><code class="highlight mermaid">graph LR
-    A[用户查询问题] --&gt;|自然语言输入| B[模型解析与条件提取]
-    B --&gt;|结构化参数| C[查询接口调用]
-    C --&gt;|API请求| D[车源数据库]
-    D --&gt;|JSON响应| E[返回结果]
-    E --&gt; F(用户界面展示)
-    
-    style A fill:#f9f,stroke:#333
-    style B fill:#bbf,stroke:#333
-    style B stroke:#ff0000,stroke-width:2px
-    style C fill:#9bf,stroke:#333
-    style D fill:#6cf,stroke:#333
-    style E fill:#9f9,stroke:#333
-</code></pre>
-
-<ul>
-<li>待测类型：<ul>
-<li>单次查询</li>
-<li>上下文查询 (是否批量验证待定)</li>
-</ul>
-</li>
-</ul>
-<h2 id="二、评测数据集"><a href="#二、评测数据集" class="headerlink" title="二、评测数据集"></a>二、评测数据集</h2><h3 id="1-测试数据类型覆盖"><a href="#1-测试数据类型覆盖" class="headerlink" title="1. 测试数据类型覆盖"></a>1. 测试数据类型覆盖</h3><p><strong>核心条件(业务字段)（13类）</strong>：</p>
-<ul>
-<li>年款（车龄）、品牌、价格、颜色、车身结构</li>
-<li>公里数（行驶里程）、过户次数、排放标准</li>
-<li>座位数、燃油类型、驱动方式、国别、变速箱</li>
-</ul>
-<h3 id="2-边界场景测试"><a href="#2-边界场景测试" class="headerlink" title="2. 边界场景测试"></a>2. 边界场景测试</h3><ul>
-<li><strong>18类用例场景</strong>（100%覆盖）</li>
-<li><strong>样本分布</strong>：<ul>
-<li>总量：1000条</li>
-<li>按类别权重分配样本量</li>
-</ul>
-</li>
-</ul>
-<h3 id="3-输入类型"><a href="#3-输入类型" class="headerlink" title="3. 输入类型"></a>3. 输入类型</h3><ul>
-<li>业务特点+数据构造设计倾向</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>占比</th>
-<th>特点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>语音转文字</td>
-<td>70%</td>
-<td>口语化表达</td>
-</tr>
-<tr>
-<td>格式化文字</td>
-<td>30%</td>
-<td>结构化&#x2F;半结构化输入</td>
-</tr>
-</tbody></table>
-<h3 id="4-提示词-部分"><a href="#4-提示词-部分" class="headerlink" title="4. 提示词(部分)"></a>4. 提示词(部分)</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">prompt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">task</span>&gt;</span>根据提供的二手车查询条件集合，生成符合语音输入习惯的多样化搜索问题，模拟真实用户通过语音助手或对话系统进行查询时可能使用的自然语言表达。<span class="tag">&lt;/<span class="name">task</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">role</span>&gt;</span>你是二手车行业智能问答生成专家，擅长构造符合语音交互和中文口语表达习惯的多样化查询问题，能模拟真实用户的复杂意图和模糊描述。<span class="tag">&lt;/<span class="name">role</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">requirements</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scenario_types</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>1. 单条件查询：仅包含一个查询条件<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>2. 多条件组合：包含2-5个不同类型的查询条件<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>3. 全部条件：包含所有提供的查询条件<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>4. 多值并列条件：同一字段多个取值（如“黑色或者白色”、“SUV或轿车”）<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>5. 地域相关性：包含地区限制的问题（如“本地车源”、“不限迁”、“支持外地过户”）<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>6. 用户意图识别：构造包含用户意图但无明确参数的问题（如“我想买辆代步车”、“适合家用的SUV有哪些？”）<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">scenario_types</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">query_conditions</span>&gt;</span></span><br><span class="line">      ......</span><br><span class="line">    <span class="tag">&lt;/<span class="name">query_conditions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">output_format</span>&gt;</span>请以标准JSON格式输出100个不同场景的查询问题，每个问题需满足以下Schema：<span class="tag">&lt;/<span class="name">output_format</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">output_schema</span>&gt;</span></span><br><span class="line">      ......</span><br><span class="line">    <span class="tag">&lt;/<span class="name">output_schema</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">examples</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">examples</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">note</span>&gt;</span></span><br><span class="line">      注意事项：</span><br><span class="line">      ......</span><br><span class="line">      </span><br><span class="line">      4. 所有问题应模拟真实语音输入场景，使用自然口语句式，如：“帮我查下…”、“查一下…”、“有没有…”、“找找看…”等。尽量避免书面格式。</span><br><span class="line">      5. 每类 scenario_types 应平均分布，尽量覆盖多样场景。</span><br><span class="line">    <span class="tag">&lt;/<span class="name">note</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">requirements</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">prompt</span>&gt;</span></span><br><span class="line">  </span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="三、核心评估指标"><a href="#三、核心评估指标" class="headerlink" title="三、核心评估指标"></a>三、核心评估指标</h2><h3 id="概览"><a href="#概览" class="headerlink" title="概览"></a><em><strong>概览</strong></em></h3><table>
-<thead>
-<tr>
-<th align="left">类型</th>
-<th align="left">指标</th>
-<th align="left">通过过标准</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">数据集</td>
-<td align="left">用例类型覆盖率</td>
-<td align="left">100%</td>
-</tr>
-<tr>
-<td align="left">结构化提取指标</td>
-<td align="left">精确率&#x2F;召回率&#x2F;F1</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">结构化提取指标</td>
-<td align="left">字段级别准确率</td>
-<td align="left">100%</td>
-</tr>
-<tr>
-<td align="left">容错能力</td>
-<td align="left">鲁棒性(0.1 ~ 1.0)</td>
-<td align="left">0.9</td>
-</tr>
-<tr>
-<td align="left">性能</td>
-<td align="left">模型平均响应时间 ≤ [阈值]ms</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">性能</td>
-<td align="left">端到端响应时间 ≤ [阈值]ms</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<h3 id="1-结构化提取指标"><a href="#1-结构化提取指标" class="headerlink" title="1. 结构化提取指标"></a>1. 结构化提取指标</h3><table>
-<thead>
-<tr>
-<th>指标</th>
-<th>计算公式</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Precision</td>
-<td>正确字段数&#x2F;提取字段总数</td>
-<td>提取准确性</td>
-</tr>
-<tr>
-<td>Recall</td>
-<td>正确字段数&#x2F;应提取字段总数</td>
-<td>覆盖完整性</td>
-</tr>
-<tr>
-<td>F1-score</td>
-<td>2*(P*R)&#x2F;(P+R)</td>
-<td>综合评估</td>
-</tr>
-</tbody></table>
-<p><strong>抽样分析</strong>：</p>
-<ul>
-<li>字段级准确率（如颜色提取正确率）</li>
-<li>关键字段加权（品牌&#x2F;价格权重 &gt; 国别等字段）</li>
-</ul>
-<h3 id="2-查询结果验证"><a href="#2-查询结果验证" class="headerlink" title="2. 查询结果验证"></a>2. 查询结果验证</h3><ul>
-<li>车源数据准确性（人工校验）</li>
-<li>返回结果数量正确性</li>
-</ul>
-<h3 id="3-性能与鲁棒性"><a href="#3-性能与鲁棒性" class="headerlink" title="3. 性能与鲁棒性"></a>3. 性能与鲁棒性</h3><table>
-<thead>
-<tr>
-<th>指标</th>
-<th>测量内容</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>容错能力</td>
-<td>处理错别字&#x2F;别名&#x2F;语序颠倒的能力</td>
-</tr>
-<tr>
-<td>多轮会话(待定)</td>
-<td>上下文连续处理能力</td>
-</tr>
-</tbody></table>
-<h2 id="四、通过标准"><a href="#四、通过标准" class="headerlink" title="四、通过标准"></a>四、通过标准</h2><h3 id="1-样本类别-15类"><a href="#1-样本类别-15类" class="headerlink" title="1. 样本类别(15类)"></a>1. 样本类别(15类)</h3><ul>
-<li><p><strong>正常类</strong> (正向用例 &#x2F; 基础用例 &#x2F; 一般用例):</p>
-<ol>
-<li><p>单条件查询：只使用一个筛选条件，是最基础的用例</p>
-</li>
-<li><p>多条件组合：两个及以上条件组合，是核心业务逻辑</p>
-</li>
-<li><p>全部条件：填写所有字段，测试系统是否全面支持</p>
-</li>
-<li><p>用户意图识别：一般用于验证是否能提取关键字段</p>
-</li>
-<li><p>地域相关性：如“北京能买的车”，虽稍复杂，但属于常见需求</p>
-</li>
-<li><p>多值并列条件：如“要白色或黑色”，结构明确，逻辑合理</p>
-</li>
-</ol>
-</li>
-<li><p><strong>容错类</strong>（复杂用例 &#x2F; 异常 &#x2F; 极端 &#x2F; 容错能力验证）</p>
-<ol>
-<li><p>包含错别字：如“本驰”、“百马”，考查容错纠错能力</p>
-</li>
-<li><p>数字格式变化：如“十万”、“10k”、“10w”，需规范化处理</p>
-</li>
-<li><p>口语化表达：如“来辆能开得住的SUV”，语义不标准</p>
-</li>
-<li><p>条件冲突：如“奔驰3系”，字段间逻辑矛盾</p>
-</li>
-<li><p>特殊格式字符：如包含 emoji、标点、半角全角混排等</p>
-</li>
-<li><p>边界值：如价格 &#x3D; 0、公里数 &#x3D; 100000，验证上下限处理</p>
-</li>
-<li><p>异常情况：如语义模糊、不完整、系统无法识别的输入</p>
-</li>
-<li><p>条件模糊表达：如“预算差不多5万”、“公里数不要太多”</p>
-</li>
-<li><p>隐含否定条件：如“不要电车”、“非白色”，否定式表达需处理</p>
-</li>
-</ol>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>类别</th>
-<th>占比</th>
-<th>样本量</th>
-<th>准确率要求</th>
-<th>其他要求</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>正常类</td>
-<td>70%</td>
-<td>700</td>
-<td>P&#x2F;R&#x2F;F1&#x3D;100%</td>
-<td>全条件覆盖</td>
-</tr>
-<tr>
-<td>容错类</td>
-<td>30%</td>
-<td>300</td>
-<td>P&#x2F;R&#x2F;F1≥90%</td>
-<td>鲁棒性≥0.9 (容错类别用例正确数&#x2F;容错类别用例总数)</td>
-</tr>
-</tbody></table>
-<h3 id="2-性能标准"><a href="#2-性能标准" class="headerlink" title="2. 性能标准"></a>2. 性能标准</h3><ul>
-<li>模型平均响应时间 ≤ [阈值]ms</li>
-<li>端到端响应时间 ≤ [阈值]ms</li>
-</ul>
-<h2 id="五、标准设定建议-other"><a href="#五、标准设定建议-other" class="headerlink" title="五、标准设定建议(other)"></a>五、标准设定建议(other)</h2><h3 id="1-两种场景标准"><a href="#1-两种场景标准" class="headerlink" title="1. 两种场景标准"></a>1. 两种场景标准</h3><ol>
-<li><p><strong>强约束验证集</strong>（回归测试）：</p>
-<ul>
-<li>要求：<code>F1=1.0</code></li>
-<li>适用：核心业务逻辑验证</li>
-</ul>
-</li>
-<li><p><strong>弱约束泛化集</strong>（灰度测试）：</p>
-<ul>
-<li>要求：<code>P≥0.95, R≥0.90, F1≥0.92</code></li>
-<li>适用：模型迭代评估</li>
-</ul>
-</li>
-</ol>
-<h3 id="2-优化建议"><a href="#2-优化建议" class="headerlink" title="2. 优化建议"></a>2. 优化建议</h3><ul>
-<li>错误样本分类分析（FP&#x2F;FN类型）</li>
-<li>核心字段单独达标（如品牌&#x2F;价格F1≥90%）</li>
-<li>避免设定”100%全达标”的非现实标准</li>
-</ul>
-<h1 id="模型验证示例分析"><a href="#模型验证示例分析" class="headerlink" title="模型验证示例分析"></a>模型验证示例分析</h1><h2 id="一、测试用例"><a href="#一、测试用例" class="headerlink" title="一、测试用例"></a>一、测试用例</h2><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;sample_id&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;scenario_types&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;多条件组合&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;query&quot;</span><span class="punctuation">:</span> <span class="string">&quot;查下2025款宝马3系, 30万以下的 白色的&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;expected&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">				<span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="number">2025</span><span class="punctuation">,</span></span><br><span class="line">				<span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;宝马3系&quot;</span><span class="punctuation">,</span></span><br><span class="line">				<span class="attr">&quot;mileageTo&quot;</span><span class="punctuation">:</span> <span class="number">300000</span><span class="punctuation">,</span></span><br><span class="line">				<span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;白色&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;intent&quot;</span><span class="punctuation">:</span> <span class="string">&quot;寻找特定年款和价位,颜色的宝马3系&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;predicted&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">				<span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="number">2025</span><span class="punctuation">,</span></span><br><span class="line">				<span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;宝马&quot;</span><span class="punctuation">,</span></span><br><span class="line">				<span class="attr">&quot;mileageTo&quot;</span><span class="punctuation">:</span> <span class="number">300000</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;eval_result&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">			 <span class="attr">&quot;is_passed&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">    		 <span class="attr">&quot;failure_reasons&quot;</span><span class="punctuation">:</span> <span class="string">&quot; 少提字段:&#x27;color&#x27;;&#x27;keywords&#x27;字段值不正确,应为&#x27;宝马3系&#x27;但输出&#x27;宝马&#x27; &quot;</span>		</span><br><span class="line">  <span class="punctuation">&#125;</span> </span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-输入查询"><a href="#1-输入查询" class="headerlink" title="1. 输入查询"></a>1. 输入查询</h3><p>Query: <code>查下2025款宝马3系, 30万以下的 白色的</code></p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;query&quot;</span><span class="punctuation">:</span> <span class="string">&quot;查下2025款宝马3系, 30万以下的 白色的&quot;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-预期输出（Ground-Truth）"><a href="#2-预期输出（Ground-Truth）" class="headerlink" title="2. 预期输出（Ground Truth）"></a>2. 预期输出（Ground Truth）</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="number">2025</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;宝马3系&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;mileageTo&quot;</span><span class="punctuation">:</span> <span class="number">300000</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;白色&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-模型实际输出"><a href="#3-模型实际输出" class="headerlink" title="3. 模型实际输出"></a>3. 模型实际输出</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="number">2025</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;宝马&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;mileageTo&quot;</span><span class="punctuation">:</span> <span class="number">300000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="二、维度分析"><a href="#二、维度分析" class="headerlink" title="二、维度分析"></a>二、维度分析</h2><ol>
-<li><p><strong>字段存在性</strong></p>
-<ul>
-<li>多提字段：无</li>
-<li>少提字段：<code>color</code>（漏提）</li>
-</ul>
-</li>
-<li><p><strong>字段值一致性</strong></p>
-<ul>
-<li>正确值：<code>year</code>, <code>mileageTo</code></li>
-<li>错误值：<code>keywords</code>（应为”宝马3系”但输出”宝马”）</li>
-</ul>
-</li>
-</ol>
-<h2 id="三、评估指标计算"><a href="#三、评估指标计算" class="headerlink" title="三、评估指标计算"></a>三、评估指标计算</h2><table>
-<thead>
-<tr>
-<th>指标</th>
-<th>计算过程</th>
-<th>结果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Precision</td>
-<td>2个正确字段 &#x2F; 3个提取字段</td>
-<td>67%</td>
-</tr>
-<tr>
-<td>Recall</td>
-<td>2个正确字段 &#x2F; 4个应提字段</td>
-<td>50%</td>
-</tr>
-<tr>
-<td>F1-score</td>
-<td>2*(0.67* * 0.5)&#x2F;(0.67+0.5)</td>
-<td>57%</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>指标</th>
-<th>结果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>用例覆盖类型</td>
-<td>[“多条件组合”] “正向用例(正常类别)”</td>
-</tr>
-<tr>
-<td>结果是否正确</td>
-<td><code>Fail</code></td>
-</tr>
-<tr>
-<td>鲁棒性(容错能力)</td>
-<td>容错类别正确数&#x2F;所有容错类别用例数 如: [“特殊格式字符”]</td>
-</tr>
-<tr>
-<td>模型响应时间</td>
-<td>api 请求 -&gt; predicted提取结果返回时间</td>
-</tr>
-</tbody></table>
-<h2 id="四、混淆矩阵分析"><a href="#四、混淆矩阵分析" class="headerlink" title="四、混淆矩阵分析"></a>四、混淆矩阵分析</h2><table>
-<thead>
-<tr>
-<th>类型</th>
-<th>说明</th>
-<th>数量</th>
-<th>对应字段</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>TP</strong></td>
-<td>字段存在且值正确</td>
-<td>2</td>
-<td>year, mileageTo</td>
-</tr>
-<tr>
-<td><strong>FP</strong></td>
-<td>字段存在但值错误</td>
-<td>1</td>
-<td>keywords（”宝马”≠”宝马3系”）</td>
-</tr>
-<tr>
-<td><strong>FN</strong></td>
-<td>应提未提 + 值错误</td>
-<td>2</td>
-<td>color漏提 + keywords值错误</td>
-</tr>
-</tbody></table>
-<h2 id="五、结果输出-样例"><a href="#五、结果输出-样例" class="headerlink" title="五、结果输出(样例)"></a>五、结果输出(样例)</h2><h3 id="1-🔹多提字段（多提取不应该出现的字段）"><a href="#1-🔹多提字段（多提取不应该出现的字段）" class="headerlink" title="1. 🔹多提字段（多提取不应该出现的字段）"></a>1. 🔹多提字段（多提取不应该出现的字段）</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">🔹 字段: driveType</span><br><span class="line">   📝 文本<span class="number">1</span>: 前驱</span><br><span class="line">   📝 文本<span class="number">2</span>: <span class="literal">None</span></span><br><span class="line">------------------------------------------------------------</span><br><span class="line">   🧮 余弦相似度: <span class="number">0.00</span> ❌</span><br><span class="line">   🤖 LLM匹配: ❌</span><br><span class="line">   💡 匹配原因: [多提字段] 字段多提取（driveType），不应被提取</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-🔹少提字段（应提取但缺失的字段）"><a href="#2-🔹少提字段（应提取但缺失的字段）" class="headerlink" title="2. 🔹少提字段（应提取但缺失的字段）"></a>2. 🔹少提字段（应提取但缺失的字段）</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">🔹 字段: transferredCount</span><br><span class="line">   📝 文本<span class="number">1</span>: <span class="literal">None</span></span><br><span class="line">   📝 文本<span class="number">2</span>: <span class="number">1</span></span><br><span class="line">------------------------------------------------------------</span><br><span class="line">   🧮 余弦相似度: <span class="number">0.00</span> ❌</span><br><span class="line">   🤖 LLM匹配: ❌</span><br><span class="line">   💡 匹配原因: [少提字段] 字段少提取（transferredCount），应被提取</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-🔹字段值有误（字段值不匹配）"><a href="#3-🔹字段值有误（字段值不匹配）" class="headerlink" title="3. 🔹字段值有误（字段值不匹配）"></a>3. 🔹字段值有误（字段值不匹配）</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">🔹 字段: bodyStyle</span><br><span class="line">   📝 文本<span class="number">1</span>: SUV</span><br><span class="line">   📝 文本<span class="number">2</span>: MPV</span><br><span class="line">   🧾 差异对比:</span><br><span class="line">     - SUV</span><br><span class="line">     + MPV</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">   🧮 余弦相似度: <span class="number">0.31</span> ❌</span><br><span class="line">   🤖 LLM匹配: ❌</span><br><span class="line">   💡 匹配原因: [字段值有误] SUV和MPV是两种不同的车身类型，分别代表运动型多功能车和多用途车，表达明显不同含义。</span><br><span class="line"></span><br><span class="line">🔹 字段: priceTo</span><br><span class="line">   📝 文本<span class="number">1</span>: <span class="number">350000</span></span><br><span class="line">   📝 文本<span class="number">2</span>: <span class="number">30</span>万左右</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">   🧮 余弦相似度: <span class="number">0.85</span> ✅</span><br><span class="line">   🤖 LLM匹配: ✅</span><br><span class="line">   💡 匹配原因: 相似度高</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-🔹总体评估结果"><a href="#4-🔹总体评估结果" class="headerlink" title="4. 🔹总体评估结果"></a>4. 🔹总体评估结果</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">🟢 是否整体通过: ❌ 否</span><br><span class="line">📌 不通过原因: </span><br><span class="line">多提字段: driveType：字段多提取（driveType），不应被提取</span><br><span class="line">少提字段: transferredCount：字段少提取（transferredCount），应被提取</span><br><span class="line">字段值有误: [字段值有误] bodyStyle：SUV和MPV是两种不同的车身类型，分别代表运动型多功能车和多用途车，表达明显不同含义。</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-🔹返回-overall-res"><a href="#5-🔹返回-overall-res" class="headerlink" title="5. 🔹返回 overall_res"></a>5. 🔹返回 overall_res</h3><ul>
-<li><strong>期望值</strong></li>
-</ul>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;奥迪A6L&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2023&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;priceTo&quot;</span><span class="punctuation">:</span> <span class="string">&quot;30万左右&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;黑色&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;gearboxType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;自动&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;bodyStyle&quot;</span><span class="punctuation">:</span> <span class="string">&quot;MPV&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;transferredCount&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1&quot;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>预测值</strong></li>
-</ul>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;奥迪A6L&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2023&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;黑色&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;priceTo&quot;</span><span class="punctuation">:</span> <span class="string">&quot;350000&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;gearboxType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;自动&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;bodyStyle&quot;</span><span class="punctuation">:</span> <span class="string">&quot;SUV&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;driveType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;前驱&quot;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>overall_res</strong></li>
-</ul>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;details&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2023&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2023&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">1.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;完全一致&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;黑色&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;黑色&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">1.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;完全一致&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;bodyStyle&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;SUV&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;MPV&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">0.3057</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;[字段值有误] SUV和MPV是两种不同的车身类型，分别代表运动型多功能车和多用途车，表达明显不同含义。&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;text_diff&quot;</span><span class="punctuation">:</span> <span class="string">&quot;- SUV\n+ MPV&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;priceTo&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;350000&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;30万左右&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">0.8466</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;相似度高&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;gearboxType&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;自动&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;自动&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">1.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;完全一致&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;transferredCount&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">null</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">0.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;[少提字段] 字段少提取（transferredCount），应被提取&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;奥迪A6L&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;奥迪A6L&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">1.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;完全一致&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;driveType&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;前驱&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">null</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">0.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;[多提字段] 字段多提取（driveType），不应被提取&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;overall&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;is_passed&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;failure_reasons&quot;</span><span class="punctuation">:</span> <span class="string">&quot;多提字段: driveType：字段多提取（driveType），不应被提取\n少提字段: transferredCount：字段少提取（transferredCount），应被提取\n字段值有误: [字段值有误] bodyStyle：SUV和MPV是两种不同的车身类型，分别代表运动型多功能车和多用途车，表达明显不同含义。&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="六、问题总结"><a href="#六、问题总结" class="headerlink" title="六、问题总结"></a>六、问题总结</h2><ol>
-<li><strong>主要错误</strong>：<ul>
-<li>品牌型号识别不完整（缺失”3系”）</li>
-<li>完全漏提颜色字段</li>
-</ul>
-</li>
-<li><strong>优化方向</strong>：<ul>
-<li>加强复合名词识别（品牌+车型）</li>
-<li>提高颜色等显性特征的提取能力</li>
-</ul>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>评测</category>
-      </categories>
-      <tags>
-        <tag>模型评测</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
