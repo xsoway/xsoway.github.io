@@ -1356,7 +1356,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #b33b9e;
+    background: #4e779e;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3128,8 +3128,8 @@ header.header {
   padding: 0;
 }
 .post-block {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 35px;
   background: rgba(255,255,255,0.9) none repeat scroll !important;
 }
