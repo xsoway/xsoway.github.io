@@ -86,25 +86,6 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://xmylog.com/2025/07/24/hello-world/"/>
-    <id>https://xmylog.com/2025/07/24/hello-world/</id>
-    <published>2025-07-24T14:20:46.000Z</published>
-    <updated>2025-07-24T14:43:19.559Z</updated>
-    
-    
-    <summary type="html">WorldWorldWorldWorldWorldWorldWorldWorldWorldWorldWorldWorld</summary>
-    
-    
-    
-    <category term="hello" scheme="https://xmylog.com/categories/hello/"/>
-    
-    
-    <category term="World" scheme="https://xmylog.com/tags/World/"/>
-    
-  </entry>
-  
-  <entry>
     <title>评测方案</title>
     <link href="https://xmylog.com/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/"/>
     <id>https://xmylog.com/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</id>
@@ -120,6 +101,25 @@
     
     
     <category term="模型" scheme="https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://xmylog.com/2025/07/24/hello-world/"/>
+    <id>https://xmylog.com/2025/07/24/hello-world/</id>
+    <published>2025-07-24T14:20:46.000Z</published>
+    <updated>2025-07-24T14:43:19.559Z</updated>
+    
+    
+    <summary type="html">WorldWorldWorldWorldWorldWorldWorldWorldWorldWorldWorldWorld</summary>
+    
+    
+    
+    <category term="hello" scheme="https://xmylog.com/categories/hello/"/>
+    
+    
+    <category term="World" scheme="https://xmylog.com/tags/World/"/>
     
   </entry>
   
