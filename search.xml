@@ -1,6 +1,380 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>门店车辆AI搜索_模型评测方案</title>
+    <url>/2025/07/26/%E9%97%A8%E5%BA%97%E8%BD%A6%E8%BE%86AI%E6%90%9C%E7%B4%A2-%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="一、评测对象"><a href="#一、评测对象" class="headerlink" title="一、评测对象"></a>一、评测对象</h2><h3 id="1-业务实现流程"><a href="#1-业务实现流程" class="headerlink" title="1. 业务实现流程"></a>1. 业务实现流程</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    A[用户查询问题] --&gt;|自然语言输入| B[模型解析与条件提取]</span><br><span class="line">    B --&gt;|结构化参数| C[查询接口调用]</span><br><span class="line">    C --&gt;|API请求| D[车源数据库]</span><br><span class="line">    D --&gt;|JSON响应| E[返回结果]</span><br><span class="line">    E --&gt; F(用户界面展示)</span><br><span class="line">    </span><br><span class="line">    style A fill:#f9f,stroke:#333</span><br><span class="line">    style B fill:#bbf,stroke:#333</span><br><span class="line">    style B stroke:#ff0000,stroke-width:2px</span><br><span class="line">    style C fill:#9bf,stroke:#333</span><br><span class="line">    style D fill:#6cf,stroke:#333</span><br><span class="line">    style E fill:#9f9,stroke:#333</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>待测类型：<ul>
+<li>单次查询</li>
+<li>上下文查询 (是否批量验证待定)</li>
+</ul>
+</li>
+</ul>
+<h2 id="二、评测数据集"><a href="#二、评测数据集" class="headerlink" title="二、评测数据集"></a>二、评测数据集</h2><h3 id="1-测试数据类型覆盖"><a href="#1-测试数据类型覆盖" class="headerlink" title="1. 测试数据类型覆盖"></a>1. 测试数据类型覆盖</h3><p><strong>核心条件(业务字段)（13类）</strong>：</p>
+<ul>
+<li>年款（车龄）、品牌、价格、颜色、车身结构</li>
+<li>公里数（行驶里程）、过户次数、排放标准</li>
+<li>座位数、燃油类型、驱动方式、国别、变速箱</li>
+</ul>
+<h3 id="2-边界场景测试"><a href="#2-边界场景测试" class="headerlink" title="2. 边界场景测试"></a>2. 边界场景测试</h3><ul>
+<li><strong>18类用例场景</strong>（100%覆盖）</li>
+<li><strong>样本分布</strong>：<ul>
+<li>总量：1000条</li>
+<li>按类别权重分配样本量</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-输入类型"><a href="#3-输入类型" class="headerlink" title="3. 输入类型"></a>3. 输入类型</h3><ul>
+<li>业务特点+数据构造设计倾向</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>占比</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>语音转文字</td>
+<td>70%</td>
+<td>口语化表达</td>
+</tr>
+<tr>
+<td>格式化文字</td>
+<td>30%</td>
+<td>结构化&#x2F;半结构化输入</td>
+</tr>
+</tbody></table>
+<h3 id="4-提示词-部分"><a href="#4-提示词-部分" class="headerlink" title="4. 提示词(部分)"></a>4. 提示词(部分)</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">prompt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">task</span>&gt;</span>根据提供的二手车查询条件集合，生成符合语音输入习惯的多样化搜索问题，模拟真实用户通过语音助手或对话系统进行查询时可能使用的自然语言表达。<span class="tag">&lt;/<span class="name">task</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">role</span>&gt;</span>你是二手车行业智能问答生成专家，擅长构造符合语音交互和中文口语表达习惯的多样化查询问题，能模拟真实用户的复杂意图和模糊描述。<span class="tag">&lt;/<span class="name">role</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">requirements</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scenario_types</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>1. 单条件查询：仅包含一个查询条件<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>2. 多条件组合：包含2-5个不同类型的查询条件<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>3. 全部条件：包含所有提供的查询条件<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>4. 多值并列条件：同一字段多个取值（如“黑色或者白色”、“SUV或轿车”）<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>5. 地域相关性：包含地区限制的问题（如“本地车源”、“不限迁”、“支持外地过户”）<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">type</span>&gt;</span>6. 用户意图识别：构造包含用户意图但无明确参数的问题（如“我想买辆代步车”、“适合家用的SUV有哪些？”）<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">scenario_types</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">query_conditions</span>&gt;</span></span><br><span class="line">      ......</span><br><span class="line">    <span class="tag">&lt;/<span class="name">query_conditions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">output_format</span>&gt;</span>请以标准JSON格式输出100个不同场景的查询问题，每个问题需满足以下Schema：<span class="tag">&lt;/<span class="name">output_format</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">output_schema</span>&gt;</span></span><br><span class="line">      ......</span><br><span class="line">    <span class="tag">&lt;/<span class="name">output_schema</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">examples</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">examples</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">note</span>&gt;</span></span><br><span class="line">      注意事项：</span><br><span class="line">      ......</span><br><span class="line">      </span><br><span class="line">      4. 所有问题应模拟真实语音输入场景，使用自然口语句式，如：“帮我查下…”、“查一下…”、“有没有…”、“找找看…”等。尽量避免书面格式。</span><br><span class="line">      5. 每类 scenario_types 应平均分布，尽量覆盖多样场景。</span><br><span class="line">    <span class="tag">&lt;/<span class="name">note</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">requirements</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">prompt</span>&gt;</span></span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="三、核心评估指标"><a href="#三、核心评估指标" class="headerlink" title="三、核心评估指标"></a>三、核心评估指标</h2><h3 id="概览"><a href="#概览" class="headerlink" title="概览"></a><em><strong>概览</strong></em></h3><table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th align="left">指标</th>
+<th align="left">通过过标准</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">数据集</td>
+<td align="left">用例类型覆盖率</td>
+<td align="left">100%</td>
+</tr>
+<tr>
+<td align="left">结构化提取指标</td>
+<td align="left">精确率&#x2F;召回率&#x2F;F1</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">结构化提取指标</td>
+<td align="left">字段级别准确率</td>
+<td align="left">100%</td>
+</tr>
+<tr>
+<td align="left">容错能力</td>
+<td align="left">鲁棒性(0.1 ~ 1.0)</td>
+<td align="left">0.9</td>
+</tr>
+<tr>
+<td align="left">性能</td>
+<td align="left">模型平均响应时间 ≤ [阈值]ms</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">性能</td>
+<td align="left">端到端响应时间 ≤ [阈值]ms</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h3 id="1-结构化提取指标"><a href="#1-结构化提取指标" class="headerlink" title="1. 结构化提取指标"></a>1. 结构化提取指标</h3><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>计算公式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Precision</td>
+<td>正确字段数&#x2F;提取字段总数</td>
+<td>提取准确性</td>
+</tr>
+<tr>
+<td>Recall</td>
+<td>正确字段数&#x2F;应提取字段总数</td>
+<td>覆盖完整性</td>
+</tr>
+<tr>
+<td>F1-score</td>
+<td>2*(P*R)&#x2F;(P+R)</td>
+<td>综合评估</td>
+</tr>
+</tbody></table>
+<p><strong>抽样分析</strong>：</p>
+<ul>
+<li>字段级准确率（如颜色提取正确率）</li>
+<li>关键字段加权（品牌&#x2F;价格权重 &gt; 国别等字段）</li>
+</ul>
+<h3 id="2-查询结果验证"><a href="#2-查询结果验证" class="headerlink" title="2. 查询结果验证"></a>2. 查询结果验证</h3><ul>
+<li>车源数据准确性（人工校验）</li>
+<li>返回结果数量正确性</li>
+</ul>
+<h3 id="3-性能与鲁棒性"><a href="#3-性能与鲁棒性" class="headerlink" title="3. 性能与鲁棒性"></a>3. 性能与鲁棒性</h3><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>测量内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>容错能力</td>
+<td>处理错别字&#x2F;别名&#x2F;语序颠倒的能力</td>
+</tr>
+<tr>
+<td>多轮会话(待定)</td>
+<td>上下文连续处理能力</td>
+</tr>
+</tbody></table>
+<h2 id="四、通过标准"><a href="#四、通过标准" class="headerlink" title="四、通过标准"></a>四、通过标准</h2><h3 id="1-样本类别-15类"><a href="#1-样本类别-15类" class="headerlink" title="1. 样本类别(15类)"></a>1. 样本类别(15类)</h3><ul>
+<li><p><strong>正常类</strong> (正向用例 &#x2F; 基础用例 &#x2F; 一般用例):</p>
+<ol>
+<li><p>单条件查询：只使用一个筛选条件，是最基础的用例</p>
+</li>
+<li><p>多条件组合：两个及以上条件组合，是核心业务逻辑</p>
+</li>
+<li><p>全部条件：填写所有字段，测试系统是否全面支持</p>
+</li>
+<li><p>用户意图识别：一般用于验证是否能提取关键字段</p>
+</li>
+<li><p>地域相关性：如“北京能买的车”，虽稍复杂，但属于常见需求</p>
+</li>
+<li><p>多值并列条件：如“要白色或黑色”，结构明确，逻辑合理</p>
+</li>
+</ol>
+</li>
+<li><p><strong>容错类</strong>（复杂用例 &#x2F; 异常 &#x2F; 极端 &#x2F; 容错能力验证）</p>
+<ol>
+<li><p>包含错别字：如“本驰”、“百马”，考查容错纠错能力</p>
+</li>
+<li><p>数字格式变化：如“十万”、“10k”、“10w”，需规范化处理</p>
+</li>
+<li><p>口语化表达：如“来辆能开得住的SUV”，语义不标准</p>
+</li>
+<li><p>条件冲突：如“奔驰3系”，字段间逻辑矛盾</p>
+</li>
+<li><p>特殊格式字符：如包含 emoji、标点、半角全角混排等</p>
+</li>
+<li><p>边界值：如价格 &#x3D; 0、公里数 &#x3D; 100000，验证上下限处理</p>
+</li>
+<li><p>异常情况：如语义模糊、不完整、系统无法识别的输入</p>
+</li>
+<li><p>条件模糊表达：如“预算差不多5万”、“公里数不要太多”</p>
+</li>
+<li><p>隐含否定条件：如“不要电车”、“非白色”，否定式表达需处理</p>
+</li>
+</ol>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>占比</th>
+<th>样本量</th>
+<th>准确率要求</th>
+<th>其他要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>正常类</td>
+<td>70%</td>
+<td>700</td>
+<td>P&#x2F;R&#x2F;F1&#x3D;100%</td>
+<td>全条件覆盖</td>
+</tr>
+<tr>
+<td>容错类</td>
+<td>30%</td>
+<td>300</td>
+<td>P&#x2F;R&#x2F;F1≥90%</td>
+<td>鲁棒性≥0.9 (容错类别用例正确数&#x2F;容错类别用例总数)</td>
+</tr>
+</tbody></table>
+<h3 id="2-性能标准"><a href="#2-性能标准" class="headerlink" title="2. 性能标准"></a>2. 性能标准</h3><ul>
+<li>模型平均响应时间 ≤ [阈值]ms</li>
+<li>端到端响应时间 ≤ [阈值]ms</li>
+</ul>
+<h2 id="五、标准设定建议-other"><a href="#五、标准设定建议-other" class="headerlink" title="五、标准设定建议(other)"></a>五、标准设定建议(other)</h2><h3 id="1-两种场景标准"><a href="#1-两种场景标准" class="headerlink" title="1. 两种场景标准"></a>1. 两种场景标准</h3><ol>
+<li><p><strong>强约束验证集</strong>（回归测试）：</p>
+<ul>
+<li>要求：<code>F1=1.0</code></li>
+<li>适用：核心业务逻辑验证</li>
+</ul>
+</li>
+<li><p><strong>弱约束泛化集</strong>（灰度测试）：</p>
+<ul>
+<li>要求：<code>P≥0.95, R≥0.90, F1≥0.92</code></li>
+<li>适用：模型迭代评估</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-优化建议"><a href="#2-优化建议" class="headerlink" title="2. 优化建议"></a>2. 优化建议</h3><ul>
+<li>错误样本分类分析（FP&#x2F;FN类型）</li>
+<li>核心字段单独达标（如品牌&#x2F;价格F1≥90%）</li>
+<li>避免设定”100%全达标”的非现实标准</li>
+</ul>
+<h1 id="模型验证示例分析"><a href="#模型验证示例分析" class="headerlink" title="模型验证示例分析"></a>模型验证示例分析</h1><h2 id="一、测试用例"><a href="#一、测试用例" class="headerlink" title="一、测试用例"></a>一、测试用例</h2><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;sample_id&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;scenario_types&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;多条件组合&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;query&quot;</span><span class="punctuation">:</span> <span class="string">&quot;查下2025款宝马3系, 30万以下的 白色的&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;expected&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">				<span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="number">2025</span><span class="punctuation">,</span></span><br><span class="line">				<span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;宝马3系&quot;</span><span class="punctuation">,</span></span><br><span class="line">				<span class="attr">&quot;mileageTo&quot;</span><span class="punctuation">:</span> <span class="number">300000</span><span class="punctuation">,</span></span><br><span class="line">				<span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;白色&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;intent&quot;</span><span class="punctuation">:</span> <span class="string">&quot;寻找特定年款和价位,颜色的宝马3系&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;predicted&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">				<span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="number">2025</span><span class="punctuation">,</span></span><br><span class="line">				<span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;宝马&quot;</span><span class="punctuation">,</span></span><br><span class="line">				<span class="attr">&quot;mileageTo&quot;</span><span class="punctuation">:</span> <span class="number">300000</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;eval_result&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">			 <span class="attr">&quot;is_passed&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">    		 <span class="attr">&quot;failure_reasons&quot;</span><span class="punctuation">:</span> <span class="string">&quot; 少提字段:&#x27;color&#x27;;&#x27;keywords&#x27;字段值不正确,应为&#x27;宝马3系&#x27;但输出&#x27;宝马&#x27; &quot;</span>		</span><br><span class="line">  <span class="punctuation">&#125;</span> </span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-输入查询"><a href="#1-输入查询" class="headerlink" title="1. 输入查询"></a>1. 输入查询</h3><p>Query: <code>查下2025款宝马3系, 30万以下的 白色的</code></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;query&quot;</span><span class="punctuation">:</span> <span class="string">&quot;查下2025款宝马3系, 30万以下的 白色的&quot;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-预期输出（Ground-Truth）"><a href="#2-预期输出（Ground-Truth）" class="headerlink" title="2. 预期输出（Ground Truth）"></a>2. 预期输出（Ground Truth）</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="number">2025</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;宝马3系&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;mileageTo&quot;</span><span class="punctuation">:</span> <span class="number">300000</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;白色&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-模型实际输出"><a href="#3-模型实际输出" class="headerlink" title="3. 模型实际输出"></a>3. 模型实际输出</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="number">2025</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;宝马&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;mileageTo&quot;</span><span class="punctuation">:</span> <span class="number">300000</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="二、维度分析"><a href="#二、维度分析" class="headerlink" title="二、维度分析"></a>二、维度分析</h2><ol>
+<li><p><strong>字段存在性</strong></p>
+<ul>
+<li>多提字段：无</li>
+<li>少提字段：<code>color</code>（漏提）</li>
+</ul>
+</li>
+<li><p><strong>字段值一致性</strong></p>
+<ul>
+<li>正确值：<code>year</code>, <code>mileageTo</code></li>
+<li>错误值：<code>keywords</code>（应为”宝马3系”但输出”宝马”）</li>
+</ul>
+</li>
+</ol>
+<h2 id="三、评估指标计算"><a href="#三、评估指标计算" class="headerlink" title="三、评估指标计算"></a>三、评估指标计算</h2><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>计算过程</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Precision</td>
+<td>2个正确字段 &#x2F; 3个提取字段</td>
+<td>67%</td>
+</tr>
+<tr>
+<td>Recall</td>
+<td>2个正确字段 &#x2F; 4个应提字段</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>F1-score</td>
+<td>2*(0.67* * 0.5)&#x2F;(0.67+0.5)</td>
+<td>57%</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用例覆盖类型</td>
+<td>[“多条件组合”] “正向用例(正常类别)”</td>
+</tr>
+<tr>
+<td>结果是否正确</td>
+<td><code>Fail</code></td>
+</tr>
+<tr>
+<td>鲁棒性(容错能力)</td>
+<td>容错类别正确数&#x2F;所有容错类别用例数 如: [“特殊格式字符”]</td>
+</tr>
+<tr>
+<td>模型响应时间</td>
+<td>api 请求 -&gt; predicted提取结果返回时间</td>
+</tr>
+</tbody></table>
+<h2 id="四、混淆矩阵分析"><a href="#四、混淆矩阵分析" class="headerlink" title="四、混淆矩阵分析"></a>四、混淆矩阵分析</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+<th>数量</th>
+<th>对应字段</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>TP</strong></td>
+<td>字段存在且值正确</td>
+<td>2</td>
+<td>year, mileageTo</td>
+</tr>
+<tr>
+<td><strong>FP</strong></td>
+<td>字段存在但值错误</td>
+<td>1</td>
+<td>keywords（”宝马”≠”宝马3系”）</td>
+</tr>
+<tr>
+<td><strong>FN</strong></td>
+<td>应提未提 + 值错误</td>
+<td>2</td>
+<td>color漏提 + keywords值错误</td>
+</tr>
+</tbody></table>
+<h2 id="五、结果输出-样例"><a href="#五、结果输出-样例" class="headerlink" title="五、结果输出(样例)"></a>五、结果输出(样例)</h2><h3 id="1-🔹多提字段（多提取不应该出现的字段）"><a href="#1-🔹多提字段（多提取不应该出现的字段）" class="headerlink" title="1. 🔹多提字段（多提取不应该出现的字段）"></a>1. 🔹多提字段（多提取不应该出现的字段）</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">🔹 字段: driveType</span><br><span class="line">   📝 文本<span class="number">1</span>: 前驱</span><br><span class="line">   📝 文本<span class="number">2</span>: <span class="literal">None</span></span><br><span class="line">------------------------------------------------------------</span><br><span class="line">   🧮 余弦相似度: <span class="number">0.00</span> ❌</span><br><span class="line">   🤖 LLM匹配: ❌</span><br><span class="line">   💡 匹配原因: [多提字段] 字段多提取（driveType），不应被提取</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-🔹少提字段（应提取但缺失的字段）"><a href="#2-🔹少提字段（应提取但缺失的字段）" class="headerlink" title="2. 🔹少提字段（应提取但缺失的字段）"></a>2. 🔹少提字段（应提取但缺失的字段）</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">🔹 字段: transferredCount</span><br><span class="line">   📝 文本<span class="number">1</span>: <span class="literal">None</span></span><br><span class="line">   📝 文本<span class="number">2</span>: <span class="number">1</span></span><br><span class="line">------------------------------------------------------------</span><br><span class="line">   🧮 余弦相似度: <span class="number">0.00</span> ❌</span><br><span class="line">   🤖 LLM匹配: ❌</span><br><span class="line">   💡 匹配原因: [少提字段] 字段少提取（transferredCount），应被提取</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-🔹字段值有误（字段值不匹配）"><a href="#3-🔹字段值有误（字段值不匹配）" class="headerlink" title="3. 🔹字段值有误（字段值不匹配）"></a>3. 🔹字段值有误（字段值不匹配）</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">🔹 字段: bodyStyle</span><br><span class="line">   📝 文本<span class="number">1</span>: SUV</span><br><span class="line">   📝 文本<span class="number">2</span>: MPV</span><br><span class="line">   🧾 差异对比:</span><br><span class="line">     - SUV</span><br><span class="line">     + MPV</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">   🧮 余弦相似度: <span class="number">0.31</span> ❌</span><br><span class="line">   🤖 LLM匹配: ❌</span><br><span class="line">   💡 匹配原因: [字段值有误] SUV和MPV是两种不同的车身类型，分别代表运动型多功能车和多用途车，表达明显不同含义。</span><br><span class="line"></span><br><span class="line">🔹 字段: priceTo</span><br><span class="line">   📝 文本<span class="number">1</span>: <span class="number">350000</span></span><br><span class="line">   📝 文本<span class="number">2</span>: <span class="number">30</span>万左右</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">   🧮 余弦相似度: <span class="number">0.85</span> ✅</span><br><span class="line">   🤖 LLM匹配: ✅</span><br><span class="line">   💡 匹配原因: 相似度高</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-🔹总体评估结果"><a href="#4-🔹总体评估结果" class="headerlink" title="4. 🔹总体评估结果"></a>4. 🔹总体评估结果</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">🟢 是否整体通过: ❌ 否</span><br><span class="line">📌 不通过原因: </span><br><span class="line">多提字段: driveType：字段多提取（driveType），不应被提取</span><br><span class="line">少提字段: transferredCount：字段少提取（transferredCount），应被提取</span><br><span class="line">字段值有误: [字段值有误] bodyStyle：SUV和MPV是两种不同的车身类型，分别代表运动型多功能车和多用途车，表达明显不同含义。</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-🔹返回-overall-res"><a href="#5-🔹返回-overall-res" class="headerlink" title="5. 🔹返回 overall_res"></a>5. 🔹返回 overall_res</h3><ul>
+<li><strong>期望值</strong></li>
+</ul>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;奥迪A6L&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2023&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;priceTo&quot;</span><span class="punctuation">:</span> <span class="string">&quot;30万左右&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;黑色&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;gearboxType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;自动&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;bodyStyle&quot;</span><span class="punctuation">:</span> <span class="string">&quot;MPV&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;transferredCount&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1&quot;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>预测值</strong></li>
+</ul>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;奥迪A6L&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2023&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;黑色&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;priceTo&quot;</span><span class="punctuation">:</span> <span class="string">&quot;350000&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;gearboxType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;自动&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;bodyStyle&quot;</span><span class="punctuation">:</span> <span class="string">&quot;SUV&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;driveType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;前驱&quot;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>overall_res</strong></li>
+</ul>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;details&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;year&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2023&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2023&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">1.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;完全一致&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;黑色&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;黑色&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">1.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;完全一致&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;bodyStyle&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;SUV&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;MPV&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">0.3057</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;[字段值有误] SUV和MPV是两种不同的车身类型，分别代表运动型多功能车和多用途车，表达明显不同含义。&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;text_diff&quot;</span><span class="punctuation">:</span> <span class="string">&quot;- SUV\n+ MPV&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;priceTo&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;350000&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;30万左右&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">0.8466</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;相似度高&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;gearboxType&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;自动&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;自动&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">1.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;完全一致&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;transferredCount&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">null</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">0.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;[少提字段] 字段少提取（transferredCount），应被提取&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;奥迪A6L&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;奥迪A6L&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">1.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;完全一致&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;driveType&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;pred_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;前驱&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exp_text&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">null</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_similarity&quot;</span><span class="punctuation">:</span> <span class="number">0.0</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cosine_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_match&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;llm_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;[多提字段] 字段多提取（driveType），不应被提取&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;overall&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;is_passed&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;failure_reasons&quot;</span><span class="punctuation">:</span> <span class="string">&quot;多提字段: driveType：字段多提取（driveType），不应被提取\n少提字段: transferredCount：字段少提取（transferredCount），应被提取\n字段值有误: [字段值有误] bodyStyle：SUV和MPV是两种不同的车身类型，分别代表运动型多功能车和多用途车，表达明显不同含义。&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="六、问题总结"><a href="#六、问题总结" class="headerlink" title="六、问题总结"></a>六、问题总结</h2><ol>
+<li><strong>主要错误</strong>：<ul>
+<li>品牌型号识别不完整（缺失”3系”）</li>
+<li>完全漏提颜色字段</li>
+</ul>
+</li>
+<li><strong>优化方向</strong>：<ul>
+<li>加强复合名词识别（品牌+车型）</li>
+<li>提高颜色等显性特征的提取能力</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>评测</category>
+      </categories>
+      <tags>
+        <tag>模型评测</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于业务场景下的模型评测流程</title>
     <url>/2025/07/26/%E5%9F%BA%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="基于业务场景下的模型评测流程"><a href="#基于业务场景下的模型评测流程" class="headerlink" title="基于业务场景下的模型评测流程"></a>基于业务场景下的模型评测流程</h1><h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>本文旨在系统性地介绍如何在实际业务场景中开展大模型评测工作，帮助读者理解并掌握从需求分析、评测集设计与生成、评测维度设定、评测任务执行到评测报告输出的完整流程。</p>

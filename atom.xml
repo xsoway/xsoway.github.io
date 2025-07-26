@@ -6,7 +6,7 @@
   <link href="https://xmylog.com/atom.xml" rel="self"/>
   
   <link href="https://xmylog.com/"/>
-  <updated>2025-07-26T03:04:17.458Z</updated>
+  <updated>2025-07-26T04:02:34.714Z</updated>
   <id>https://xmylog.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>门店车辆AI搜索_模型评测方案</title>
+    <link href="https://xmylog.com/2025/07/26/%E9%97%A8%E5%BA%97%E8%BD%A6%E8%BE%86AI%E6%90%9C%E7%B4%A2-%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/"/>
+    <id>https://xmylog.com/2025/07/26/%E9%97%A8%E5%BA%97%E8%BD%A6%E8%BE%86AI%E6%90%9C%E7%B4%A2-%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</id>
+    <published>2025-07-26T03:59:29.000Z</published>
+    <updated>2025-07-26T04:02:34.714Z</updated>
+    
+    
+    <summary type="html">门店车辆AI搜索_模型评测方案</summary>
+    
+    
+    
+    <category term="评测" scheme="https://xmylog.com/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="模型评测" scheme="https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>基于业务场景下的模型评测流程</title>
