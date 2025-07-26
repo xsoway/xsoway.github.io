@@ -1356,7 +1356,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #fffe50;
+    background: #ff7708;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1731,6 +1731,7 @@ pre code {
 .popular-posts .popular-posts-item .popular-posts-time {
   color: #999;
 }
+/ Footer Section,
 .footer {
   color: #999;
   font-size: 0.875em;
@@ -1738,6 +1739,7 @@ pre code {
   transition: 0.2s ease-in-out;
   transition-property: left, right;
 }
+/ Footer Section.footer-fixed,
 .footer.footer-fixed {
   bottom: 0;
   left: 0;
@@ -3033,7 +3035,7 @@ header.header {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-inner .post-block:not(:first-child):not(:first-child) {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 @media (max-width: 767px) {
@@ -3054,7 +3056,7 @@ header.header {
   .main-inner > .comments,
   .main-inner .comment-position .comments,
   .main-inner .pagination {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 @media (max-width: 767px) {
@@ -3085,16 +3087,16 @@ header.header {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-inner {
-    padding: 10px;
+    padding: 5px;
   }
   .posts-expand .post-button {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .post-block {
-    padding: 20px;
+    padding: 10px;
   }
   .comments {
-    padding: 10px 20px;
+    padding: 5px 10px;
   }
 }
 @media (max-width: 767px) {
