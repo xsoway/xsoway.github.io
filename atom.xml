@@ -6,7 +6,7 @@
   <link href="https://xmylog.com/atom.xml" rel="self"/>
   
   <link href="https://xmylog.com/"/>
-  <updated>2025-07-26T12:55:16.196Z</updated>
+  <updated>2025-07-26T13:12:38.863Z</updated>
   <id>https://xmylog.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ChatBI 评测方案设计</title>
+    <link href="https://xmylog.com/2025/07/26/chat-bi-case/"/>
+    <id>https://xmylog.com/2025/07/26/chat-bi-case/</id>
+    <published>2025-07-26T13:09:52.000Z</published>
+    <updated>2025-07-26T13:12:38.863Z</updated>
+    
+    
+    <summary type="html">chatbi 模型评测方案设计</summary>
+    
+    
+    
+    <category term="技术整理" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
+    
+    <category term="chatbi" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/chatbi/"/>
+    
+    
+    <category term="模型评测" scheme="https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo_写作技巧_01</title>
