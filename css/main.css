@@ -1356,7 +1356,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #f6d17d;
+    background: #36a1ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3127,4 +3127,11 @@ header.header {
 }
 :root {
   --content-bg-color: rgba(255,255,255,0.902);
+}
+body {
+  background: url("https://picsum.photos/800/600");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
