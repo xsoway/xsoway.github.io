@@ -115,13 +115,6 @@
   </url>
   
   <url>
-    <loc>https://xmylog.com/tags/%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2025-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xmylog.com/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -136,7 +129,7 @@
   </url>
   
   <url>
-    <loc>https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/</loc>
+    <loc>https://xmylog.com/tags/%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -144,6 +137,13 @@
   
   <url>
     <loc>https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2025-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -166,13 +166,6 @@
   </url>
   
   <url>
-    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2025-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xmylog.com/categories/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -180,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://xmylog.com/categories/%E8%AF%84%E6%B5%8B/</loc>
+    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -188,6 +181,13 @@
   
   <url>
     <loc>https://xmylog.com/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2025-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xmylog.com/categories/%E8%AF%84%E6%B5%8B/</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
