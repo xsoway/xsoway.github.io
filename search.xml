@@ -1,186 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/07/24/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>hello</category>
-      </categories>
-      <tags>
-        <tag>World</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>评测</title>
-    <url>/2025/07/24/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h2><p>Bee King AI 评估框架是一个专为智能客服场景设计的AI模型评测工具集，用于全面评估模型在各种业务场景下的表现。该框架支持多维度评测，包括意图识别、线索提取、内容质量、对话能力等，并能生成详细的评测报告。</p>
-<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/Users/xulanzhong/Desktop/fw_eval/test_fw_evaluation/</span><br><span class="line">├── __init__.py                      # 包初始化文件</span><br><span class="line">├── eval_fw_summary_report/          # 评估框架汇总报告目录</span><br><span class="line">├── eval_summary_report/             # 评估汇总报告目录</span><br><span class="line">│   ├── generate_summary_report.py   # 生成汇总报告的工具</span><br><span class="line">│   └── report_data.md               # 报告数据说明</span><br><span class="line">├── eval_summary_report_analysis/    # 评估报告分析工具目录</span><br><span class="line">├── test_fw_ai_assistant/           # AI助手评估模块</span><br><span class="line">├── test_fw_chat_content/           # 聊天内容评估模块</span><br><span class="line">├── test_fw_chat_intent/            # 聊天意图识别评估模块</span><br><span class="line">│   ├── backup/                      # 备份文件</span><br><span class="line">│   ├── conftest.py                  # pytest配置文件</span><br><span class="line">│   ├── eval_dataset/                # 评估数据集</span><br><span class="line">│   ├── eval_dataset_report/         # 评估报告输出目录</span><br><span class="line">│   ├── eval_dataset_result/         # 评估结果输出目录</span><br><span class="line">│   ├── log/                         # 日志目录</span><br><span class="line">│   ├── main.py                      # 主程序入口</span><br><span class="line">│   ├── test_fw_chat_intent_handle.py # 意图识别测试处理程序</span><br><span class="line">│   └── tools/                       # 工具函数目录</span><br><span class="line">├── test_fw_clue_extract/           # 线索提取评估模块</span><br><span class="line">├── test_fw_conversations_content/  # 对话内容评估模块</span><br><span class="line">└── test_fw_diff_content/           # 内容差异评估模块</span><br></pre></td></tr></table></figure>
-
-<h2 id="模块说明"><a href="#模块说明" class="headerlink" title="模块说明"></a>模块说明</h2><h3 id="1-评估汇总报告模块-eval-fw-summary-report"><a href="#1-评估汇总报告模块-eval-fw-summary-report" class="headerlink" title="1. 评估汇总报告模块 (eval_fw_summary_report)"></a>1. 评估汇总报告模块 (eval_fw_summary_report)</h3><ul>
-<li>负责汇总所有评估模块的结果，生成最终的综合评估报告。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>simple_report/</code> - 包含各个模块的简化报告</li>
-<li><code>summary_report_*.html</code> - 汇总报告HTML文件</li>
-</ul>
-<h3 id="2-评估报告生成模块-eval-summary-report"><a href="#2-评估报告生成模块-eval-summary-report" class="headerlink" title="2. 评估报告生成模块 (eval_summary_report)"></a>2. 评估报告生成模块 (eval_summary_report)</h3><p>提供评估报告生成的核心功能，将评估结果转换为可视化的HTML报告。</p>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>generate_summary_report.py</code> - 报告生成主函数</li>
-<li><code>report_data.md</code> - 报告数据模板</li>
-<li><code>simple_report/</code> - 简化报告目录</li>
-</ul>
-<h3 id="3-评估报告分析模块-eval-summary-report-analysis"><a href="#3-评估报告分析模块-eval-summary-report-analysis" class="headerlink" title="3. 评估报告分析模块 (eval_summary_report_analysis)"></a>3. 评估报告分析模块 (eval_summary_report_analysis)</h3><ul>
-<li>对评估结果进行深入分析，提供数据洞察和改进建议。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>agno_agent_analysis.py</code> - 基于Agent的分析工具</li>
-<li><code>report_analysis_tool.py</code> - 报告分析工具</li>
-<li><code>summary_report_data.json</code> - 汇总数据</li>
-</ul>
-<h3 id="4-AI助手评估模块-test-fw-ai-assistant"><a href="#4-AI助手评估模块-test-fw-ai-assistant" class="headerlink" title="4. AI助手评估模块 (test_fw_ai_assistant)"></a>4. AI助手评估模块 (test_fw_ai_assistant)</h3><ul>
-<li>评估AI助手的回答质量、准确性和用户体验。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>eval_ai_assistant_handle.py</code> - 评估处理主函数</li>
-<li><code>eval_dataset/</code> - 评估数据集</li>
-<li><code>eval_dataset_report/</code> - 评估报告</li>
-<li><code>eval_dataset_result/</code> - 评估结果</li>
-<li><code>tools/</code> - 评估工具</li>
-</ul>
-<h3 id="5-对话内容评估模块-test-fw-chat-content"><a href="#5-对话内容评估模块-test-fw-chat-content" class="headerlink" title="5. 对话内容评估模块 (test_fw_chat_content)"></a>5. 对话内容评估模块 (test_fw_chat_content)</h3><ul>
-<li>评估对话内容的合规性、安全性和用户体验。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>conftest.py</code> - 测试配置</li>
-<li><code>test_judge_model_content.py</code> - 内容评判模型测试</li>
-<li><code>test_judge_model_content_pro.py</code> - 高级内容评判模型测试</li>
-<li><code>tools/</code> - 评估工具<ul>
-<li><code>judge_model_handle.py</code> - 评判模型处理器</li>
-<li><code>load_rules_tool.py</code> - 规则加载工具</li>
-</ul>
-</li>
-</ul>
-<p><strong>评估维度</strong>：</p>
-<ul>
-<li>业务规则检查 - 检查是否遵循业务规则和逻辑要求</li>
-<li>会话能力评估 - 评估多轮对话的流畅性与连贯性</li>
-<li>鲁棒性测试 - 测试在异常输入或边界情况下的稳定性</li>
-<li>安全与合规验证 - 检验内容是否符合安全与合规标准</li>
-<li>用户体验评价 - 评估整体交互体验的自然性和友好性</li>
-</ul>
-<h3 id="6-对话意图识别评估模块-test-fw-chat-intent"><a href="#6-对话意图识别评估模块-test-fw-chat-intent" class="headerlink" title="6. 对话意图识别评估模块 (test_fw_chat_intent)"></a>6. 对话意图识别评估模块 (test_fw_chat_intent)</h3><p>该模块用于评估模型对用户意图的识别准确性，主要功能包括：</p>
-<ul>
-<li>测试模型对各类用户意图的识别能力</li>
-<li>生成意图识别评分结果</li>
-<li>生成HTML格式的评估报告</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>main.py</code> - 主函数</li>
-<li><code>test_fw_chat_intent_handle.py</code> - 意图识别测试处理</li>
-<li><code>test_fw_chat_intent_handle_prod.py</code> - 生产环境意图识别测试</li>
-<li><code>tools/</code> - 评估工具<ul>
-<li><code>intent_eval_analysis.py</code> - 意图评估分析</li>
-<li><code>intent_generate_report_html.py</code> - 报告生成</li>
-</ul>
-</li>
-</ul>
-<h3 id="7-线索提取能力评估模块-test-fw-clue-extract"><a href="#7-线索提取能力评估模块-test-fw-clue-extract" class="headerlink" title="7. 线索提取能力评估模块 (test_fw_clue_extract)"></a>7. 线索提取能力评估模块 (test_fw_clue_extract)</h3><ul>
-<li>评估模型从对话中提取关键信息的能力。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>main.py</code> - 主函数</li>
-<li><code>test_fw_clue_extract_handle.py</code> - 线索提取测试处理</li>
-<li><code>test_fw_clue_extract_handle_prod.py</code> - 生产环境线索提取测试</li>
-</ul>
-<h3 id="8-多轮对话内容评估模块-test-fw-conversations-content"><a href="#8-多轮对话内容评估模块-test-fw-conversations-content" class="headerlink" title="8. 多轮对话内容评估模块 (test_fw_conversations_content)"></a>8. 多轮对话内容评估模块 (test_fw_conversations_content)</h3><ul>
-<li>评估多轮对话中的内容质量和连贯性。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>tools/</code> - 评估工具<ul>
-<li><code>conversation_new_chat_handle.py</code> - 对话处理</li>
-<li><code>fw_chat_api.py</code> - 聊天API接口</li>
-</ul>
-</li>
-</ul>
-<h3 id="9-对话内容差异比较评估模块-test-fw-diff-content"><a href="#9-对话内容差异比较评估模块-test-fw-diff-content" class="headerlink" title="9. 对话内容差异比较评估模块 (test_fw_diff_content)"></a>9. 对话内容差异比较评估模块 (test_fw_diff_content)</h3><ul>
-<li>比较不同模型或版本的对话内容差异，评估改进效果。</li>
-</ul>
-<p><strong>主要文件</strong>：</p>
-<ul>
-<li><code>test_fw_diff_content_handle.py</code> - 差异比较测试处理</li>
-<li><code>tools/</code> - 评估工具<ul>
-<li><code>eval_qa_content_model.py</code> - 内容评估模型</li>
-<li><code>eval_processor.py</code> - 评估处理器</li>
-<li><code>eval_summary_result.py</code> - 结果汇总</li>
-<li><code>diff_generate_report_html.py</code> - 差异报告生成</li>
-</ul>
-</li>
-</ul>
-<h2 id="评估维度"><a href="#评估维度" class="headerlink" title="评估维度"></a>评估维度</h2><ul>
-<li>该框架从以下维度对AI模型进行评估：</li>
-</ul>
-<ol>
-<li><strong>业务规则检查</strong> - 检查是否遵循业务规则和逻辑要求</li>
-<li><strong>会话能力评估</strong> - 评估多轮对话的流畅性与连贯性</li>
-<li><strong>鲁棒性测试</strong> - 测试在异常输入或边界情况下的稳定性</li>
-<li><strong>安全与合规验证</strong> - 检验内容是否符合安全与合规标准</li>
-<li><strong>用户体验评价</strong> - 评估整体交互体验的自然性和友好性</li>
-<li><strong>意图识别准确性</strong> - 测试系统对用户意图的识别准确性</li>
-<li><strong>系统性能</strong> - 评估系统响应时间和吞吐率</li>
-</ol>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="运行评估测试"><a href="#运行评估测试" class="headerlink" title="运行评估测试"></a>运行评估测试</h3><p>各模块可以独立运行，通常使用以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m test_fw_evaluation.test_fw_chat_intent.main</span><br></pre></td></tr></table></figure>
-
-<p>或直接运行测试文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pytest test_fw_evaluation/test_fw_chat_intent/test_fw_chat_intent_handle.py -v</span><br></pre></td></tr></table></figure>
-
-<h3 id="生成评估报告"><a href="#生成评估报告" class="headerlink" title="生成评估报告"></a>生成评估报告</h3><p>评估完成后，可以生成HTML格式的评估报告：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m test_fw_evaluation.eval_summary_report.generate_summary_report</span><br></pre></td></tr></table></figure>
-
-<h2 id="数据流程"><a href="#数据流程" class="headerlink" title="数据流程"></a>数据流程</h2><ol>
-<li><strong>数据准备</strong> - 在各模块的<code>eval_dataset/</code>目录中准备测试数据</li>
-<li><strong>执行测试</strong> - 运行测试脚本，评估模型性能</li>
-<li><strong>结果收集</strong> - 测试结果保存在<code>eval_dataset_result/</code>目录</li>
-<li><strong>报告生成</strong> - 基于结果生成HTML报告，保存在<code>eval_dataset_report/</code>目录</li>
-<li><strong>结果分析</strong> - 使用分析工具对结果进行深入分析</li>
-<li><strong>汇总报告</strong> - 生成包含所有模块评估结果的汇总报告</li>
-</ol>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li>确保在运行测试前已正确配置环境和依赖</li>
-<li>测试数据应符合实际业务场景，以获得更准确的评估结果</li>
-<li>评估报告中的指标和分数可用于模型迭代和优化的参考</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>测试技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于业务场景下的模型评测流程</title>
     <url>/2025/07/26/%E5%9F%BA%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="基于业务场景下的模型评测流程"><a href="#基于业务场景下的模型评测流程" class="headerlink" title="基于业务场景下的模型评测流程"></a>基于业务场景下的模型评测流程</h1><h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>本文旨在系统性地介绍如何在实际业务场景中开展大模型评测工作，帮助读者理解并掌握从需求分析、评测集设计与生成、评测维度设定、评测任务执行到评测报告输出的完整流程。</p>
@@ -421,6 +241,30 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2025/07/24/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>hello</category>
+      </categories>
+      <tags>
+        <tag>World</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>评测方案</title>
     <url>/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[]]></content>
@@ -429,6 +273,162 @@
       </categories>
       <tags>
         <tag>模型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>评测</title>
+    <url>/2025/07/24/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h2><p>Bee King AI 评估框架是一个专为智能客服场景设计的AI模型评测工具集，用于全面评估模型在各种业务场景下的表现。该框架支持多维度评测，包括意图识别、线索提取、内容质量、对话能力等，并能生成详细的评测报告。</p>
+<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/Users/xulanzhong/Desktop/fw_eval/test_fw_evaluation/</span><br><span class="line">├── __init__.py                      # 包初始化文件</span><br><span class="line">├── eval_fw_summary_report/          # 评估框架汇总报告目录</span><br><span class="line">├── eval_summary_report/             # 评估汇总报告目录</span><br><span class="line">│   ├── generate_summary_report.py   # 生成汇总报告的工具</span><br><span class="line">│   └── report_data.md               # 报告数据说明</span><br><span class="line">├── eval_summary_report_analysis/    # 评估报告分析工具目录</span><br><span class="line">├── test_fw_ai_assistant/           # AI助手评估模块</span><br><span class="line">├── test_fw_chat_content/           # 聊天内容评估模块</span><br><span class="line">├── test_fw_chat_intent/            # 聊天意图识别评估模块</span><br><span class="line">│   ├── backup/                      # 备份文件</span><br><span class="line">│   ├── conftest.py                  # pytest配置文件</span><br><span class="line">│   ├── eval_dataset/                # 评估数据集</span><br><span class="line">│   ├── eval_dataset_report/         # 评估报告输出目录</span><br><span class="line">│   ├── eval_dataset_result/         # 评估结果输出目录</span><br><span class="line">│   ├── log/                         # 日志目录</span><br><span class="line">│   ├── main.py                      # 主程序入口</span><br><span class="line">│   ├── test_fw_chat_intent_handle.py # 意图识别测试处理程序</span><br><span class="line">│   └── tools/                       # 工具函数目录</span><br><span class="line">├── test_fw_clue_extract/           # 线索提取评估模块</span><br><span class="line">├── test_fw_conversations_content/  # 对话内容评估模块</span><br><span class="line">└── test_fw_diff_content/           # 内容差异评估模块</span><br></pre></td></tr></table></figure>
+
+<h2 id="模块说明"><a href="#模块说明" class="headerlink" title="模块说明"></a>模块说明</h2><h3 id="1-评估汇总报告模块-eval-fw-summary-report"><a href="#1-评估汇总报告模块-eval-fw-summary-report" class="headerlink" title="1. 评估汇总报告模块 (eval_fw_summary_report)"></a>1. 评估汇总报告模块 (eval_fw_summary_report)</h3><ul>
+<li>负责汇总所有评估模块的结果，生成最终的综合评估报告。</li>
+</ul>
+<p><strong>主要文件</strong>：</p>
+<ul>
+<li><code>simple_report/</code> - 包含各个模块的简化报告</li>
+<li><code>summary_report_*.html</code> - 汇总报告HTML文件</li>
+</ul>
+<h3 id="2-评估报告生成模块-eval-summary-report"><a href="#2-评估报告生成模块-eval-summary-report" class="headerlink" title="2. 评估报告生成模块 (eval_summary_report)"></a>2. 评估报告生成模块 (eval_summary_report)</h3><p>提供评估报告生成的核心功能，将评估结果转换为可视化的HTML报告。</p>
+<p><strong>主要文件</strong>：</p>
+<ul>
+<li><code>generate_summary_report.py</code> - 报告生成主函数</li>
+<li><code>report_data.md</code> - 报告数据模板</li>
+<li><code>simple_report/</code> - 简化报告目录</li>
+</ul>
+<h3 id="3-评估报告分析模块-eval-summary-report-analysis"><a href="#3-评估报告分析模块-eval-summary-report-analysis" class="headerlink" title="3. 评估报告分析模块 (eval_summary_report_analysis)"></a>3. 评估报告分析模块 (eval_summary_report_analysis)</h3><ul>
+<li>对评估结果进行深入分析，提供数据洞察和改进建议。</li>
+</ul>
+<p><strong>主要文件</strong>：</p>
+<ul>
+<li><code>agno_agent_analysis.py</code> - 基于Agent的分析工具</li>
+<li><code>report_analysis_tool.py</code> - 报告分析工具</li>
+<li><code>summary_report_data.json</code> - 汇总数据</li>
+</ul>
+<h3 id="4-AI助手评估模块-test-fw-ai-assistant"><a href="#4-AI助手评估模块-test-fw-ai-assistant" class="headerlink" title="4. AI助手评估模块 (test_fw_ai_assistant)"></a>4. AI助手评估模块 (test_fw_ai_assistant)</h3><ul>
+<li>评估AI助手的回答质量、准确性和用户体验。</li>
+</ul>
+<p><strong>主要文件</strong>：</p>
+<ul>
+<li><code>eval_ai_assistant_handle.py</code> - 评估处理主函数</li>
+<li><code>eval_dataset/</code> - 评估数据集</li>
+<li><code>eval_dataset_report/</code> - 评估报告</li>
+<li><code>eval_dataset_result/</code> - 评估结果</li>
+<li><code>tools/</code> - 评估工具</li>
+</ul>
+<h3 id="5-对话内容评估模块-test-fw-chat-content"><a href="#5-对话内容评估模块-test-fw-chat-content" class="headerlink" title="5. 对话内容评估模块 (test_fw_chat_content)"></a>5. 对话内容评估模块 (test_fw_chat_content)</h3><ul>
+<li>评估对话内容的合规性、安全性和用户体验。</li>
+</ul>
+<p><strong>主要文件</strong>：</p>
+<ul>
+<li><code>conftest.py</code> - 测试配置</li>
+<li><code>test_judge_model_content.py</code> - 内容评判模型测试</li>
+<li><code>test_judge_model_content_pro.py</code> - 高级内容评判模型测试</li>
+<li><code>tools/</code> - 评估工具<ul>
+<li><code>judge_model_handle.py</code> - 评判模型处理器</li>
+<li><code>load_rules_tool.py</code> - 规则加载工具</li>
+</ul>
+</li>
+</ul>
+<p><strong>评估维度</strong>：</p>
+<ul>
+<li>业务规则检查 - 检查是否遵循业务规则和逻辑要求</li>
+<li>会话能力评估 - 评估多轮对话的流畅性与连贯性</li>
+<li>鲁棒性测试 - 测试在异常输入或边界情况下的稳定性</li>
+<li>安全与合规验证 - 检验内容是否符合安全与合规标准</li>
+<li>用户体验评价 - 评估整体交互体验的自然性和友好性</li>
+</ul>
+<h3 id="6-对话意图识别评估模块-test-fw-chat-intent"><a href="#6-对话意图识别评估模块-test-fw-chat-intent" class="headerlink" title="6. 对话意图识别评估模块 (test_fw_chat_intent)"></a>6. 对话意图识别评估模块 (test_fw_chat_intent)</h3><p>该模块用于评估模型对用户意图的识别准确性，主要功能包括：</p>
+<ul>
+<li>测试模型对各类用户意图的识别能力</li>
+<li>生成意图识别评分结果</li>
+<li>生成HTML格式的评估报告</li>
+</ul>
+<p><strong>主要文件</strong>：</p>
+<ul>
+<li><code>main.py</code> - 主函数</li>
+<li><code>test_fw_chat_intent_handle.py</code> - 意图识别测试处理</li>
+<li><code>test_fw_chat_intent_handle_prod.py</code> - 生产环境意图识别测试</li>
+<li><code>tools/</code> - 评估工具<ul>
+<li><code>intent_eval_analysis.py</code> - 意图评估分析</li>
+<li><code>intent_generate_report_html.py</code> - 报告生成</li>
+</ul>
+</li>
+</ul>
+<h3 id="7-线索提取能力评估模块-test-fw-clue-extract"><a href="#7-线索提取能力评估模块-test-fw-clue-extract" class="headerlink" title="7. 线索提取能力评估模块 (test_fw_clue_extract)"></a>7. 线索提取能力评估模块 (test_fw_clue_extract)</h3><ul>
+<li>评估模型从对话中提取关键信息的能力。</li>
+</ul>
+<p><strong>主要文件</strong>：</p>
+<ul>
+<li><code>main.py</code> - 主函数</li>
+<li><code>test_fw_clue_extract_handle.py</code> - 线索提取测试处理</li>
+<li><code>test_fw_clue_extract_handle_prod.py</code> - 生产环境线索提取测试</li>
+</ul>
+<h3 id="8-多轮对话内容评估模块-test-fw-conversations-content"><a href="#8-多轮对话内容评估模块-test-fw-conversations-content" class="headerlink" title="8. 多轮对话内容评估模块 (test_fw_conversations_content)"></a>8. 多轮对话内容评估模块 (test_fw_conversations_content)</h3><ul>
+<li>评估多轮对话中的内容质量和连贯性。</li>
+</ul>
+<p><strong>主要文件</strong>：</p>
+<ul>
+<li><code>tools/</code> - 评估工具<ul>
+<li><code>conversation_new_chat_handle.py</code> - 对话处理</li>
+<li><code>fw_chat_api.py</code> - 聊天API接口</li>
+</ul>
+</li>
+</ul>
+<h3 id="9-对话内容差异比较评估模块-test-fw-diff-content"><a href="#9-对话内容差异比较评估模块-test-fw-diff-content" class="headerlink" title="9. 对话内容差异比较评估模块 (test_fw_diff_content)"></a>9. 对话内容差异比较评估模块 (test_fw_diff_content)</h3><ul>
+<li>比较不同模型或版本的对话内容差异，评估改进效果。</li>
+</ul>
+<p><strong>主要文件</strong>：</p>
+<ul>
+<li><code>test_fw_diff_content_handle.py</code> - 差异比较测试处理</li>
+<li><code>tools/</code> - 评估工具<ul>
+<li><code>eval_qa_content_model.py</code> - 内容评估模型</li>
+<li><code>eval_processor.py</code> - 评估处理器</li>
+<li><code>eval_summary_result.py</code> - 结果汇总</li>
+<li><code>diff_generate_report_html.py</code> - 差异报告生成</li>
+</ul>
+</li>
+</ul>
+<h2 id="评估维度"><a href="#评估维度" class="headerlink" title="评估维度"></a>评估维度</h2><ul>
+<li>该框架从以下维度对AI模型进行评估：</li>
+</ul>
+<ol>
+<li><strong>业务规则检查</strong> - 检查是否遵循业务规则和逻辑要求</li>
+<li><strong>会话能力评估</strong> - 评估多轮对话的流畅性与连贯性</li>
+<li><strong>鲁棒性测试</strong> - 测试在异常输入或边界情况下的稳定性</li>
+<li><strong>安全与合规验证</strong> - 检验内容是否符合安全与合规标准</li>
+<li><strong>用户体验评价</strong> - 评估整体交互体验的自然性和友好性</li>
+<li><strong>意图识别准确性</strong> - 测试系统对用户意图的识别准确性</li>
+<li><strong>系统性能</strong> - 评估系统响应时间和吞吐率</li>
+</ol>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="运行评估测试"><a href="#运行评估测试" class="headerlink" title="运行评估测试"></a>运行评估测试</h3><p>各模块可以独立运行，通常使用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m test_fw_evaluation.test_fw_chat_intent.main</span><br></pre></td></tr></table></figure>
+
+<p>或直接运行测试文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pytest test_fw_evaluation/test_fw_chat_intent/test_fw_chat_intent_handle.py -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成评估报告"><a href="#生成评估报告" class="headerlink" title="生成评估报告"></a>生成评估报告</h3><p>评估完成后，可以生成HTML格式的评估报告：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m test_fw_evaluation.eval_summary_report.generate_summary_report</span><br></pre></td></tr></table></figure>
+
+<h2 id="数据流程"><a href="#数据流程" class="headerlink" title="数据流程"></a>数据流程</h2><ol>
+<li><strong>数据准备</strong> - 在各模块的<code>eval_dataset/</code>目录中准备测试数据</li>
+<li><strong>执行测试</strong> - 运行测试脚本，评估模型性能</li>
+<li><strong>结果收集</strong> - 测试结果保存在<code>eval_dataset_result/</code>目录</li>
+<li><strong>报告生成</strong> - 基于结果生成HTML报告，保存在<code>eval_dataset_report/</code>目录</li>
+<li><strong>结果分析</strong> - 使用分析工具对结果进行深入分析</li>
+<li><strong>汇总报告</strong> - 生成包含所有模块评估结果的汇总报告</li>
+</ol>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>确保在运行测试前已正确配置环境和依赖</li>
+<li>测试数据应符合实际业务场景，以获得更准确的评估结果</li>
+<li>评估报告中的指标和分数可用于模型迭代和优化的参考</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>测试技术</tag>
       </tags>
   </entry>
 </search>
