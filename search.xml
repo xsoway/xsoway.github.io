@@ -25,17 +25,6 @@
       </tags>
   </entry>
   <entry>
-    <title>评测方案</title>
-    <url>/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>模型</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于业务场景下的模型评测流程</title>
     <url>/2025/07/26/%E5%9F%BA%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="基于业务场景下的模型评测流程"><a href="#基于业务场景下的模型评测流程" class="headerlink" title="基于业务场景下的模型评测流程"></a>基于业务场景下的模型评测流程</h1><h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>本文旨在系统性地介绍如何在实际业务场景中开展大模型评测工作，帮助读者理解并掌握从需求分析、评测集设计与生成、评测维度设定、评测任务执行到评测报告输出的完整流程。</p>
@@ -429,6 +418,17 @@
       </categories>
       <tags>
         <tag>测试技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>评测方案</title>
+    <url>/2025/07/24/%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>模型</tag>
       </tags>
   </entry>
 </search>
