@@ -1,6 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>甘南自驾_2025_7</title>
+    <url>/2025/07/27/ganan-journey-2025-7/</url>
+    <content><![CDATA[<h1 id="🚗甘南自驾2025-part-01"><a href="#🚗甘南自驾2025-part-01" class="headerlink" title="🚗甘南自驾2025_part_01"></a>🚗甘南自驾2025_part_01</h1><p>🏔️ 三千海拔之上，绿浪托起红原，经幡卷走浮世尘埃，此程——见天地，见众生，终见本心</p>
+<span id="more"></span>
+
+<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p><strong>心之所向，念之已久。</strong></p>
+<p>对甘南的向往，早在疫情前就已开始计划，便一再搁置。</p>
+<p>七月，是甘南最美的时节。天空澄澈，草原一片青绿；而在六月份，那边还常常飘雪，虽寒，却能远眺皑皑雪山。等到七月中下旬，雨季便悄然而至，行程多了几分变数。</p>
+<p>这次两周的假期，计划了三套方案：青甘大环线、北疆小环线、还有最早开始酝酿的甘南环线。最终决定走甘南——不仅因为筹划已久，更因为每个人心中，都藏着一个想去的地方。</p>
+<p>我想去《魔兽世界》里的现实原型——莲宝叶则；莫菲一直惦记着扎尕那；艾米则心心念念着九寨沟。甘南环线恰好能一网打尽，三个人的愿望一个不落。</p>
+<p>我们最终舍弃了最远端的色达：一方面是担心高海拔的反应，另一方面，如果要去九寨沟，就必须割舍掉色达。权衡之下，甘南环线附赠九寨沟</p>
+<h1 id="行程路线"><a href="#行程路线" class="headerlink" title="行程路线"></a>行程路线</h1><pre><code class="highlight mermaid">%% 甘南自驾环线路线图优化版
+graph LR
+    A[石家庄] --&gt;|Day1 14h| B(白银)
+    B --&gt;|Day2 1.5h| C[兰州]
+    C --&gt;|Day3 3h| D[夏河]
+    D --&gt;|Day4 3h| E[郎木寺]
+    E --&gt;|Day5 3.5h| F[阿坝县]
+    F --&gt;|Day6| G[阿坝县 深度游]
+    G --&gt;|Day7 5h| H[扎尕那]
+    H --&gt;|Day8 5h| I[九寨沟]
+    I --&gt;|Day9| J[九寨沟 深度游]
+    J --&gt;|Day10 10h| K[运城]
+    K --&gt;|Day11 9h| A[石家庄（回程）]
+
+    %% 色彩渐变（冷暖过渡）
+    style A fill:#FF8A80,stroke:#D32F2F
+    style B fill:#FFB74D,stroke:#F57C00
+    style C fill:#FFD54F,stroke:#FBC02D
+    style D fill:#DCE775,stroke:#AFB42B
+    style E fill:#AED581,stroke:#689F38
+    style F fill:#81C784,stroke:#388E3C
+    style G fill:#4DB6AC,stroke:#00796B
+    style H fill:#4FC3F7,stroke:#0288D1
+    style I fill:#64B5F6,stroke:#1976D2
+    style J fill:#7986CB,stroke:#303F9F
+    style K fill:#B39DDB,stroke:#512DA8
+
+    %% 深色节点样式统一
+    classDef darkNode fill:#263238,stroke:#37474F,color:#FFFFFF
+    class A,B,C,D,E,F,G,H,I,J,K darkNode
+
+    %% 节点标注（行程亮点）
+    C -.-&gt;|景点推荐:\n- 正宁路夜市\n- 中山桥\n- 黄河母亲| C
+    D -.-&gt;|必游打卡:\n- 拉卜楞寺\n- 甘加秘境\n- 桑科草原| D
+    E -.-&gt;|自然人文:\n- 郎木寺\n- 纳摩大峡谷| E
+    F -.-&gt;|人文宗教:\n- 宁玛寺\n- 各莫寺\n- 阿坝观景台| F
+    G -.-&gt;|深度探秘:\n- 莲宝叶则| G
+    H -.-&gt;|草原秘境:\n- 扎尕那\n- 若尔盖草原\n- 黄河九曲第一湾| H
+    J -.-&gt;|经典景区:\n- 九寨沟全景体验| J
+
+    %% 标注起终点
+    A -.-&gt;|起点 &amp; 终点| A</code></pre>
+
+<h1 id="兰州"><a href="#兰州" class="headerlink" title="兰州"></a>兰州</h1><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC08040.jpg" alt="DSC08040"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC08048-3.jpg" alt="DSC08048-3"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC08045.jpg" alt="DSC08045"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC08086.jpg" alt="DSC08086"></p>
+<h1 id="夏河县"><a href="#夏河县" class="headerlink" title="夏河县"></a>夏河县</h1><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/61361752576460_.pic.jpg" alt="61361752576460_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/61371752576473_.pic.jpg" alt="61371752576473_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/61381752576478_.pic.jpg" alt="61381752576478_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/61391752576515_.pic.jpg" alt="61391752576515_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/61401752576651_.pic.jpg" alt="61401752576651_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/61411752576662_.pic.jpg" alt="61411752576662_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/61421752576675_.pic.jpg" alt="61421752576675_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/61431752576682_.pic.jpg" alt="61431752576682_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/61441752576694_.pic.jpg" alt="61441752576694_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/61451752576702_.pic.jpg" alt="61451752576702_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/61461752577461_.pic.jpg" alt="61461752577461_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/61471752577483_.pic.jpg" alt="61471752577483_.pic"></p>
+<h1 id="拉卜楞寺"><a href="#拉卜楞寺" class="headerlink" title="拉卜楞寺"></a>拉卜楞寺</h1><p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/62931753192937_.pic.jpg" alt="62931753192937_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/62941753192940_.pic.jpg" alt="62941753192940_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/62951753192943_.pic.jpg" alt="62951753192943_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/62961753192947_.pic.jpg" alt="62961753192947_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/62971753192950_.pic.jpg" alt="62971753192950_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/62991753192955_.pic.jpg" alt="62991753192955_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/63001753192959_.pic.jpg" alt="63001753192959_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/63011753192964_.pic.jpg" alt="63011753192964_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/63021753192973_.pic.jpg" alt="63021753192973_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63031753192980_.pic.jpg" alt="63031753192980_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63041753192985_.pic.jpg" alt="63041753192985_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63051753192992_.pic.jpg" alt="63051753192992_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63061753192998_.pic.jpg" alt="63061753192998_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/63071753193004_.pic.jpg" alt="63071753193004_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63081753193009_.pic.jpg" alt="63081753193009_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63091753193014_.pic.jpg" alt="63091753193014_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63101753193021_.pic.jpg" alt="63101753193021_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/63111753193026_.pic.jpg" alt="63111753193026_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63121753193031_.pic.jpg" alt="63121753193031_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/63131753193038_.pic.jpg" alt="63131753193038_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63141753193039_.pic.jpg" alt="63141753193039_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63151753193042_.pic.jpg" alt="63151753193042_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63161753193048_.pic.jpg" alt="63161753193048_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63171753193051_.pic.jpg" alt="63171753193051_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/63181753193056_.pic.jpg" alt="63181753193056_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/63191753193062_.pic.jpg" alt="63191753193062_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63201753193070_.pic.jpg" alt="63201753193070_.pic"></p>
+<p><img src="/Users/xulanzhong/Desktop/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA/%E6%9C%80%E7%BB%88-%E7%94%98%E5%8D%97/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/63211753193079_.pic.jpg" alt="63211753193079_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/63221753193085_.pic.jpg" alt="63221753193085_.pic"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/61511752577608_.pic.jpg" alt="61511752577608_.pic"></p>
+]]></content>
+      <categories>
+        <category>户外旅行</category>
+        <category>自驾</category>
+      </categories>
+      <tags>
+        <tag>甘南</tag>
+        <tag>自驾</tag>
+        <tag>暑假</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ChatBI 评测方案设计</title>
     <url>/2025/07/26/chat-bi-case/</url>
     <content><![CDATA[<h1 id="ChatBI-评测方案设计"><a href="#ChatBI-评测方案设计" class="headerlink" title="ChatBI 评测方案设计"></a>ChatBI 评测方案设计</h1><h2 id="一-思路"><a href="#一-思路" class="headerlink" title="一. 思路"></a>一. 思路</h2><h3 id="1-核心流程"><a href="#1-核心流程" class="headerlink" title="1. 核心流程"></a>1. 核心流程</h3><p>用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成</p>
