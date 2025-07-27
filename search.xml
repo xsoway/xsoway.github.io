@@ -200,7 +200,7 @@ graph LR
   </entry>
   <entry>
     <title>xmylog_new_online</title>
-    <url>/2025/07/26/xmylog-new-online/</url>
+    <url>/2025/06/28/xmylog-new-online/</url>
     <content><![CDATA[<h1 id="搭建自己的数字自留地"><a href="#搭建自己的数字自留地" class="headerlink" title="搭建自己的数字自留地"></a>搭建自己的数字自留地</h1><p>Vercel 被停用快小半年了, 之前的博客总想着做迁移,一直没提上日程, 最近查了各种博客平台搭建方案,还是选择了 完全开源,经得起瞎折腾的hexo + github + 图床 + typora +…(obsibian &amp; notion)</p>
 <p>Vercel 服务在国外,国内访问还是很慢, github pages + 腾讯域名 + cdn加速, 访问起来还好</p>
 <span id="more"></span>
