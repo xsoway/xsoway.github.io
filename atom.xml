@@ -42,44 +42,24 @@
   </entry>
   
   <entry>
-    <title>ChatBI 评测方案设计</title>
-    <link href="https://xmylog.com/2025/07/26/chat-bi-case/"/>
-    <id>https://xmylog.com/2025/07/26/chat-bi-case/</id>
-    <published>2025-07-26T13:09:52.000Z</published>
-    <updated>2025-07-26T13:12:48.418Z</updated>
+    <title>xmylog_new_online</title>
+    <link href="https://xmylog.com/2025/07/26/xmylog-new-online/"/>
+    <id>https://xmylog.com/2025/07/26/xmylog-new-online/</id>
+    <published>2025-07-26T07:15:52.000Z</published>
+    <updated>2025-07-27T07:18:36.301Z</updated>
     
     
-    <summary type="html">chatbi 模型评测方案设计</summary>
-    
-    
-    
-    <category term="技术整理" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
-    
-    <category term="chatbi" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/chatbi/"/>
-    
-    
-    <category term="模型评测" scheme="https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo_写作技巧_01</title>
-    <link href="https://xmylog.com/2025/07/26/hexo-technique-01/"/>
-    <id>https://xmylog.com/2025/07/26/hexo-technique-01/</id>
-    <published>2025-07-26T07:49:51.000Z</published>
-    <updated>2025-07-26T12:55:16.196Z</updated>
-    
-    
-    <summary type="html">md 高级技巧</summary>
+    <summary type="html">&lt;h1 id=&quot;搭建自己的数字自留地&quot;&gt;&lt;a href=&quot;#搭建自己的数字自留地&quot; class=&quot;headerlink&quot; title=&quot;搭建自己的数字自留地&quot;&gt;&lt;/a&gt;搭建自己的数字自留地&lt;/h1&gt;&lt;p&gt;Vercel 被停用快小半年了, 之前的博客总想着做迁移,一直没提上日程, 最近查了各路博客搭建平台,还是选择了 完全开源,经得起瞎折腾的hexo + github + 图床 + typora +…(obsibian &amp;amp; notion)&lt;/p&gt;
+&lt;p&gt;Vercel 服务在国外,国内访问还是很慢, github pages + 腾讯域名 + cdn加速, 访问起来还好&lt;/p&gt;</summary>
     
     
     
-    <category term="技术整理" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
-    
-    <category term="hexo" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/hexo/"/>
+    <category term="随笔感想" scheme="https://xmylog.com/categories/%E9%9A%8F%E7%AC%94%E6%84%9F%E6%83%B3/"/>
     
     
     <category term="hexo" scheme="https://xmylog.com/tags/hexo/"/>
+    
+    <category term="xmylog" scheme="https://xmylog.com/tags/xmylog/"/>
     
   </entry>
   
