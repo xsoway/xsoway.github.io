@@ -20,17 +20,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer></script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"xmylog.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.23.2","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"a11y-dark","dark":"a11y-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"xmylog.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.23.2","exturl":true,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"a11y-dark","dark":"a11y-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="Life is not what you have gained, but what you have done !   ChatBI 评测方案设计一. 思路1. 核心流程用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成">
+    <meta name="description" content="ChatBI 评测方案设计,用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="ChatBI 评测方案设计">
 <meta property="og:url" content="https://xmylog.com/2025/07/05/llm-eval-chatbi-test-design/index.html">
 <meta property="og:site_name" content="X·myLog">
-<meta property="og:description" content="Life is not what you have gained, but what you have done !   ChatBI 评测方案设计一. 思路1. 核心流程用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成">
+<meta property="og:description" content="ChatBI 评测方案设计,用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-07-05T06:09:45.000Z">
-<meta property="article:modified_time" content="2025-07-29T06:13:27.012Z">
+<meta property="article:modified_time" content="2025-07-29T07:06:05.505Z">
 <meta property="article:author" content="Alan Hsu">
 <meta property="article:tag" content="chatbi">
 <meta property="article:tag" content="LLM_eval">
@@ -68,6 +68,9 @@
   <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.7.0/mermaid.min.js","integrity":"sha256-4+IKDqhZ/sXjc8Wtl2/MsxI4e0s1KpEVdbEP7V/Lz8U="}}</script>
   <script src="/js/third-party/tags/mermaid.js" defer></script>
 
+  <script class="next-config" data-name="wavedrom" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.5.0/wavedrom.min.js","integrity":"sha256-INLAoJc6quTNfiMWkGZniYO2cxE8mHpddnLow1m6RFs="}}</script>
+  <script class="next-config" data-name="wavedrom_skin" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.5.0/skins/default.js","integrity":"sha256-fduc/Zszk5ezWws2uInY/ALWVmIrmV6VTgXbsYSReFI="}}</script>
+  <script src="/js/third-party/tags/wavedrom.js" defer></script>
 
 
   <script src="/js/third-party/pace.js" defer></script>
@@ -120,7 +123,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页 | home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于 | about</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签 | tags<span class="badge">9</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类 | categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档 | archives<span class="badge">4</span></a></li><li class="menu-item menu-item-running"><a href="https://run.xmylog.com/" rel="section" target="_blank"><i class="fa fa-running fa-fw"></i>跑步 | running</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页 | home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于 | about</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签 | tags<span class="badge">9</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类 | categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档 | archives<span class="badge">4</span></a></li><li class="menu-item menu-item-running"><span class="exturl" data-url="aHR0cHM6Ly9ydW4ueG15bG9nLmNvbQ=="><i class="fa fa-running fa-fw"></i>跑步 | running</span></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索 | search
         </a>
@@ -171,7 +174,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ChatBI-%E8%AF%84%E6%B5%8B%E6%96%B9%E6%A1%88%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.</span> <span class="nav-text">ChatBI 评测方案设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-%E6%80%9D%E8%B7%AF"><span class="nav-number">1.1.</span> <span class="nav-text">一. 思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%A0%B8%E5%BF%83%E6%B5%81%E7%A8%8B"><span class="nav-number">1.1.1.</span> <span class="nav-text">1. 核心流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%85%B3%E9%94%AE%E7%BB%84%E4%BB%B6"><span class="nav-number">1.1.2.</span> <span class="nav-text">2. 关键组件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-%E8%AF%84%E6%B5%8B%E4%BD%93%E7%B3%BB"><span class="nav-number">1.2.</span> <span class="nav-text">二. 评测体系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E8%AF%84%E6%B5%8B%E7%9B%AE%E6%A0%87"><span class="nav-number">1.2.1.</span> <span class="nav-text">1. 评测目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%A0%B8%E5%BF%83%E9%AA%8C%E8%AF%81%E7%BB%B4%E5%BA%A6"><span class="nav-number">1.2.2.</span> <span class="nav-text">2. 核心验证维度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89-Datasets"><span class="nav-number">1.3.</span> <span class="nav-text">三. Datasets</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Datasets-json"><span class="nav-number">1.3.1.</span> <span class="nav-text">Datasets .json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chatbi-result-json"><span class="nav-number">1.3.2.</span> <span class="nav-text">chatbi_result .json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Evaluation-Metrics-json"><span class="nav-number">1.3.3.</span> <span class="nav-text">Evaluation Metrics .json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%94%99%E8%AF%AF%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.3.4.</span> <span class="nav-text">错误类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#json%E6%A0%BC%E5%BC%8F%E7%A4%BA%E4%BE%8B"><span class="nav-number">1.3.5.</span> <span class="nav-text">json格式示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B-%E6%A1%86%E6%9E%B6%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.4.</span> <span class="nav-text">四. 框架实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%9A%E5%8A%A1%E5%AD%97%E5%85%B8%E6%95%B4%E7%90%86-%E6%97%B6%E9%97%B4%E8%8C%83%E5%9B%B4"><span class="nav-number">1.4.1.</span> <span class="nav-text">业务字典整理_时间范围</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#json-schema"><span class="nav-number">1.4.2.</span> <span class="nav-text">json_schema</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BA%E5%AE%9A%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B6-fixed-conditions"><span class="nav-number">1.4.3.</span> <span class="nav-text">固定查询条件 (fixed_conditions)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B6-dynamic-conditions"><span class="nav-number">1.4.4.</span> <span class="nav-text">动态查询条件 (dynamic_conditions)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E7%94%9F%E6%88%90%E5%80%BC%E7%9A%84%E5%AD%97%E6%AE%B5-random-value-fields"><span class="nav-number">1.4.5.</span> <span class="nav-text">随机生成值的字段 (random_value_fields)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E8%AF%A2%E6%8C%87%E6%A0%87-query-indicators"><span class="nav-number">1.4.6.</span> <span class="nav-text">查询指标 (query_indicators)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#datasets-generate-prompt"><span class="nav-number">1.4.7.</span> <span class="nav-text">datasets_generate_prompt</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E4%BC%BC%E9%97%AE%E9%A2%98%E7%94%9F%E6%88%90prompt"><span class="nav-number">1.5.</span> <span class="nav-text">相似问题生成prompt</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-%E6%80%9D%E8%B7%AF"><span class="nav-number">1.</span> <span class="nav-text">一. 思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%A0%B8%E5%BF%83%E6%B5%81%E7%A8%8B"><span class="nav-number">1.1.</span> <span class="nav-text">1. 核心流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%85%B3%E9%94%AE%E7%BB%84%E4%BB%B6"><span class="nav-number">1.2.</span> <span class="nav-text">2. 关键组件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-%E8%AF%84%E6%B5%8B%E4%BD%93%E7%B3%BB"><span class="nav-number">2.</span> <span class="nav-text">二. 评测体系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E8%AF%84%E6%B5%8B%E7%9B%AE%E6%A0%87"><span class="nav-number">2.1.</span> <span class="nav-text">1. 评测目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%A0%B8%E5%BF%83%E9%AA%8C%E8%AF%81%E7%BB%B4%E5%BA%A6"><span class="nav-number">2.2.</span> <span class="nav-text">2. 核心验证维度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89-Datasets"><span class="nav-number">3.</span> <span class="nav-text">三. Datasets</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Datasets-json"><span class="nav-number">3.1.</span> <span class="nav-text">Datasets .json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chatbi-result-json"><span class="nav-number">3.2.</span> <span class="nav-text">chatbi_result .json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Evaluation-Metrics-json"><span class="nav-number">3.3.</span> <span class="nav-text">Evaluation Metrics .json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%94%99%E8%AF%AF%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.4.</span> <span class="nav-text">错误类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#json%E6%A0%BC%E5%BC%8F%E7%A4%BA%E4%BE%8B"><span class="nav-number">3.5.</span> <span class="nav-text">json格式示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B-%E6%A1%86%E6%9E%B6%E5%AE%9E%E7%8E%B0"><span class="nav-number">4.</span> <span class="nav-text">四. 框架实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%9A%E5%8A%A1%E5%AD%97%E5%85%B8%E6%95%B4%E7%90%86-%E6%97%B6%E9%97%B4%E8%8C%83%E5%9B%B4"><span class="nav-number">4.1.</span> <span class="nav-text">业务字典整理_时间范围</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#json-schema"><span class="nav-number">4.2.</span> <span class="nav-text">json_schema</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BA%E5%AE%9A%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B6-fixed-conditions"><span class="nav-number">4.3.</span> <span class="nav-text">固定查询条件 (fixed_conditions)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B6-dynamic-conditions"><span class="nav-number">4.4.</span> <span class="nav-text">动态查询条件 (dynamic_conditions)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E7%94%9F%E6%88%90%E5%80%BC%E7%9A%84%E5%AD%97%E6%AE%B5-random-value-fields"><span class="nav-number">4.5.</span> <span class="nav-text">随机生成值的字段 (random_value_fields)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E8%AF%A2%E6%8C%87%E6%A0%87-query-indicators"><span class="nav-number">4.6.</span> <span class="nav-text">查询指标 (query_indicators)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#datasets-generate-prompt"><span class="nav-number">4.7.</span> <span class="nav-text">datasets_generate_prompt</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E4%BC%BC%E9%97%AE%E9%A2%98%E7%94%9F%E6%88%90prompt"><span class="nav-number">5.</span> <span class="nav-text">相似问题生成prompt</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -204,13 +207,13 @@
 </div>
   <div class="links-of-author animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/xsoway" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xsoway" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3hzb3dheQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xsoway"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:xulanzhong521@gmail.com" title="E-Mail → mailto:xulanzhong521@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <span class="exturl" data-url="bWFpbHRvOnh1bGFuemhvbmc1MjFAZ21haWwuY29t" title="E-Mail → mailto:xulanzhong521@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
       </span>
       <span class="links-of-author-item">
-        <a href="https://t.me/AlanHsu521" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;AlanHsu521" rel="noopener me" target="_blank"><i class="fab fa-telegram fa-fw"></i>Telegram</a>
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL0FsYW5Ic3U1MjE=" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;AlanHsu521"><i class="fab fa-telegram fa-fw"></i>Telegram</span>
       </span>
       <span class="links-of-author-item">
         <a href="https://xmylog.com/" title="Blog → https:&#x2F;&#x2F;xmylog.com" rel="noopener me"><i class="fa fa-rss fa-fw"></i>Blog</a>
@@ -297,7 +300,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="ChatBI 评测方案设计 | X·myLog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="ChatBI 评测方案设计,用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -319,7 +322,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-07-29 14:13:27" itemprop="dateModified" datetime="2025-07-29T14:13:27+08:00">2025-07-29</time>
+      <time title="修改时间：2025-07-29 15:06:05" itemprop="dateModified" datetime="2025-07-29T15:06:05+08:00">2025-07-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -363,6 +366,7 @@
     </span>
 </div>
 
+            <div class="post-description">ChatBI 评测方案设计,用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成</div>
 
 
           
@@ -382,11 +386,9 @@
     
     <div class="post-body" itemprop="articleBody"><blockquote class="blockquote-center" style="background-color: #e0f7fa
 ; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;">Life is not what you have gained, but what you have done !</blockquote>
+# ChatBI 评测方案设计
 
-
-<h1 id="ChatBI-评测方案设计"><a href="#ChatBI-评测方案设计" class="headerlink" title="ChatBI 评测方案设计"></a>ChatBI 评测方案设计</h1><h2 id="一-思路"><a href="#一-思路" class="headerlink" title="一. 思路"></a>一. 思路</h2><h3 id="1-核心流程"><a href="#1-核心流程" class="headerlink" title="1. 核心流程"></a>1. 核心流程</h3><p>用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成</p>
-<span id="more"></span>
-
+<h2 id="一-思路"><a href="#一-思路" class="headerlink" title="一. 思路"></a>一. 思路</h2><h3 id="1-核心流程"><a href="#1-核心流程" class="headerlink" title="1. 核心流程"></a>1. 核心流程</h3><p>用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成</p>
 <pre><code class="highlight mermaid">flowchart LR
     A[用户输入自然语言问题] --&gt; B(ChatBI 文本解析)
     B --&gt; C&#123;Text-to-SQL 转换&#125;
@@ -724,7 +726,7 @@
       <a href="https://xmylog.com/2025/07/05/llm-eval-chatbi-test-design/" title="ChatBI 评测方案设计">https://xmylog.com/2025/07/05/llm-eval-chatbi-test-design/</a>
   </li>
   <li class="post-copyright-license">
-      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -852,7 +854,7 @@ setInterval("createtime()",250);
   <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
-  <a href="https://github.com/xsoway" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL3hzb3dheQ==" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
