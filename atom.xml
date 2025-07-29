@@ -46,7 +46,7 @@
     <link href="https://xmylog.com/2025/07/25/llm-eval-metrics/"/>
     <id>https://xmylog.com/2025/07/25/llm-eval-metrics/</id>
     <published>2025-07-25T05:42:15.000Z</published>
-    <updated>2025-07-29T05:47:13.641Z</updated>
+    <updated>2025-07-29T05:47:20.299Z</updated>
     
     
     <summary type="html">模型评测 意图识别 关键指标详解 -&gt; 准确率,精确率,召回率,F1分数</summary>
@@ -61,6 +61,37 @@
     <category term="LLM_eval" scheme="https://xmylog.com/tags/LLM-eval/"/>
     
     <category term="模型评测" scheme="https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ChatBI 评测方案设计</title>
+    <link href="https://xmylog.com/2025/07/05/llm-eval-chatbi-test-design/"/>
+    <id>https://xmylog.com/2025/07/05/llm-eval-chatbi-test-design/</id>
+    <published>2025-07-05T06:09:45.000Z</published>
+    <updated>2025-07-29T06:13:27.012Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot; style=&quot;background-color: #e0f7fa
+; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;&quot;&gt;Life is not what you have gained, but what you have done !&lt;/blockquote&gt;
+
+
+&lt;h1 id=&quot;ChatBI-评测方案设计&quot;&gt;&lt;a href=&quot;#ChatBI-评测方案设计&quot; class=&quot;headerlink&quot; title=&quot;ChatBI 评测方案设计&quot;&gt;&lt;/a&gt;ChatBI 评测方案设计&lt;/h1&gt;&lt;h2 id=&quot;一-思路&quot;&gt;&lt;a href=&quot;#一-思路&quot; class=&quot;headerlink&quot; title=&quot;一. 思路&quot;&gt;&lt;/a&gt;一. 思路&lt;/h2&gt;&lt;h3 id=&quot;1-核心流程&quot;&gt;&lt;a href=&quot;#1-核心流程&quot; class=&quot;headerlink&quot; title=&quot;1. 核心流程&quot;&gt;&lt;/a&gt;1. 核心流程&lt;/h3&gt;&lt;p&gt;用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术整理" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
+    
+    <category term="模型评测" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
+    
+    <category term="chatbi" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/chatbi/"/>
+    
+    
+    <category term="chatbi" scheme="https://xmylog.com/tags/chatbi/"/>
+    
+    <category term="LLM_eval" scheme="https://xmylog.com/tags/LLM-eval/"/>
+    
+    <category term="测试方案" scheme="https://xmylog.com/tags/%E6%B5%8B%E8%AF%95%E6%96%B9%E6%A1%88/"/>
     
   </entry>
   

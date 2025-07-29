@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xmylog.com/2025/07/05/llm-eval-chatbi-test-design/</loc>
+    
+    <lastmod>2025-07-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xmylog.com/2025/07/25/llm-eval-metrics/</loc>
     
     <lastmod>2025-07-29</lastmod>
@@ -74,7 +83,42 @@
 
   
   <url>
+    <loc>https://xmylog.com/tags/%E7%94%98%E5%8D%97/</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xmylog.com/tags/%E8%87%AA%E9%A9%BE/</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xmylog.com/tags/%E6%9A%91%E5%81%87/</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xmylog.com/tags/chatbi/</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://xmylog.com/tags/LLM-eval/</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xmylog.com/tags/%E6%B5%8B%E8%AF%95%E6%96%B9%E6%A1%88/</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -101,38 +145,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://xmylog.com/tags/%E7%94%98%E5%8D%97/</loc>
-    <lastmod>2025-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xmylog.com/tags/%E8%87%AA%E9%A9%BE/</loc>
-    <lastmod>2025-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xmylog.com/tags/%E6%9A%91%E5%81%87/</loc>
-    <lastmod>2025-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</loc>
+    <loc>https://xmylog.com/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/</loc>
+    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -146,14 +169,21 @@
   </url>
   
   <url>
-    <loc>https://xmylog.com/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/</loc>
+    <loc>https://xmylog.com/categories/%E8%87%AA%E9%A9%BE/</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xmylog.com/categories/%E8%87%AA%E9%A9%BE/</loc>
+    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/chatbi/</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
