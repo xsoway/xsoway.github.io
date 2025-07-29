@@ -1,7 +1,7 @@
-https://xmylog.com/2025/07/05/llm-eval-chatbi-test-design/
-https://xmylog.com/2025/07/25/llm-eval-metrics/
-https://xmylog.com/2025/07/27/ganan-journey-2025-7/
-https://xmylog.com/2025/06/28/xmylog-new-online/
+https://xmylog.com/undefined/2025/58196/
+https://xmylog.com/undefined/2025/34583/
+https://xmylog.com/undefined/2025/43808/
+https://xmylog.com/undefined/2025/21655/
 https://xmylog.com/photos/index.html
 https://xmylog.com/about/index.html
 https://xmylog.com/tags/index.html
@@ -13,9 +13,9 @@ https://xmylog.com/tags/%E6%9A%91%E5%81%87/
 https://xmylog.com/tags/chatbi/
 https://xmylog.com/tags/LLM-eval/
 https://xmylog.com/tags/%E6%B5%8B%E8%AF%95%E6%96%B9%E6%A1%88/
+https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/
 https://xmylog.com/tags/hexo/
 https://xmylog.com/tags/xmylog/
-https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/
 https://xmylog.com/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/
 https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/
 https://xmylog.com/categories/%E8%87%AA%E9%A9%BE/
