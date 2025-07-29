@@ -204,6 +204,767 @@ graph LR
       </tags>
   </entry>
   <entry>
+    <title>模型评测 _意图识别_ 关键指标详解</title>
+    <url>/2025/07/25/llm-eval-metrics/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">时光荏苒，珍惜当下</blockquote>
+
+<h1 id="模型评测-意图识别-关键指标详解"><a href="#模型评测-意图识别-关键指标详解" class="headerlink" title="模型评测 意图识别 关键指标详解"></a>模型评测 <em>意图识别</em> 关键指标详解</h1><h3 id="🧠-四个关键指标的通俗解释"><a href="#🧠-四个关键指标的通俗解释" class="headerlink" title="🧠 四个关键指标的通俗解释"></a><strong>🧠 四个关键指标的通俗解释</strong></h3><table>
+<thead>
+<tr>
+<th><strong>指标</strong></th>
+<th><strong>英文名</strong></th>
+<th><strong>通俗理解</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>准确率</td>
+<td>Accuracy</td>
+<td>总体判断对的比例（考试得了几分）</td>
+</tr>
+<tr>
+<td>精确率</td>
+<td>Precision</td>
+<td>你说是对的里，有多少是真的对（你说有癌的病人里，真的有癌的比例）</td>
+</tr>
+<tr>
+<td>召回率</td>
+<td>Recall</td>
+<td>真正该判断出来的，有多少被你找出来了（所有癌症病人里，你找出来多少）</td>
+</tr>
+<tr>
+<td>F1分数</td>
+<td>F1-score</td>
+<td>精确率和召回率的加权平均，是个综合分数</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="🕵️‍♀️-什么时候用这些指标？"><a href="#🕵️‍♀️-什么时候用这些指标？" class="headerlink" title="🕵️‍♀️ 什么时候用这些指标？"></a><strong>🕵️‍♀️ 什么时候用这些指标？</strong></h3><table>
+<thead>
+<tr>
+<th><strong>场景类型</strong></th>
+<th><strong>推荐使用指标</strong></th>
+<th><strong>为什么</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类别平衡</td>
+<td>准确率</td>
+<td>比如识别猫狗照片，各类样本数差不多</td>
+</tr>
+<tr>
+<td>正负样本极度不平衡</td>
+<td>精确率、召回率、F1</td>
+<td>比如癌症检测、欺诈识别，阳性样本极少，准确率可能误导</td>
+</tr>
+<tr>
+<td>希望少错杀</td>
+<td>精确率</td>
+<td>比如自动封号系统，不能乱封用户</td>
+</tr>
+<tr>
+<td>希望少漏报</td>
+<td>召回率</td>
+<td>比如安全报警系统，希望尽可能别漏掉真正的异常</td>
+</tr>
+<tr>
+<td>想要两者平衡</td>
+<td>F1-score</td>
+<td>综合考虑不要漏太多也不要乱报</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="✅-如何用它们分析模型效果？"><a href="#✅-如何用它们分析模型效果？" class="headerlink" title="✅ 如何用它们分析模型效果？"></a><strong>✅ 如何用它们分析模型效果？</strong></h3><p>假设你对两个模型做了评估：</p>
+<table>
+<thead>
+<tr>
+<th><strong>模型</strong></th>
+<th><strong>精确率</strong></th>
+<th><strong>召回率</strong></th>
+<th><strong>F1分数</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>模型A</td>
+<td>90%</td>
+<td>50%</td>
+<td>64%</td>
+</tr>
+<tr>
+<td>模型B</td>
+<td>70%</td>
+<td>70%</td>
+<td>70%</td>
+</tr>
+</tbody></table>
+<p>分析：</p>
+<ul>
+<li>模型A 很谨慎，只在非常确定的情况下才说“这是阳性”，所以<strong>精确率高</strong>，但<strong>召回率低</strong>，漏掉很多。</li>
+<li>模型B 更积极地判断，<strong>召回率提高</strong>了，但<strong>精确率下降</strong>了一点点，整体的 <strong>F1更好</strong>，说明更平衡。</li>
+</ul>
+<hr>
+<h3 id="📌-总结一句话"><a href="#📌-总结一句话" class="headerlink" title="📌 总结一句话"></a><strong>📌 总结一句话</strong></h3><blockquote>
+<p><strong>准确率看整体对错，精确率看你说对的有多准，召回率看你能找全多少，F1看你综合表现。</strong></p>
+</blockquote>
+<hr>
+<h2 id="实例-多分类意图识别（3类）"><a href="#实例-多分类意图识别（3类）" class="headerlink" title="实例: 多分类意图识别（3类）"></a><strong>实例: 多分类意图识别（3类）</strong></h2><p>三类分别是：</p>
+<ul>
+<li>无意图（no_intent）</li>
+<li>C1意图（c1_lead）</li>
+<li>C2意图（c2_lead）</li>
+</ul>
+<hr>
+<h4 id="✅-一、用哪些指标合适？"><a href="#✅-一、用哪些指标合适？" class="headerlink" title="✅ 一、用哪些指标合适？"></a><strong>✅ 一、用哪些指标合适？</strong></h4><p>在多分类意图识别中，推荐你重点关注这几个指标：</p>
+<table>
+<thead>
+<tr>
+<th><strong>指标</strong></th>
+<th><strong>是否推荐</strong></th>
+<th><strong>原因说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>准确率 Accuracy</strong></td>
+<td>✅ 基础指标，看整体预测有多准，但容易&#x3D;&#x3D;被类分布不均误导&#x3D;&#x3D;</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>精确率 Precision</strong></td>
+<td>✅ 看每个意图你说对的有多少是真的</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>召回率 Recall</strong></td>
+<td>✅ 看每个意图里你能找出多少</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>F1-score</strong></td>
+<td>✅ 综合考虑精确率和召回率的平衡</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="🧪-举个例子（假设有100条测试样本）"><a href="#🧪-举个例子（假设有100条测试样本）" class="headerlink" title="🧪 举个例子（假设有100条测试样本）"></a><strong>🧪 举个例子（假设有100条测试样本）</strong></h4><table>
+<thead>
+<tr>
+<th><strong>实际 &#x2F; 预测</strong></th>
+<th><strong>无意图</strong></th>
+<th><strong>C1意图</strong></th>
+<th><strong>C2意图</strong></th>
+<th><strong>合计</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无意图</td>
+<td>30</td>
+<td>3</td>
+<td>2</td>
+<td>35</td>
+</tr>
+<tr>
+<td>C1意图</td>
+<td>4</td>
+<td>25</td>
+<td>1</td>
+<td>30</td>
+</tr>
+<tr>
+<td>C2意图</td>
+<td>3</td>
+<td>2</td>
+<td>30</td>
+<td>35</td>
+</tr>
+</tbody></table>
+<p>从这个混淆矩阵可以看出：</p>
+<ul>
+<li><p>总共预测对的 &#x3D; 30（无意图）+ 25（C1）+ 30（C2） &#x3D; 85  → <strong>准确率 &#x3D; 85%</strong></p>
+</li>
+<li><p>C1的 <strong>精确率 &#x3D; 25 &#x2F; (25 + 3 + 2) &#x3D; 25 &#x2F; 30 &#x3D; 83.3%</strong></p>
+</li>
+<li><p>C1的 <strong>召回率 &#x3D; 25 &#x2F; (25 + 4 + 1) &#x3D; 25 &#x2F; 30 &#x3D; 83.3%</strong></p>
+</li>
+<li><p>C1的 <strong>F1 &#x3D; 2 × (0.833 × 0.833) &#x2F; (0.833 + 0.833) &#x3D; 2 × 0.694 &#x2F; 1.666 ≈ 0.833（即 83.3%）</strong></p>
+</li>
+<li><p>&#x3D;&#x3D;F1 &#x3D; 2 × (Precision × Recall) &#x2F; (Precision + Recall)&#x3D;&#x3D;</p>
+</li>
+</ul>
+<p>你可以对每个类都这样计算精确率、召回率、F1-score，然后看哪一类模型识别得不好，是否存在误判为“无意图”等问题。</p>
+<hr>
+<h4 id="📊-实际怎么分析和使用这些指标？"><a href="#📊-实际怎么分析和使用这些指标？" class="headerlink" title="📊 实际怎么分析和使用这些指标？"></a><strong>📊 实际怎么分析和使用这些指标？</strong></h4><h5 id="1-准确率可以看整体是否可用"><a href="#1-准确率可以看整体是否可用" class="headerlink" title="1. 准确率可以看整体是否可用"></a><strong>1.</strong> <strong>准确率可以看整体是否可用</strong></h5><blockquote>
+<p>比如训练了一个模型，准确率从 60% 提升到 85%，说明整体识别能力有进步。</p>
+</blockquote>
+<h5 id="2-F1-score-分析“弱类”"><a href="#2-F1-score-分析“弱类”" class="headerlink" title="2. F1-score 分析“弱类”"></a><strong>2.</strong> <strong>F1-score 分析“弱类”</strong></h5><blockquote>
+<p>比如 C2意图 的 F1 比 C1意图 低很多，那可能是你训练数据中 C2 不够，或者模型容易把它误判为 无意图。</p>
+</blockquote>
+<h5 id="3-精确率-vs-召回率的权衡"><a href="#3-精确率-vs-召回率的权衡" class="headerlink" title="3. 精确率 vs 召回率的权衡"></a><strong>3.</strong> <strong>精确率 vs 召回率的权衡</strong></h5><ul>
+<li><strong>高精确率、低召回率</strong>：你只预测最有把握的，比如只说特别明显的 C2 是 C2，漏掉了一些边界样本；</li>
+<li><strong>高召回率、低精确率</strong>：你把很多都预测为 C2，但有些其实是错的，模型激进了；</li>
+<li><strong>F1-score</strong> 可以看整体平衡性。</li>
+</ul>
+<h5 id="📌-建议这样做评估"><a href="#📌-建议这样做评估" class="headerlink" title="📌 建议这样做评估"></a><strong>📌 建议这样做评估</strong></h5><p>评测数据_dataset</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;accuracy&quot;: 0.85,</span><br><span class="line">  &quot;intent_results&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;name&quot;: &quot;no_intent&quot;,</span><br><span class="line">      &quot;precision&quot;: 0.91,</span><br><span class="line">      &quot;recall&quot;: 0.86,</span><br><span class="line">      &quot;f1_score&quot;: 0.88</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;name&quot;: &quot;c1_lead&quot;,</span><br><span class="line">      &quot;precision&quot;: 0.83,</span><br><span class="line">      &quot;recall&quot;: 0.83,</span><br><span class="line">      &quot;f1_score&quot;: 0.83</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;name&quot;: &quot;c2_lead&quot;,</span><br><span class="line">      &quot;precision&quot;: 0.80,</span><br><span class="line">      &quot;recall&quot;: 0.86,</span><br><span class="line">      &quot;f1_score&quot;: 0.83</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样你就可以清楚地分析每个意图的分类表现，看到弱点在哪里（比如哪类精度低或召回低），进而优化数据或模型策略。</p>
+<hr>
+<h3 id="✅-二、F1-是什么？为啥有它？"><a href="#✅-二、F1-是什么？为啥有它？" class="headerlink" title="✅ 二、F1 是什么？为啥有它？"></a><strong>✅ 二、F1 是什么？为啥有它？</strong></h3><p>通俗地说：</p>
+<ul>
+<li>精确率高，但召回低：你说得很准，<strong>但只说了一小部分</strong>；</li>
+<li>召回高，但精确率低：你说了很多，但正确的很少；</li>
+<li>F1-score 是这两者的“<strong>综合评分</strong>”，告诉你：你既不能瞎猜，也不能太保守。</li>
+</ul>
+<p>就像考试时：</p>
+<ul>
+<li>你写的答案对的比例是精确率；</li>
+<li>所有应该答对的题中，你做对的比例是召回率；</li>
+<li>F1 就是你总体的答题能力。</li>
+</ul>
+<hr>
+<h3 id="✅-三、F1-score-是高好还是低好？"><a href="#✅-三、F1-score-是高好还是低好？" class="headerlink" title="✅ 三、F1-score 是高好还是低好？"></a><strong>✅ 三、F1-score 是高好还是低好？</strong></h3><ul>
+<li><strong>高好！F1 越高越说明你的模型“全面且可靠”</strong>。</li>
+<li><strong>F1 &#x3D; 1（100%）</strong> 表示：你预测得既准又全，非常理想。</li>
+<li><strong>F1 &#x3D; 0</strong> 表示：完全没预测对。</li>
+</ul>
+<hr>
+<h3 id="✅-四、如何分析-F1-的高低？"><a href="#✅-四、如何分析-F1-的高低？" class="headerlink" title="✅ 四、如何分析 F1 的高低？"></a><strong>✅ 四、如何分析 F1 的高低？</strong></h3><hr>
+<h4 id="举例：你有三个类的-F1-分数"><a href="#举例：你有三个类的-F1-分数" class="headerlink" title="举例：你有三个类的 F1 分数"></a><strong>举例：你有三个类的 F1 分数</strong></h4><pre><code class="highlight mermaid">quadrantChart
+    title 精确率(Precision) vs 召回率(Recall) 矩阵
+    x-axis &quot;低召回率&quot; --&gt; &quot;高召回率&quot;
+    y-axis &quot;低精确率&quot; --&gt; &quot;高精确率&quot;
+    quadrant-1 &quot;F1高-理想模型,识别准确&quot;
+    quadrant-2 &quot;F1中-误判很少,漏掉很多&quot;
+    quadrant-3 &quot;F1低-漏掉很多,误判很多&quot;
+    quadrant-4 &quot;F1中-漏掉很少,误判很多&quot;</code></pre>
+
+
+
+<hr>
+<table>
+<thead>
+<tr>
+<th><strong>意图</strong></th>
+<th><strong>Precision</strong></th>
+<th><strong>Recall</strong></th>
+<th><strong>F1</strong></th>
+<th><strong>分析建议</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>no_intent</td>
+<td>0.91</td>
+<td>0.86</td>
+<td>0.88</td>
+<td>模型在这类上表现很好</td>
+</tr>
+<tr>
+<td>c1_lead</td>
+<td>0.83</td>
+<td>0.83</td>
+<td>0.83</td>
+<td>表现稳定，可以继续优化</td>
+</tr>
+<tr>
+<td>c2_lead</td>
+<td>0.60</td>
+<td>0.40</td>
+<td>0.48</td>
+<td>问题明显：召回太低，可能漏报</td>
+</tr>
+</tbody></table>
+<p>分析建议：</p>
+<ul>
+<li><p><strong>如果 F1 明显低</strong>：</p>
+<ul>
+<li>可能样本数量不够；</li>
+<li>或训练数据分布不均；</li>
+<li>或模型对这个意图区分能力差；</li>
+</ul>
+</li>
+<li><p><strong>进一步看 Precision 和 Recall 谁低</strong>，找出是<strong>乱猜</strong>还是<strong>漏报</strong>。</p>
+</li>
+</ul>
+<hr>
+<h4 id="✅-五、总结一句话"><a href="#✅-五、总结一句话" class="headerlink" title="✅ 五、总结一句话"></a><strong>✅ 五、总结一句话</strong></h4><blockquote>
+<p><strong>F1 越高越好，是判断单个意图识别是否“又准又全”的关键指标。</strong></p>
+</blockquote>
+<hr>
+<h1 id="指标结果-报告-分析"><a href="#指标结果-报告-分析" class="headerlink" title="指标结果(报告)分析"></a><strong>指标结果(报告)分析</strong></h1><h2 id="✅-一、术语回顾（以-C1-意图为例）"><a href="#✅-一、术语回顾（以-C1-意图为例）" class="headerlink" title="✅ 一、术语回顾（以 C1 意图为例）"></a><strong>✅ 一、术语回顾（以 C1 意图为例）</strong></h2><ul>
+<li><strong>精确率（Precision）</strong>：预测为 C1 的样本中，有多少是真的 C1？</li>
+<li><strong>召回率（Recall）</strong>：所有真实是 C1 的样本中，有多少被你预测对了？</li>
+<li><strong>F1-score</strong>：精确率和召回率的综合评分。</li>
+</ul>
+<hr>
+<h2 id="✅-二、四种组合场景分析"><a href="#✅-二、四种组合场景分析" class="headerlink" title="✅ 二、四种组合场景分析"></a><strong>✅ 二、四种组合场景分析</strong></h2><hr>
+<h3 id="✅-1-精确率高-召回率高-⇒-F1-高"><a href="#✅-1-精确率高-召回率高-⇒-F1-高" class="headerlink" title="✅ 1. 精确率高 + 召回率高 ⇒ F1 高"></a><strong>✅ 1.</strong> <strong>精确率高 + 召回率高 ⇒ F1 高</strong></h3><h4 id="✅说明"><a href="#✅说明" class="headerlink" title="✅说明"></a><strong>✅说明</strong></h4><ul>
+<li>你预测为 C1 的，大多数是对的（Precision 高）</li>
+<li>你把该找的 C1 样本几乎都找到了（Recall 高）</li>
+</ul>
+<h4 id="✅模型状态"><a href="#✅模型状态" class="headerlink" title="✅模型状态"></a><strong>✅模型状态</strong></h4><blockquote>
+<p>模型表现理想，识别准确、覆盖也全。</p>
+</blockquote>
+<h4 id="✅调优建议"><a href="#✅调优建议" class="headerlink" title="✅调优建议"></a><strong>✅调优建议</strong></h4><ul>
+<li>保持现状，可能进一步通过模型微调、增加边界样本来提升鲁棒性。</li>
+</ul>
+<hr>
+<h3 id="⚠️-2-精确率低-召回率高-⇒-F1-中等偏低"><a href="#⚠️-2-精确率低-召回率高-⇒-F1-中等偏低" class="headerlink" title="⚠️ 2. 精确率低 + 召回率高 ⇒ F1 中等偏低"></a><strong>⚠️ 2.</strong> <strong>精确率低 + 召回率高 ⇒ F1 中等偏低</strong></h3><h4 id="❗说明"><a href="#❗说明" class="headerlink" title="❗说明"></a><strong>❗说明</strong></h4><ul>
+<li>你预测为 C1 的样本，很多是错的（Precision 低）</li>
+<li>但你确实把大部分 C1 都找出来了（Recall 高）</li>
+</ul>
+<h4 id="📌可能原因"><a href="#📌可能原因" class="headerlink" title="📌可能原因"></a><strong>📌可能原因</strong></h4><ul>
+<li>模型“太激进”，宁可错杀也不放过；</li>
+<li>把很多非 C1 样本误判为 C1（<strong>误报多，假阳性多</strong>）。</li>
+</ul>
+<h4 id="✅调优建议-1"><a href="#✅调优建议-1" class="headerlink" title="✅调优建议"></a><strong>✅调优建议</strong></h4><table>
+<thead>
+<tr>
+<th><strong>方向</strong></th>
+<th><strong>操作</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1️⃣ 优化数据质量</td>
+<td>- 给模型更多 <strong>“负样本”（非 C1）</strong>，让它知道哪些不是 C1</td>
+</tr>
+<tr>
+<td>2️⃣ 提高决策门槛</td>
+<td>- 调高分类阈值，使模型只有“非常确定”才判为 C1</td>
+</tr>
+<tr>
+<td>3️⃣ 调整损失函数</td>
+<td>- 使用 Focal Loss 等惩罚误报的函数</td>
+</tr>
+<tr>
+<td>4️⃣ 规则辅助</td>
+<td>- 加一些后置逻辑判断或规则补充识别逻辑</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="⚠️-3-精确率高-召回率低-⇒-F1-中等偏低"><a href="#⚠️-3-精确率高-召回率低-⇒-F1-中等偏低" class="headerlink" title="⚠️ 3. 精确率高 + 召回率低 ⇒ F1 中等偏低"></a><strong>⚠️ 3.</strong> <strong>精确率高 + 召回率低 ⇒ F1 中等偏低</strong></h3><h4 id="❗说明-1"><a href="#❗说明-1" class="headerlink" title="❗说明"></a><strong>❗说明</strong></h4><ul>
+<li>你说 C1 的时候基本都对（Precision 高）</li>
+<li>但很多真正的 C1 你没说出来（Recall 低）</li>
+</ul>
+<h4 id="📌可能原因-1"><a href="#📌可能原因-1" class="headerlink" title="📌可能原因"></a><strong>📌可能原因</strong></h4><ul>
+<li>模型“太保守”，只有特别像的样本才判断为 C1；</li>
+<li>导致漏报多（<strong>假阴性多</strong>）。</li>
+</ul>
+<h4 id="✅调优建议-2"><a href="#✅调优建议-2" class="headerlink" title="✅调优建议"></a><strong>✅调优建议</strong></h4><table>
+<thead>
+<tr>
+<th><strong>方向</strong></th>
+<th><strong>操作</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1️⃣ 增加多样性样本</td>
+<td>- 丰富“边缘 C1 样本”，让模型知道哪些样本也属于 C1</td>
+</tr>
+<tr>
+<td>2️⃣ 降低分类门槛</td>
+<td>- 放松模型判断条件，让更多潜在 C1 被识别出来</td>
+</tr>
+<tr>
+<td>3️⃣ 数据增强</td>
+<td>- 使用语义变换、同义替换等提升 Recall</td>
+</tr>
+<tr>
+<td>4️⃣ 多模型融合</td>
+<td>- 融合更激进模型补充召回，做 Recall 提升模型</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="❌-4-精确率低-召回率低-⇒-F1-很差"><a href="#❌-4-精确率低-召回率低-⇒-F1-很差" class="headerlink" title="❌ 4. 精确率低 + 召回率低 ⇒ F1 很差"></a><strong>❌ 4.</strong> <strong>精确率低 + 召回率低 ⇒ F1 很差</strong></h3><h4 id="❗说明-2"><a href="#❗说明-2" class="headerlink" title="❗说明"></a><strong>❗说明</strong></h4><ul>
+<li>模型在这个类别表现很差，基本是乱猜；</li>
+<li>不但预测错多，而且漏得也多。</li>
+</ul>
+<h4 id="✅调优建议-3"><a href="#✅调优建议-3" class="headerlink" title="✅调优建议"></a><strong>✅调优建议</strong></h4><table>
+<thead>
+<tr>
+<th><strong>方向</strong></th>
+<th><strong>操作</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据</td>
+<td>- 检查是否样本太少或标签错误</td>
+</tr>
+<tr>
+<td>特征</td>
+<td>- 看是否特征区分度不够，需要引入上下文、意图词等</td>
+</tr>
+<tr>
+<td>模型结构</td>
+<td>- 换更强的模型，如 BERT -&gt; RoBERTa 或引入语义增强模块</td>
+</tr>
+<tr>
+<td>多轮策略</td>
+<td>- 引入多轮会话上下文，避免只依赖当前句子判断</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="✅-三、总结分析表"><a href="#✅-三、总结分析表" class="headerlink" title="✅ 三、总结分析表"></a><strong>✅ 三、总结分析表</strong></h2><table>
+<thead>
+<tr>
+<th><strong>情况</strong></th>
+<th><strong>分析</strong></th>
+<th><strong>建议重点</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>精确高 + 召回高</td>
+<td>理想状态</td>
+<td>保持 &amp; 微调</td>
+</tr>
+<tr>
+<td>精确低 + 召回高</td>
+<td>误报多，模型太激进</td>
+<td><strong>调高阈值 + 训练更多负样本</strong></td>
+</tr>
+<tr>
+<td>精确高 + 召回低</td>
+<td>漏报多，模型太保守</td>
+<td><strong>增加边缘样本 + 降低阈值</strong></td>
+</tr>
+<tr>
+<td>精确低 + 召回低</td>
+<td>模型几乎失效</td>
+<td><strong>检查数据 + 模型结构大调整</strong></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="✅-四、“意图识别三分类”中建议"><a href="#✅-四、“意图识别三分类”中建议" class="headerlink" title="✅ 四、“意图识别三分类”中建议"></a><strong>✅ 四、“意图识别三分类”中建议</strong></h2><ul>
+<li><strong>重点看 C1 &#x2F; C2 意图是否 Precision 低 or Recall 低</strong></li>
+<li>看是否混淆成“无意图”</li>
+<li>检查标签质量 + 多样性 + 特征词覆盖情况</li>
+</ul>
+<hr>
+<h2 id="⚠️-情况：精确率低-召回率高"><a href="#⚠️-情况：精确率低-召回率高" class="headerlink" title="⚠️ 情况：精确率低 + 召回率高"></a><strong>⚠️ 情况：精确率低 + 召回率高</strong></h2><h3 id="❓情境"><a href="#❓情境" class="headerlink" title="❓情境"></a><strong>❓情境</strong></h3><p>你训练了一个模型来识别 <strong>用户是否有 C1 买车意图</strong>（比如：想买车但还没确定品牌）。</p>
+<hr>
+<h3 id="✅-测试数据中"><a href="#✅-测试数据中" class="headerlink" title="✅ 测试数据中"></a><strong>✅ 测试数据中</strong></h3><ul>
+<li>实际 C1 意图的用户：<strong>100 个</strong></li>
+<li>实际非 C1 的用户：<strong>100 个</strong></li>
+</ul>
+<hr>
+<h3 id="🤖-模型预测结果"><a href="#🤖-模型预测结果" class="headerlink" title="🤖 模型预测结果"></a><strong>🤖 模型预测结果</strong></h3><ul>
+<li><p>模型预测为 C1 的用户：<strong>150 个</strong></p>
+<ul>
+<li>其中真正的 C1：<strong>80 个</strong></li>
+<li>错判成 C1 的（其实不是）：<strong>70 个</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="📊-指标计算"><a href="#📊-指标计算" class="headerlink" title="📊 指标计算"></a><strong>📊 指标计算</strong></h3><table>
+<thead>
+<tr>
+<th><strong>指标</strong></th>
+<th><strong>公式</strong></th>
+<th><strong>结果</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Precision 精确率</td>
+<td>80 &#x2F; 150</td>
+<td><strong>53.3%</strong> → 很多预测错了（误报多）</td>
+</tr>
+<tr>
+<td>Recall 召回率</td>
+<td>80 &#x2F; 100</td>
+<td><strong>80.0%</strong> → 绝大部分 C1 被识别出来了</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>2 × (P × R) &#x2F; (P + R)</td>
+<td>≈ <strong>64.0%</strong>（中等偏低）</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="🧠-通俗理解"><a href="#🧠-通俗理解" class="headerlink" title="🧠 通俗理解"></a><strong>🧠 通俗理解</strong></h3><blockquote>
+<p>你“见谁像买车的都说是 C1”，导致你<strong>覆盖面很广</strong>（召回率高），但很多人其实是“无意图”或“C2”被你<strong>误判成 C1</strong>（精确率低）。</p>
+</blockquote>
+<hr>
+<h3 id="🚧-风险"><a href="#🚧-风险" class="headerlink" title="🚧 风险"></a><strong>🚧 风险</strong></h3><ul>
+<li>实际上很多不是 C1 的客户（例如随便问问的）被你当成 C1 推给销售，<strong>增加了销售的无效工作量</strong>。</li>
+<li>销售可能反馈：“这个模型推的线索质量太差了，浪费时间”。</li>
+</ul>
+<hr>
+<h3 id="🛠️-如何优化？"><a href="#🛠️-如何优化？" class="headerlink" title="🛠️ 如何优化？"></a><strong>🛠️ 如何优化？</strong></h3><table>
+<thead>
+<tr>
+<th><strong>方向</strong></th>
+<th><strong>优化方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据层</td>
+<td>增加“无意图”和“C2”类别的负样本，减少混淆</td>
+</tr>
+<tr>
+<td>模型层</td>
+<td>加强模型区分 C1 和其他意图的能力</td>
+</tr>
+<tr>
+<td>阈值层</td>
+<td>提高 C1 类别的分类阈值，让模型更保守一点，不要轻易说是 C1</td>
+</tr>
+<tr>
+<td>后处理</td>
+<td>引入规则，例如“必须提到预算&#x2F;品牌&#x2F;购车需求关键词”才认为是 C1</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="实例-数据分析-完整版"><a href="#实例-数据分析-完整版" class="headerlink" title="实例: (数据分析_完整版)"></a><strong>实例: (数据分析_完整版)</strong></h2><p>我们用一组模拟数据生成了<strong>意图识别的分类结果</strong>，其中包括三类意图：<strong>C1、C2、无意图</strong>。以下是完整的分析：</p>
+<hr>
+<h3 id="✅-一、混淆矩阵结果"><a href="#✅-一、混淆矩阵结果" class="headerlink" title="✅ 一、混淆矩阵结果"></a><strong>✅ 一、混淆矩阵结果</strong></h3><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>预测为 C1</strong></th>
+<th><strong>预测为 C2</strong></th>
+<th><strong>预测为 无意图</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实际是 C1</td>
+<td><strong>7</strong></td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>实际是 C2</td>
+<td>2</td>
+<td><strong>2</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td>实际是 无意图</td>
+<td>2</td>
+<td>2</td>
+<td><strong>1</strong></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="📊-二、指标分析报告"><a href="#📊-二、指标分析报告" class="headerlink" title="📊 二、指标分析报告"></a><strong>📊 二、指标分析报告</strong></h3><table>
+<thead>
+<tr>
+<th><strong>类别</strong></th>
+<th><strong>精确率 (Precision)</strong></th>
+<th><strong>召回率 (Recall)</strong></th>
+<th><strong>F1 分数</strong></th>
+<th><strong>样本数</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C1</td>
+<td><strong>63.6%</strong></td>
+<td><strong>70.0%</strong></td>
+<td><strong>66.6%</strong></td>
+<td>10</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>33.3%</td>
+<td>40.0%</td>
+<td>36.4%</td>
+<td>5</td>
+</tr>
+<tr>
+<td>无意图</td>
+<td>33.3%</td>
+<td>20.0%</td>
+<td>25.0%</td>
+<td>5</td>
+</tr>
+<tr>
+<td><strong>宏平均</strong></td>
+<td>43.4%</td>
+<td>43.3%</td>
+<td>42.7%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>加权平均</strong></td>
+<td>48.3%</td>
+<td>50.0%</td>
+<td>48.7%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>准确率</strong></td>
+<td>-</td>
+<td>-</td>
+<td><strong>50.0%</strong></td>
+<td>20</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="🧠-三、重点解读：C1-精确率低、召回率高的情况"><a href="#🧠-三、重点解读：C1-精确率低、召回率高的情况" class="headerlink" title="🧠 三、重点解读：C1 精确率低、召回率高的情况"></a><strong>🧠 三、重点解读：C1 精确率低、召回率高的情况</strong></h3><ul>
+<li><p><strong>预测为 C1 的人有 11 个，但其中只有 7 个是真的 C1</strong></p>
+<ul>
+<li>所以 <strong>精确率低</strong>：63.6%</li>
+</ul>
+</li>
+<li><p><strong>实际 10 个 C1 中识别出了 7 个</strong></p>
+<ul>
+<li>所以 <strong>召回率高</strong>：70.0%</li>
+</ul>
+</li>
+<li><p><strong>所以 -&gt;</strong></p>
+<blockquote>
+<p>精确率低 + 召回率高 ⇒ F1 中等偏低（66.6%）</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h3 id="🧰-四、调优建议"><a href="#🧰-四、调优建议" class="headerlink" title="🧰 四、调优建议"></a><strong>🧰 四、调优建议</strong></h3><table>
+<thead>
+<tr>
+<th><strong>问题</strong></th>
+<th><strong>建议</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>模型把太多非 C1 的样本当成 C1（误报）</td>
+<td>加强 <strong>区分能力</strong>：让模型学会真正的 C1 特征，比如用户明确表达意图、车型预算、提到购买时间等</td>
+</tr>
+<tr>
+<td>精确率低</td>
+<td><strong>提升预测门槛</strong>：提高 C1 的判断阈值，避免“太容易就说是 C1”</td>
+</tr>
+<tr>
+<td>C2 和 无意图混淆严重</td>
+<td>增加无意图和 C2 的训练样本，特别是容易与 C1 混淆的那部分对话</td>
+</tr>
+<tr>
+<td>模型过度偏向 C1（可能类别不平衡）</td>
+<td>检查训练集分布，考虑加入 class_weight 或重新采样</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="🔍-五、宏平均-vs-加权平均"><a href="#🔍-五、宏平均-vs-加权平均" class="headerlink" title="🔍 五、宏平均 vs 加权平均"></a><strong>🔍 五、宏平均 vs 加权平均</strong></h3><table>
+<thead>
+<tr>
+<th><strong>类型</strong></th>
+<th><strong>含义</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>宏平均</strong></td>
+<td>所有类别一视同仁，不考虑样本数差异。适合衡量模型对每类的均衡表现。</td>
+</tr>
+<tr>
+<td><strong>加权平均</strong></td>
+<td>按样本数加权，更真实地反映整体表现。适合衡量实际平均性能。</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="✅-一、F1-分数（F1-score）"><a href="#✅-一、F1-分数（F1-score）" class="headerlink" title="✅ 一、F1 分数（F1-score）"></a><strong>✅ 一、F1 分数（F1-score）</strong></h3><h4 id="📌-定义"><a href="#📌-定义" class="headerlink" title="📌 定义"></a><strong>📌 定义</strong></h4><p>F1 是**精确率（Precision）<strong>和</strong>召回率（Recall）**的调和平均数</p>
+<h4 id="📌-作用"><a href="#📌-作用" class="headerlink" title="📌 作用"></a><strong>📌 作用</strong></h4><ul>
+<li>衡量模型的<strong>整体表现</strong>，特别在类别不平衡时，比准确率更可靠。</li>
+<li>适合用在 <strong>“不希望错过任何一个正例” 又希望 “预测要准”</strong> 的场景，比如意图识别、疾病诊断。</li>
+</ul>
+<h4 id="🎯-理解方式"><a href="#🎯-理解方式" class="headerlink" title="🎯 理解方式"></a><strong>🎯 理解方式</strong></h4><ul>
+<li><strong>F1 高</strong>：模型既<strong>预测准</strong>又<strong>找全了</strong>。</li>
+<li><strong>F1 低</strong>：说明 precision、recall 至少有一个差。</li>
+</ul>
+<h4 id="✅-你要监控-F1，特别是在"><a href="#✅-你要监控-F1，特别是在" class="headerlink" title="✅ 你要监控 F1，特别是在"></a><strong>✅ 你要监控 F1，特别是在</strong></h4><ul>
+<li>多分类任务中，<strong>每一类的识别效果</strong></li>
+<li>类别不平衡时的表现</li>
+</ul>
+<hr>
+<h3 id="✅-二、宏平均（Macro-Average）"><a href="#✅-二、宏平均（Macro-Average）" class="headerlink" title="✅ 二、宏平均（Macro Average）"></a><strong>✅ 二、宏平均（Macro Average）</strong></h3><h4 id="📌-定义-1"><a href="#📌-定义-1" class="headerlink" title="📌 定义"></a><strong>📌 定义</strong></h4><p>将每个类别的指标（如 F1、precision、recall）<strong>等权重地平均</strong>：</p>
+<h4 id="📌-特点"><a href="#📌-特点" class="headerlink" title="📌 特点"></a><strong>📌 特点</strong></h4><ul>
+<li><strong>不考虑类别数量多少</strong></li>
+<li>假设每类都一样重要（即便只有很少的样本）</li>
+</ul>
+<h4 id="🎯-使用场景"><a href="#🎯-使用场景" class="headerlink" title="🎯 使用场景"></a><strong>🎯 使用场景</strong></h4><ul>
+<li>当你希望<strong>每个意图分类都表现良好</strong>（公平性导向）</li>
+<li>特别适合 QA 系统、客服意图识别等场景</li>
+</ul>
+<hr>
+<h3 id="✅-三、加权平均（Weighted-Average）"><a href="#✅-三、加权平均（Weighted-Average）" class="headerlink" title="✅ 三、加权平均（Weighted Average）"></a><strong>✅ 三、加权平均（Weighted Average）</strong></h3><h4 id="📌-定义-2"><a href="#📌-定义-2" class="headerlink" title="📌 定义"></a><strong>📌 定义</strong></h4><p>将每个类别的指标按照该类<strong>真实样本占比加权平均</strong></p>
+<h4 id="📌-特点-1"><a href="#📌-特点-1" class="headerlink" title="📌 特点"></a><strong>📌 特点</strong></h4><ul>
+<li>更反映<strong>整体准确性</strong>。</li>
+<li>大类权重更高，小类影响小。</li>
+</ul>
+<h4 id="🎯-使用场景-1"><a href="#🎯-使用场景-1" class="headerlink" title="🎯 使用场景"></a><strong>🎯 使用场景</strong></h4><ul>
+<li>当你更关心<strong>整体性能</strong>（比如误报率、准确率）</li>
+<li>在<strong>类别分布不均</strong>（如 C1 多、无意图少）时很有用</li>
+</ul>
+<hr>
+<h3 id="✅-四、ROC-曲线-AUC"><a href="#✅-四、ROC-曲线-AUC" class="headerlink" title="✅ 四、ROC 曲线 &amp; AUC"></a><strong>✅ 四、ROC 曲线 &amp; AUC</strong></h3><h4 id="📌-什么是-ROC-曲线"><a href="#📌-什么是-ROC-曲线" class="headerlink" title="📌 什么是 ROC 曲线"></a><strong>📌 什么是 ROC 曲线</strong></h4><ul>
+<li><strong>横轴（FPR）</strong>：假正例率（把负类错分为正类）</li>
+<li><strong>纵轴（TPR）</strong>：真正例率（召回率）</li>
+<li>每一个点代表一个<strong>预测阈值</strong></li>
+</ul>
+<h4 id="📌-AUC（曲线下的面积）"><a href="#📌-AUC（曲线下的面积）" class="headerlink" title="📌 AUC（曲线下的面积）"></a><strong>📌 AUC（曲线下的面积）</strong></h4><ul>
+<li>AUC 越接近 1，表示模型越好；</li>
+<li>AUC ≈ 0.5 表示模型没啥用（随机猜）</li>
+</ul>
+<hr>
+<h4 id="📈-在多分类中的用法"><a href="#📈-在多分类中的用法" class="headerlink" title="📈 在多分类中的用法"></a><strong>📈 在多分类中的用法</strong></h4><ul>
+<li>对每个类别做 One-vs-Rest（如：是否为 C1）</li>
+<li>得到每类的 ROC 曲线 + AUC 值</li>
+</ul>
+<hr>
+<h3 id="🧠-总结对比"><a href="#🧠-总结对比" class="headerlink" title="🧠 总结对比"></a><strong>🧠 总结对比</strong></h3><table>
+<thead>
+<tr>
+<th><strong>指标</strong></th>
+<th><strong>是否考虑类别权重</strong></th>
+<th><strong>用途</strong></th>
+<th><strong>对不平衡敏感性</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>F1-score</td>
+<td>❌ 单类</td>
+<td>综合衡量一个类的 precision + recall</td>
+<td>是</td>
+</tr>
+<tr>
+<td>宏平均 Macro</td>
+<td>❌ 平均每类表现</td>
+<td>想看每一类是否都表现得不错</td>
+<td>高</td>
+</tr>
+<tr>
+<td>加权平均</td>
+<td>✅ 按样本占比加权</td>
+<td>更贴近整体真实表现</td>
+<td>中</td>
+</tr>
+<tr>
+<td>AUC&#x2F;ROC</td>
+<td>✅ 评估模型阈值表现</td>
+<td>阈值调节、诊断模型能力</td>
+<td>是</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="✅-建议你怎么用这些指标分析模型？"><a href="#✅-建议你怎么用这些指标分析模型？" class="headerlink" title="✅ 建议你怎么用这些指标分析模型？"></a><strong>✅ 建议你怎么用这些指标分析模型？</strong></h3><ol>
+<li><p><strong>每类 F1 分数</strong>：判断哪个意图识别弱，是否是 precision 低还是 recall 低。</p>
+</li>
+<li><p><strong>Macro-F1 vs Weighted-F1</strong>：</p>
+<ul>
+<li>Macro-F1 低 → 少数类模型学不好（比如无意图）</li>
+<li>Weighted-F1 高 → 整体还凑合</li>
+</ul>
+</li>
+<li><p><strong>AUC 曲线</strong>：看是否有足够区分度，以及是否能通过<strong>调节阈值</strong>改善性能</p>
+</li>
+</ol>
+<hr>
+]]></content>
+      <categories>
+        <category>技术整理</category>
+        <category>模型评测</category>
+      </categories>
+      <tags>
+        <tag>LLM_eval</tag>
+        <tag>模型评测</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>xmylog_new_online</title>
     <url>/2025/06/28/xmylog-new-online/</url>
     <content><![CDATA[<h1 id="搭建自己的数字自留地"><a href="#搭建自己的数字自留地" class="headerlink" title="搭建自己的数字自留地"></a>搭建自己的数字自留地</h1><p>Vercel 被停用快小半年了, 之前的博客总想着做迁移,一直没提上日程, 最近查了各种博客平台搭建方案,还是选择了 完全开源,经得起瞎折腾的hexo + github + 图床 + typora +…(obsibian &amp; notion)</p>
