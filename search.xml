@@ -9,8 +9,7 @@
 
 ]]></content>
       <categories>
-        <category>技术整理</category>
-        <category>终端工具</category>
+        <category>uncategorized</category>
       </categories>
       <tags>
         <tag>配置文件</tag>
@@ -1266,8 +1265,8 @@ graph LR
         <category>chatbi</category>
       </categories>
       <tags>
-        <tag>chatbi</tag>
         <tag>LLM_eval</tag>
+        <tag>chatbi</tag>
         <tag>测试方案</tag>
       </tags>
   </entry>
