@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>ghostty_config</title>
+    <title>ghostty终端工具,主题,配置文件设置备份</title>
     <url>/artciles/2025/7ab897/</url>
     <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
 ; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;">Life is not what you have gained, but what you have done !</blockquote>
@@ -9,7 +9,9 @@
 
 ]]></content>
       <categories>
-        <category>uncategorized</category>
+        <category>技术整理</category>
+        <category>配置文件</category>
+        <category>终端工具</category>
       </categories>
       <tags>
         <tag>配置文件</tag>
@@ -1265,8 +1267,8 @@ graph LR
         <category>chatbi</category>
       </categories>
       <tags>
-        <tag>LLM_eval</tag>
         <tag>chatbi</tag>
+        <tag>LLM_eval</tag>
         <tag>测试方案</tag>
       </tags>
   </entry>
