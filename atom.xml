@@ -6,7 +6,7 @@
   <link href="https://xmylog.com/atom.xml" rel="self"/>
   
   <link href="https://xmylog.com/"/>
-  <updated>2025-07-27T11:27:50.585Z</updated>
+  <updated>2025-07-30T09:39:47.184Z</updated>
   <id>https://xmylog.com/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ghostty_config</title>
+    <link href="https://xmylog.com/artciles/2025/7ab897/"/>
+    <id>https://xmylog.com/artciles/2025/7ab897/</id>
+    <published>2025-07-30T09:37:09.000Z</published>
+    <updated>2025-07-30T09:39:47.184Z</updated>
+    
+    
+    <summary type="html">ghostty终端工具,主题,配置文件设置备份</summary>
+    
+    
+    
+    <category term="技术整理" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
+    
+    <category term="终端工具" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="配置文件" scheme="https://xmylog.com/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>甘南自驾_2025_7</title>
     <link href="https://xmylog.com/artciles/2025/43808/"/>
     <id>https://xmylog.com/artciles/2025/43808/</id>
     <published>2025-07-27T02:39:59.000Z</published>
-    <updated>2025-07-27T11:27:50.585Z</updated>
+    <updated>2025-07-27T11:27:50.000Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;🚗甘南自驾2025&quot;&gt;&lt;a href=&quot;#🚗甘南自驾2025&quot; class=&quot;headerlink&quot; title=&quot;🚗甘南自驾2025&quot;&gt;&lt;/a&gt;🚗甘南自驾2025&lt;/h1&gt;&lt;p&gt;🏔️ 三千海拔之上，绿浪托起红原，经幡卷走浮世尘埃，此程——见天地，见众生，终见本心&lt;/p&gt;</summary>
@@ -46,7 +67,7 @@
     <link href="https://xmylog.com/artciles/2025/34583/"/>
     <id>https://xmylog.com/artciles/2025/34583/</id>
     <published>2025-07-25T05:42:15.000Z</published>
-    <updated>2025-07-29T05:47:20.299Z</updated>
+    <updated>2025-07-29T05:47:20.000Z</updated>
     
     
     <summary type="html">模型评测 意图识别 关键指标详解 -&gt; 准确率,精确率,召回率,F1分数</summary>
@@ -69,7 +90,7 @@
     <link href="https://xmylog.com/artciles/2025/58196/"/>
     <id>https://xmylog.com/artciles/2025/58196/</id>
     <published>2025-07-05T06:09:45.000Z</published>
-    <updated>2025-07-29T07:06:05.505Z</updated>
+    <updated>2025-07-29T07:06:05.000Z</updated>
     
     
     <summary type="html">ChatBI 评测方案设计,用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成</summary>
@@ -96,7 +117,7 @@
     <link href="https://xmylog.com/artciles/2025/21655/"/>
     <id>https://xmylog.com/artciles/2025/21655/</id>
     <published>2025-06-28T07:15:52.000Z</published>
-    <updated>2025-07-27T09:04:34.880Z</updated>
+    <updated>2025-07-27T09:04:34.000Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;搭建自己的数字自留地&quot;&gt;&lt;a href=&quot;#搭建自己的数字自留地&quot; class=&quot;headerlink&quot; title=&quot;搭建自己的数字自留地&quot;&gt;&lt;/a&gt;搭建自己的数字自留地&lt;/h1&gt;&lt;p&gt;Vercel 被停用快小半年了, 之前的博客总想着做迁移,一直没提上日程, 最近查了各种博客平台搭建方案,还是选择了 完全开源,经得起瞎折腾的hexo + github + 图床 + typora +…(obsibian &amp;amp; notion)&lt;/p&gt;
