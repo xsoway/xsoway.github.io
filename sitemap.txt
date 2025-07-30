@@ -21,9 +21,9 @@ https://xmylog.com/tags/hexo/
 https://xmylog.com/tags/xmylog/
 https://xmylog.com/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/
 https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/
-https://xmylog.com/categories/%E9%9A%8F%E7%AC%94%E6%84%9F%E6%83%B3/
 https://xmylog.com/categories/%E8%87%AA%E9%A9%BE/
 https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/
 https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/
 https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/
 https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/chatbi/
+https://xmylog.com/categories/%E9%9A%8F%E7%AC%94%E6%84%9F%E6%83%B3/
