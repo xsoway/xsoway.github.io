@@ -1360,7 +1360,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #fbb5ff;
+    background: #878c01;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3091,4 +3091,11 @@ header.header {
 }
 .comments {
   background: rgba(255,255,255,0.9);
+}
+#vcomments {
+  order: 1;
+  margin-top: 50px;
+}
+#vcomments .vpower {
+  display: none;
 }
