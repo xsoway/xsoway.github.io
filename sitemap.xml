@@ -113,13 +113,6 @@
   </url>
   
   <url>
-    <loc>https://xmylog.com/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xmylog.com/tags/chatbi/</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -161,6 +154,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://xmylog.com/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2025-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -178,14 +178,14 @@
   </url>
   
   <url>
-    <loc>https://xmylog.com/categories/%E8%87%AA%E9%A9%BE/</loc>
+    <loc>https://xmylog.com/categories/%E9%9A%8F%E7%AC%94%E6%84%9F%E6%83%B3/</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
+    <loc>https://xmylog.com/categories/%E8%87%AA%E9%A9%BE/</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -199,7 +199,7 @@
   </url>
   
   <url>
-    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -213,7 +213,7 @@
   </url>
   
   <url>
-    <loc>https://xmylog.com/categories/%E9%9A%8F%E7%AC%94%E6%84%9F%E6%83%B3/</loc>
+    <loc>https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
