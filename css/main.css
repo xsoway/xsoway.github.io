@@ -1360,7 +1360,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #61bd49;
+    background: #5b7e16;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1900,7 +1900,7 @@ pre code {
 .reading-progress-bar {
   --progress: 0;
   background: #37c6c0;
-  height: 3px;
+  height: 6px;
   position: fixed;
   z-index: 50;
   width: var(--progress);
@@ -3092,11 +3092,9 @@ header.header {
 .comments {
   background: rgba(255,255,255,0.9);
 }
-.sidebar a {
-  border-bottom-color: #fff;
-  color: #fff;
+.sidebar {
+  font-size: 1.15em;
 }
-.sidebar a:hover {
-  border-bottom-color: $FFFFFF;
-  color: #fff;
+.menu-item {
+  font-size: 1.15em;
 }
