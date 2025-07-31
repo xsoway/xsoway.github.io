@@ -1360,7 +1360,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #fbf;
+    background: #600f12;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3092,10 +3092,23 @@ header.header {
 .comments {
   background: rgba(255,255,255,0.9);
 }
-#vcomments {
-  order: 1;
-  margin-top: 50px;
+.sidebar {
+  background: url("/images/sidebar-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.2s ease-out;
+  width: $sidebar-desktop;
+  z-index: 20;
 }
-#vcomments .vpower {
-  display: none;
+.sidebar a {
+  border-bottom-color: #fff;
+  color: #fff;
+}
+.sidebar a:hover {
+  border-bottom-color: $FFFFFF;
+  color: #fff;
 }
