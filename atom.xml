@@ -106,9 +106,9 @@
     <category term="chatbi" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/chatbi/"/>
     
     
-    <category term="chatbi" scheme="https://xsoul.life/tags/chatbi/"/>
-    
     <category term="LLM_eval" scheme="https://xsoul.life/tags/LLM-eval/"/>
+    
+    <category term="chatbi" scheme="https://xsoul.life/tags/chatbi/"/>
     
     <category term="测试方案" scheme="https://xsoul.life/tags/%E6%B5%8B%E8%AF%95%E6%96%B9%E6%A1%88/"/>
     
