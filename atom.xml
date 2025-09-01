@@ -3,11 +3,11 @@
   <title>X·myLog</title>
   
   
-  <link href="https://xmylog.com/atom.xml" rel="self"/>
+  <link href="https://xsoul.life/atom.xml" rel="self"/>
   
-  <link href="https://xmylog.com/"/>
+  <link href="https://xsoul.life/"/>
   <updated>2025-07-30T10:38:59.426Z</updated>
-  <id>https://xmylog.com/</id>
+  <id>https://xsoul.life/</id>
   
   <author>
     <name>Alan Hsu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>ghostty终端工具,主题,配置文件设置备份</title>
-    <link href="https://xmylog.com/articles/2025/7ab897/"/>
-    <id>https://xmylog.com/articles/2025/7ab897/</id>
+    <link href="https://xsoul.life/articles/2025/7ab897/"/>
+    <id>https://xsoul.life/articles/2025/7ab897/</id>
     <published>2025-07-30T09:37:09.000Z</published>
     <updated>2025-07-30T10:38:59.426Z</updated>
     
@@ -28,21 +28,21 @@
     
     
     
-    <category term="技术整理" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
+    <category term="技术整理" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
     
-    <category term="配置文件" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    <category term="配置文件" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
     
-    <category term="终端工具" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/"/>
+    <category term="终端工具" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="配置文件" scheme="https://xmylog.com/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    <category term="配置文件" scheme="https://xsoul.life/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>甘南自驾_2025_7</title>
-    <link href="https://xmylog.com/articles/2025/43808/"/>
-    <id>https://xmylog.com/articles/2025/43808/</id>
+    <link href="https://xsoul.life/articles/2025/43808/"/>
+    <id>https://xsoul.life/articles/2025/43808/</id>
     <published>2025-07-27T02:39:59.000Z</published>
     <updated>2025-07-27T11:27:50.000Z</updated>
     
@@ -51,23 +51,23 @@
     
     
     
-    <category term="户外旅行" scheme="https://xmylog.com/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/"/>
+    <category term="户外旅行" scheme="https://xsoul.life/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/"/>
     
-    <category term="自驾" scheme="https://xmylog.com/categories/%E8%87%AA%E9%A9%BE/"/>
+    <category term="自驾" scheme="https://xsoul.life/categories/%E8%87%AA%E9%A9%BE/"/>
     
     
-    <category term="甘南" scheme="https://xmylog.com/tags/%E7%94%98%E5%8D%97/"/>
+    <category term="甘南" scheme="https://xsoul.life/tags/%E7%94%98%E5%8D%97/"/>
     
-    <category term="自驾" scheme="https://xmylog.com/tags/%E8%87%AA%E9%A9%BE/"/>
+    <category term="自驾" scheme="https://xsoul.life/tags/%E8%87%AA%E9%A9%BE/"/>
     
-    <category term="暑假" scheme="https://xmylog.com/tags/%E6%9A%91%E5%81%87/"/>
+    <category term="暑假" scheme="https://xsoul.life/tags/%E6%9A%91%E5%81%87/"/>
     
   </entry>
   
   <entry>
     <title>模型评测 _意图识别_ 关键指标详解</title>
-    <link href="https://xmylog.com/articles/2025/34583/"/>
-    <id>https://xmylog.com/articles/2025/34583/</id>
+    <link href="https://xsoul.life/articles/2025/34583/"/>
+    <id>https://xsoul.life/articles/2025/34583/</id>
     <published>2025-07-25T05:42:15.000Z</published>
     <updated>2025-07-29T05:47:20.000Z</updated>
     
@@ -76,21 +76,21 @@
     
     
     
-    <category term="技术整理" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
+    <category term="技术整理" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
     
-    <category term="模型评测" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
+    <category term="模型评测" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
     
     
-    <category term="LLM_eval" scheme="https://xmylog.com/tags/LLM-eval/"/>
+    <category term="LLM_eval" scheme="https://xsoul.life/tags/LLM-eval/"/>
     
-    <category term="模型评测" scheme="https://xmylog.com/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
+    <category term="模型评测" scheme="https://xsoul.life/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
     
   </entry>
   
   <entry>
     <title>ChatBI 评测方案设计</title>
-    <link href="https://xmylog.com/articles/2025/58196/"/>
-    <id>https://xmylog.com/articles/2025/58196/</id>
+    <link href="https://xsoul.life/articles/2025/58196/"/>
+    <id>https://xsoul.life/articles/2025/58196/</id>
     <published>2025-07-05T06:09:45.000Z</published>
     <updated>2025-07-29T07:06:05.000Z</updated>
     
@@ -99,25 +99,25 @@
     
     
     
-    <category term="技术整理" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
+    <category term="技术整理" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
     
-    <category term="模型评测" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
+    <category term="模型评测" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
     
-    <category term="chatbi" scheme="https://xmylog.com/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/chatbi/"/>
+    <category term="chatbi" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/chatbi/"/>
     
     
-    <category term="chatbi" scheme="https://xmylog.com/tags/chatbi/"/>
+    <category term="LLM_eval" scheme="https://xsoul.life/tags/LLM-eval/"/>
     
-    <category term="LLM_eval" scheme="https://xmylog.com/tags/LLM-eval/"/>
+    <category term="chatbi" scheme="https://xsoul.life/tags/chatbi/"/>
     
-    <category term="测试方案" scheme="https://xmylog.com/tags/%E6%B5%8B%E8%AF%95%E6%96%B9%E6%A1%88/"/>
+    <category term="测试方案" scheme="https://xsoul.life/tags/%E6%B5%8B%E8%AF%95%E6%96%B9%E6%A1%88/"/>
     
   </entry>
   
   <entry>
     <title>xmylog_new_online</title>
-    <link href="https://xmylog.com/articles/2025/21655/"/>
-    <id>https://xmylog.com/articles/2025/21655/</id>
+    <link href="https://xsoul.life/articles/2025/21655/"/>
+    <id>https://xsoul.life/articles/2025/21655/</id>
     <published>2025-06-28T07:15:52.000Z</published>
     <updated>2025-07-27T09:04:34.000Z</updated>
     
@@ -127,12 +127,12 @@
     
     
     
-    <category term="随笔感想" scheme="https://xmylog.com/categories/%E9%9A%8F%E7%AC%94%E6%84%9F%E6%83%B3/"/>
+    <category term="随笔感想" scheme="https://xsoul.life/categories/%E9%9A%8F%E7%AC%94%E6%84%9F%E6%83%B3/"/>
     
     
-    <category term="hexo" scheme="https://xmylog.com/tags/hexo/"/>
+    <category term="hexo" scheme="https://xsoul.life/tags/hexo/"/>
     
-    <category term="xmylog" scheme="https://xmylog.com/tags/xmylog/"/>
+    <category term="xmylog" scheme="https://xsoul.life/tags/xmylog/"/>
     
   </entry>
   

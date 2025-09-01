@@ -1267,8 +1267,8 @@ graph LR
         <category>chatbi</category>
       </categories>
       <tags>
-        <tag>chatbi</tag>
         <tag>LLM_eval</tag>
+        <tag>chatbi</tag>
         <tag>测试方案</tag>
       </tags>
   </entry>
