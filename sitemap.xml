@@ -110,14 +110,35 @@
 
   
   <url>
-    <loc>https://xsoul.life/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
+    <loc>https://xsoul.life/tags/%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2025-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xsoul.life/tags/%E5%9F%9F%E5%90%8D/</loc>
+    <loc>https://xsoul.life/tags/%E7%94%98%E5%8D%97/</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xsoul.life/tags/%E8%87%AA%E9%A9%BE/</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xsoul.life/tags/%E6%9A%91%E5%81%87/</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xsoul.life/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2025-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -165,28 +186,21 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://xsoul.life/tags/%E7%94%98%E5%8D%97/</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xsoul.life/tags/%E8%87%AA%E9%A9%BE/</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xsoul.life/tags/%E6%9A%91%E5%81%87/</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
+  
+  <url>
+    <loc>https://xsoul.life/categories/uncategorized/</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xsoul.life/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</loc>
@@ -196,14 +210,14 @@
   </url>
   
   <url>
-    <loc>https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
+    <loc>https://xsoul.life/categories/%E8%87%AA%E9%A9%BE/</loc>
     <lastmod>2025-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/hexo/</loc>
+    <loc>https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2025-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -231,21 +245,7 @@
   </url>
   
   <url>
-    <loc>https://xsoul.life/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/chatbi/</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xsoul.life/categories/%E8%87%AA%E9%A9%BE/</loc>
     <lastmod>2025-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
