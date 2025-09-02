@@ -6,7 +6,7 @@
   <link href="https://xsoul.life/atom.xml" rel="self"/>
   
   <link href="https://xsoul.life/"/>
-  <updated>2025-09-02T10:01:36.840Z</updated>
+  <updated>2025-09-02T10:12:20.836Z</updated>
   <id>https://xsoul.life/</id>
   
   <author>
@@ -21,14 +21,16 @@
     <link href="https://xsoul.life/articles/2025/c1f52489/"/>
     <id>https://xsoul.life/articles/2025/c1f52489/</id>
     <published>2025-09-01T15:21:45.000Z</published>
-    <updated>2025-09-02T10:01:36.840Z</updated>
+    <updated>2025-09-02T10:12:20.836Z</updated>
     
     
     <summary type="html">熬过那半小时的心魔</summary>
     
     
     
-    <category term="-生活记录 - dailynotes" scheme="https://xsoul.life/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95-dailynotes/"/>
+    <category term="生活记录" scheme="https://xsoul.life/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="dailynotes" scheme="https://xsoul.life/categories/dailynotes/"/>
     
     
     <category term="日报" scheme="https://xsoul.life/tags/%E6%97%A5%E6%8A%A5/"/>
@@ -40,7 +42,7 @@
     <link href="https://xsoul.life/articles/2025/f3b43ffa/"/>
     <id>https://xsoul.life/articles/2025/f3b43ffa/</id>
     <published>2025-09-01T13:29:12.000Z</published>
-    <updated>2025-09-02T10:00:19.770Z</updated>
+    <updated>2025-09-02T10:12:35.036Z</updated>
     
     
     <summary type="html">离开乏味的皮囊，自由的灵魂在路上 xsoul.life</summary>
@@ -146,9 +148,9 @@
     <category term="chatbi" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/chatbi/"/>
     
     
-    <category term="LLM_eval" scheme="https://xsoul.life/tags/LLM-eval/"/>
-    
     <category term="chatbi" scheme="https://xsoul.life/tags/chatbi/"/>
+    
+    <category term="LLM_eval" scheme="https://xsoul.life/tags/LLM-eval/"/>
     
     <category term="测试方案" scheme="https://xsoul.life/tags/%E6%B5%8B%E8%AF%95%E6%96%B9%E6%A1%88/"/>
     
