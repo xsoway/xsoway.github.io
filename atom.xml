@@ -6,7 +6,7 @@
   <link href="https://xsoul.life/atom.xml" rel="self"/>
   
   <link href="https://xsoul.life/"/>
-  <updated>2025-09-02T10:12:20.836Z</updated>
+  <updated>2025-09-04T00:29:00.747Z</updated>
   <id>https://xsoul.life/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AI_project_prod_test_plan</title>
+    <link href="https://xsoul.life/articles/2025/9c39cab5/"/>
+    <id>https://xsoul.life/articles/2025/9c39cab5/</id>
+    <published>2025-09-04T00:25:04.000Z</published>
+    <updated>2025-09-04T00:29:00.747Z</updated>
+    
+    
+    <summary type="html">整理了下AI智能项目上线后,如何巡检,回归的测试设计方案</summary>
+    
+    
+    
+    <category term="技术整理" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
+    
+    <category term="AI测试" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/AI%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="模型评测" scheme="https://xsoul.life/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
+    
+    <category term="AI智能测试" scheme="https://xsoul.life/tags/AI%E6%99%BA%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>daily_notes_0901</title>
@@ -123,9 +146,9 @@
     <category term="模型评测" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
     
     
-    <category term="LLM_eval" scheme="https://xsoul.life/tags/LLM-eval/"/>
-    
     <category term="模型评测" scheme="https://xsoul.life/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"/>
+    
+    <category term="LLM_eval" scheme="https://xsoul.life/tags/LLM-eval/"/>
     
   </entry>
   

@@ -1,6 +1,500 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>AI_project_prod_test_plan</title>
+    <url>/articles/2025/9c39cab5/</url>
+    <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
+; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;">Life is not what you have gained, but what you have done !</blockquote>
+
+
+<h2 id="1-项目迭代有规则改动-如-Prompt-改动"><a href="#1-项目迭代有规则改动-如-Prompt-改动" class="headerlink" title="1. 项目迭代有规则改动 (如 Prompt 改动)"></a><strong>1.</strong> <strong>项目迭代有规则改动 (如 Prompt 改动)</strong></h2><ul>
+<li><p>✅ <strong>必须全量回归</strong>：Prompt 改动往往会导致整体行为逻辑的变化，不能只测改动点。</p>
+</li>
+<li><p>建议：</p>
+<ul>
+<li>准备一份 <strong>基准测试集（benchmark dataset）</strong>，覆盖常见场景、边界场景、历史 bug case。</li>
+<li>改动后 <strong>全量跑 benchmark</strong>，对比前后结果，监控准确率、召回率、语义相似度、业务关键指标。</li>
+<li>对比报告保存存档，形成“模型基线”，便于回溯。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2-模型版本升级-环境迁移"><a href="#2-模型版本升级-环境迁移" class="headerlink" title="2. 模型版本升级 &#x2F; 环境迁移"></a><strong>2.</strong> <strong>模型版本升级 &#x2F; 环境迁移</strong></h2><ul>
+<li><p>✅ <strong>必须巡检 + 对比测试</strong>：新模型或者新环境可能会影响结果稳定性和性能。</p>
+</li>
+<li><p>检查点：</p>
+<ul>
+<li><strong>功能层面</strong>：跑基准集，保证语义准确率不下降。</li>
+<li><strong>性能层面</strong>：QPS、延迟、吞吐量、资源消耗。</li>
+<li><strong>兼容性</strong>：上下游 API &#x2F; 服务调用是否异常。</li>
+<li><strong>回滚机制</strong>：保留旧版本，设置灰度发布，逐步切流。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="3-项目迭代无改动"><a href="#3-项目迭代无改动" class="headerlink" title="3. 项目迭代无改动"></a><strong>3.</strong> <strong>项目迭代无改动</strong></h2><ul>
+<li><p>❓是否有必要巡检 → <strong>建议定期轻量巡检</strong></p>
+</li>
+<li><p>理由：即使代码&#x2F;Prompt没改，生产环境可能因为：</p>
+<ul>
+<li>模型 API 供应商升级了底层（无通知更新）</li>
+<li>依赖服务（数据库、缓存、接口）稳定性问题</li>
+<li>数据分布随时间漂移（用户提问习惯、业务场景变化）</li>
+<li>资源不足（显存、并发压力）</li>
+</ul>
+</li>
+</ul>
+<p>🔍 <strong>巡检建议</strong>：</p>
+<ul>
+<li><strong>周检</strong>：抽样小集跑通流程，看功能和准确率是否正常。</li>
+<li><strong>月检</strong>：跑一次完整基准集，出报告（准确率、响应时间、异常率）。</li>
+<li><strong>季度检</strong>：系统级巡检，包括安全、性能压测、日志分析、异常告警校验。</li>
+</ul>
+<hr>
+<h3 id="✅-总结"><a href="#✅-总结" class="headerlink" title="✅ 总结"></a><strong>✅ 总结</strong></h3><ul>
+<li><strong>有改动 (规则&#x2F;Prompt)</strong>：全量回归必跑。</li>
+<li><strong>模型升级&#x2F;环境迁移</strong>：必须巡检+对比，灰度上线。</li>
+<li><strong>无改动</strong>：也要定期轻量巡检（周检&#x2F;月检&#x2F;季度检），预防 API 变动、数据漂移。</li>
+</ul>
+<hr>
+<h2 id="🔹-流程图"><a href="#🔹-流程图" class="headerlink" title="🔹  流程图"></a><strong>🔹  流程图</strong></h2><pre><code class="highlight mermaid">flowchart TD
+    A[AI 项目生产环境巡检] --&gt; B&#123;是否有改动?&#125;
+    
+    B --&gt;|Prompt/规则改动/版本迭代| C[执行全量回归测试&lt;br/&gt;对比基准集&lt;br/&gt;生成报告存档]
+    B --&gt;|模型版本升级/环境迁移| D[功能 + 性能巡检&lt;br/&gt;对比测试&lt;br/&gt;灰度发布+回滚机制]
+    B --&gt;|无改动| E&#123;是否到定期巡检周期?&#125;
+    
+    E --&gt;|是| F[执行轻量巡检&lt;br/&gt;抽样运行小集&lt;br/&gt;日志/告警校验]
+    E --&gt;|否| G[持续监控&lt;br/&gt;等待下个周期]</code></pre>
+
+
+
+<hr>
+<h2 id="🔹-巡检-Checklist-表格"><a href="#🔹-巡检-Checklist-表格" class="headerlink" title="🔹 巡检 Checklist 表格"></a><strong>🔹 巡检 Checklist 表格</strong></h2><table>
+<thead>
+<tr>
+<th><strong>巡检场景</strong></th>
+<th><strong>必要性</strong></th>
+<th><strong>巡检动作</strong></th>
+<th><strong>频率</strong></th>
+<th><strong>输出物</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Prompt&#x2F;规则改动</td>
+<td><strong>强制</strong></td>
+<td>- 跑全量基准测试集- 对比前后准确率&#x2F;业务指标- 保存对比报告</td>
+<td>每次改动</td>
+<td>基准对比报告、回归结果</td>
+</tr>
+<tr>
+<td>模型版本升级 &#x2F; 环境迁移</td>
+<td><strong>强制</strong></td>
+<td>- 功能测试（语义准确率）- 性能测试（QPS、延迟、吞吐）- 上下游兼容性验证- 灰度发布+回滚策略</td>
+<td>每次升级&#x2F;迁移</td>
+<td>功能+性能报告、灰度上线方案</td>
+</tr>
+<tr>
+<td>无改动（例行巡检）</td>
+<td><strong>建议</strong></td>
+<td>- 周检：小集抽样运行，功能结果对比- 月检：完整基准集跑一遍，出报告- 季度检：系统巡检（安全、性能、日志、告警）</td>
+<td>周检&#x2F;月检&#x2F;季度检</td>
+<td>巡检报告、异常分析记录</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="4-线上数据在巡检中的使用原则"><a href="#4-线上数据在巡检中的使用原则" class="headerlink" title="4. 线上数据在巡检中的使用原则"></a><strong>4</strong>. <strong>线上数据在巡检中的使用原则</strong></h2><h3 id="1-什么时候用线上数据？"><a href="#1-什么时候用线上数据？" class="headerlink" title="1. 什么时候用线上数据？"></a><strong>1. 什么时候用线上数据？</strong></h3><table>
+<thead>
+<tr>
+<th><strong>使用场景</strong></th>
+<th><strong>是否适合</strong></th>
+<th><strong>理由</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>功能正确性（回归测试）</strong></td>
+<td>❌ 不直接使用</td>
+<td>线上数据不可控、不可复现，无法稳定对比。</td>
+</tr>
+<tr>
+<td><strong>数据漂移检测</strong></td>
+<td>✅ 推荐</td>
+<td>用户提问习惯、业务内容会随时间变化，需要线上数据抽样监控。</td>
+</tr>
+<tr>
+<td><strong>性能&#x2F;稳定性巡检</strong></td>
+<td>✅ 必须</td>
+<td>真实流量最能反映 QPS、延迟、错误率。</td>
+</tr>
+<tr>
+<td><strong>安全&#x2F;合规检测</strong></td>
+<td>✅ 可用</td>
+<td>抽查线上输入，识别潜在风险（敏感词、越权行为）。</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="2-怎么用线上数据？"><a href="#2-怎么用线上数据？" class="headerlink" title="2. 怎么用线上数据？"></a><strong>2. 怎么用线上数据？</strong></h3><ul>
+<li><strong>抽样</strong>：不要全量，避免成本过高（一般取 <strong>1% 流量</strong> 或每日 <strong>N 千条</strong>）。</li>
+<li><strong>回放</strong>：将抽样的线上请求，导入测试环境，避免影响真实用户。</li>
+<li><strong>脱敏</strong>：对用户隐私数据（手机号、姓名、车牌、身份证）做脱敏处理。</li>
+<li><strong>基线对比</strong>：和历史线上抽样的结果对比，监控准确率、异常率变化。</li>
+<li><strong>自动化管道</strong>：数据抽样 → 脱敏 → 存储到“线上数据集” → 定期跑巡检。</li>
+</ul>
+<hr>
+<h3 id="3-注意事项"><a href="#3-注意事项" class="headerlink" title="3. 注意事项"></a><strong>3. 注意事项</strong></h3><ul>
+<li><strong>隐私合规</strong>：敏感数据必须脱敏或匿名化，保证合规。</li>
+<li><strong>可复现性</strong>：巡检数据集要定期固化（例如“2025Q3线上样例集”），方便后续对比。</li>
+<li><strong>覆盖代表性</strong>：要覆盖不同类型用户、不同入口（App&#x2F;小程序&#x2F;PC）、不同业务场景。</li>
+<li><strong>异常优先</strong>：除了随机抽样，还要重点收集日志中失败的 case（如报错、空响应）。</li>
+</ul>
+<hr>
+<h3 id="4-如何挑选线上数据？"><a href="#4-如何挑选线上数据？" class="headerlink" title="4. 如何挑选线上数据？"></a><strong>4. 如何挑选线上数据？</strong></h3><h4 id="✅-挑选原则"><a href="#✅-挑选原则" class="headerlink" title="✅ 挑选原则"></a><strong>✅ 挑选原则</strong></h4><ol>
+<li><strong>代表性</strong>：覆盖主要业务意图（购车咨询、卖车、贷款、售后、配件、报价）。</li>
+<li><strong>多样性</strong>：包含长尾问题、冷门车型、方言、emoji、网络用语。</li>
+<li><strong>异常性</strong>：采集异常日志样例（报错&#x2F;低分&#x2F;用户反馈不满意）。</li>
+<li><strong>时效性</strong>：保证数据集更新频率（比如每月替换 20% 数据）。</li>
+</ol>
+<h4 id="📊-选择方法"><a href="#📊-选择方法" class="headerlink" title="📊 选择方法"></a><strong>📊 选择方法</strong></h4><ul>
+<li><strong>随机抽样</strong>：保证整体分布。</li>
+<li><strong>分层抽样</strong>：按业务意图、入口渠道、地域、车型等维度采样，保证覆盖面。</li>
+<li><strong>热点采样</strong>：选取用户量最高的车型&#x2F;问题，确保主流场景稳定。</li>
+<li><strong>异常采样</strong>：挑选失败&#x2F;低满意度 case，重点巡检。</li>
+</ul>
+<hr>
+<h3 id="5-推荐落地做法"><a href="#5-推荐落地做法" class="headerlink" title="5. 推荐落地做法"></a><strong>5. 推荐落地做法</strong></h3><ul>
+<li><strong>每周</strong>：随机抽取线上 1% 数据，快速回放测试。</li>
+<li><strong>每月</strong>：更新一版“线上样例集”，合并进基准测试集。</li>
+<li><strong>每季度</strong>：全量分析线上日志，生成分布报告，更新巡检策略。</li>
+</ul>
+<hr>
+<p>👉 总结一句话：</p>
+<ul>
+<li><strong>功能正确性靠离线固定基准集</strong>；</li>
+<li><strong>线上数据用于发现新问题、监控漂移和性能</strong>；</li>
+<li><strong>选择时遵循：代表性 + 多样性 + 异常性 + 时效性</strong>。</li>
+</ul>
+<hr>
+<pre><code class="highlight mermaid">flowchart TD
+    A[线上全量数据] --&gt; B[随机抽样&lt;br/&gt;保证整体分布]
+    B --&gt; C[分层抽样&lt;br/&gt;业务/地域/车型/渠道]
+    C --&gt; D[异常样本补充&lt;br/&gt;失败日志/低满意度/报错Case]
+    D --&gt; E[形成线上巡检集]
+    E --&gt; F[定期固化&lt;br/&gt;周抽样/月更新/季度归档]</code></pre>
+
+<h2 id="5-总结-看这里"><a href="#5-总结-看这里" class="headerlink" title="5. 总结(看这里)"></a><strong>5.</strong> <strong>总结</strong>(看这里)</h2><h3 id="1-全量回归"><a href="#1-全量回归" class="headerlink" title="1. 全量回归"></a>1. <strong>全量回归</strong></h3><ul>
+<li>用于 <strong>项目迭代或规则改动</strong>、<strong>模型版本升级&#x2F;环境迁移</strong></li>
+<li>保证整体准确率和业务逻辑不受影响</li>
+<li><strong>Bad case</strong> 会加入定期更新数据集，形成长期基准</li>
+</ul>
+<h3 id="2-日常巡检"><a href="#2-日常巡检" class="headerlink" title="2. 日常巡检"></a>2. <strong>日常巡检</strong></h3><ul>
+<li><p>周期性执行（建议 <strong>每 2 周</strong>）</p>
+</li>
+<li><p>数据来源：</p>
+<ul>
+<li><strong>线上抽样数据</strong> → 使用裁判模型 judge_as_a_llm 筛选高价值样本</li>
+<li><strong>固定测试数据集(Benchmark)</strong> → 保证对比可复现</li>
+</ul>
+</li>
+<li><p>输出：巡检报告 + 巡检数据集存档</p>
+</li>
+</ul>
+<h3 id="3-裁判模型作用"><a href="#3-裁判模型作用" class="headerlink" title="3. 裁判模型作用"></a>3. <strong>裁判模型作用</strong></h3><ul>
+<li>自动判断线上数据是否适合作为巡检样本</li>
+<li>可以依据 prompt 规则筛选异常、低质量或高代表性样本</li>
+</ul>
+<hr>
+<h3 id="4-流程图"><a href="#4-流程图" class="headerlink" title="4. 流程图"></a>4. <strong>流程图</strong></h3><pre><code class="highlight mermaid">flowchart TD
+    A[AI 项目自动化巡检] --&gt; B&#123;巡检类型&#125;
+
+    %% 1. 项目迭代 / Prompt规则变动
+    B --&gt;|项目迭代 / Prompt规则变动| C[全量回归测试]
+    C --&gt; C1[使用基准测试集Benchmark]
+    C --&gt; C2[Bad case / 问题样例加入定期更新数据集]
+    C --&gt; C3[生成回归对比报告并存档]
+
+    %% 2. 模型版本升级 / 环境迁移
+    B --&gt;|模型版本升级 / 环境迁移| D[全量回归 + 对比测试]
+    D --&gt; D1[功能测试：语义准确率/业务指标]
+    D --&gt; D2[性能测试：QPS / 延迟 / 吞吐量 / 错误率]
+    D --&gt; D3[生成回归报告 + 灰度发布策略]
+
+    %% 3. 日常巡检
+    B --&gt;|日常巡检| E[周期性巡检方案]
+
+    %% 3a. 定时执行
+    E --&gt; E1[定时任务 Cron / CI 执行巡检脚本]
+    E1 --&gt; E2[数据来源抽取]
+    
+    %% 3b. 数据来源
+    E2 --&gt; E2a[线上数据抽样]
+    E2 --&gt; E2b[固定测试数据集Benchmark]
+    
+    %% 3c. 线上数据抽样处理
+    E2a --&gt; F1[裁判模型  LLM-as-a-Judge  
+    筛选高价值样本]
+    F1 --&gt; F2[数据脱敏 / 匿名化处理]
+    F2 --&gt; F3[形成巡检数据集]
+
+    %% 3d. 执行巡检
+    F3 --&gt; G[回放测试 / 功能验证]
+    E2b --&gt; G
+    G --&gt; H[基准对比 / 差异分析]
+
+    %% 3e. 报告生成 &amp; 告警
+    H --&gt; I[生成巡检报告 HTML/Markdown]
+    I --&gt; J&#123;是否异常?&#125;
+    J --&gt;|否| K[存档报告，持续监控]
+    J --&gt;|是| L[触发告警 → 企业微信]
+
+    %% 3f. 定期更新数据集
+    L --&gt; M[将发现的 Bad Case 加入定期更新数据集]
+    
+    
+    %% 节点背景颜色设置
+    style C fill:#8ecae6,stroke:#000,stroke-width:1px
+    style C1 fill:#8ecae6,stroke:#000,stroke-width:1px
+    style C2 fill:#8ecae6,stroke:#000,stroke-width:1px
+    style C3 fill:#8ecae6,stroke:#000,stroke-width:1px
+    style D fill:#8ecae6,stroke:#000,stroke-width:1px
+    style D1 fill:#8ecae6,stroke:#000,stroke-width:1px
+    style D2 fill:#8ecae6,stroke:#000,stroke-width:1px
+    style D3 fill:#8ecae6,stroke:#000,stroke-width:1px
+
+    style E fill:#95d5b2,stroke:#000,stroke-width:1px
+    style E1 fill:#95d5b2,stroke:#000,stroke-width:1px
+    style E2 fill:#95d5b2,stroke:#000,stroke-width:1px
+    style E2b fill:#95d5b2,stroke:#000,stroke-width:1px
+
+    style F1 fill:#f94144,stroke:#000,stroke-width:1px
+    style F2 fill:#f94144,stroke:#000,stroke-width:1px
+    style F3 fill:#f94144,stroke:#000,stroke-width:1px
+
+    style G fill:#ffe066,stroke:#000,stroke-width:1px
+    style H fill:#ffe066,stroke:#000,stroke-width:1px
+    style I fill:#ffe066,stroke:#000,stroke-width:1px
+
+    style J fill:#f9c74f,stroke:#000,stroke-width:1px
+    style K fill:#f9c74f,stroke:#000,stroke-width:1px
+    style L fill:#f9c74f,stroke:#000,stroke-width:1px
+    style M fill:#f9c74f,stroke:#000,stroke-width:1px</code></pre>
+
+<h3 id="5-AI搜车巡检线上设计方案"><a href="#5-AI搜车巡检线上设计方案" class="headerlink" title="5. AI搜车巡检线上设计方案"></a>5. AI搜车巡检线上设计方案</h3><h4 id="数据集来源-DataSource"><a href="#数据集来源-DataSource" class="headerlink" title="数据集来源_DataSource"></a>数据集来源_DataSource</h4><ol>
+<li><p>测试数据集</p>
+</li>
+<li><p>生产数据集(定期导出)</p>
+</li>
+<li><p>生产badcase(修复后数据集)</p>
+</li>
+<li><p>人工抽查&#x2F;新增(更新)</p>
+<ul>
+<li>Datasets 新增字段(数据来源)</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;data_source&quot;</span><span class="punctuation">:</span> <span class="string">&quot;test&quot;</span>   # 测试</span><br><span class="line"><span class="attr">&quot;data_source&quot;</span><span class="punctuation">:</span> <span class="string">&quot;prod&quot;</span>  # 生产</span><br><span class="line"><span class="attr">&quot;data_source&quot;</span><span class="punctuation">:</span> <span class="string">&quot;badcase&quot;</span> # 版本迭代问题修复(个别用例)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="数据集抽样比例-benchmark（总计-100-）"><a href="#数据集抽样比例-benchmark（总计-100-）" class="headerlink" title="数据集抽样比例_benchmark（总计 100%）"></a><strong>数据集抽样比例_benchmark（总计 100%）</strong></h4><table>
+<thead>
+<tr>
+<th><strong>场景类型</strong></th>
+<th><strong>占比</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单条件查询</td>
+<td>18%</td>
+</tr>
+<tr>
+<td>多条件组合</td>
+<td>18%</td>
+</tr>
+<tr>
+<td>口语化表达</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>用户意图识别</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>包含错别字</td>
+<td>6%</td>
+</tr>
+<tr>
+<td>数字格式变化</td>
+<td>6%</td>
+</tr>
+<tr>
+<td>条件模糊表达</td>
+<td>6%</td>
+</tr>
+<tr>
+<td>多值并列条件</td>
+<td>6%</td>
+</tr>
+<tr>
+<td>边界值</td>
+<td>6%</td>
+</tr>
+<tr>
+<td>条件冲突</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>地域相关性</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>特殊格式字符</td>
+<td>3%</td>
+</tr>
+<tr>
+<td>全部条件</td>
+<td>2%</td>
+</tr>
+<tr>
+<td>异常情况</td>
+<td>2%</td>
+</tr>
+<tr>
+<td>隐含否定条件</td>
+<td>2%</td>
+</tr>
+</tbody></table>
+<p><strong>设计理由（核心点）：</strong></p>
+<ul>
+<li><strong>真实分布 + 高频主干</strong>：单条件查询、多条件组合 合计 36%，覆盖最常见路径，能稳定反映线上主流程健康度。</li>
+<li><strong>可用性与鲁棒性</strong>：口语化、错别字、数字格式、模糊表达、多值并列（合计 32%）是搜索&#x2F;解析最常见噪声来源，容易引发召回或解析偏差，需持续巡检。</li>
+<li><strong>边界&amp;冲突</strong>：边界值、条件冲突 合计 11%，专门挖风险点（规则边界、优先级冲突、解析歧义）。</li>
+<li><strong>长尾稳压</strong>：特殊格式字符、全部条件、异常情况、隐含否定条件 共 9%，保持低但固定占比，防止盲区；地域相关性 4% 兼顾地域词典&#x2F;地名歧义。</li>
+<li><strong>理解保障</strong>：用户意图识别 8% 专注“未显式结构化”的理解正确率，防回退为“看似正常但理解错”。</li>
+</ul>
+<p><em>备注:</em> </p>
+<blockquote>
+<p>如果有历史线上缺陷数据：把对应标签的占比<strong>额外上调 2–5 个百分点</strong>，从 单条件查询&#x2F;多条件组合 中对等下调。</p>
+</blockquote>
+<h4 id="抽样规则（实操落地）"><a href="#抽样规则（实操落地）" class="headerlink" title="抽样规则（实操落地）"></a><strong>抽样规则（实操落地）</strong></h4><ol>
+<li><p><strong>总量与最小覆盖：</strong></p>
+<ul>
+<li>设本次巡检样本量 &#x3D; <strong>N</strong>。</li>
+<li>每类目标样本数 &#x3D; round(占比 * N)。</li>
+<li><strong>每类最少 min(10, max(2, 0.02*N)) 条</strong>（避免极小样本导致“假通过”）。不足则从“主干类”（单条件&#x2F;多条件）等比例扣给不足类。</li>
+</ul>
+</li>
+<li><p><strong>多标签样本处理：</strong></p>
+<ul>
+<li>每条样本可有多个 scenario_types。</li>
+<li><strong>分桶填充</strong>：对每个标签独立建候选池，按各自配额从池内抽；同一条样本被多个标签命中时只计入一次，优先归属最稀缺的标签（当前缺口最大的标签）。</li>
+<li>若某标签候选不足，用“相近标签”回填（例如：特殊格式字符 不足，优先用含表情&#x2F;全角符号&#x2F;混排数字的样本；地域相关性 不足，用含城市&#x2F;省份&#x2F;商圈词的样本）。</li>
+</ul>
+</li>
+<li><p><strong>风险自适应调权（可选）：</strong></p>
+<ul>
+<li><strong>线上报警&#x2F;质量看板</strong>：最近 1 周错误率 &gt; 阈值（如 &gt;3%）的标签，临时 +3pt；</li>
+<li><strong>新版本影响面</strong>：引入新解析&#x2F;新规则的标签 +2pt；</li>
+<li><strong>季节&#x2F;活动因素</strong>：与营销&#x2F;节日强相关的标签（如价格数字&#x2F;颜色）+1–2pt。</li>
+</ul>
+</li>
+<li><p><strong>频率与留存：</strong></p>
+<ul>
+<li><strong>周检</strong>用 30–50 条&#x2F;日滚动抽样（轻量健康度）；</li>
+<li><strong>月检&#x2F;大版本前</strong>用 N&#x3D;300–500；</li>
+<li>保留**金标样本集（不变集）20–30%**做回归基线，其余 70–80%滚动更换，避免过拟合巡检集。</li>
+</ul>
+</li>
+</ol>
+<h4 id="示例：给定-N-的配额计算"><a href="#示例：给定-N-的配额计算" class="headerlink" title="示例：给定 N 的配额计算"></a><strong>示例：给定 N 的配额计算</strong></h4><p>以 <strong>N&#x3D;300</strong> 为例（供参考）：</p>
+<ul>
+<li><p>单条件 54， 多条件 54， 口语化 24， 意图识别 24， 错别字 18， 数字格式 18， 模糊表达 18， 多值并列 18， 边界值 18， 条件冲突 15， 地域 12， 特殊字符 9， 全部条件 6， 异常 6， 隐含否定 6。</p>
+<p>（若四舍五入有出入，按缺口从主干类补&#x2F;扣。）</p>
+</li>
+</ul>
+<h4 id="质检要点（抽样后）"><a href="#质检要点（抽样后）" class="headerlink" title="质检要点（抽样后）"></a><strong>质检要点（抽样后）</strong></h4><ul>
+<li><strong>覆盖检查</strong>：所有 15 类都有样本且 ≥ 最小覆盖；</li>
+<li><strong>难例比例</strong>：含噪声类（错别字&#x2F;口语化&#x2F;数字格式&#x2F;模糊&#x2F;多值并列&#x2F;特殊字符&#x2F;边界&#x2F;冲突）合计 ≥ 50%；</li>
+<li><strong>标签一致性</strong>：多标签样本的主次标签合理（记录主因标签，便于缺陷定位）。</li>
+</ul>
+<h4 id="采样代码"><a href="#采样代码" class="headerlink" title="采样代码"></a><strong>采样代码</strong></h4><ul>
+<li><p>测试数据集</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">   <span class="attr">&quot;sample_id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1065&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;scenario_types&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">     <span class="string">&quot;单条件查询&quot;</span></span><br><span class="line">   <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;query&quot;</span><span class="punctuation">:</span> <span class="string">&quot;帮我查查国六的车&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;expected&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">     <span class="attr">&quot;emissionStandard&quot;</span><span class="punctuation">:</span> <span class="string">&quot;国六&quot;</span></span><br><span class="line">   <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;intent&quot;</span><span class="punctuation">:</span> <span class="string">&quot;查询国六排放的二手车&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;data_source&quot;</span><span class="punctuation">:</span> <span class="string">&quot;test&quot;</span></span><br><span class="line"> <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"> <span class="punctuation">&#123;</span></span><br><span class="line">   <span class="attr">&quot;sample_id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1066&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;scenario_types&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">     <span class="string">&quot;多值并列条件&quot;</span><span class="punctuation">,</span><span class="string">&quot;多条件组合&quot;</span></span><br><span class="line">   <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;query&quot;</span><span class="punctuation">:</span> <span class="string">&quot;本田CR-V或者丰田RAV4，2019-2021款&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;expected&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">     <span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">       <span class="string">&quot;本田CR-V&quot;</span><span class="punctuation">,</span></span><br><span class="line">       <span class="string">&quot;丰田RAV4&quot;</span></span><br><span class="line">     <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">     <span class="attr">&quot;years&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">       <span class="string">&quot;2019&quot;</span><span class="punctuation">,</span></span><br><span class="line">       <span class="string">&quot;2020&quot;</span><span class="punctuation">,</span></span><br><span class="line">       <span class="string">&quot;2021&quot;</span></span><br><span class="line">     <span class="punctuation">]</span></span><br><span class="line">   <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;intent&quot;</span><span class="punctuation">:</span> <span class="string">&quot;查询2019-2021款本田CR-V或丰田RAV4&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;data_source&quot;</span><span class="punctuation">:</span> <span class="string">&quot;test&quot;</span></span><br><span class="line"> <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"> <span class="punctuation">&#123;</span></span><br><span class="line">   <span class="attr">&quot;sample_id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1067&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;scenario_types&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">     <span class="string">&quot;地域相关性&quot;</span><span class="punctuation">,</span><span class="string">&quot;多条件组合&quot;</span></span><br><span class="line">   <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;query&quot;</span><span class="punctuation">:</span> <span class="string">&quot;成都本地的沃尔沃S90，2020年以后上牌的&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;expected&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">     <span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;沃尔沃S90&quot;</span><span class="punctuation">,</span></span><br><span class="line">     <span class="attr">&quot;registrationDate&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">       <span class="attr">&quot;registrationDateFrom&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2020-01-01&quot;</span><span class="punctuation">,</span></span><br><span class="line">       <span class="attr">&quot;registrationDateTo&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2025-12-31&quot;</span></span><br><span class="line">     <span class="punctuation">&#125;</span></span><br><span class="line">   <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;intent&quot;</span><span class="punctuation">:</span> <span class="string">&quot;查询成都本地的2020年后上牌沃尔沃S90&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;data_source&quot;</span><span class="punctuation">:</span> <span class="string">&quot;test&quot;</span></span><br><span class="line"> <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"> <span class="punctuation">&#123;</span></span><br><span class="line">   <span class="attr">&quot;sample_id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1068&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;scenario_types&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">     <span class="string">&quot;包含错别字&quot;</span> <span class="punctuation">,</span><span class="string">&quot;多条件组合&quot;</span></span><br><span class="line">   <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;query&quot;</span><span class="punctuation">:</span> <span class="string">&quot;比压迪汉EV，2023款&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;expected&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">     <span class="attr">&quot;keywords&quot;</span><span class="punctuation">:</span> <span class="string">&quot;比亚迪汉&quot;</span><span class="punctuation">,</span></span><br><span class="line">     <span class="attr">&quot;years&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2023&quot;</span><span class="punctuation">,</span></span><br><span class="line">     <span class="attr">&quot;oilType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;纯电&quot;</span></span><br><span class="line">   <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;intent&quot;</span><span class="punctuation">:</span> <span class="string">&quot;查询2023款比亚迪汉EV&quot;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;data_source&quot;</span><span class="punctuation">:</span> <span class="string">&quot;test&quot;</span></span><br><span class="line"> <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数据集抽样逻辑 handle</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="comment"># @Time     : 2025/9/2 22:37</span></span><br><span class="line"><span class="comment"># @Filename : stratified_sample_handle.py</span></span><br><span class="line"><span class="comment"># @Author   : Alan_Hsu</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict, Counter</span><br><span class="line"></span><br><span class="line"><span class="comment"># 标签及抽样比例（可调整）</span></span><br><span class="line">LABEL_WEIGHTS = &#123;</span><br><span class="line">    <span class="string">&quot;单条件查询&quot;</span>: <span class="number">0.18</span>,</span><br><span class="line">    <span class="string">&quot;多条件组合&quot;</span>: <span class="number">0.18</span>,</span><br><span class="line">    <span class="string">&quot;口语化表达&quot;</span>: <span class="number">0.08</span>,</span><br><span class="line">    <span class="string">&quot;用户意图识别&quot;</span>: <span class="number">0.08</span>,</span><br><span class="line">    <span class="string">&quot;包含错别字&quot;</span>: <span class="number">0.06</span>,</span><br><span class="line">    <span class="string">&quot;数字格式变化&quot;</span>: <span class="number">0.06</span>,</span><br><span class="line">    <span class="string">&quot;条件模糊表达&quot;</span>: <span class="number">0.06</span>,</span><br><span class="line">    <span class="string">&quot;多值并列条件&quot;</span>: <span class="number">0.06</span>,</span><br><span class="line">    <span class="string">&quot;边界值&quot;</span>: <span class="number">0.06</span>,</span><br><span class="line">    <span class="string">&quot;条件冲突&quot;</span>: <span class="number">0.05</span>,</span><br><span class="line">    <span class="string">&quot;地域相关性&quot;</span>: <span class="number">0.04</span>,</span><br><span class="line">    <span class="string">&quot;特殊格式字符&quot;</span>: <span class="number">0.03</span>,</span><br><span class="line">    <span class="string">&quot;全部条件&quot;</span>: <span class="number">0.02</span>,</span><br><span class="line">    <span class="string">&quot;异常情况&quot;</span>: <span class="number">0.02</span>,</span><br><span class="line">    <span class="string">&quot;隐含否定条件&quot;</span>: <span class="number">0.02</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">compute_quota</span>(<span class="params">total_n, weights, min_each=<span class="number">2</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;计算每个标签的目标抽取数&quot;&quot;&quot;</span></span><br><span class="line">    base = &#123;k: <span class="built_in">max</span>(min_each, <span class="built_in">int</span>(<span class="built_in">round</span>(v * total_n))) <span class="keyword">for</span> k, v <span class="keyword">in</span> weights.items()&#125;</span><br><span class="line">    <span class="comment"># 修正总和可能不等于 total_n 的问题</span></span><br><span class="line">    delta = total_n - <span class="built_in">sum</span>(base.values())</span><br><span class="line">    <span class="keyword">if</span> delta != <span class="number">0</span>:</span><br><span class="line">        <span class="comment"># 按权重从大到小调整</span></span><br><span class="line">        keys_sorted = <span class="built_in">sorted</span>(weights, key=weights.get, reverse=<span class="literal">True</span>)</span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> delta != <span class="number">0</span>:</span><br><span class="line">            k = keys_sorted[i % <span class="built_in">len</span>(keys_sorted)]</span><br><span class="line">            base[k] += <span class="number">1</span> <span class="keyword">if</span> delta &gt; <span class="number">0</span> <span class="keyword">else</span> -<span class="number">1</span></span><br><span class="line">            delta += -<span class="number">1</span> <span class="keyword">if</span> delta &gt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">1</span></span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> base</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">stratified_sample</span>(<span class="params">data, total_n, weights</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    按标签比例抽样，支持多标签 scenario_types</span></span><br><span class="line"><span class="string">    data: list of dict</span></span><br><span class="line"><span class="string">    total_n: 抽样总数</span></span><br><span class="line"><span class="string">    weights: 标签比例字典</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 构建每标签候选池</span></span><br><span class="line">    pools = &#123;label: [] <span class="keyword">for</span> label <span class="keyword">in</span> weights&#125;</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> data:</span><br><span class="line">        labels = item.get(<span class="string">&quot;scenario_types&quot;</span>, [])</span><br><span class="line">        <span class="keyword">for</span> label <span class="keyword">in</span> labels:</span><br><span class="line">            <span class="keyword">if</span> label <span class="keyword">in</span> pools:</span><br><span class="line">                pools[label].append(item)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 计算每个标签的抽取目标</span></span><br><span class="line">    quota = compute_quota(total_n, weights)</span><br><span class="line">    chosen_ids = <span class="built_in">set</span>()</span><br><span class="line">    result = []</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 按缺口最大的标签依次抽样</span></span><br><span class="line">    <span class="keyword">while</span> <span class="built_in">len</span>(result) &lt; total_n:</span><br><span class="line">        <span class="comment"># 计算当前缺口</span></span><br><span class="line">        deficits = &#123;k: quota[k] - <span class="built_in">sum</span>(<span class="number">1</span> <span class="keyword">for</span> x <span class="keyword">in</span> result <span class="keyword">if</span> k <span class="keyword">in</span> x.get(<span class="string">&quot;scenario_types&quot;</span>, [])) <span class="keyword">for</span> k <span class="keyword">in</span> quota&#125;</span><br><span class="line">        deficits = &#123;k: v <span class="keyword">for</span> k, v <span class="keyword">in</span> deficits.items() <span class="keyword">if</span> v &gt; <span class="number">0</span>&#125;</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> deficits:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        target_label = <span class="built_in">max</span>(deficits, key=deficits.get)</span><br><span class="line">        <span class="comment"># 候选池中未选中的样本</span></span><br><span class="line">        candidates = [x <span class="keyword">for</span> x <span class="keyword">in</span> pools[target_label] <span class="keyword">if</span> x[<span class="string">&quot;sample_id&quot;</span>] <span class="keyword">not</span> <span class="keyword">in</span> chosen_ids]</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> candidates:</span><br><span class="line">            quota[target_label] = <span class="built_in">sum</span>(<span class="number">1</span> <span class="keyword">for</span> x <span class="keyword">in</span> result <span class="keyword">if</span> target_label <span class="keyword">in</span> x.get(<span class="string">&quot;scenario_types&quot;</span>, []))</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        selected = random.choice(candidates)</span><br><span class="line">        <span class="keyword">if</span> selected[<span class="string">&quot;sample_id&quot;</span>] <span class="keyword">not</span> <span class="keyword">in</span> chosen_ids:</span><br><span class="line">            result.append(selected)</span><br><span class="line">            chosen_ids.add(selected[<span class="string">&quot;sample_id&quot;</span>])</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 若仍不足 total_n，从剩余样本随机补齐</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(result) &lt; total_n:</span><br><span class="line">        remaining = [x <span class="keyword">for</span> x <span class="keyword">in</span> data <span class="keyword">if</span> x[<span class="string">&quot;sample_id&quot;</span>] <span class="keyword">not</span> <span class="keyword">in</span> chosen_ids]</span><br><span class="line">        extra_needed = total_n - <span class="built_in">len</span>(result)</span><br><span class="line">        <span class="keyword">if</span> remaining:</span><br><span class="line">            extra_samples = random.sample(remaining, <span class="built_in">min</span>(extra_needed, <span class="built_in">len</span>(remaining)))</span><br><span class="line">            result.extend(extra_samples)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 统计每个标签数量</span></span><br><span class="line">    label_counter = Counter()</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> result:</span><br><span class="line">        <span class="keyword">for</span> label <span class="keyword">in</span> item.get(<span class="string">&quot;scenario_types&quot;</span>, []):</span><br><span class="line">            label_counter[label] += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;🔹 抽样结果统计（标签: 数量, 占比）&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> label, count <span class="keyword">in</span> label_counter.items():</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;label&#125;</span>: <span class="subst">&#123;count&#125;</span> / <span class="subst">&#123;<span class="built_in">len</span>(result)&#125;</span> (<span class="subst">&#123;count/<span class="built_in">len</span>(result):<span class="number">.2</span>%&#125;</span>)&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>(<span class="params">input_file=<span class="string">&quot;output.json&quot;</span>, output_file=<span class="string">&quot;output_new.json&quot;</span>, n=<span class="number">300</span></span>):</span><br><span class="line">    <span class="comment"># 读取数据</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(input_file, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        data = json.load(f)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 抽样</span></span><br><span class="line">    sampled_data = stratified_sample(data, n, LABEL_WEIGHTS)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 保存结果</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(output_file, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        json.dump(sampled_data, f, ensure_ascii=<span class="literal">False</span>, indent=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;\n✅ 已生成巡检数据集，共 <span class="subst">&#123;<span class="built_in">len</span>(sampled_data)&#125;</span> 条，保存到 <span class="subst">&#123;output_file&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main(input_file=<span class="string">&quot;../eval_dataset/dataset_0901_all.json&quot;</span>, output_file=<span class="string">&quot;../eval_dataset/dataset_0901_clean.json&quot;</span>, n=<span class="number">300</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="执行与复盘"><a href="#执行与复盘" class="headerlink" title="执行与复盘"></a><strong>执行与复盘</strong></h4><p>(频次待定)</p>
+<ul>
+<li><strong>周检</strong>：N≈100，快速健康度；</li>
+<li><strong>月检&#x2F;大促前</strong>：N≈300–500，全面巡检；</li>
+<li><strong>复盘看板</strong>：按标签统计：通过率、严重&#x2F;高&#x2F;中缺陷占比、回归是否修复；</li>
+<li><strong>动态调权</strong>：把“近两周高缺陷标签”自动 +2–5 个百分点，并保留到下次抽样。</li>
+</ul>
+<h4 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h4><pre><code class="highlight mermaid">%% AI搜车巡检线上设计方案流程图
+%% 深色模式配色方案：节点使用亮色系
+flowchart TD
+    %% ===== 数据输入层 =====
+    A((&quot;数据源集合&quot;)) --&gt; B[分层抽样引擎]
+    
+    subgraph 数据源
+        A1[测试数据集]:::data
+        A2[生产数据集]:::data
+        A3[生产badcase]:::data
+        A4[人工抽查/新增]:::data
+    end
+    A --&gt; A1 &amp; A2 &amp; A3 &amp; A4
+
+    %% ===== 核心处理层 =====
+    B --&gt; C&#123;抽样策略控制&#125;
+    C --&gt;|基准比例| D[基准配额计算&lt;br&gt;LABEL_WEIGHTS]:::process
+    C --&gt;|动态调整| E[风险自适应调权]:::process
+    D --&gt; F[分层抽样执行]:::process
+    E --&gt; F
+
+    %% ===== 抽样逻辑层 =====
+    F --&gt; G[多标签样本处理]:::logic
+    G --&gt; G1[分桶填充策略]:::logic
+    G --&gt; G2[稀缺标签优先]:::logic
+    G --&gt; G3[相近标签回填]:::logic
+    F --&gt; H[&quot;最小覆盖保障&lt;br&gt;min(10, 2%N)&quot;]:::logic
+
+    %% ===== 输出层 =====
+    H --&gt; I((&quot;质检数据集&quot;))
+    
+    subgraph 输出模式
+        J[周检模式&lt;br&gt;N=100]:::output
+        K[月检模式&lt;br&gt;N=300-500]:::output
+        L[版本前全检]:::output
+    end
+    I --&gt; J &amp; K &amp; L
+
+    %% ===== 反馈环 =====
+    L --&gt; M[缺陷分析看板]:::feedback
+    M --&gt;|高缺陷标签| N[权重+2~5%]:::feedback
+    N --&gt;|更新| D
+    M --&gt; O[金标样本集&lt;br&gt;20-30%]:::feedback
+    O --&gt; B
+
+    %% ===== 样式定义 =====
+    classDef data fill:#E6E6FA,stroke:#9370DB,stroke-width:2px
+    classDef process fill:#FFFACD,stroke:#FFD700,stroke-width:2px
+    classDef logic fill:#FFDAB9,stroke:#FF6347,stroke-width:2px
+    classDef decision fill:#FFA07A,stroke:#FF4500,stroke-width:2px,shape:hexagon
+    classDef output fill:#98FB98,stroke:#2E8B57,stroke-width:2px
+    classDef feedback fill:#D8BFD8,stroke:#9400D3,stroke-width:2px
+</code></pre>
+
+]]></content>
+      <categories>
+        <category>技术整理</category>
+        <category>AI测试</category>
+      </categories>
+      <tags>
+        <tag>模型评测</tag>
+        <tag>AI智能测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>daily_notes_0901</title>
     <url>/articles/2025/c1f52489/</url>
     <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
@@ -1112,8 +1606,8 @@ graph LR
         <category>模型评测</category>
       </categories>
       <tags>
-        <tag>LLM_eval</tag>
         <tag>模型评测</tag>
+        <tag>LLM_eval</tag>
       </tags>
   </entry>
   <entry>
