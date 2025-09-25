@@ -31,8 +31,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-09-22_085256_864.jpg" alt="微信图片_2025-09-22_085256_864"></p>
 ]]></content>
       <categories>
-        <category>生活记录</category>
-        <category>Amy</category>
+        <category>uncategorized</category>
       </categories>
       <tags>
         <tag>Amy</tag>
@@ -166,7 +165,7 @@ flowchart TD
 <h2 id="15-23-10-睡觉"><a href="#15-23-10-睡觉" class="headerlink" title="15. 23:10 睡觉"></a>15. 23:10 睡觉</h2><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/image-20250904090243049.png" alt="image-20250904090243049"></p>
 ]]></content>
       <categories>
-        <category>uncategorized</category>
+        <category>生活记录</category>
       </categories>
       <tags>
         <tag>日常</tag>
@@ -659,7 +658,8 @@ flowchart TD
 
 ]]></content>
       <categories>
-        <category>uncategorized</category>
+        <category>技术整理</category>
+        <category>模型评测</category>
       </categories>
       <tags>
         <tag>模型评测</tag>
