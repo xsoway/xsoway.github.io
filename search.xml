@@ -495,84 +495,6 @@ flowchart TD
       </tags>
   </entry>
   <entry>
-    <title>Github+PicGo+jsDelivr</title>
-    <url>/articles/2025/94fe91f2/</url>
-    <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
-; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;">Life is not what you have gained, but what you have done !</blockquote>
-
-
-<h1 id="🤣前言"><a href="#🤣前言" class="headerlink" title="🤣前言"></a>🤣前言</h1><blockquote>
-<p>在搭建博客之后，紧接着需要去寻找好用的云端图床工具了🤣，网上搜罗了一堆免费、收费的图床工具，遍布国内外众多大小作坊，现成的云端图床，限制众多，这里就不多说了，当然，自己折腾完的，也不能什么图都可以传哈，博客都折腾完了，图床看来还是有必要折腾一下下的，毕竟属于自己的才是最DIY，最nice的，😄</p>
-</blockquote>
-<aside>
-💡 世上最重要的事，不在于我们在何处，而在于我们朝着什么方向走
-
-</aside>
-
-<h1 id="😝图床是什么-？"><a href="#😝图床是什么-？" class="headerlink" title="😝图床是什么**？**"></a>😝图床是什么**？**</h1><aside>
-❇️ 图床用于储存图片的
-
-
-<ul>
-<li>网站、APP的所有图片都是储存在服务器，然后获得图片地址，就能把图片显示出来。一个大的网站，或者发展久了，服务器就会储存非常多的图片，也是一笔不小的经费，加上每张图片都有访问的请求，都会被占用服务器的流量或cdn流量。<br>在这里推荐一个聚合图床，聚合百度、腾讯、阿里、bilibili、中关村、今日头条、网易、搜狐、58同城、小米、360等众多互联网公司的图床，减缓自己服务器的压力和节省开支，免费使用：里客云 - 聚合图床 - 图片上传工具 - 图片外链获取</li>
-<li>传个人图片，并可以分享</li>
-</ul>
-<p>好的解决方案：博客页面放在github，图片在阿里云 oss，虽然oss按流量收费，但是便宜又快，一个月也就几毛钱，等同免费</p>
-</aside>
-
-<h1 id="🧐准备工作"><a href="#🧐准备工作" class="headerlink" title="🧐准备工作"></a>🧐准备工作</h1><aside>
-❇️ Github 账号
-
-
-<p>那么在正式开始之前，你需要提前准备以下东西：</p>
-<p>一个 Github 账号</p>
-<p>好了，就这么简单，只要你有一个 Github 账号就够了，你就能拥有一个免费的图床了，如果你还没有，那赶紧去一个吧</p>
-</aside>
-
-<h1 id="😋搭建过程"><a href="#😋搭建过程" class="headerlink" title="😋搭建过程"></a>😋<strong>搭建过程</strong></h1><h3 id="1-创建一个新的仓库"><a href="#1-创建一个新的仓库" class="headerlink" title="1. 创建一个新的仓库"></a>1. 创建一个新的仓库</h3><p>登录你的 Github 之后，创建一个新的仓库, 确保仓库为 <code>public</code> 其他的保持默认就好</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%9B%BE%E5%BA%8A1.png"></p>
-<h3 id="2-上传图片"><a href="#2-上传图片" class="headerlink" title="2. 上传图片"></a>2. <strong>上传图片</strong></h3><p>下载客户端 </p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9tb2x1bmVyZmlubi5jb20vUGljR28v">PicGo<i class="fa fa-external-link-alt"></i></span></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%9B%BE%E5%BA%8A2.png"></p>
-<h3 id="3-Github-创建一个-token"><a href="#3-Github-创建一个-token" class="headerlink" title="3. Github 创建一个 token"></a>3. Github 创建一个 token</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`Settings -&gt; Developer settings -&gt; Personal access tokens`</span>，最后点击 <span class="code">`generate new token`</span></span><br><span class="line"></span><br><span class="line">填写相关信息及勾选repo，然后点击 <span class="code">`Genetate token`</span> 即可</span><br><span class="line"></span><br><span class="line"><span class="code">`token`</span> 生成，注意它只会显示一次，所以你最好把它复制下来到你的备忘录存好，方便下次使用，否则下次有需要重新新建；</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-PicGo配置"><a href="#4-PicGo配置" class="headerlink" title="4. PicGo配置"></a>4. PicGo配置</h3><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%9B%BE%E5%BA%8A3.png"></p>
-<ul>
-<li>图床配置名：自定义名字</li>
-<li>设定仓库名：github新建的仓库名 <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vWFhYL1hYWA==">github.com&#x2F;XXX&#x2F;XXX<i class="fa fa-external-link-alt"></i></span>      只填写 <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vWFhYL1hYWA==">&#x2F;XXX&#x2F;XXX<i class="fa fa-external-link-alt"></i></span></li>
-<li>设定分支名： main</li>
-<li>设定token: 步聚3中的token</li>
-<li>设定自定义域名：<span class="exturl" data-url="aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3hzb3dheS94bXlsb2dfaW1nc0BtYWlu">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;XXX&#x2F;XXX@main<i class="fa fa-external-link-alt"></i></span>    （<span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vWFhYL1hYWA==">&#x2F;XXX&#x2F;XXX<i class="fa fa-external-link-alt"></i></span> 为仓库名）（CDN加速访问）</li>
-</ul>
-<aside>
-💡 CDN加速访问
-**使用 jsDelivr CDN 加速 Github 仓库的图片，以作为博客的图床**
-
-
-<p>sDelivr 是国外的一家优秀的公共 CDN 服务提供商，也是首个「打通中国大陆（网宿公司运营）与海外的免费 CDN 服务」。jsDelivr 有一个十分好用的功能——<strong>它可以加速 Github 仓库的文件</strong>。我们可以借此搭建一个免费、全球访问速度超快的图床。</p>
-<p><strong>声明：静态文件主要是缓存在 jsDelivr 的 CDN 节点上，确保 GitHub 承受最小的负载，并且你还可以从 GitHub 仓库获得快速简便的静态文件托管。</strong></p>
-<p>其中：</p>
-<ul>
-<li><code>gh</code> 表示来自 Github 的仓库</li>
-<li><code>joeyliu6/Blogger</code> 仓库的具体位置</li>
-<li><code>master</code> 仓库的分支</aside></li>
-</ul>
-<h3 id="5-上传图片"><a href="#5-上传图片" class="headerlink" title="5. 上传图片"></a>5. 上传图片</h3><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%9B%BE%E5%BA%8A4.png"></p>
-<h3 id="6-在相册中选中图片，点击复制链接，进行使用"><a href="#6-在相册中选中图片，点击复制链接，进行使用" class="headerlink" title="6. 在相册中选中图片，点击复制链接，进行使用"></a>6. 在相册中选中图片，点击复制链接，进行使用</h3><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%9B%BE%E5%BA%8A5-20250925085556603.png"></p>
-<h1 id="图床推荐"><a href="#图床推荐" class="headerlink" title="图床推荐"></a>图床推荐</h1><p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC81ODg2MzM3OA==">最全的图床集合（国内外，站长必备）<i class="fa fa-external-link-alt"></i></span></p>
-<hr>
-<aside>
-🎒 离开乏味的皮囊，自由的灵魂在路上
-
-</aside>]]></content>
-      <categories>
-        <category>uncategorized</category>
-      </categories>
-      <tags>
-        <tag>图床</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>amy_birthday_0921</title>
     <url>/articles/2025/e1245b90/</url>
     <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
@@ -949,23 +871,6 @@ graph LR
       </tags>
   </entry>
   <entry>
-    <title>ghostty终端工具,主题,配置文件设置备份</title>
-    <url>/articles/2025/7ab897/</url>
-    <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
-; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;">Life is not what you have gained, but what you have done !</blockquote>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># This is the configuration file for Ghostty.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># This template file has been automatically created at the following</span></span><br><span class="line"><span class="comment"># path since Ghostty couldn&#x27;t find any existing config files on your system:</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#   /Users/xulanzhong/Library/Application Support/com.mitchellh.ghostty/config</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># The template does not set any default options, since Ghostty ships</span></span><br><span class="line"><span class="comment"># with sensible defaults for all options. Users should only need to set</span></span><br><span class="line"><span class="comment"># options that they want to change from the default.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Run `ghostty +show-config --default --docs` to view a list of</span></span><br><span class="line"><span class="comment"># all available config options and their default values.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Additionally, each config option is also explained in detail</span></span><br><span class="line"><span class="comment"># on Ghostty&#x27;s website, at https://ghostty.org/docs/config.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Config syntax crash course</span></span><br><span class="line"><span class="comment"># ==========================</span></span><br><span class="line"><span class="comment"># # The config file consists of simple key-value pairs,</span></span><br><span class="line"><span class="comment"># # separated by equals signs.</span></span><br><span class="line"><span class="comment"># font-family = Iosevka</span></span><br><span class="line"><span class="comment"># window-padding-x = 2</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># # Spacing around the equals sign does not matter.</span></span><br><span class="line"><span class="comment"># # All of these are identical:</span></span><br><span class="line"><span class="comment"># key=value</span></span><br><span class="line"><span class="comment"># key= value</span></span><br><span class="line"><span class="comment"># key =value</span></span><br><span class="line"><span class="comment"># key = value</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># # Any line beginning with a # is a comment. It&#x27;s not possible to put</span></span><br><span class="line"><span class="comment"># # a comment after a config option, since it would be interpreted as a</span></span><br><span class="line"><span class="comment"># # part of the value. For example, this will have a value of &quot;#123abc&quot;:</span></span><br><span class="line"><span class="comment"># background = #123abc</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># # Empty values are used to reset config keys to default.</span></span><br><span class="line"><span class="comment"># key =</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># # Some config options have unique syntaxes for their value,</span></span><br><span class="line"><span class="comment"># # which is explained in the docs for that config option.</span></span><br><span class="line"><span class="comment"># # Just for example:</span></span><br><span class="line"><span class="comment"># resize-overlay-duration = 4s 200ms</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 字体设置</span></span><br><span class="line"><span class="string">font-family</span> <span class="string">=</span> <span class="string">BlexMono</span> <span class="string">Nerd</span> <span class="string">Font</span> <span class="string">Mono</span></span><br><span class="line"><span class="string">font-size</span> <span class="string">=</span> <span class="number">16</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 主题和样式</span></span><br><span class="line"><span class="string">theme</span> <span class="string">=</span> <span class="string">Gruvbox</span> <span class="string">Dark</span> <span class="string">Hard</span></span><br><span class="line"><span class="string">cursor-style</span> <span class="string">=</span> <span class="string">block</span></span><br><span class="line"><span class="string">adjust-cell-height</span> <span class="string">=</span> <span class="number">35</span><span class="string">%</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 鼠标相关</span></span><br><span class="line"><span class="string">mouse-hide-while-typing</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">mouse-scroll-multiplier</span> <span class="string">=</span> <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># macOS 特定</span></span><br><span class="line"><span class="comment"># macos-titlebar-style = hidden</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 窗口设置</span></span><br><span class="line"><span class="string">window-padding-balance</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">window-save-state</span> <span class="string">=</span> <span class="string">always</span></span><br><span class="line"><span class="string">window-colorspace</span> <span class="string">=</span> <span class="string">&quot;display-p3&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 颜色设置</span></span><br><span class="line"><span class="string">background</span> <span class="string">=</span> <span class="string">1C2021</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 外观</span></span><br><span class="line"><span class="comment">#theme = tokyonight-storm</span></span><br><span class="line"><span class="string">background-opacity</span> <span class="string">=</span> <span class="number">0.75</span></span><br><span class="line"><span class="string">background-blur-radius</span> <span class="string">=</span> <span class="number">40</span></span><br><span class="line"><span class="string">font-family</span> <span class="string">=</span> <span class="string">VictorMono</span> <span class="string">NFM</span></span><br><span class="line"><span class="string">font-size</span> <span class="string">=</span> <span class="number">16</span></span><br><span class="line"><span class="string">cursor-style</span> <span class="string">=</span> <span class="string">block</span></span><br><span class="line"><span class="string">cursor-style-blink</span> <span class="string">=</span> <span class="literal">false</span></span><br><span class="line"><span class="string">cursor-invert-fg-bg</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">mouse-hide-while-typing</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># macOS 专属设置</span></span><br><span class="line"><span class="string">macos-titlebar-style</span> <span class="string">=</span> <span class="string">tabs</span></span><br><span class="line"><span class="string">macos-option-as-alt</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 窗口控制</span></span><br><span class="line"><span class="string">confirm-close-surface</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">window-title-font-family</span> <span class="string">=</span> <span class="string">VictorMono</span> <span class="string">NFM</span> <span class="string">Italic</span></span><br><span class="line"><span class="string">window-decoration</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">window-padding-x</span> <span class="string">=</span> <span class="number">2</span></span><br><span class="line"><span class="string">window-padding-y</span> <span class="string">=</span> <span class="number">2</span></span><br><span class="line"><span class="string">window-padding-balance</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">window-save-state</span> <span class="string">=</span> <span class="string">always</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 自动更新设置</span></span><br><span class="line"><span class="string">auto-update</span> <span class="string">=</span> <span class="string">download</span></span><br><span class="line"><span class="string">auto-update-channel</span> <span class="string">=</span> <span class="string">stable</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 附加功能</span></span><br><span class="line"><span class="string">shell-integration-features</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">copy-on-select</span> <span class="string">=</span> <span class="string">clipboard</span></span><br><span class="line"><span class="string">focus-follows-mouse</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">link-url</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 自定义快捷键</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+r=reload_config</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+i=inspector:toggle</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+f=toggle_fullscreen</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+left=previous_tab</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+right=next_tab</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 快速终端 (全局快捷键)</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">global:super+grave_accent=toggle_quick_terminal</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># tmux 风格的前缀控制快捷键</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;x=close_surface</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;c=new_tab</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;n=new_window</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;f=toggle_fullscreen</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 标签页导航</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;1=goto_tab:1</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;2=goto_tab:2</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;3=goto_tab:3</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;4=goto_tab:4</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;5=goto_tab:5</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;6=goto_tab:6</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;7=goto_tab:7</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;8=goto_tab:8</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;9=goto_tab:9</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分割</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;\=new_split:right</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;-=new_split:down</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;e=equalize_splits</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;z=toggle_split_zoom</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分割导航</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;h=goto_split:left</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;j=goto_split:bottom</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;k=goto_split:top</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;l=goto_split:right</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;left=goto_split:left</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;down=goto_split:bottom</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;up=goto_split:top</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;right=goto_split:right</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术整理</category>
-        <category>配置文件</category>
-        <category>终端工具</category>
-      </categories>
-      <tags>
-        <tag>配置文件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ChatBI 评测方案设计</title>
     <url>/articles/2025/58196/</url>
     <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
@@ -1254,6 +1159,234 @@ graph LR
         <tag>chatbi</tag>
         <tag>LLM_eval</tag>
         <tag>测试方案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>working_day_flow</title>
+    <url>/articles/2025/8faa0a34/</url>
+    <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
+; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;">Life is not what you have gained, but what you have done !</blockquote>
+<pre><code class="highlight mermaid">%%&#123;init: &#123;&#x27;theme&#x27;: &#x27;dark&#x27;, &#x27;themeVariables&#x27;: &#123; &#x27;primaryColor&#x27;: &#x27;#1e1e1e&#x27;, &#x27;nodeTextColor&#x27;: &#x27;#f0f0f0&#x27;, &#x27;edgeLabelBackground&#x27;:&#x27;#333&#x27;, &#x27;clusterBkg&#x27;: &#x27;#2a2a2a&#x27;&#125;&#125;&#125;%%
+gantt
+    title 每日作息流程图
+    dateFormat  HH:mm
+    axisFormat %H:%M
+    
+    section 早晨
+    闹钟 :a1, 06:00, 10m
+    闹钟 :a2, after a1, 10m
+    闹钟 :a3, after a2, 10m
+    起床洗漱 :06:30, 10m
+    通勤 :06:50, 40m
+    早餐 :07:40, 10m
+    
+    section 上午
+    到公司准备 :07:50, 10m
+    个人时间 :08:00, 60m
+    工作 :09:00, 180m
+    
+    section 午间
+    午休活动 :12:00, 60m
+    
+    section 下午
+    工作 :13:00, 330m
+    
+    section 晚上
+    健身/加班 :18:30, 90m
+    通勤回家 :19:40, 60m
+    晚间清洁 :21:00, 40m
+    Coding时间 :21:40, 30m
+    刷手机 :22:40, 30m
+    睡觉 :23:10, 0m
+    
+    section 关键标注
+    地铁阅读 :crit, 06:50, 40m
+    公众号整理 :crit, 08:00, 60m
+    运动时间 :crit, 12:00, 40m
+</code></pre>
+
+<pre><code class="highlight mermaid">%%&#123;init: &#123;&#x27;theme&#x27;: &#x27;dark&#x27;, &#x27;themeVariables&#x27;: &#123; &#x27;primaryColor&#x27;: &#x27;#1e1e1e&#x27;, &#x27;nodeTextColor&#x27;: &#x27;#f0f0f0&#x27;, &#x27;edgeLabelBackground&#x27;:&#x27;#333&#x27;, &#x27;clusterBkg&#x27;: &#x27;#2a2a2a&#x27;&#125;&#125;&#125;%%
+flowchart TD
+    A[6:00 闹钟响] --&gt;|10分钟间隔| B[6:30 起床洗漱]
+    B --&gt; C[6:40 出门]
+    C --&gt; D[6:50-7:30 地铁通勤]
+    D --&gt; E[7:40 早餐]
+    E --&gt; F[7:50 到公司准备]
+    
+    subgraph 上午行程
+    F --&gt; G[8:00 个人时间]
+    G --&gt;|公众号整理| H[Agent-RAG框架优化]
+    H --&gt; I[9:00 工作]
+    end
+    
+    subgraph 午间选择
+    I --&gt; J&#123;12:00-13:00&#125;
+    J --&gt;|选项1| K[羽毛球]
+    J --&gt;|选项2| L[公园散步]
+    J --&gt;|选项3| M[午餐+午休]
+    end
+    
+    subgraph 晚间活动
+    N[18:30] --&gt; O&#123;活动选择&#125;
+    O --&gt;|加班| P[工作]
+    O --&gt;|跑步| Q[运动]
+    O --&gt;|羽毛球| R[运动]
+    
+    S[19:40/20:00/21:00] --&gt; T[通勤回家]
+    T --&gt; U[21:00/22:00 洗澡洗衣]
+    U --&gt; V[Coding 30min]
+    V --&gt; W[22:40 刷手机]
+    W --&gt; X[23:10 睡觉]
+    end
+    
+    style A fill:#4CAF50,stroke:#388E3C
+    style D fill:#2196F3,stroke:#1976D2
+    style G fill:#FFC107,stroke:#FFA000
+    style J fill:#9C27B0,stroke:#7B1FA2
+    style O fill:#F44336,stroke:#D32F2F
+    style X fill:#607D8B,stroke:#455A64
+</code></pre>
+
+
+
+<h2 id="1-6-00-闹钟响-10分钟响一次-闹3次"><a href="#1-6-00-闹钟响-10分钟响一次-闹3次" class="headerlink" title="1. 6:00 闹钟响 (10分钟响一次,闹3次)"></a>1. 6:00 闹钟响 (10分钟响一次,闹3次)</h2><h2 id="2-6-30-起床-洗漱-检查背包-要带的装备-衣服"><a href="#2-6-30-起床-洗漱-检查背包-要带的装备-衣服" class="headerlink" title="2. 6:30 起床,洗漱,检查背包(要带的装备,衣服)"></a>2. 6:30 起床,洗漱,检查背包(要带的装备,衣服)</h2><h2 id="3-6-40-出门"><a href="#3-6-40-出门" class="headerlink" title="3. 6:40 出门"></a>3. 6:40 出门</h2><h2 id="4-6-50-7-30-地铁通勤"><a href="#4-6-50-7-30-地铁通勤" class="headerlink" title="4. 6:50  -&gt; 7:30 (地铁通勤)"></a>4. 6:50  -&gt; 7:30 (地铁通勤)</h2><ul>
+<li><h3 id="40分钟"><a href="#40分钟" class="headerlink" title="40分钟"></a>40分钟</h3></li>
+<li><h3 id="Review公众号文章-有价值的转载"><a href="#Review公众号文章-有价值的转载" class="headerlink" title="Review公众号文章(有价值的转载)"></a>Review公众号文章(有价值的转载)</h3></li>
+</ul>
+<h2 id="5-7-40-早餐-随机"><a href="#5-7-40-早餐-随机" class="headerlink" title="5. 7:40 早餐 (随机)"></a>5. 7:40 早餐 (随机)</h2><ul>
+<li><h3 id="豆腐脑-油条"><a href="#豆腐脑-油条" class="headerlink" title="豆腐脑,油条"></a>豆腐脑,油条</h3></li>
+<li><h3 id="星巴克早餐"><a href="#星巴克早餐" class="headerlink" title="星巴克早餐"></a>星巴克早餐</h3></li>
+<li><h3 id="瑞幸咖啡"><a href="#瑞幸咖啡" class="headerlink" title="瑞幸咖啡"></a>瑞幸咖啡</h3></li>
+</ul>
+<h2 id="6-7-50-公司-收拾工位-水杯-洗漱"><a href="#6-7-50-公司-收拾工位-水杯-洗漱" class="headerlink" title="6. 7:50 公司,收拾工位,水杯,洗漱"></a>6. 7:50 公司,收拾工位,水杯,洗漱</h2><h2 id="7-8-00-WC大事-随机"><a href="#7-8-00-WC大事-随机" class="headerlink" title="7. 8:00 (WC大事) 随机"></a>7. <del>8:00 (WC大事) 随机</del></h2><h2 id="8-8-00-个人时间"><a href="#8-8-00-个人时间" class="headerlink" title="8. 8:00 个人时间"></a>8. 8:00 个人时间</h2><ul>
+<li><h3 id="开始整理公众号文章"><a href="#开始整理公众号文章" class="headerlink" title="开始整理公众号文章"></a>开始整理公众号文章</h3></li>
+<li><h3 id="文整理一篇"><a href="#文整理一篇" class="headerlink" title="文整理一篇"></a>文整理一篇</h3></li>
+<li><h3 id="Agent-RAG-评测-框架-持续优化"><a href="#Agent-RAG-评测-框架-持续优化" class="headerlink" title="Agent-RAG-评测-框架( 持续优化)"></a>Agent-RAG-评测-框架( 持续优化)</h3></li>
+</ul>
+<h2 id="9-9-00-Working…"><a href="#9-9-00-Working…" class="headerlink" title="9. 9:00 Working…"></a>9. 9:00 Working…</h2><h2 id="10-12-00-13-00-随机"><a href="#10-12-00-13-00-随机" class="headerlink" title="10. 12:00-13:00 (随机)"></a>10. 12:00-13:00 (随机)</h2><ul>
+<li><h3 id="楼上羽球40分钟"><a href="#楼上羽球40分钟" class="headerlink" title="楼上羽球40分钟"></a>楼上羽球40分钟</h3></li>
+<li><h3 id="公园遛达30分钟"><a href="#公园遛达30分钟" class="headerlink" title="公园遛达30分钟"></a>公园遛达30分钟</h3></li>
+<li><h3 id="午餐-步行-骑行"><a href="#午餐-步行-骑行" class="headerlink" title="午餐(步行 &amp; 骑行)"></a>午餐(步行 &amp; 骑行)</h3></li>
+<li><h3 id="午休"><a href="#午休" class="headerlink" title="午休"></a>午休</h3></li>
+</ul>
+<h2 id="11-18-30-随机"><a href="#11-18-30-随机" class="headerlink" title="11. 18:30 ~ (随机)"></a>11. 18:30 ~ (随机)</h2><ul>
+<li><h3 id="加班"><a href="#加班" class="headerlink" title="加班"></a>加班</h3></li>
+<li><h3 id="跑步"><a href="#跑步" class="headerlink" title="跑步"></a>跑步</h3></li>
+<li><h3 id="羽球"><a href="#羽球" class="headerlink" title="羽球"></a>羽球</h3></li>
+</ul>
+<h2 id="12-19-40-20-00-21-00"><a href="#12-19-40-20-00-21-00" class="headerlink" title="12. 19:40&#x2F;20:00&#x2F;21:00 ~"></a>12. 19:40&#x2F;20:00&#x2F;21:00 ~</h2><ul>
+<li><h3 id="下班回家"><a href="#下班回家" class="headerlink" title="下班回家"></a>下班回家</h3></li>
+<li><h3 id="通勤1小时-整理转载公从号文章"><a href="#通勤1小时-整理转载公从号文章" class="headerlink" title="通勤1小时(整理转载公从号文章)"></a>通勤1小时(整理转载公从号文章)</h3></li>
+</ul>
+<h2 id="13-21-00-22-00"><a href="#13-21-00-22-00" class="headerlink" title="13. 21:00&#x2F;22:00"></a>13. 21:00&#x2F;22:00</h2><ul>
+<li><h3 id="洗澡"><a href="#洗澡" class="headerlink" title="洗澡"></a>洗澡</h3></li>
+<li><h3 id="洗衣服"><a href="#洗衣服" class="headerlink" title="洗衣服"></a>洗衣服</h3></li>
+<li><h3 id="coding-30分钟"><a href="#coding-30分钟" class="headerlink" title="coding~ (30分钟)"></a>coding~ (30分钟)</h3></li>
+</ul>
+<h2 id="14-22-40-躺下"><a href="#14-22-40-躺下" class="headerlink" title="14. 22:40 躺下"></a>14. 22:40 躺下</h2><ul>
+<li><h3 id="刷手机-30分钟"><a href="#刷手机-30分钟" class="headerlink" title="刷手机(30分钟)"></a>刷手机(30分钟)</h3></li>
+</ul>
+<h2 id="15-23-10-睡觉"><a href="#15-23-10-睡觉" class="headerlink" title="15. 23:10 睡觉"></a>15. 23:10 睡觉</h2><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/image-20250904090243049.png" alt="image-20250904090243049"></p>
+]]></content>
+      <categories>
+        <category>生活记录</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>流水账</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ghostty终端工具,主题,配置文件设置备份</title>
+    <url>/articles/2025/7ab897/</url>
+    <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
+; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;">Life is not what you have gained, but what you have done !</blockquote>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># This is the configuration file for Ghostty.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># This template file has been automatically created at the following</span></span><br><span class="line"><span class="comment"># path since Ghostty couldn&#x27;t find any existing config files on your system:</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#   /Users/xulanzhong/Library/Application Support/com.mitchellh.ghostty/config</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># The template does not set any default options, since Ghostty ships</span></span><br><span class="line"><span class="comment"># with sensible defaults for all options. Users should only need to set</span></span><br><span class="line"><span class="comment"># options that they want to change from the default.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Run `ghostty +show-config --default --docs` to view a list of</span></span><br><span class="line"><span class="comment"># all available config options and their default values.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Additionally, each config option is also explained in detail</span></span><br><span class="line"><span class="comment"># on Ghostty&#x27;s website, at https://ghostty.org/docs/config.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Config syntax crash course</span></span><br><span class="line"><span class="comment"># ==========================</span></span><br><span class="line"><span class="comment"># # The config file consists of simple key-value pairs,</span></span><br><span class="line"><span class="comment"># # separated by equals signs.</span></span><br><span class="line"><span class="comment"># font-family = Iosevka</span></span><br><span class="line"><span class="comment"># window-padding-x = 2</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># # Spacing around the equals sign does not matter.</span></span><br><span class="line"><span class="comment"># # All of these are identical:</span></span><br><span class="line"><span class="comment"># key=value</span></span><br><span class="line"><span class="comment"># key= value</span></span><br><span class="line"><span class="comment"># key =value</span></span><br><span class="line"><span class="comment"># key = value</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># # Any line beginning with a # is a comment. It&#x27;s not possible to put</span></span><br><span class="line"><span class="comment"># # a comment after a config option, since it would be interpreted as a</span></span><br><span class="line"><span class="comment"># # part of the value. For example, this will have a value of &quot;#123abc&quot;:</span></span><br><span class="line"><span class="comment"># background = #123abc</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># # Empty values are used to reset config keys to default.</span></span><br><span class="line"><span class="comment"># key =</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># # Some config options have unique syntaxes for their value,</span></span><br><span class="line"><span class="comment"># # which is explained in the docs for that config option.</span></span><br><span class="line"><span class="comment"># # Just for example:</span></span><br><span class="line"><span class="comment"># resize-overlay-duration = 4s 200ms</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 字体设置</span></span><br><span class="line"><span class="string">font-family</span> <span class="string">=</span> <span class="string">BlexMono</span> <span class="string">Nerd</span> <span class="string">Font</span> <span class="string">Mono</span></span><br><span class="line"><span class="string">font-size</span> <span class="string">=</span> <span class="number">16</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 主题和样式</span></span><br><span class="line"><span class="string">theme</span> <span class="string">=</span> <span class="string">Gruvbox</span> <span class="string">Dark</span> <span class="string">Hard</span></span><br><span class="line"><span class="string">cursor-style</span> <span class="string">=</span> <span class="string">block</span></span><br><span class="line"><span class="string">adjust-cell-height</span> <span class="string">=</span> <span class="number">35</span><span class="string">%</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 鼠标相关</span></span><br><span class="line"><span class="string">mouse-hide-while-typing</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">mouse-scroll-multiplier</span> <span class="string">=</span> <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># macOS 特定</span></span><br><span class="line"><span class="comment"># macos-titlebar-style = hidden</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 窗口设置</span></span><br><span class="line"><span class="string">window-padding-balance</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">window-save-state</span> <span class="string">=</span> <span class="string">always</span></span><br><span class="line"><span class="string">window-colorspace</span> <span class="string">=</span> <span class="string">&quot;display-p3&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 颜色设置</span></span><br><span class="line"><span class="string">background</span> <span class="string">=</span> <span class="string">1C2021</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 外观</span></span><br><span class="line"><span class="comment">#theme = tokyonight-storm</span></span><br><span class="line"><span class="string">background-opacity</span> <span class="string">=</span> <span class="number">0.75</span></span><br><span class="line"><span class="string">background-blur-radius</span> <span class="string">=</span> <span class="number">40</span></span><br><span class="line"><span class="string">font-family</span> <span class="string">=</span> <span class="string">VictorMono</span> <span class="string">NFM</span></span><br><span class="line"><span class="string">font-size</span> <span class="string">=</span> <span class="number">16</span></span><br><span class="line"><span class="string">cursor-style</span> <span class="string">=</span> <span class="string">block</span></span><br><span class="line"><span class="string">cursor-style-blink</span> <span class="string">=</span> <span class="literal">false</span></span><br><span class="line"><span class="string">cursor-invert-fg-bg</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">mouse-hide-while-typing</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># macOS 专属设置</span></span><br><span class="line"><span class="string">macos-titlebar-style</span> <span class="string">=</span> <span class="string">tabs</span></span><br><span class="line"><span class="string">macos-option-as-alt</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 窗口控制</span></span><br><span class="line"><span class="string">confirm-close-surface</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">window-title-font-family</span> <span class="string">=</span> <span class="string">VictorMono</span> <span class="string">NFM</span> <span class="string">Italic</span></span><br><span class="line"><span class="string">window-decoration</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">window-padding-x</span> <span class="string">=</span> <span class="number">2</span></span><br><span class="line"><span class="string">window-padding-y</span> <span class="string">=</span> <span class="number">2</span></span><br><span class="line"><span class="string">window-padding-balance</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">window-save-state</span> <span class="string">=</span> <span class="string">always</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 自动更新设置</span></span><br><span class="line"><span class="string">auto-update</span> <span class="string">=</span> <span class="string">download</span></span><br><span class="line"><span class="string">auto-update-channel</span> <span class="string">=</span> <span class="string">stable</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 附加功能</span></span><br><span class="line"><span class="string">shell-integration-features</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">copy-on-select</span> <span class="string">=</span> <span class="string">clipboard</span></span><br><span class="line"><span class="string">focus-follows-mouse</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"><span class="string">link-url</span> <span class="string">=</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 自定义快捷键</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+r=reload_config</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+i=inspector:toggle</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+f=toggle_fullscreen</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+left=previous_tab</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+right=next_tab</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 快速终端 (全局快捷键)</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">global:super+grave_accent=toggle_quick_terminal</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># tmux 风格的前缀控制快捷键</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;x=close_surface</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;c=new_tab</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;n=new_window</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;f=toggle_fullscreen</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 标签页导航</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;1=goto_tab:1</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;2=goto_tab:2</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;3=goto_tab:3</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;4=goto_tab:4</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;5=goto_tab:5</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;6=goto_tab:6</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;7=goto_tab:7</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;8=goto_tab:8</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;9=goto_tab:9</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分割</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;\=new_split:right</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;-=new_split:down</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;e=equalize_splits</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;z=toggle_split_zoom</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分割导航</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;h=goto_split:left</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;j=goto_split:bottom</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;k=goto_split:top</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;l=goto_split:right</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;left=goto_split:left</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;down=goto_split:bottom</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;up=goto_split:top</span></span><br><span class="line"><span class="string">keybind</span> <span class="string">=</span> <span class="string">super+b&gt;right=goto_split:right</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术整理</category>
+        <category>配置文件</category>
+        <category>终端工具</category>
+      </categories>
+      <tags>
+        <tag>配置文件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虎跳峡徒步_10.2</title>
+    <url>/articles/2025/b551278f/</url>
+    <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
+; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;">Life is not what you have gained, but what you have done !</blockquote>
+
+
+<h1 id="此生必徒📍-《国家地理》·虎跳峡"><a href="#此生必徒📍-《国家地理》·虎跳峡" class="headerlink" title="此生必徒📍 《国家地理》·虎跳峡"></a>此生必徒📍 《国家地理》·虎跳峡</h1><p>✨ 虎跳峡｜在悬崖及咆哮的金沙江边行走！ ✨</p>
+<h2 id="攻略"><a href="#攻略" class="headerlink" title="攻略"></a>攻略</h2><ol>
+<li>驱车到张老师客栈(或在丽江报团也很方便)</li>
+<li>然后包车或拼车至茶马客栈, 开始徒步到张老师客栈(10km) ,耗时5h+, 建议 ✓</li>
+<li>或包车或拼车至halfway中途客栈, 开始徒步到张老帅客栈(5km) , 耗时3h+</li>
+</ol>
+<h2 id="轨迹"><a href="#轨迹" class="headerlink" title="轨迹"></a>轨迹</h2><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/22937c08efe9feb4d76685c9eee2e493.jpg" alt="22937c08efe9feb4d76685c9eee2e493"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/f911980ab9027fab0c3b2968998a11be.jpg" alt="f911980ab9027fab0c3b2968998a11be"></p>
+<div class="note default"><p>此生必徒｜走进《国家地理》 走进国家地理，当山川不只在教科书上，世界这本书我又读了一页 行走在哈巴与玉龙之间，每一帧画面都是生命力 用脚步丈量世界 用眼睛记录风景 ✨“当玉龙雪山的风掠过发梢，脚下金沙江怒吼着劈开峡谷，那一刻我才明白——有些风景，是双脚丈量世界时，命运赠予勇者的礼物。”</p>
+</div>
+
+
+
+<h2 id="上图"><a href="#上图" class="headerlink" title="上图"></a>上图</h2><div class="note primary"><p>“如果人生必须有一次孤身赴山河的疯狂，请把虎跳峡的名字，写在清单最前方。”  这一刻便是旅行的意义！ 📍云南·迪庆</p>
+</div>
+
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225137_3402_104_compressed.jpg" alt="微信图片_20251007225137_3402_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225124_3399_104_compressed.jpg" alt="微信图片_20251007225124_3399_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224945_3372_104_compressed.jpg" alt="微信图片_20251007224945_3372_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225105_3394_104_compressed.jpg" alt="微信图片_20251007225105_3394_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225109_3396_104_compressed.jpg" alt="微信图片_20251007225109_3396_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225130_3400_104_compressed.jpg" alt="微信图片_20251007225130_3400_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225131_3401_104_compressed.jpg" alt="微信图片_20251007225131_3401_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225335_3404_104_compressed.jpg" alt="微信图片_20251007225335_3404_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225617_3405_104_compressed.jpg" alt="微信图片_20251007225617_3405_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224939_3371_104_compressed.jpg" alt="微信图片_20251007224939_3371_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224947_3373_104_compressed.jpg" alt="微信图片_20251007224947_3373_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224950_3374_104_compressed.jpg" alt="微信图片_20251007224950_3374_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224954_3375_104_compressed.jpg" alt="微信图片_20251007224954_3375_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224957_3376_104_compressed.jpg" alt="微信图片_20251007224957_3376_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225001_3377_104_compressed.jpg" alt="微信图片_20251007225001_3377_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225003_3378_104_compressed.jpg" alt="微信图片_20251007225003_3378_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225007_3379_104_compressed.jpg" alt="微信图片_20251007225007_3379_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225010_3380_104_compressed.jpg" alt="微信图片_20251007225010_3380_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225014_3381_104_compressed.jpg" alt="微信图片_20251007225014_3381_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225016_3382_104_compressed.jpg" alt="微信图片_20251007225016_3382_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225019_3383_104_compressed.jpg" alt="微信图片_20251007225019_3383_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225022_3384_104_compressed.jpg" alt="微信图片_20251007225022_3384_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225025_3385_104_compressed.jpg" alt="微信图片_20251007225025_3385_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225029_3386_104_compressed.jpg" alt="微信图片_20251007225029_3386_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225034_3387_104_compressed.jpg" alt="微信图片_20251007225034_3387_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225038_3388_104_compressed.jpg" alt="微信图片_20251007225038_3388_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225041_3389_104_compressed.jpg" alt="微信图片_20251007225041_3389_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225045_3390_104_compressed.jpg" alt="微信图片_20251007225045_3390_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225048_3391_104_compressed.jpg" alt="微信图片_20251007225048_3391_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225054_3392_104_compressed.jpg" alt="微信图片_20251007225054_3392_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225100_3393_104_compressed.jpg" alt="微信图片_20251007225100_3393_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225108_3395_104_compressed.jpg" alt="微信图片_20251007225108_3395_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225114_3397_104_compressed.jpg" alt="微信图片_20251007225114_3397_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225119_3398_104_compressed.jpg" alt="微信图片_20251007225119_3398_104_compressed"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC00100.jpg" alt="DSC00100"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC00101.jpg" alt="DSC00101"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC00102.jpg" alt="DSC00102"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC00104.jpg" alt="DSC00104"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC00113.jpg" alt="DSC00113"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC00127.jpg" alt="DSC00127"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/DSC00137.jpg" alt="DSC00137"></p>
+]]></content>
+      <categories>
+        <category>户外旅行</category>
+        <category>徒步</category>
+        <category>虎跳峡</category>
+      </categories>
+      <tags>
+        <tag>云南</tag>
+        <tag>虎跳峡</tag>
+        <tag>徒步</tag>
       </tags>
   </entry>
   <entry>
@@ -2018,141 +2151,6 @@ graph LR
       </tags>
   </entry>
   <entry>
-    <title>working_day_flow</title>
-    <url>/articles/2025/8faa0a34/</url>
-    <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
-; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;">Life is not what you have gained, but what you have done !</blockquote>
-<pre><code class="highlight mermaid">%%&#123;init: &#123;&#x27;theme&#x27;: &#x27;dark&#x27;, &#x27;themeVariables&#x27;: &#123; &#x27;primaryColor&#x27;: &#x27;#1e1e1e&#x27;, &#x27;nodeTextColor&#x27;: &#x27;#f0f0f0&#x27;, &#x27;edgeLabelBackground&#x27;:&#x27;#333&#x27;, &#x27;clusterBkg&#x27;: &#x27;#2a2a2a&#x27;&#125;&#125;&#125;%%
-gantt
-    title 每日作息流程图
-    dateFormat  HH:mm
-    axisFormat %H:%M
-    
-    section 早晨
-    闹钟 :a1, 06:00, 10m
-    闹钟 :a2, after a1, 10m
-    闹钟 :a3, after a2, 10m
-    起床洗漱 :06:30, 10m
-    通勤 :06:50, 40m
-    早餐 :07:40, 10m
-    
-    section 上午
-    到公司准备 :07:50, 10m
-    个人时间 :08:00, 60m
-    工作 :09:00, 180m
-    
-    section 午间
-    午休活动 :12:00, 60m
-    
-    section 下午
-    工作 :13:00, 330m
-    
-    section 晚上
-    健身/加班 :18:30, 90m
-    通勤回家 :19:40, 60m
-    晚间清洁 :21:00, 40m
-    Coding时间 :21:40, 30m
-    刷手机 :22:40, 30m
-    睡觉 :23:10, 0m
-    
-    section 关键标注
-    地铁阅读 :crit, 06:50, 40m
-    公众号整理 :crit, 08:00, 60m
-    运动时间 :crit, 12:00, 40m
-</code></pre>
-
-<pre><code class="highlight mermaid">%%&#123;init: &#123;&#x27;theme&#x27;: &#x27;dark&#x27;, &#x27;themeVariables&#x27;: &#123; &#x27;primaryColor&#x27;: &#x27;#1e1e1e&#x27;, &#x27;nodeTextColor&#x27;: &#x27;#f0f0f0&#x27;, &#x27;edgeLabelBackground&#x27;:&#x27;#333&#x27;, &#x27;clusterBkg&#x27;: &#x27;#2a2a2a&#x27;&#125;&#125;&#125;%%
-flowchart TD
-    A[6:00 闹钟响] --&gt;|10分钟间隔| B[6:30 起床洗漱]
-    B --&gt; C[6:40 出门]
-    C --&gt; D[6:50-7:30 地铁通勤]
-    D --&gt; E[7:40 早餐]
-    E --&gt; F[7:50 到公司准备]
-    
-    subgraph 上午行程
-    F --&gt; G[8:00 个人时间]
-    G --&gt;|公众号整理| H[Agent-RAG框架优化]
-    H --&gt; I[9:00 工作]
-    end
-    
-    subgraph 午间选择
-    I --&gt; J&#123;12:00-13:00&#125;
-    J --&gt;|选项1| K[羽毛球]
-    J --&gt;|选项2| L[公园散步]
-    J --&gt;|选项3| M[午餐+午休]
-    end
-    
-    subgraph 晚间活动
-    N[18:30] --&gt; O&#123;活动选择&#125;
-    O --&gt;|加班| P[工作]
-    O --&gt;|跑步| Q[运动]
-    O --&gt;|羽毛球| R[运动]
-    
-    S[19:40/20:00/21:00] --&gt; T[通勤回家]
-    T --&gt; U[21:00/22:00 洗澡洗衣]
-    U --&gt; V[Coding 30min]
-    V --&gt; W[22:40 刷手机]
-    W --&gt; X[23:10 睡觉]
-    end
-    
-    style A fill:#4CAF50,stroke:#388E3C
-    style D fill:#2196F3,stroke:#1976D2
-    style G fill:#FFC107,stroke:#FFA000
-    style J fill:#9C27B0,stroke:#7B1FA2
-    style O fill:#F44336,stroke:#D32F2F
-    style X fill:#607D8B,stroke:#455A64
-</code></pre>
-
-
-
-<h2 id="1-6-00-闹钟响-10分钟响一次-闹3次"><a href="#1-6-00-闹钟响-10分钟响一次-闹3次" class="headerlink" title="1. 6:00 闹钟响 (10分钟响一次,闹3次)"></a>1. 6:00 闹钟响 (10分钟响一次,闹3次)</h2><h2 id="2-6-30-起床-洗漱-检查背包-要带的装备-衣服"><a href="#2-6-30-起床-洗漱-检查背包-要带的装备-衣服" class="headerlink" title="2. 6:30 起床,洗漱,检查背包(要带的装备,衣服)"></a>2. 6:30 起床,洗漱,检查背包(要带的装备,衣服)</h2><h2 id="3-6-40-出门"><a href="#3-6-40-出门" class="headerlink" title="3. 6:40 出门"></a>3. 6:40 出门</h2><h2 id="4-6-50-7-30-地铁通勤"><a href="#4-6-50-7-30-地铁通勤" class="headerlink" title="4. 6:50  -&gt; 7:30 (地铁通勤)"></a>4. 6:50  -&gt; 7:30 (地铁通勤)</h2><ul>
-<li><h3 id="40分钟"><a href="#40分钟" class="headerlink" title="40分钟"></a>40分钟</h3></li>
-<li><h3 id="Review公众号文章-有价值的转载"><a href="#Review公众号文章-有价值的转载" class="headerlink" title="Review公众号文章(有价值的转载)"></a>Review公众号文章(有价值的转载)</h3></li>
-</ul>
-<h2 id="5-7-40-早餐-随机"><a href="#5-7-40-早餐-随机" class="headerlink" title="5. 7:40 早餐 (随机)"></a>5. 7:40 早餐 (随机)</h2><ul>
-<li><h3 id="豆腐脑-油条"><a href="#豆腐脑-油条" class="headerlink" title="豆腐脑,油条"></a>豆腐脑,油条</h3></li>
-<li><h3 id="星巴克早餐"><a href="#星巴克早餐" class="headerlink" title="星巴克早餐"></a>星巴克早餐</h3></li>
-<li><h3 id="瑞幸咖啡"><a href="#瑞幸咖啡" class="headerlink" title="瑞幸咖啡"></a>瑞幸咖啡</h3></li>
-</ul>
-<h2 id="6-7-50-公司-收拾工位-水杯-洗漱"><a href="#6-7-50-公司-收拾工位-水杯-洗漱" class="headerlink" title="6. 7:50 公司,收拾工位,水杯,洗漱"></a>6. 7:50 公司,收拾工位,水杯,洗漱</h2><h2 id="7-8-00-WC大事-随机"><a href="#7-8-00-WC大事-随机" class="headerlink" title="7. 8:00 (WC大事) 随机"></a>7. <del>8:00 (WC大事) 随机</del></h2><h2 id="8-8-00-个人时间"><a href="#8-8-00-个人时间" class="headerlink" title="8. 8:00 个人时间"></a>8. 8:00 个人时间</h2><ul>
-<li><h3 id="开始整理公众号文章"><a href="#开始整理公众号文章" class="headerlink" title="开始整理公众号文章"></a>开始整理公众号文章</h3></li>
-<li><h3 id="文整理一篇"><a href="#文整理一篇" class="headerlink" title="文整理一篇"></a>文整理一篇</h3></li>
-<li><h3 id="Agent-RAG-评测-框架-持续优化"><a href="#Agent-RAG-评测-框架-持续优化" class="headerlink" title="Agent-RAG-评测-框架( 持续优化)"></a>Agent-RAG-评测-框架( 持续优化)</h3></li>
-</ul>
-<h2 id="9-9-00-Working…"><a href="#9-9-00-Working…" class="headerlink" title="9. 9:00 Working…"></a>9. 9:00 Working…</h2><h2 id="10-12-00-13-00-随机"><a href="#10-12-00-13-00-随机" class="headerlink" title="10. 12:00-13:00 (随机)"></a>10. 12:00-13:00 (随机)</h2><ul>
-<li><h3 id="楼上羽球40分钟"><a href="#楼上羽球40分钟" class="headerlink" title="楼上羽球40分钟"></a>楼上羽球40分钟</h3></li>
-<li><h3 id="公园遛达30分钟"><a href="#公园遛达30分钟" class="headerlink" title="公园遛达30分钟"></a>公园遛达30分钟</h3></li>
-<li><h3 id="午餐-步行-骑行"><a href="#午餐-步行-骑行" class="headerlink" title="午餐(步行 &amp; 骑行)"></a>午餐(步行 &amp; 骑行)</h3></li>
-<li><h3 id="午休"><a href="#午休" class="headerlink" title="午休"></a>午休</h3></li>
-</ul>
-<h2 id="11-18-30-随机"><a href="#11-18-30-随机" class="headerlink" title="11. 18:30 ~ (随机)"></a>11. 18:30 ~ (随机)</h2><ul>
-<li><h3 id="加班"><a href="#加班" class="headerlink" title="加班"></a>加班</h3></li>
-<li><h3 id="跑步"><a href="#跑步" class="headerlink" title="跑步"></a>跑步</h3></li>
-<li><h3 id="羽球"><a href="#羽球" class="headerlink" title="羽球"></a>羽球</h3></li>
-</ul>
-<h2 id="12-19-40-20-00-21-00"><a href="#12-19-40-20-00-21-00" class="headerlink" title="12. 19:40&#x2F;20:00&#x2F;21:00 ~"></a>12. 19:40&#x2F;20:00&#x2F;21:00 ~</h2><ul>
-<li><h3 id="下班回家"><a href="#下班回家" class="headerlink" title="下班回家"></a>下班回家</h3></li>
-<li><h3 id="通勤1小时-整理转载公从号文章"><a href="#通勤1小时-整理转载公从号文章" class="headerlink" title="通勤1小时(整理转载公从号文章)"></a>通勤1小时(整理转载公从号文章)</h3></li>
-</ul>
-<h2 id="13-21-00-22-00"><a href="#13-21-00-22-00" class="headerlink" title="13. 21:00&#x2F;22:00"></a>13. 21:00&#x2F;22:00</h2><ul>
-<li><h3 id="洗澡"><a href="#洗澡" class="headerlink" title="洗澡"></a>洗澡</h3></li>
-<li><h3 id="洗衣服"><a href="#洗衣服" class="headerlink" title="洗衣服"></a>洗衣服</h3></li>
-<li><h3 id="coding-30分钟"><a href="#coding-30分钟" class="headerlink" title="coding~ (30分钟)"></a>coding~ (30分钟)</h3></li>
-</ul>
-<h2 id="14-22-40-躺下"><a href="#14-22-40-躺下" class="headerlink" title="14. 22:40 躺下"></a>14. 22:40 躺下</h2><ul>
-<li><h3 id="刷手机-30分钟"><a href="#刷手机-30分钟" class="headerlink" title="刷手机(30分钟)"></a>刷手机(30分钟)</h3></li>
-</ul>
-<h2 id="15-23-10-睡觉"><a href="#15-23-10-睡觉" class="headerlink" title="15. 23:10 睡觉"></a>15. 23:10 睡觉</h2><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/image-20250904090243049.png" alt="image-20250904090243049"></p>
-]]></content>
-      <categories>
-        <category>生活记录</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>流水账</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>xmylog_new_online</title>
     <url>/articles/2025/21655/</url>
     <content><![CDATA[<h1 id="搭建自己的数字自留地"><a href="#搭建自己的数字自留地" class="headerlink" title="搭建自己的数字自留地"></a>搭建自己的数字自留地</h1><p>Vercel 被停用快小半年了, 之前的博客总想着做迁移,一直没提上日程, 最近查了各种博客平台搭建方案,还是选择了 完全开源,经得起瞎折腾的hexo + github + 图床 + typora +…(obsibian &amp; notion)</p>
@@ -2260,72 +2258,81 @@ flowchart TD
       </tags>
   </entry>
   <entry>
-    <title>虎跳峡徒步_10.2</title>
-    <url>/articles/2025/b551278f/</url>
+    <title>Github+PicGo+jsDelivr</title>
+    <url>/articles/2025/94fe91f2/</url>
     <content><![CDATA[<blockquote class="blockquote-center" style="background-color: #e0f7fa
 ; padding: 16px; border-left: 5px solid #ccc; border-radius: 8px; text-align: center; font-style: italic; color: #333;">Life is not what you have gained, but what you have done !</blockquote>
 
 
-<h1 id="此生必徒📍-《国家地理》·虎跳峡"><a href="#此生必徒📍-《国家地理》·虎跳峡" class="headerlink" title="此生必徒📍 《国家地理》·虎跳峡"></a>此生必徒📍 《国家地理》·虎跳峡</h1><p>✨ 虎跳峡｜在悬崖及咆哮的金沙江边行走！ ✨</p>
-<h2 id="攻略"><a href="#攻略" class="headerlink" title="攻略"></a>攻略</h2><ol>
-<li>驱车到张老师客栈(或在丽江报团也很方便)</li>
-<li>然后包车或拼车至茶马客栈, 开始徒步到张老师客栈(10km) ,耗时5h+, 建议 ✓</li>
-<li>或包车或拼车至halfway中途客栈, 开始徒步到张老帅客栈(5km) , 耗时3h+</li>
-</ol>
-<h2 id="轨迹"><a href="#轨迹" class="headerlink" title="轨迹"></a>轨迹</h2><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/22937c08efe9feb4d76685c9eee2e493.jpg" alt="22937c08efe9feb4d76685c9eee2e493"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/f911980ab9027fab0c3b2968998a11be.jpg" alt="f911980ab9027fab0c3b2968998a11be"></p>
-<div class="note default"><p>此生必徒｜走进《国家地理》 走进国家地理，当山川不只在教科书上，世界这本书我又读了一页 行走在哈巴与玉龙之间，每一帧画面都是生命力 用脚步丈量世界 用眼睛记录风景 ✨“当玉龙雪山的风掠过发梢，脚下金沙江怒吼着劈开峡谷，那一刻我才明白——有些风景，是双脚丈量世界时，命运赠予勇者的礼物。”</p>
-</div>
+<h1 id="🤣前言"><a href="#🤣前言" class="headerlink" title="🤣前言"></a>🤣前言</h1><blockquote>
+<p>在搭建博客之后，紧接着需要去寻找好用的云端图床工具了🤣，网上搜罗了一堆免费、收费的图床工具，遍布国内外众多大小作坊，现成的云端图床，限制众多，这里就不多说了，当然，自己折腾完的，也不能什么图都可以传哈，博客都折腾完了，图床看来还是有必要折腾一下下的，毕竟属于自己的才是最DIY，最nice的，😄</p>
+</blockquote>
+<aside>
+💡 世上最重要的事，不在于我们在何处，而在于我们朝着什么方向走
+
+</aside>
+
+<h1 id="😝图床是什么-？"><a href="#😝图床是什么-？" class="headerlink" title="😝图床是什么**？**"></a>😝图床是什么**？**</h1><aside>
+❇️ 图床用于储存图片的
 
 
+<ul>
+<li>网站、APP的所有图片都是储存在服务器，然后获得图片地址，就能把图片显示出来。一个大的网站，或者发展久了，服务器就会储存非常多的图片，也是一笔不小的经费，加上每张图片都有访问的请求，都会被占用服务器的流量或cdn流量。<br>在这里推荐一个聚合图床，聚合百度、腾讯、阿里、bilibili、中关村、今日头条、网易、搜狐、58同城、小米、360等众多互联网公司的图床，减缓自己服务器的压力和节省开支，免费使用：里客云 - 聚合图床 - 图片上传工具 - 图片外链获取</li>
+<li>传个人图片，并可以分享</li>
+</ul>
+<p>好的解决方案：博客页面放在github，图片在阿里云 oss，虽然oss按流量收费，但是便宜又快，一个月也就几毛钱，等同免费</p>
+</aside>
 
-<h2 id="上图"><a href="#上图" class="headerlink" title="上图"></a>上图</h2><div class="note primary"><p>“如果人生必须有一次孤身赴山河的疯狂，请把虎跳峡的名字，写在清单最前方。”  这一刻便是旅行的意义！ 📍云南·迪庆</p>
-</div>
+<h1 id="🧐准备工作"><a href="#🧐准备工作" class="headerlink" title="🧐准备工作"></a>🧐准备工作</h1><aside>
+❇️ Github 账号
 
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225137_3402_104_compressed.jpg" alt="微信图片_20251007225137_3402_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225124_3399_104_compressed.jpg" alt="微信图片_20251007225124_3399_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224945_3372_104_compressed.jpg" alt="微信图片_20251007224945_3372_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225105_3394_104_compressed.jpg" alt="微信图片_20251007225105_3394_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225109_3396_104_compressed.jpg" alt="微信图片_20251007225109_3396_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225130_3400_104_compressed.jpg" alt="微信图片_20251007225130_3400_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225131_3401_104_compressed.jpg" alt="微信图片_20251007225131_3401_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225335_3404_104_compressed.jpg" alt="微信图片_20251007225335_3404_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225617_3405_104_compressed.jpg" alt="微信图片_20251007225617_3405_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224939_3371_104_compressed.jpg" alt="微信图片_20251007224939_3371_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224947_3373_104_compressed.jpg" alt="微信图片_20251007224947_3373_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224950_3374_104_compressed.jpg" alt="微信图片_20251007224950_3374_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224954_3375_104_compressed.jpg" alt="微信图片_20251007224954_3375_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007224957_3376_104_compressed.jpg" alt="微信图片_20251007224957_3376_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225001_3377_104_compressed.jpg" alt="微信图片_20251007225001_3377_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225003_3378_104_compressed.jpg" alt="微信图片_20251007225003_3378_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225007_3379_104_compressed.jpg" alt="微信图片_20251007225007_3379_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225010_3380_104_compressed.jpg" alt="微信图片_20251007225010_3380_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225014_3381_104_compressed.jpg" alt="微信图片_20251007225014_3381_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225016_3382_104_compressed.jpg" alt="微信图片_20251007225016_3382_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225019_3383_104_compressed.jpg" alt="微信图片_20251007225019_3383_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225022_3384_104_compressed.jpg" alt="微信图片_20251007225022_3384_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225025_3385_104_compressed.jpg" alt="微信图片_20251007225025_3385_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225029_3386_104_compressed.jpg" alt="微信图片_20251007225029_3386_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225034_3387_104_compressed.jpg" alt="微信图片_20251007225034_3387_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225038_3388_104_compressed.jpg" alt="微信图片_20251007225038_3388_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225041_3389_104_compressed.jpg" alt="微信图片_20251007225041_3389_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225045_3390_104_compressed.jpg" alt="微信图片_20251007225045_3390_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225048_3391_104_compressed.jpg" alt="微信图片_20251007225048_3391_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225054_3392_104_compressed.jpg" alt="微信图片_20251007225054_3392_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225100_3393_104_compressed.jpg" alt="微信图片_20251007225100_3393_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225108_3395_104_compressed.jpg" alt="微信图片_20251007225108_3395_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225114_3397_104_compressed.jpg" alt="微信图片_20251007225114_3397_104_compressed"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251007225119_3398_104_compressed.jpg" alt="微信图片_20251007225119_3398_104_compressed"></p>
-]]></content>
+
+<p>那么在正式开始之前，你需要提前准备以下东西：</p>
+<p>一个 Github 账号</p>
+<p>好了，就这么简单，只要你有一个 Github 账号就够了，你就能拥有一个免费的图床了，如果你还没有，那赶紧去一个吧</p>
+</aside>
+
+<h1 id="😋搭建过程"><a href="#😋搭建过程" class="headerlink" title="😋搭建过程"></a>😋<strong>搭建过程</strong></h1><h3 id="1-创建一个新的仓库"><a href="#1-创建一个新的仓库" class="headerlink" title="1. 创建一个新的仓库"></a>1. 创建一个新的仓库</h3><p>登录你的 Github 之后，创建一个新的仓库, 确保仓库为 <code>public</code> 其他的保持默认就好</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%9B%BE%E5%BA%8A1.png"></p>
+<h3 id="2-上传图片"><a href="#2-上传图片" class="headerlink" title="2. 上传图片"></a>2. <strong>上传图片</strong></h3><p>下载客户端 </p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9tb2x1bmVyZmlubi5jb20vUGljR28v">PicGo<i class="fa fa-external-link-alt"></i></span></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%9B%BE%E5%BA%8A2.png"></p>
+<h3 id="3-Github-创建一个-token"><a href="#3-Github-创建一个-token" class="headerlink" title="3. Github 创建一个 token"></a>3. Github 创建一个 token</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`Settings -&gt; Developer settings -&gt; Personal access tokens`</span>，最后点击 <span class="code">`generate new token`</span></span><br><span class="line"></span><br><span class="line">填写相关信息及勾选repo，然后点击 <span class="code">`Genetate token`</span> 即可</span><br><span class="line"></span><br><span class="line"><span class="code">`token`</span> 生成，注意它只会显示一次，所以你最好把它复制下来到你的备忘录存好，方便下次使用，否则下次有需要重新新建；</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-PicGo配置"><a href="#4-PicGo配置" class="headerlink" title="4. PicGo配置"></a>4. PicGo配置</h3><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%9B%BE%E5%BA%8A3.png"></p>
+<ul>
+<li>图床配置名：自定义名字</li>
+<li>设定仓库名：github新建的仓库名 <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vWFhYL1hYWA==">github.com&#x2F;XXX&#x2F;XXX<i class="fa fa-external-link-alt"></i></span>      只填写 <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vWFhYL1hYWA==">&#x2F;XXX&#x2F;XXX<i class="fa fa-external-link-alt"></i></span></li>
+<li>设定分支名： main</li>
+<li>设定token: 步聚3中的token</li>
+<li>设定自定义域名：<span class="exturl" data-url="aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3hzb3dheS94bXlsb2dfaW1nc0BtYWlu">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;XXX&#x2F;XXX@main<i class="fa fa-external-link-alt"></i></span>    （<span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vWFhYL1hYWA==">&#x2F;XXX&#x2F;XXX<i class="fa fa-external-link-alt"></i></span> 为仓库名）（CDN加速访问）</li>
+</ul>
+<aside>
+💡 CDN加速访问
+**使用 jsDelivr CDN 加速 Github 仓库的图片，以作为博客的图床**
+
+
+<p>sDelivr 是国外的一家优秀的公共 CDN 服务提供商，也是首个「打通中国大陆（网宿公司运营）与海外的免费 CDN 服务」。jsDelivr 有一个十分好用的功能——<strong>它可以加速 Github 仓库的文件</strong>。我们可以借此搭建一个免费、全球访问速度超快的图床。</p>
+<p><strong>声明：静态文件主要是缓存在 jsDelivr 的 CDN 节点上，确保 GitHub 承受最小的负载，并且你还可以从 GitHub 仓库获得快速简便的静态文件托管。</strong></p>
+<p>其中：</p>
+<ul>
+<li><code>gh</code> 表示来自 Github 的仓库</li>
+<li><code>joeyliu6/Blogger</code> 仓库的具体位置</li>
+<li><code>master</code> 仓库的分支</aside></li>
+</ul>
+<h3 id="5-上传图片"><a href="#5-上传图片" class="headerlink" title="5. 上传图片"></a>5. 上传图片</h3><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%9B%BE%E5%BA%8A4.png"></p>
+<h3 id="6-在相册中选中图片，点击复制链接，进行使用"><a href="#6-在相册中选中图片，点击复制链接，进行使用" class="headerlink" title="6. 在相册中选中图片，点击复制链接，进行使用"></a>6. 在相册中选中图片，点击复制链接，进行使用</h3><p><img src="https://cdn.jsdelivr.net/gh/xsoway/xsoway_pic_db@master/%E5%9B%BE%E5%BA%8A5-20250925085556603.png"></p>
+<h1 id="图床推荐"><a href="#图床推荐" class="headerlink" title="图床推荐"></a>图床推荐</h1><p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC81ODg2MzM3OA==">最全的图床集合（国内外，站长必备）<i class="fa fa-external-link-alt"></i></span></p>
+<hr>
+<aside>
+🎒 离开乏味的皮囊，自由的灵魂在路上
+
+</aside>]]></content>
       <categories>
-        <category>户外旅行</category>
-        <category>徒步</category>
-        <category>虎跳峡</category>
+        <category>uncategorized</category>
       </categories>
       <tags>
-        <tag>云南</tag>
-        <tag>虎跳峡</tag>
-        <tag>徒步</tag>
+        <tag>图床</tag>
       </tags>
   </entry>
 </search>
