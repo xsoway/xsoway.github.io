@@ -6,7 +6,7 @@
   <link href="https://xsoul.life/atom.xml" rel="self"/>
   
   <link href="https://xsoul.life/"/>
-  <updated>2025-10-08T00:46:01.313Z</updated>
+  <updated>2025-10-08T00:59:18.327Z</updated>
   <id>https://xsoul.life/</id>
   
   <author>
@@ -21,14 +21,18 @@
     <link href="https://xsoul.life/articles/2025/b551278f/"/>
     <id>https://xsoul.life/articles/2025/b551278f/</id>
     <published>2025-10-02T13:34:21.000Z</published>
-    <updated>2025-10-08T00:46:01.313Z</updated>
+    <updated>2025-10-08T00:59:18.327Z</updated>
     
     
     <summary type="html">✨ 虎跳峡｜在悬崖及咆哮的金沙江边行走！ ✨</summary>
     
     
     
-    <category term="-户外旅行 - 徒步" scheme="https://xsoul.life/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C-%E5%BE%92%E6%AD%A5/"/>
+    <category term="户外旅行" scheme="https://xsoul.life/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/"/>
+    
+    <category term="徒步" scheme="https://xsoul.life/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/%E5%BE%92%E6%AD%A5/"/>
+    
+    <category term="虎跳峡" scheme="https://xsoul.life/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/%E5%BE%92%E6%AD%A5/%E8%99%8E%E8%B7%B3%E5%B3%A1/"/>
     
     
     <category term="云南" scheme="https://xsoul.life/tags/%E4%BA%91%E5%8D%97/"/>
@@ -44,14 +48,16 @@
     <link href="https://xsoul.life/articles/2025/e1245b90/"/>
     <id>https://xsoul.life/articles/2025/e1245b90/</id>
     <published>2025-09-21T10:32:29.000Z</published>
-    <updated>2025-09-23T00:44:08.780Z</updated>
+    <updated>2025-10-08T01:00:55.907Z</updated>
     
     
     <summary type="html">Amy birthday 0921</summary>
     
     
     
-    <category term="uncategorized" scheme="https://xsoul.life/categories/uncategorized/"/>
+    <category term="生活记录" scheme="https://xsoul.life/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="Amy" scheme="https://xsoul.life/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/Amy/"/>
     
     
     <category term="Amy" scheme="https://xsoul.life/tags/Amy/"/>
