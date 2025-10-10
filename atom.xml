@@ -6,7 +6,7 @@
   <link href="https://xsoul.life/atom.xml" rel="self"/>
   
   <link href="https://xsoul.life/"/>
-  <updated>2025-10-09T12:17:50.916Z</updated>
+  <updated>2025-10-10T07:12:43.633Z</updated>
   <id>https://xsoul.life/</id>
   
   <author>
@@ -21,14 +21,18 @@
     <link href="https://xsoul.life/articles/2025/e12120e1/"/>
     <id>https://xsoul.life/articles/2025/e12120e1/</id>
     <published>2025-10-08T05:54:03.000Z</published>
-    <updated>2025-10-09T12:17:50.916Z</updated>
+    <updated>2025-10-10T07:12:43.633Z</updated>
     
     
     <summary type="html">2025-10-香格里拉-丽江-大理</summary>
     
     
     
-    <category term="uncategorized" scheme="https://xsoul.life/categories/uncategorized/"/>
+    <category term="户外旅行" scheme="https://xsoul.life/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/"/>
+    
+    <category term="云南" scheme="https://xsoul.life/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/%E4%BA%91%E5%8D%97/"/>
+    
+    <category term="自驾" scheme="https://xsoul.life/categories/%E6%88%B7%E5%A4%96%E6%97%85%E8%A1%8C/%E4%BA%91%E5%8D%97/%E8%87%AA%E9%A9%BE/"/>
     
     
     <category term="云南" scheme="https://xsoul.life/tags/%E4%BA%91%E5%8D%97/"/>
