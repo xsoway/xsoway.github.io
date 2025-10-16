@@ -6,7 +6,7 @@
   <link href="https://xsoul.life/atom.xml" rel="self"/>
   
   <link href="https://xsoul.life/"/>
-  <updated>2025-10-12T04:53:17.674Z</updated>
+  <updated>2025-10-16T06:27:15.213Z</updated>
   <id>https://xsoul.life/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>rag-faiss-llm实现的知识检索总结输出</title>
+    <link href="https://xsoul.life/articles/2025/a9398ac6/"/>
+    <id>https://xsoul.life/articles/2025/a9398ac6/</id>
+    <published>2025-10-16T06:23:39.000Z</published>
+    <updated>2025-10-16T06:27:15.213Z</updated>
+    
+    
+    <summary type="html">文本 → 向量化 → 向量检索 → LLM问答 → 输出答案</summary>
+    
+    
+    
+    <category term="技术整理" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
+    
+    <category term="rag" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/rag/"/>
+    
+    
+    <category term="RAG" scheme="https://xsoul.life/tags/RAG/"/>
+    
+    <category term="FAISS" scheme="https://xsoul.life/tags/FAISS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2025-10-云南自驾</title>
     <link href="https://xsoul.life/articles/2025/e12120e1/"/>
     <id>https://xsoul.life/articles/2025/e12120e1/</id>
     <published>2025-10-08T05:54:03.000Z</published>
-    <updated>2025-10-12T04:53:17.674Z</updated>
+    <updated>2025-10-12T04:56:17.292Z</updated>
     
     
     <summary type="html">2025-10-香格里拉-丽江-大理</summary>
