@@ -6,7 +6,7 @@
   <link href="https://xsoul.life/atom.xml" rel="self"/>
   
   <link href="https://xsoul.life/"/>
-  <updated>2025-10-16T06:27:15.213Z</updated>
+  <updated>2025-10-16T06:27:32.544Z</updated>
   <id>https://xsoul.life/</id>
   
   <author>
@@ -21,16 +21,14 @@
     <link href="https://xsoul.life/articles/2025/a9398ac6/"/>
     <id>https://xsoul.life/articles/2025/a9398ac6/</id>
     <published>2025-10-16T06:23:39.000Z</published>
-    <updated>2025-10-16T06:27:15.213Z</updated>
+    <updated>2025-10-16T06:27:32.544Z</updated>
     
     
     <summary type="html">文本 → 向量化 → 向量检索 → LLM问答 → 输出答案</summary>
     
     
     
-    <category term="技术整理" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
-    
-    <category term="rag" scheme="https://xsoul.life/categories/%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/rag/"/>
+    <category term="uncategorized" scheme="https://xsoul.life/categories/uncategorized/"/>
     
     
     <category term="RAG" scheme="https://xsoul.life/tags/RAG/"/>
