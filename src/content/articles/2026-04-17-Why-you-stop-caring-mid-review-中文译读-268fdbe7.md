@@ -1,5 +1,5 @@
 ---
-title: "2026-04-17-Why-you-stop-caring-mid-review-中文译读"
+title: "Why you stop caring mid-review 中文译读"
 created: "2026-04-17"
 tags: ["KnowledgeBase","Translation","Engineering","CodeReview","Communication"]
 category: "Articles"

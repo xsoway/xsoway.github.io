@@ -1,5 +1,5 @@
 ---
-title: "2026-06-06-CUA-扔掉 Appium？用 CUA 在 Android 沙箱里跑 AI 驱动的 UI 自动化测试"
+title: "CUA —— 计算机使用 Agent 平台解读及 UI/Android 自动化测试落地实践"
 created: "2026-06-06"
 tags: ["KnowledgeBase","CUA","Computer-Use","UI-Automation","Android-Testing","Agent","Sandbox"]
 category: "技术文档"

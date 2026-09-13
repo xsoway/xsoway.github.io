@@ -1,5 +1,5 @@
 ---
-title: "2026-08-05-Eval-Anything-AI评测框架"
+title: "一条命令跑通 AI 模型评测：Eval-Anything 把评测做成了 agent skill"
 created: "2026-08-05"
 tags: ["KnowledgeBase","开源","AI评测","模型评估","LLM","Agent","效率工具","GitHub"]
 category: "技术分享"

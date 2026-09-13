@@ -1,5 +1,5 @@
 ---
-title: "2026-05-17-这套-agent-skills-不是帮你-vibe-coding-而是把开发流程重新拽回正轨"
+title: "这套 Agent Skills，不是帮你 vibe coding，而是把开发流程重新拽回正轨"
 created: "2026-05-17"
 tags: ["Articles","GitHub","AI","CodingAgent","Skills","OpenClaw"]
 category: "- Articles"

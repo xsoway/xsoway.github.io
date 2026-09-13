@@ -1,5 +1,5 @@
 ---
-title: "2026-08-23-agent-skills-Addy-Osmani的24个生产级技能"
+title: "别再让 Agent 瞎写代码了：Addy Osmani 把\"资深工程师的流程\"打包成了 24 个技能"
 created: "2026-08-23"
 tags: ["KnowledgeBase","AIAgent","Skills","Codex","ClaudeCode","AgentSkills","工程实践","GitHub"]
 category: "工具链"

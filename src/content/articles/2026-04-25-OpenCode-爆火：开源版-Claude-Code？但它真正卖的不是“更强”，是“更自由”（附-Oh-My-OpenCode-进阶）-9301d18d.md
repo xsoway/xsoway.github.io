@@ -1,5 +1,5 @@
 ---
-title: "2026-04-25-OpenCode-爆火：开源版-Claude-Code？但它真正卖的不是“更强”，是“更自由”（附-Oh-My-OpenCode-进阶）"
+title: "OpenCode 爆火：开源版 Claude Code？但它真正卖的不是“更强”，是“更自由”（附 Oh-My-OpenCode 进阶）"
 created: "2026-04-25"
 tags: ["/init","/undo + /redo","1）安装","2）启动（建议在干净 Git 仓库）","2）常用快捷键","3）初始化项目（必做）","75+ LLM Provider","@文件/目录","AI","Agent","OpenClaw"]
 category: "Wiki"

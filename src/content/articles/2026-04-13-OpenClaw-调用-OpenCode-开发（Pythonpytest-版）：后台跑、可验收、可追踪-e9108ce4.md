@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-OpenClaw-调用-OpenCode-开发（Pythonpytest-版）：后台跑、可验收、可追踪"
+title: "OpenClaw 调用 OpenCode 开发（Python/pytest 版）：后台跑、可验收、可追踪"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

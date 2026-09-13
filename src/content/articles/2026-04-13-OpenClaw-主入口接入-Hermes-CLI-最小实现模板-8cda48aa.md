@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-OpenClaw-主入口接入-Hermes-CLI-最小实现模板"
+title: "OpenClaw 主入口接入 Hermes CLI 最小实现模板"
 created: "2026-04-12"
 tags: ["KnowledgeBase","OpenClaw","Hermes","AIAgent","EngineeringPractice","Workflow","Draft"]
 category: "Articles"

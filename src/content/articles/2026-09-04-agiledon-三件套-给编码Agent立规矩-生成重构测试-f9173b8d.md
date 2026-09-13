@@ -1,5 +1,5 @@
 ---
-title: "2026-09-04-agiledon-三件套-给编码Agent立规矩-生成重构测试"
+title: "给编码 Agent 建立工程约束：三个工具覆盖生成、重构和测试"
 created: "2026-09-04"
 tags: ["KnowledgeBase","WeChat","AgentSkill","DDD","Refactoring","TestGeneration"]
 category: "AI-Tool"

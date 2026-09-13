@@ -1,5 +1,5 @@
 ---
-title: "2026-08-18-Pi-vs-DeepSeek-Harness-全方位技术对比"
+title: "Pi vs DeepSeek Harness：从架构到实战的全方位技术对比"
 created: "2026-08-18"
 tags: ["KnowledgeBase","dsh","pi","Agent","Harness","架构对比"]
 category: "文章"

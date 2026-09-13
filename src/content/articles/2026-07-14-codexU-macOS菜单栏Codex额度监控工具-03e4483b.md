@@ -1,5 +1,5 @@
 ---
-title: "2026-07-14-codexU-macOS菜单栏Codex额度监控工具"
+title: "8K Star！一个菜单栏搞定 Codex 和 Claude Code 额度监控：codexU 把“到底还剩多少额度”这件事做成了菜单栏上的环"
 created: "2026-07-14"
 tags: ["KnowledgeBase","工具分享","Codex","Claude Code","macOS","开源项目","额度监控"]
 category: "工具分享"

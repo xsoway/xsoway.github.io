@@ -1,5 +1,5 @@
 ---
-title: "2026-09-08-给-Agent-记忆跑-梯度下降-backpass-把会话日志变成可审的记忆编辑"
+title: "给 Agent 记忆跑「梯度下降」：backpass 把会话日志变成可审的记忆编辑"
 created: "2026-09-08"
 tags: ["AI-Agent","AgentMemory","公众号","开发实例"]
 category: "AI-Agent"

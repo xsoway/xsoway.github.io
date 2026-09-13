@@ -1,5 +1,5 @@
 ---
-title: "2026-08-23-PrimeAgent-能自己变强跑不停的CodingAgent"
+title: "跑十几个小时不掉线，还能自己变强的 Coding Agent：Prime Agent 把\"持久\"做成了内核"
 created: "2026-08-23"
 tags: ["KnowledgeBase","AIAgent","PrimeAgent","RLM","AgentHarness","开源","MIT","长任务"]
 category: "工具链"

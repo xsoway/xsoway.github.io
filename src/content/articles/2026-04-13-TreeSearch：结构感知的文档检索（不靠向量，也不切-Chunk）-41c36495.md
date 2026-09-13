@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-TreeSearch：结构感知的文档检索（不靠向量，也不切-Chunk）"
+title: "TreeSearch：结构感知的文档检索（不靠向量，也不切 Chunk）"
 created: "2026-03-29"
 tags: ["KnowledgeBase","WeChatArticle","Retrieval","RAG","InformationRetrieval","SQLite","FTS5","Draft","OpenClaw"]
 category: "Articles"

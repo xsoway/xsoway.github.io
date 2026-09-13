@@ -1,5 +1,5 @@
 ---
-title: "2026-09-04-humanizer-去AI味Skill-35条维基清单"
+title: "给AI装上「去AI味」的Skill：35条维基清单，把机器腔拉回人话"
 created: "2026-09-04"
 tags: ["KnowledgeBase","WeChat","AIAgent","AISkill","humanizer","去AI味","内容质量","AI测试"]
 category: "AI-Agent"

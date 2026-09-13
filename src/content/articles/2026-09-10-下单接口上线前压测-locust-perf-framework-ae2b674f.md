@@ -1,5 +1,5 @@
 ---
-title: "2026-09-10-下单接口上线前压测-locust-perf-framework"
+title: "从 Locust 脚本到决策级报告：一个开源的通用性能测试框架"
 created: "2026-09-10"
 tags: ["性能测试","Locust","压测框架","开源","测试开发","接口压测"]
 category: "性能测试"

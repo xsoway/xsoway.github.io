@@ -1,5 +1,5 @@
 ---
-title: "2026-05-23-Codex-Goal-模板库"
+title: "Codex /goal 模板库（可复制）"
 created: "2026-05-23"
 tags: ["KnowledgeBase","Codex","OpenAI","Agent","Workflow","Template"]
 category: "Notes"

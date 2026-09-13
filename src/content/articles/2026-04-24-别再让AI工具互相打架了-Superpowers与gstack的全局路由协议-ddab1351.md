@@ -1,5 +1,5 @@
 ---
-title: "2026-04-24-别再让AI工具互相打架了-Superpowers与gstack的全局路由协议"
+title: "别再让 AI 工具互相打架了：Superpowers 与 gstack 的全局路由协议"
 created: "2026-04-24"
 tags: ["KnowledgeBase","Writing","AI","Agents","Workflow","Superpowers","gstack","Quant"]
 category: "Writing"

@@ -1,5 +1,5 @@
 ---
-title: "2026-08-15-DeepSeek-Harness-桌面端"
+title: "不想敲命令了？DeepSeek Harness 有人给它套了个桌面壳，装好就能用"
 created: "2026-08-15"
 tags: ["Articles","DeepSeek","dsh","Desktop","Agent","开源"]
 category: "Articles"

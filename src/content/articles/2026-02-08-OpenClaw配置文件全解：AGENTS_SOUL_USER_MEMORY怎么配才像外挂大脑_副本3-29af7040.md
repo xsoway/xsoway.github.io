@@ -1,5 +1,5 @@
 ---
-title: "2026-02-08-OpenClaw配置文件全解：AGENTS_SOUL_USER_MEMORY怎么配才像外挂大脑_副本3"
+title: "OpenClaw 配置文件全解：AGENTS.md / SOUL.md / USER.md / MEMORY.md / TOOLS.md / HEARTBEAT"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

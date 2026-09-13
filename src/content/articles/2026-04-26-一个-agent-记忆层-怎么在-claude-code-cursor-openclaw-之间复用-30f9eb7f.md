@@ -1,5 +1,5 @@
 ---
-title: "2026-04-26-一个-agent-记忆层-怎么在-claude-code-cursor-openclaw-之间复用"
+title: "一个 Agent 记忆层，怎么在 Claude Code、Cursor、OpenClaw 之间复用"
 created: "2026-04-26"
 tags: ["KnowledgeBase","GitHub","Agent","OpenClaw","ClaudeCode","Cursor","Codex","Hermes"]
 category: "文章"

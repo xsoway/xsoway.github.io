@@ -1,5 +1,5 @@
 ---
-title: "2026-05-05-别再让Agent瞎写代码了：Matt-Pocock的Skills把工程素养塞回AI工作流"
+title: "别再让Agent瞎写代码了：Matt Pocock 的 Skills 把工程素养塞回 AI 工作流"
 created: "2026-05-05"
 tags: ["KnowledgeBase","AI","CodingAgent","Skills","MattPocock","TDD","Architecture","Engineering","ClaudeCode","OpenClaw"]
 category: "AI-Engineering"

@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-AI-in-Software-Testing（补充内容翻译）"
+title: "AI in Software Testing（补充内容翻译）"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

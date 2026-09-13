@@ -1,5 +1,5 @@
 ---
-title: "2026-08-20-ai-native-scaffold"
+title: "把 Claude Code 变成你的全栈交付团队：这个脚手架用 AI-Native 方法论重新定义了开发协作"
 created: "2026-08-20"
 tags: ["Claude Code","AI","脚手架","多智能体","工程化","开源工具","协作","AI-Native"]
 category: "技术分享"

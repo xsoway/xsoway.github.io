@@ -1,5 +1,5 @@
 ---
-title: "2026-08-04-pict-test-designer-v2"
+title: "一个 Claude Skill 把 25,920 个测试用例砍到 30 个——微软的 PICT 终于有人打包了"
 created: "2026-08-04"
 tags: ["KnowledgeBase","测试","PICT","成对组合测试","Claude","开源工具","质量保障","自动化测试","测试设计","微软","AI测试"]
 category: "技术分享"

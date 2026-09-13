@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-Vibe-Coding-新范式：OpenClaw-+-OpenCode-组合拳怎么打？OpenClaw-的价值不是写代码：是把-opencode-变成可控流程"
+title: "Vibe Coding 新范式：OpenClaw + OpenCode 组合拳怎么打？OpenClaw 的价值不是写代码：是把 opencode 变成可控流程"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

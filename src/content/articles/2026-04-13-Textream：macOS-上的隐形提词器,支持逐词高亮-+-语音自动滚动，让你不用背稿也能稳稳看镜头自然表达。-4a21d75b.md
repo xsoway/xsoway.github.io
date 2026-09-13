@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-Textream：macOS-上的隐形提词器,支持逐词高亮-+-语音自动滚动，让你不用背稿也能稳稳看镜头自然表达。"
+title: "Textream：macOS 上的隐形提词器,支持逐词高亮 + 语音自动滚动，让你不用背稿也能稳稳看镜头自然表达。"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

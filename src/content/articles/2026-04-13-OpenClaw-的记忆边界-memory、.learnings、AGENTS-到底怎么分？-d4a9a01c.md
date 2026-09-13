@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-OpenClaw-的记忆边界-memory、.learnings、AGENTS-到底怎么分？"
+title: "memory / .learnings / agent-notes / AGENTS 边界对照表"
 created: "2026-04-13"
 tags: ["OpenClaw","MemorySystem","SelfImprovingAgent","KnowledgeManagement","WorkflowDesign","AIAgent","Draft","OpenClaw"]
 category: "Articles"

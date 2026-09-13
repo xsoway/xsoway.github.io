@@ -1,5 +1,5 @@
 ---
-title: "2026-07-31-skill-up-agent-skill-eval-evolution-tool"
+title: "阿里开源了一个 Agent Skill 评测工具：skill-up，把“写测试用例”这件事让 AI 自己干了"
 created: "2026-07-31"
 tags: ["KnowledgeBase","Agent","开源项目","评测框架","MCP","AI工具"]
 category: "技术分享"

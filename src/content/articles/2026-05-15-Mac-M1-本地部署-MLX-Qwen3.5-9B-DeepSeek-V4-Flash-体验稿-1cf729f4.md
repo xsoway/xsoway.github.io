@@ -1,5 +1,5 @@
 ---
-title: "2026-05-15-Mac-M1-本地部署-MLX-Qwen3.5-9B-DeepSeek-V4-Flash-体验稿"
+title: "Mac M1 本地部署 MLX Qwen3.5-9B DeepSeek-V4-Flash 体验稿"
 created: "2026-05-15"
 tags: ["AI","LLM","MLX","Mac","LocalDeployment","Coding"]
 category: "Article"

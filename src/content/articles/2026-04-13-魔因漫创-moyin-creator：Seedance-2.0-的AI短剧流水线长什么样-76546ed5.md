@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-魔因漫创-moyin-creator：Seedance-2.0-的AI短剧流水线长什么样"
+title: "魔因漫创 moyin-creator：Seedance 2.0 的AI短剧流水线长什么样"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

@@ -1,5 +1,5 @@
 ---
-title: "2026-08-23-CodexHost-把Pi-Claude-Code-DeepSeek全塞进Codex桌面"
+title: "一个桌面，装下 Codex、Pi、Claude Code、DeepSeek：CodexHost 让 Agent 不必再\"换壳"
 created: "2026-08-23"
 tags: ["KnowledgeBase","AIAgent","Harness","Codex","MultiAgent","EngineeringPractice"]
 category: "工具链"

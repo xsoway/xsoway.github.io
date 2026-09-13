@@ -1,5 +1,5 @@
 ---
-title: "2026-09-01-Semantica-能查账可审计AI底巢"
+title: "让机器帮你做决定，又没人能说清它凭啥——Semantica 把\"为什么\"变成了能查的账"
 created: "2026-09-01"
 tags: ["KnowledgeBase","AI","Graph","agent评测","审计","知识库","开源","质量"]
 category: "技术分享"

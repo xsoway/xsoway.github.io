@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-OpenClaw-×-OpenViking：把“长期记忆”从文件夹升级成可召回的外脑"
+title: "OpenClaw × OpenViking：把“长期记忆”从文件夹升级成可召回的外脑"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

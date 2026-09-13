@@ -1,5 +1,5 @@
 ---
-title: "2026-04-26-hermes-web-ui-公众号分享"
+title: "给 Hermes Agent 装个 Web 面板：终于不用在命令行切配置、翻日志了"
 created: "2026-04-26"
 tags: ["- Hermes"]
 category: "技术分享"

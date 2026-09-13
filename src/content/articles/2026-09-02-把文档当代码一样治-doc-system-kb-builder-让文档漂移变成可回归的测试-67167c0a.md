@@ -1,5 +1,5 @@
 ---
-title: "2026-09-02-把文档当代码一样治-doc-system-kb-builder-让文档漂移变成可回归的测试"
+title: "把文档当代码一样治：doc-system-kb-builder 让文档漂移变成可回归的测试"
 created: "2026-09-02"
 tags: ["AI","LLM","知识库","doc-as-data","文档漂移","测试","自动化","Codex","开源","确定性渲染"]
 category: "技术分享"

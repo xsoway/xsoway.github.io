@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-OpenClaw-×-OpenCode：两套模板直接抄：OpenClaw-编排-OpenCode（可控-B-省心-C）"
+title: "OpenClaw × OpenCode：两套模板直接抄：OpenClaw 编排 OpenCode（可控 B / 省心 C）"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

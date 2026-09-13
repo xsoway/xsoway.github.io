@@ -1,5 +1,5 @@
 ---
-title: "2026-04-28-刷到-harness-creator-这玩意我有点上头但也有边界"
+title: "刷到 harness-creator 这玩意，我有点上头，但也有边界"
 created: "2026-04-28"
 tags: ["KnowledgeBase","AIAgent","HarnessEngineering","GitHub项目拆解","公众号草稿"]
 category: "文章"

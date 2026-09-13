@@ -1,5 +1,5 @@
 ---
-title: "2026-04-19-OpenClaw-Hermes-Obsidian-协作体系专题页"
+title: "OpenClaw / Hermes / Obsidian 协作体系专题页"
 created: "2026-04-19"
 tags: ["KnowledgeBase","OpenClaw","Hermes","Obsidian","Collaboration","Architecture","Documentation"]
 category: "Articles"

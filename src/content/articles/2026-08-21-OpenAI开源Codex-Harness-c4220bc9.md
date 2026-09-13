@@ -1,5 +1,5 @@
 ---
-title: "2026-08-21-OpenAI开源Codex-Harness"
+title: "OpenAI 开源了 Codex 的 Harness：不只是 CLI，是整个 Agent 运行时"
 created: "2026-08-21"
 tags: ["KnowledgeBase","AI","OpenAI","Codex","DeepSeek","开源","Agent","MCP"]
 category: "技术分享"

@@ -1,5 +1,5 @@
 ---
-title: "2026-05-24-rtk-给-claude-code-装一个-token-压缩机"
+title: "rtk：给 Claude Code 装一个「token 压缩机」，把命令输出先过滤再喂给 LLM"
 created: "2026-05-24"
 tags: ["KnowledgeBase","GitHub","LLM","ClaudeCode","CLI","Rust","Token","DeveloperProductivity"]
 category: "AI/Tools"

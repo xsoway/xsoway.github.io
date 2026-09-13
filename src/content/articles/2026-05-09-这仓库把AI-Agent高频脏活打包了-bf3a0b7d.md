@@ -1,5 +1,5 @@
 ---
-title: "2026-05-09-这仓库把AI-Agent高频脏活打包了"
+title: "这仓库把 AI Agent 的「高频脏活」打包了：装上就能用，但别瞎上头"
 created: "2026-05-09"
 tags: ["KnowledgeBase","GitHub","AI-Agent","Skills","OpenClaw","Codex","ClaudeCode","Hermes"]
 category: "文章"

@@ -1,5 +1,5 @@
 ---
-title: "2026-04-25-OpenClaw-vs-Hermes-Agent-全面对比"
+title: "OpenClaw vs Hermes Agent 全面对比"
 created: "2026-04-09"
 tags: ["KnowledgeBase","OpenClaw","Hermes","AIAgent","EngineeringPractice","Workflow","AI","Agent","Article","Code","Memory","Project","Review","Skill"]
 category: "Articles"

@@ -1,5 +1,5 @@
 ---
-title: "2026-08-25-FreeLLMAPI-把几十家免费大模型额度叠成一座池子"
+title: "别再为 34 套 SDK 手写限流了：一个接口把几十家免费大模型额度叠成一座池子"
 created: "2026-08-25"
 tags: ["KnowledgeBase","LLM","开源项目","API网关","免费模型","OpenAI兼容"]
 category: "技术分享"

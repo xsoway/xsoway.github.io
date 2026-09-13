@@ -1,5 +1,5 @@
 ---
-title: "2026-05-24-CodeGraph-让AI编码代理少读文件更省Token"
+title: "CodeGraph：让 Claude Code / Cursor / Codex / Hermes 少读文件、更省 Token 的“本地语义代码图谱”"
 created: "2026-05-24"
 tags: ["KnowledgeBase","GitHub","AI","MCP","CodeGraph","ClaudeCode","Cursor","Codex","HermesAgent"]
 category: "GitHubProject"

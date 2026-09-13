@@ -1,5 +1,5 @@
 ---
-title: "2026-05-25-把知识库健康分从0救到10-一周OpenClaw与LLM-Wiki实战复盘"
+title: "把知识库健康分从0救到10：一周OpenClaw与LLM-Wiki实战复盘"
 created: "2026-05-25"
 tags: ["KnowledgeBase","OpenClaw","LLM-Wiki","Obsidian","WeeklyReview","Skill","Engineering"]
 category: "Article"

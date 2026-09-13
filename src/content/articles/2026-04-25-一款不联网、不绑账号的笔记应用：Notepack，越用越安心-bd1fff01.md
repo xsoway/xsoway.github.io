@@ -1,5 +1,5 @@
 ---
-title: "2026-04-25-一款不联网、不绑账号的笔记应用：Notepack，越用越安心"
+title: "一款不联网、不绑账号的笔记应用：Notepack，越用越安心"
 created: "2026-04-25"
 tags: ["Git","Note","Project","TODO 支持标准 iCalendar（VTODO）","Wiki","你的笔记，应该只属于你自己。","使用感受（不官方版）","关键用法 / 使用方式","多存储后端","多工作区管理","OpenClaw"]
 category: "Notes"

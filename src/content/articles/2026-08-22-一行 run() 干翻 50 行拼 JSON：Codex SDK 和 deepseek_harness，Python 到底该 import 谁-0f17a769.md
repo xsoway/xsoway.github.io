@@ -1,5 +1,5 @@
 ---
-title: "2026-08-22-一行 run() 干翻 50 行拼 JSON：Codex SDK 和 deepseek_harness，Python 到底该 import 谁"
+title: "Codex SDK vs deepseek_harness SDK：同样是让 Python 驱动 Agent，为什么一个要你拼 JSON，一个甩一句自然语言就行"
 created: "2026-08-22"
 tags: ["KnowledgeBase","Codex","DeepSeek","dsh","SDK","Python","Agent","对比","公众号"]
 category: "技术分享"

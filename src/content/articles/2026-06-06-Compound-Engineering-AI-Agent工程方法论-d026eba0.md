@@ -1,5 +1,5 @@
 ---
-title: "2026-06-06-Compound-Engineering-AI-Agent工程方法论"
+title: "Compound Engineering —— 让每次工程工作都比上次更容易的 AI Agent 方法论与插件体系"
 created: "2026-06-06"
 tags: ["KnowledgeBase","Compound-Engineering","AI-Agent","Claude-Code","Codex","工程方法论","Skill"]
 category: "技术文档"

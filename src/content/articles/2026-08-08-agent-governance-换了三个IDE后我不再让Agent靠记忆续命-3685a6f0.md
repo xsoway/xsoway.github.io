@@ -1,5 +1,5 @@
 ---
-title: "2026-08-08-agent-governance-换了三个IDE后我不再让Agent靠记忆续命"
+title: "换了三个IDE后，我不再让Agent靠记忆续命"
 created: "2026-08-08"
 tags: ["技术分享","Codex","Claude Code","OpenCode","工程治理"]
 category: "技术分享"

@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-openclaw-测试思考篇：AI-改写开发上游后，测试如何重新定位"
+title: "测试思考篇：AI 改写开发上游后，测试如何重新定位"
 created: "2026-04-13"
 tags: ["Testing","AIAgent","AI代码质量","EngineeringPractice","QualityEngineering","OpenClaw","Draft","OpenClaw"]
 category: "Articles"

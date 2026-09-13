@@ -1,5 +1,5 @@
 ---
-title: "2026-08-09-Codex-Obsidian-外置记忆库"
+title: "给 Codex 配一个 Obsidian 外置记忆库：跨项目永久记忆 + 每天凌晨 1 点自动复盘"
 created: "2026-08-09"
 tags: ["KnowledgeBase","AIAgent","Codex","Obsidian","Memory","Cron"]
 category: "工程实践"

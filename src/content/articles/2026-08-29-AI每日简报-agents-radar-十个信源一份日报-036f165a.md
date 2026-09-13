@@ -1,5 +1,5 @@
 ---
-title: "2026-08-29-AI每日简报-agents-radar-十个信源一份日报"
+title: "想盯住 AI 圈每天的新动静？这个项目把十个信源揉成一份每日简报"
 created: "2026-08-29"
 tags: ["KnowledgeBase","AI","简报","GitHubActions","MCP","开源","效率","CLI"]
 category: "技术分享"

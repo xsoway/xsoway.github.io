@@ -1,5 +1,5 @@
 ---
-title: "2026-07-29-ai-terminal-tools-comparison-codux-otty-terax-orca-kaku-cmux"
+title: "AI 终端神器横向对比：Codux、Otty、Terax、Orca、Kaku、Cmux，到底谁在真的干活？"
 created: "2026-07-29"
 tags: ["KnowledgeBase","Codux","Otty","Terax","Orca","Kaku","Cmux","AI编程","终端工具","横向对比"]
 category: "技术分享"

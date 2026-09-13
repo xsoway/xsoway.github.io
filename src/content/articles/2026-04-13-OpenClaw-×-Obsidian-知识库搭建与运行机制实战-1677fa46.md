@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-OpenClaw-×-Obsidian-知识库搭建与运行机制实战"
+title: "OpenClaw × Obsidian 知识库搭建与运行机制实战"
 created: "2026-03-25"
 tags: ["KnowledgeBase","OpenClaw","Obsidian","QMD","Automation","Cron","ModelRouting","ContextPruning","Draft"]
 category: "Articles"

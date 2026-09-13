@@ -1,5 +1,5 @@
 ---
-title: "2026-09-01-PromptCache-给LLM加一层语义缓存-让重复问题不再花钱"
+title: "用户老问同一句，AI 每次都要花钱再算一遍？PromptCache 给\"查重\"加了个语义缓存"
 created: "2026-09-01"
 tags: ["AI","LLM","缓存","成本优化","agent","客服","开源","质量"]
 category: "技术分享"

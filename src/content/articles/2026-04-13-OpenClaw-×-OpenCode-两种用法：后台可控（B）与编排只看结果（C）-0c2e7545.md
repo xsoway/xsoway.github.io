@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-OpenClaw-×-OpenCode-两种用法：后台可控（B）与编排只看结果（C）"
+title: "OpenClaw × OpenCode 两种用法：后台可控（B）与编排只看结果（C）"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

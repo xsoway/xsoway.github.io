@@ -1,5 +1,5 @@
 ---
-title: "2026-04-25-全局-AGENTS-路由协议"
+title: "全局 AGENTS 路由协议"
 created: "2026-04-25"
 tags: ["AI","Agent","Code","Project","Review","Skill","Testing","OpenClaw"]
 category: "Articles"

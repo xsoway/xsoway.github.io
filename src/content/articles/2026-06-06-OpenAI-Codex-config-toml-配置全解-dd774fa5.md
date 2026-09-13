@@ -1,5 +1,5 @@
 ---
-title: "2026-06-06-OpenAI-Codex-config-toml-配置全解"
+title: "OpenAI Codex config.toml 配置全解 —— 一份可复制的示例配置文件深度解读"
 created: "2026-06-06"
 tags: ["KnowledgeBase","Codex","OpenAI","配置","TOML","AI-Agent","CLI"]
 category: "技术文档"

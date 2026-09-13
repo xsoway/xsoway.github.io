@@ -1,5 +1,5 @@
 ---
-title: "2026-08-25-report-validator-别再让大模型给自己判卷"
+title: "别再让大模型给自己判卷：一个结构化报告验证器的完整落地复盘"
 created: "2026-08-25"
 tags: ["结构化抽取","差分测试","LLM评测","Python","pytest","OpenSpec","测试工程"]
 category: "技术分享"

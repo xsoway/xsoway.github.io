@@ -1,5 +1,5 @@
 ---
-title: "2026-04-25-AI-Agent-Automation-Code-Daily"
+title: "AI-Agent-Automation-Code-Daily"
 created: "2026-04-25"
 tags: ["AI","Agent","Automation","Code","Daily","Memory","Note","Project","Review","主要职责","OpenClaw"]
 category: "Articles"

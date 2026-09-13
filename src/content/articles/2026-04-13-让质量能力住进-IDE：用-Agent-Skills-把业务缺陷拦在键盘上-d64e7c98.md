@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-让质量能力住进-IDE：用-Agent-Skills-把业务缺陷拦在键盘上"
+title: "让质量能力住进 IDE：用 Agent Skills 把业务缺陷拦在键盘上"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

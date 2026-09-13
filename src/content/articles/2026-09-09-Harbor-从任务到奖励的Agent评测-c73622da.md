@@ -1,5 +1,5 @@
 ---
-title: "2026-09-09-Harbor-从任务到奖励的Agent评测"
+title: "评测一个 Agent，最后到底是怎么打分的？用 Harbor 从任务到奖励跑一遍"
 created: "2026-09-09"
 tags: ["KnowledgeBase","Agent评测","LLM评测","开源工具"]
 category: "AI-Agent"

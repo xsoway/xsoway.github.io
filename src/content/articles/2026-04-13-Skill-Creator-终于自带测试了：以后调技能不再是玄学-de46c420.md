@@ -1,5 +1,5 @@
 ---
-title: "2026-04-13-Skill-Creator-终于自带测试了：以后调技能不再是玄学"
+title: "Skill Creator 终于自带测试了：以后调技能不再是玄学"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"
