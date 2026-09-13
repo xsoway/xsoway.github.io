@@ -7,6 +7,7 @@ const root = path.resolve(import.meta.dirname, '..');
 const defaultSource = path.resolve('/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles');
 const legacySource = path.resolve('/Users/xulanzhong/Desktop/hexo_xmylog/mylog/source/_posts');
 const reviewSource = path.resolve('/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/40-Review');
+const allSources = [defaultSource, legacySource, reviewSource];
 const sources = (process.env.ARTICLE_SOURCES ?? process.env.ARTICLE_SOURCE ?? `${defaultSource},${legacySource},${reviewSource}`).split(',').map(item => path.resolve(item.trim()));
 const sourceLabel = new Map([[defaultSource, '主文章库'], [legacySource, '旧 Hexo 文章'], [reviewSource, '复盘归档']]);
 const contentDir = path.join(root, 'src/content/articles');
@@ -98,6 +99,22 @@ async function previousManifest() {
   }
 }
 
+async function knownOutputNames() {
+  const known = [];
+  for (const source of allSources) {
+    for (const file of await markdownFiles(source)) {
+      const text = await readFile(file, 'utf8');
+      if (metadata(text).published || source === reviewSource) {
+        const slug = name(file);
+        const hash = createHash('sha256').update(slug).digest('hex').slice(0, 8);
+        const id = known.some(article => article.slug === slug) ? `${slug}-${createHash('sha256').update(source).digest('hex').slice(0, 8)}-${hash}` : `${slug}-${hash}`;
+        known.push({ slug, id });
+      }
+    }
+  }
+  return new Set(known.map(article => `${article.id}.md`));
+}
+
 export async function syncArticles() {
   const report = { sources: sources.map((source) => sourceLabel.get(source) ?? '自定义文章源'), included: [], skipped: [], deleted: [], warnings: [], errors: [], assets: 0 };
   const candidates = [];
@@ -150,6 +167,14 @@ export async function syncArticles() {
     const retained = oldArticles.filter(article => !sources.includes(article.source));
     const articles = candidates.map(article => ({ source: article.source, file: path.relative(article.source, article.file), output: `${article.id}.md` }));
     await writeFile(manifestFile, `${JSON.stringify({ version: 1, articles: [...retained, ...articles] }, null, 2)}\n`);
+    if (sources.length === 1 && sources[0] === defaultSource) {
+      const known = await knownOutputNames();
+      for (const entry of await readdir(contentDir, { withFileTypes: true })) {
+        if (!entry.isFile() || !entry.name.endsWith('.md') || known.has(entry.name)) continue;
+        await rm(path.join(contentDir, entry.name));
+        report.deleted.push(entry.name);
+      }
+    }
   }
   await writeFile(path.join(root, '.sync-report.json'), `${JSON.stringify(report, null, 2)}\n`);
   if (report.errors.length) throw new Error(`同步失败：${report.errors.map(item => item.file).join(', ')}`);
