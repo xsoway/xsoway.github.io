@@ -1,5 +1,5 @@
 ---
-title: "CC GUI 插件概览"
+title: "2026-05-17-📝-CC-GUI（Claude-or-Codex"
 created: "2026-05-17"
 tags: ["IntelliJ","Plugin","Claude","Codex","AI","Agent","Agent-系统","Agent-自动化","CC-GUIClaude-or-Codex","CLI-登录","Claude-Code","Code","Git","MCP-服务器","OpenClaw"]
 category: "Notes"

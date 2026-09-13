@@ -1,5 +1,5 @@
 ---
-title: "每天烧上千美金的 AI Coding SOP（自用版）"
+title: "2026-04-13-每天烧上千美金的-AI-Coding-SOP（自用版）"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

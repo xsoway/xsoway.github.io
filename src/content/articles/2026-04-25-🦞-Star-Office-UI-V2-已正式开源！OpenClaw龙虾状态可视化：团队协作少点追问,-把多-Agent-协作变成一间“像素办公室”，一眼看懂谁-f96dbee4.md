@@ -1,5 +1,5 @@
 ---
-title: "🦞 Star Office UI V2 已正式开源！OpenClaw/龙虾状态可视化：团队协作少点追问, 把多 Agent 协作变成一间“像素办公室”，一眼看懂"
+title: "2026-04-25-🦞-Star-Office-UI-V2-已正式开源！OpenClaw龙虾状态可视化：团队协作少点追问,-把多-Agent-协作变成一间“像素办公室”，一眼看懂谁"
 created: "2026-04-13"
 tags: ["Inbox","OpenClaw","Agent","Code","Git","Memory","Project","Review","Skill","“昨日小记”微型总结","公网访问方式灵活"]
 category: "Notes"

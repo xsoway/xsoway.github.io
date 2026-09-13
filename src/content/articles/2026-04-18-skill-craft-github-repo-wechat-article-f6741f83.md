@@ -1,5 +1,5 @@
 ---
-title: "这个 Skill 工具有点狠，连你写的 Skill 水不水都能给你打分"
+title: "2026-04-18-skill-craft-github-repo-wechat-article"
 created: "2026-04-18"
 tags: ["KnowledgeBase","GitHub","Skill","OpenClaw","AI","工具评测","公众号文章"]
 category: "- Notes"

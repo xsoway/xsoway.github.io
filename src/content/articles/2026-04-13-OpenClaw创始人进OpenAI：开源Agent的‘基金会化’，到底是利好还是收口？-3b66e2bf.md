@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw创始人进OpenAI：开源Agent的‘基金会化’，到底是利好还是收口？"
+title: "2026-04-13-OpenClaw创始人进OpenAI：开源Agent的‘基金会化’，到底是利好还是收口？"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

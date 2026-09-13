@@ -1,5 +1,5 @@
 ---
-title: "OpenSpec：AI 编码越来越强，为什么你反而更需要先写规格，再写代码？"
+title: "2026-04-13-OpenSpec：AI-编码越来越强，为什么你反而更需要先写规格，再写代码？"
 created: "2026-03-29"
 tags: ["KnowledgeBase","WeChatArticle","Retrieval","RAG","InformationRetrieval","SQLite","FTS5","Draft","OpenClaw"]
 category: "Articles"

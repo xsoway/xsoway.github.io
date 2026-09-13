@@ -1,5 +1,5 @@
 ---
-title: "Telegram 群里让 OpenClaw 和 Hermes 互相对话的配置手册"
+title: "建群-把openclaw & hermes agent 拉进来, 开聊 !"
 created: "2026-04-18"
 tags: ["- KnowledgeBase"]
 category: "Articles"

@@ -1,5 +1,5 @@
 ---
-title: "我设计Agent测试框架时最想避免的是每接一个新Agent都重写一套评测"
+title: "2026-06-03-02-我设计Agent测试框架时最想避免的是每接一个新Agent都重写一套评测"
 created: "2026-06-03"
 tags: ["WeChat","Agent","Testing","Adapter","Scorer"]
 category: "公众号文章"

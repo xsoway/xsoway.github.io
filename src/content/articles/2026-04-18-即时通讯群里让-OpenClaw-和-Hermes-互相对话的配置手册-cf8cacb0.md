@@ -1,5 +1,5 @@
 ---
-title: "即时通讯群里让 OpenClaw 和 Hermes 互相对话的配置手册"
+title: "2026-04-18-即时通讯群里让-OpenClaw-和-Hermes-互相对话的配置手册"
 created: "2026-04-18"
 tags: ["KnowledgeBase","OpenClaw","Hermes","MultiAgent","EngineeringPractice","Documentation"]
 category: "Articles"

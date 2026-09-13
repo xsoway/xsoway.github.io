@@ -1,5 +1,5 @@
 ---
-title: "不用再为 Agent 东拼西凑了：DeepSeek 官方出品的 DeepSeek Harness 把一切都做成了一个插件"
+title: "2026-08-15-DeepSeek-Harness-插件化铺设"
 created: "2026-08-15"
 tags: ["Articles","DeepSeek","dsh","Harness","Agent","Cordis","开源"]
 category: "Articles"

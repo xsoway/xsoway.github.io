@@ -1,5 +1,5 @@
 ---
-title: "1 个文件管住 AI 的乱写乱改：Andrej Karpathy 的 LLM 编码指南"
+title: "2026-07-28-andrej-karpathy-skills"
 created: "2026-07-28"
 tags: ["KnowledgeBase","AI","LLM","ClaudeCode","Cursor","编码规范","开源项目"]
 category: "技术分享"

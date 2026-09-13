@@ -1,5 +1,5 @@
 ---
-title: "OpenAI Codex CLI 的 AGENTS.md 里，藏着一套顶级工程团队的代码规范"
+title: "2026-07-03-OpenAI-Codex-CLI-AGENTS.md"
 created: "2026-07-03"
 tags: ["KnowledgeBase","AI","Codex","OpenAI","Engineering","Rust"]
 category: "技术分享"

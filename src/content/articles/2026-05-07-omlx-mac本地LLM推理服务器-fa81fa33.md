@@ -1,5 +1,5 @@
 ---
-title: "Mac 上跑本地 LLM 总是折腾？oMLX 把推理服务器塞进菜单栏"
+title: "2026-05-07-omlx-mac本地LLM推理服务器"
 created: "2026-05-07"
 tags: ["- KnowledgeBase"]
 category: "- Articles"

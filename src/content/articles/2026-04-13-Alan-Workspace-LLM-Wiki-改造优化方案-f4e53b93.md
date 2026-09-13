@@ -1,5 +1,5 @@
 ---
-title: "Alan-Workspace LLM Wiki 改造优化方案"
+title: "2026-04-13-Alan-Workspace-LLM-Wiki-改造优化方案"
 created: "2026-04-13"
 tags: ["LLMWiki","OpenClaw","Obsidian","Optimization"]
 category: "Articles"

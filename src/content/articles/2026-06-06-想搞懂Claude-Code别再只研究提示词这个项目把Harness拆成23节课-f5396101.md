@@ -1,5 +1,5 @@
 ---
-title: "想搞懂 Claude Code，别再只研究提示词：这个项目把 Harness 拆成了 23 节课"
+title: "2026-06-06-想搞懂Claude-Code别再只研究提示词这个项目把Harness拆成23节课"
 created: "2026-06-06"
 tags: ["KnowledgeBase","WeChat","GitHub","ClaudeCode","HarnessEngineering","Agent","MCP","MultiAgent"]
 category: "公众号文章"

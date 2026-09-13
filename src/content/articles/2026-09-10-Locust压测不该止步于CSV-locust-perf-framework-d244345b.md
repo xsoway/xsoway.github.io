@@ -1,5 +1,5 @@
 ---
-title: "Locust 压完只剩 CSV？真正麻烦的，是性能结论没法复验"
+title: "2026-09-10-Locust压测不该止步于CSV-locust-perf-framework"
 created: "2026-09-10"
 tags: ["性能测试","Locust","Python","开源项目","测试开发","质量工程"]
 category: "性能测试"

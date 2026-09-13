@@ -1,5 +1,5 @@
 ---
-title: "abtop、CodeBurn、Tokscale、CodexBar：终端 Token 监控/审计工具详解与对比"
+title: "2026-05-20-abtop、CodeBurn、Tokscale、CodexBar：终端 Token 监控-审计工具详解与对比"
 created: "2026-05-20"
 tags: ["KnowledgeBase","AI","Token","Codex","ClaudeCode","OpenCode","Tools"]
 category: "工程实践"

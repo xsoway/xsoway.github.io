@@ -1,5 +1,5 @@
 ---
-title: "OpenAI Symphony：把Coding Agent从人盯人，变成工单自动跑"
+title: "2026-04-25-OpenAI-Symphony：把Coding-Agent从人盯人，变成工单自动跑"
 created: "2026-04-13"
 tags: ["Inbox","OpenClaw","AI","Agent","Note"]
 category: "Notes"

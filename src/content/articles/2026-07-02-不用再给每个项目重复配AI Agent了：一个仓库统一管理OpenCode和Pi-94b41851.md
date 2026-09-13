@@ -1,5 +1,5 @@
 ---
-title: "不用再给每个项目重复配AI Agent了：一个仓库统一管理OpenCode和Pi"
+title: "2026-07-02-不用再给每个项目重复配AI Agent了：一个仓库统一管理OpenCode和Pi"
 created: "2026-07-02"
 tags: ["KnowledgeBase","AI","OpenCode","Pi","Agent","Skill管理","开发工具","效率工具"]
 category: "技术分享"

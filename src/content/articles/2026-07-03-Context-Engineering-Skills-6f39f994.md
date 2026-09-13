@@ -1,5 +1,5 @@
 ---
-title: "Context Engineering 不是玄学：15 个标准化 Skill 把 AI Agent 的上下文管成了工程"
+title: "2026-07-03-Context-Engineering-Skills"
 created: "2026-07-03"
 tags: ["KnowledgeBase","AI","ContextEngineering","Agent","Skills","OpenSource","PromptEngineering"]
 category: "技术分享"

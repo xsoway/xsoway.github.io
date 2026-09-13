@@ -1,5 +1,5 @@
 ---
-title: "ClawFeed：把海量 RSS / Twitter 变成你的 AI 资讯流水线（附 OpenClaw 落地姿势）"
+title: "2026-04-13-ClawFeed：把海量-RSS-Twitter-变成你的-AI-资讯流水线（附-OpenClaw-落地姿势）"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

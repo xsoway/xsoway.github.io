@@ -1,5 +1,5 @@
 ---
-title: "这个 GitHub 项目，把产品经理的方法论直接喂给 AI 了"
+title: "2026-04-13-Run-a-skill-(artifactanalysis)"
 created: "2026-04-11"
 tags: ["KnowledgeBase","GitHub","ProductManagement","AI","Skills","WeChatArticle","Draft","OpenClaw"]
 category: "Articles"

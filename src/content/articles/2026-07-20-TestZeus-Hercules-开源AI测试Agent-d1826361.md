@@ -1,5 +1,5 @@
 ---
-title: "写 Gherkin 就能跑自动化测试：这个开源项目把 E2E 测试做成了\"填需求"
+title: "2026-07-20-TestZeus-Hercules-开源AI测试Agent"
 created: "2026-07-20"
 tags: ["KnowledgeBase","开源项目","测试","AI","E2E测试","Gherkin","Playwright","LangGraph"]
 category: "技术分享"

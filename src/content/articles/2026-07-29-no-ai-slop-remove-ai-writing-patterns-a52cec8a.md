@@ -1,5 +1,5 @@
 ---
-title: "2700+ Star！一个开源技能帮你删掉 AI 写作里的 20 种\"塑料味\""
+title: "2026-07-29-no-ai-slop-remove-ai-writing-patterns"
 created: "2026-07-29"
 tags: ["KnowledgeBase","no-ai-slop","AI写作","写作工具","开源","提示词工程"]
 category: "技术分享"

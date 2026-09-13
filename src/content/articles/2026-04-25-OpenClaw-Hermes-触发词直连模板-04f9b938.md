@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw Hermes 触发词直连模板"
+title: "2026-04-25-OpenClaw-Hermes-触发词直连模板"
 created: "2026-04-12"
 tags: ["KnowledgeBase","OpenClaw","Hermes","AIAgent","EngineeringPractice","Workflow","Inbox","AI","Agent","Code","Project","Testing"]
 category: "Notes"

@@ -1,5 +1,5 @@
 ---
-title: "AI-Article-Automation-Code-Daily"
+title: "2026-04-25-AI-Article-Automation-Code-Daily"
 created: "2026-04-25"
 tags: ["AI","Article","Automation","Code","Daily","Excitement","First","Heavy-hitting social accounts","Note","Old or little-known books","OpenClaw"]
 category: "Articles"

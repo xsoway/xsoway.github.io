@@ -1,5 +1,5 @@
 ---
-title: "一句话让 Agent 拥有互联网能力：Agent Reach 把 16 个平台接成了一条命令"
+title: "2026-07-24-Agent-Reach-AI-Agent-互联网能力"
 created: "2026-07-24"
 tags: ["KnowledgeBase","开源项目","Agent","AI","互联网","工具","自动化"]
 category: "技术分享"

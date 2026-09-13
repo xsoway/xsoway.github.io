@@ -1,5 +1,5 @@
 ---
-title: "别再让 Agent Skill 靠感觉上线：我看了阿里 skill-up 的评测闭环"
+title: "2026-09-05-skill-up-Agent-Skill也该有测试"
 created: "2026-09-05"
 tags: ["技术分享","Agent","Skill","评测","自动化测试"]
 category: "技术分享"

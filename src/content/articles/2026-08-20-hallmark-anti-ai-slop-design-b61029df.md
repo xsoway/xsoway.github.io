@@ -1,5 +1,5 @@
 ---
-title: "2K Star！AI 生成的前端页面再也不是「一眼假」了：这个开源项目用 57 道门禁把设计拉回真实世界"
+title: "2026-08-20-hallmark-anti-ai-slop-design"
 created: "2026-08-20"
 tags: ["AI","前端","设计","Claude Code","Cursor","Together AI","开源工具","用户体验"]
 category: "技术分享"

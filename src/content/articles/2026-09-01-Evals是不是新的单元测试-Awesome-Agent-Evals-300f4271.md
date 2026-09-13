@@ -1,5 +1,5 @@
 ---
-title: "Evals 是不是新的单元测试？Awesome Agent Evals：把'AI 怎么评'这事做成了有门槛的资料库"
+title: "2026-09-01-Evals是不是新的单元测试-Awesome-Agent-Evals"
 created: "2026-09-01"
 tags: ["AI","LLM","agent评测","AI争议","评测","知识库","开源","质量"]
 category: "技术分享"

@@ -1,5 +1,5 @@
 ---
-title: "APK 自动化测试还能这样玩：不用改代码、不用 root，纯 adb 搞定性能监控和崩溃采集"
+title: "2026-07-18-apk-auto-test-android-performance-stability-testing-tool"
 created: "2026-07-18"
 tags: ["KnowledgeBase","Android","APK","自动化测试","性能测试","adb","Python"]
 category: "技术分享"

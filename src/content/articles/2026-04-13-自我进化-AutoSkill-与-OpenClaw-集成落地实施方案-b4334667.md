@@ -1,5 +1,5 @@
 ---
-title: "AutoSkill 与 OpenClaw 集成落地实施方案"
+title: "2026-04-13-自我进化-AutoSkill-与-OpenClaw-集成落地实施方案"
 created: "2026-04-13"
 tags: ["OpenClaw","AutoSkill","AIAgent","WorkflowDesign","KnowledgeManagement","EngineeringPractice","AgentSkill","Draft","OpenClaw"]
 category: "Articles"

@@ -1,5 +1,5 @@
 ---
-title: "Agent 自己学技能、自己出题、自己验证——OpenSkill 这篇论文，把\"自我进化\"推到了新高度"
+title: "2026-07-31-openskill-agent-self-evolution-research"
 created: "2026-07-31"
 tags: ["KnowledgeBase","Agent","论文解读","自我进化","开源研究","AI"]
 category: "技术分享"

@@ -1,5 +1,5 @@
 ---
-title: "源码级融合 OpenSpec + Superpowers：一个开源插件给 AI 编程加上了\"规划-契约-执行\"三重纪律"
+title: "2026-07-29-spec-superflow-ai-programming-workflow"
 created: "2026-07-29"
 tags: ["KnowledgeBase","spec-superflow","AI编程","工作流","规划引擎","开源","TDD","SDD"]
 category: "技术分享"

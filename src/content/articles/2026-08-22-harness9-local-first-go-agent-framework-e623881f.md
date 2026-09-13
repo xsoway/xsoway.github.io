@@ -1,5 +1,5 @@
 ---
-title: "受够了又重又绕的 Agent 框架？这个 Go 写的本地优先框架，装完就跑"
+title: "2026-08-22-harness9-local-first-go-agent-framework"
 created: "2026-08-22"
 tags: ["KnowledgeBase","harness9","Agent","Go","AI框架","开源"]
 category: "文章"

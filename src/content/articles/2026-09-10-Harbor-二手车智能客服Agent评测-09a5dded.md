@@ -1,5 +1,5 @@
 ---
-title: "用 Harbor 给二手车智能客服 agent 做上线前的\"体检"
+title: "2026-09-10-Harbor-二手车智能客服Agent评测"
 created: "2026-09-10"
 tags: ["KnowledgeBase","WeChat","Harbor","Agent评测","智能客服"]
 category: "AI-Agent"

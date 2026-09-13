@@ -1,5 +1,5 @@
 ---
-title: "Skill Creator 让输出可预测：先把项目经验固化成 Skills"
+title: "2026-04-13-Skill-Creator-让输出可预测：先把项目经验固化成-Skills"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

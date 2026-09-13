@@ -1,5 +1,5 @@
 ---
-title: "用 Rust + GPUI 重写终端：一个开源项目把 AI 编程 CLI 的状态、Token、上下文全收进了一个工作台"
+title: "2026-07-29-codux-ai-programming-terminal"
 created: "2026-07-29"
 tags: ["KnowledgeBase","Codux","AI编程","终端工具","Rust","GPUI","开源"]
 category: "技术分享"

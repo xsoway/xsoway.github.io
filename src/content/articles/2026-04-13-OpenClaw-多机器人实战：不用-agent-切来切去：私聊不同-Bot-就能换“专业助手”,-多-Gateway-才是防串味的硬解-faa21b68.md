@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw 多机器人实战：不用 /agent 切来切去：私聊不同 Bot 就能换“专业助手”, 多 Gateway 才是防串味的硬解"
+title: "2026-04-13-OpenClaw-多机器人实战：不用-agent-切来切去：私聊不同-Bot-就能换“专业助手”,-多-Gateway-才是防串味的硬解"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

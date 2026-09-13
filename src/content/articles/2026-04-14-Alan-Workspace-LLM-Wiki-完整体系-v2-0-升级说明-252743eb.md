@@ -1,5 +1,5 @@
 ---
-title: "Alan-Workspace LLM Wiki 完整体系 v2.0 升级说明"
+title: "2026-04-14-Alan-Workspace-LLM-Wiki-完整体系-v2-0-升级说明"
 created: "2026-04-14"
 tags: ["KnowledgeBase","LLMWiki","OpenClaw","Obsidian","KnowledgeManagement","PersonalOps","WikiCompiler"]
 category: "Articles"

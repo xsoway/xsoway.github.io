@@ -1,5 +1,5 @@
 ---
-title: "换 Claude Code 换 Codex，AI 不再失忆：一个自托管的 Agent 长期记忆"
+title: "2026-09-04-ai-memory-AI-Agent-长期记忆-换工具不失忆"
 created: "2026-09-04"
 tags: ["KnowledgeBase","WeChat","AgentMemory","AGENTS","AI"]
 category: "AI-Tool"

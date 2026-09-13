@@ -1,5 +1,5 @@
 ---
-title: "把Langfuse的ClickHouse换成真正的时序数据库：这个开源项目把LLM观测成本打下来了"
+title: "2026-07-01-把Langfuse的ClickHouse换成真正的时序数据库"
 created: "2026-07-01"
 tags: ["KnowledgeBase","AI","LLM","可观测性","开源项目","Langfuse","GreptimeDB","Openfuse","GitHub","公众号"]
 category: "文章"

@@ -1,5 +1,5 @@
 ---
-title: "AI 写代码不听话？实测给 agent 套上\"需求→审批→编码\"流程的 skill"
+title: "2026-09-08-AI写代码不听话-实测给agent套上需求审批编码流程的skill"
 created: "2026-09-08"
 tags: ["AI编码","Agent工作流","AIDLC","公众号"]
 category: "技术分享"

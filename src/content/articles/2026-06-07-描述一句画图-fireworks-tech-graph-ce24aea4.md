@@ -1,5 +1,5 @@
 ---
-title: "描述一句就能出架构图？fireworks-tech-graph 把画图变成了说话"
+title: "2026-06-07-描述一句画图-fireworks-tech-graph"
 created: "2026-06-07"
 tags: ["AI工具","技术绘图","架构图","SVG","Agent","开源项目"]
 category: "Articles"

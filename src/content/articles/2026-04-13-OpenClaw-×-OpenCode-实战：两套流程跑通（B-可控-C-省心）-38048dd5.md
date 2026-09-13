@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw × OpenCode 实战：两套流程跑通（B 可控 / C 省心）"
+title: "2026-04-13-OpenClaw-×-OpenCode-实战：两套流程跑通（B-可控-C-省心）"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

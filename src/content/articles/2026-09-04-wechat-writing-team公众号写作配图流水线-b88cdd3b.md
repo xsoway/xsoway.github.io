@@ -1,5 +1,5 @@
 ---
-title: "公众号没写好，往往是没管流程：拆解 wechat-writing-team 的「写作 + 配图」流水线"
+title: "2026-09-04-wechat-writing-team公众号写作配图流水线"
 created: "2026-09-04"
 tags: ["KnowledgeBase","公众号写作","AgentSkill","内容流水线","AI审校"]
 category: "AI-Agent"

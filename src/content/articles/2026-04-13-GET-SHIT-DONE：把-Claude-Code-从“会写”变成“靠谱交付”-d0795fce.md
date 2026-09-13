@@ -1,5 +1,5 @@
 ---
-title: "GET SHIT DONE：把 Claude Code 从“会写”变成“靠谱交付”"
+title: "2026-04-13-GET-SHIT-DONE：把-Claude-Code-从“会写”变成“靠谱交付”"
 created: "2026-04-05"
 tags: ["KnowledgeBase","AIEngineering","ContextEngineering","SpecDrivenDevelopment","ClaudeCode","OpenCode","GeminiCLI","Codex","Cursor","Draft","OpenClaw"]
 category: "Articles"

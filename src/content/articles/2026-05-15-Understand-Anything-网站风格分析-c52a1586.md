@@ -1,5 +1,5 @@
 ---
-title: "Understand Anything 网站风格分析"
+title: "2026-05-15-Understand-Anything-网站风格分析"
 created: "2026-05-15"
 tags: ["Design","UI","AI","DeveloperTooling","GraphVisualization"]
 category: "Article"

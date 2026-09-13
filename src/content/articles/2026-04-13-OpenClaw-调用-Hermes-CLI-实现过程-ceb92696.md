@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw 调用 Hermes CLI 实现过程"
+title: "2026-04-13-OpenClaw-调用-Hermes-CLI-实现过程"
 created: "2026-04-12"
 tags: ["KnowledgeBase","OpenClaw","Hermes","AIAgent","EngineeringPractice","Workflow","Draft"]
 category: "Articles"

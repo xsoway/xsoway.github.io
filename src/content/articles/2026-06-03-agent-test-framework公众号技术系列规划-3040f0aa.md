@@ -1,5 +1,5 @@
 ---
-title: "agent-test-framework公众号技术系列规划"
+title: "2026-06-03-agent-test-framework公众号技术系列规划"
 created: "2026-06-03"
 tags: ["ContentPlan","WeChat","Testing","Agent","Evaluation","Benchmark"]
 category: "内容规划"

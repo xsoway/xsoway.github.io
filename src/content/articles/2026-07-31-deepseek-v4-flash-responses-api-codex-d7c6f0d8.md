@@ -1,5 +1,5 @@
 ---
-title: "DeepSeek V4-Flash 正式版上线：原生支持 Responses API，专为 Codex 做了适配"
+title: "2026-07-31-deepseek-v4-flash-responses-api-codex"
 created: "2026-07-31"
 tags: ["KnowledgeBase","DeepSeek","V4-Flash","Responses API","Codex","AI","模型发布"]
 category: "技术分享"

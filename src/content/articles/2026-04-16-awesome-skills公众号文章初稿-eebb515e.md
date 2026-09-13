@@ -1,5 +1,5 @@
 ---
-title: "Awesome Skills：为什么 AI Agent 的下一站，不是更大的模型，而是更好的 Skills"
+title: "2026-04-16-awesome-skills公众号文章初稿"
 created: "2026-04-16"
 tags: ["KnowledgeBase","AI","AIAgent","AgentSkill","PromptEngineering","WorkflowDesign","技术写作","公众号文章"]
 category: "文章"

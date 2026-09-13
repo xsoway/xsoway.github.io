@@ -1,5 +1,5 @@
 ---
-title: "未命名"
+title: "2026-04-26-AI-Code-Git-Memory-Note"
 created: "2026-04-26"
 tags: ["AI","Code","Git","Memory","Note","Project","Prompt","Review","Testing","三个使用场景怎么落地","OpenClaw"]
 category: "Notes"

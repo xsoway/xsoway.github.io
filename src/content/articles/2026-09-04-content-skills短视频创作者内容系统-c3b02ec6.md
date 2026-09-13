@@ -1,5 +1,5 @@
 ---
-title: "短视频创作者的内容系统：content-skills 把爆款钩子拆成 7 个 Skill"
+title: "2026-09-04-content-skills短视频创作者内容系统"
 created: "2026-09-04"
 tags: ["KnowledgeBase","短视频创作","AgentSkill","爆款钩子","内容方法论"]
 category: "AI-Agent"

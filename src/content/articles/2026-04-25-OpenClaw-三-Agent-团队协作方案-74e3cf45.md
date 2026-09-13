@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw 三 Agent 团队协作方案"
+title: "2026-04-25-OpenClaw-三-Agent-团队协作方案"
 created: "2026-04-25"
 tags: ["AI","Agent","Article","Code","Daily","Memory","OpenClaw","Project","Review","Skill"]
 category: "Articles"

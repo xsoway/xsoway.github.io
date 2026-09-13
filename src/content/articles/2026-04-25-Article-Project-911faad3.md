@@ -1,5 +1,5 @@
 ---
-title: "Article-Project"
+title: "2026-04-25-Article-Project"
 created: "2026-04-25"
 tags: ["Article","Project","Note","Inbox","OpenClaw"]
 category: "Notes"

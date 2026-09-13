@@ -1,5 +1,5 @@
 ---
-title: "OpenSpec + oh-my-opencode + superpowers + 根目录 AGENTS.md 分工与工作流说明"
+title: "2026-04-25-OpenSpec-+-oh-my-opencode-+-superpowers-+-根目录-AGENTS.md-分工与工作流说明"
 created: "2026-04-25"
 tags: ["- AI"]
 category: "Articles"

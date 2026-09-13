@@ -1,5 +1,5 @@
 ---
-title: "给 Agent 的 Skill 写评测，我这才搞清楚它到底靠不靠谱"
+title: "2026-09-04-skill-up-Agent-Skill-评测演进工具"
 created: "2026-09-04"
 tags: ["KnowledgeBase","公众号","AgentSkill","eval测试","agent开发","openSource","skill-up"]
 category: "文章"

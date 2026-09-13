@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw vs Hermes Agent 辩论赛总结"
+title: "2026-04-16-OpenClaw-vs-Hermes-Agent-辩论赛总结"
 created: "2026-04-16"
 tags: ["KnowledgeBase","OpenClaw","Hermes","AI","Agent","辩论"]
 category: "总结复盘"

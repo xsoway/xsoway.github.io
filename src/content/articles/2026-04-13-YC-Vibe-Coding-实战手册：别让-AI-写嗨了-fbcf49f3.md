@@ -1,5 +1,5 @@
 ---
-title: "YC Vibe Coding 实战手册：别让 AI 写嗨了"
+title: "2026-04-13-YC-Vibe-Coding-实战手册：别让-AI-写嗨了"
 created: "2026-04-13"
 tags: ["Draft","OpenClaw"]
 category: "Articles"

@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw Active Memory 主动记忆使用指南"
+title: "2026-04-14-OpenClaw-Active-Memory-主动记忆使用指南"
 created: "2026-04-14"
 tags: ["KnowledgeBase","OpenClaw","ActiveMemory","AI助手","记忆系统","技术教程"]
 category: "技术教程"

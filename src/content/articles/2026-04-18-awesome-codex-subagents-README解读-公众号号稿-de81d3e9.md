@@ -1,5 +1,5 @@
 ---
-title: "别再让一个 Codex 啥都干了，这个仓库直接塞了 136 个专科 AI 分身给你"
+title: "2026-04-18-awesome-codex-subagents-README解读-公众号号稿"
 created: "2026-04-18"
 tags: ["- GitHub"]
 category: "- Notes"

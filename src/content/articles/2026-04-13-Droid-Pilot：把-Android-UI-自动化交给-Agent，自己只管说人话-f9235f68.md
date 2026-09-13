@@ -1,5 +1,5 @@
 ---
-title: "Droid Pilot：把 Android UI 自动化交给 Agent，自己只管说人话"
+title: "2026-04-13-Droid-Pilot：把-Android-UI-自动化交给-Agent，自己只管说人话"
 created: "2026-04-05"
 tags: ["Android","UIAutomation","Agent","ClaudeCode","Testing","uiautomator2","pytest","Draft","OpenClaw"]
 category: "Articles"
