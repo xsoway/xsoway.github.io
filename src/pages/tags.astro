@@ -23,7 +23,7 @@ const cloudWords = cloud.map((tag) => ({ text: tag.name, href: `/tags/${tag.slug
       const height = Math.min(620, Math.max(360, width * .7));
       root.replaceChildren();
       root.style.height = `${height}px`;
-      cloud<Word>().size([width, height]).words(words.map((word) => ({ ...word, size: 13 + Math.sqrt(word.count / maxCount) * 34 }))).padding(2).rotate(() => 0).font('PingFang SC, Microsoft YaHei, sans-serif').fontSize((word) => word.size ?? 13).on('end', (placed) => {
+      cloud<Word>().size([width, height]).words(words.map((word) => ({ ...word, size: 13 + Math.sqrt(word.count / maxCount) * 34 }))).padding(2).rotate(() => 0).font('Comic Sans MS, Comic Sans, PingFang SC, Microsoft YaHei, cursive').fontSize((word) => word.size ?? 13).on('end', (placed) => {
         const svg = document.createElementNS(namespace, 'svg');
         svg.setAttribute('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`);
         svg.setAttribute('role', 'img');
