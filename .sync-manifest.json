@@ -1,0 +1,1995 @@
+{
+  "version": 1,
+  "articles": [
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-01-01-人工智能编程之方法调用结构样本（待办任务）.md",
+      "output": "2026-01-01-人工智能编程之方法调用结构样本（待办任务）-d2c28c6a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-01-23-Code-Review-Skill.md",
+      "output": "2026-01-23-Code-Review-Skill-77358f22.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-01-30-我读完“5D-思考”后：越聪明的人，越容易把自己关进笼子.md",
+      "output": "2026-01-30-我读完“5D-思考”后：越聪明的人，越容易把自己关进笼子-29b8785e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-01-31-大模型意图识别测试这事，AI-测试人得有一套“能落地、能复盘、能挨骂还能活”的体系.md",
+      "output": "2026-01-31-大模型意图识别测试这事，AI-测试人得有一套“能落地、能复盘、能挨骂还能活”的体系-e10cde0d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-02-08-OpenClaw配置文件全解：AGENTS_SOUL_USER_MEMORY怎么配才像外挂大脑_副本3.md",
+      "output": "2026-02-08-OpenClaw配置文件全解：AGENTS_SOUL_USER_MEMORY怎么配才像外挂大脑_副本3-29af7040.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-02-08-别追热点：用过滤器终结AI落后感 (copy).md",
+      "output": "2026-02-08-别追热点：用过滤器终结AI落后感 (copy)-2f5bf022.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-02-09-Seedance 2.0 技术拆解：四模态参考与分镜驱动.md",
+      "output": "2026-02-09-Seedance 2.0 技术拆解：四模态参考与分镜驱动-c0894a1f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-02-20-别再收藏教程了：OpenCode 这套路线能让你真的上手-去AI味.md",
+      "output": "2026-02-20-别再收藏教程了：OpenCode 这套路线能让你真的上手-去AI味-a94515b3.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-03-08-二月生活复盘：乐在将至，回家这几天被路况和天气教做人-v1.md",
+      "output": "2026-03-08-二月生活复盘：乐在将至，回家这几天被路况和天气教做人-v1-2c3075f5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-03-11-Product-Analyzer.md",
+      "output": "2026-03-11-Product-Analyzer-37828788.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-03-13-AI-工程下一步：从“会写代码”到“按体系交付”.md",
+      "output": "2026-03-13-AI-工程下一步：从“会写代码”到“按体系交付”-b59591bb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-03-14-老项目-AI-介入指南.md",
+      "output": "2026-03-14-老项目-AI-介入指南-cb6594a2.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-03-17-AI编程时代也要掌握的通用项目架构：4套模板让代码不再混乱.md",
+      "output": "2026-03-17-AI编程时代也要掌握的通用项目架构：4套模板让代码不再混乱-3bd8a8f5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-03-19-1.-会话记忆-1.-自动生成今天文件-1.-长期记忆-2.-当天记忆-2.-手动新建也可以.md",
+      "output": "2026-03-19-1.-会话记忆-1.-自动生成今天文件-1.-长期记忆-2.-当天记忆-2.-手动新建也可以-82c6fc07.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-03-19-AI-AI-在团队协作场景里应该怎么配合人工作-AI-工作空间-代码工程场景-Agent-Code.md",
+      "output": "2026-03-19-AI-AI-在团队协作场景里应该怎么配合人工作-AI-工作空间-代码工程场景-Agent-Code-40e5ad56.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-03-22-面向测试工程师的-OpenClaw-测试编排方案.md",
+      "output": "2026-03-22-面向测试工程师的-OpenClaw-测试编排方案-56157264.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-03-29-真正先过时的，也许不是工具，而是那套靠人肉硬扛的工作方式-v2.md",
+      "output": "2026-03-29-真正先过时的，也许不是工具，而是那套靠人肉硬扛的工作方式-v2-6569fdec.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-07-产研团队企微机器人部署手册.md",
+      "output": "2026-04-07-产研团队企微机器人部署手册-8d620225.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-2026-04-03-OpenClaw-记忆定时检查与每周卫生整理-机制复盘与配置说明.md",
+      "output": "2026-04-13-2026-04-03-OpenClaw-记忆定时检查与每周卫生整理-机制复盘与配置说明-a045ba75.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-2026-04-03-一文讲透-OpenClaw-该用Multi-Agent还是主Agent+Sub-Agent.md",
+      "output": "2026-04-13-2026-04-03-一文讲透-OpenClaw-该用Multi-Agent还是主Agent+Sub-Agent-ed88fb78.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-2026-复盘总结-2月：一边折腾OpenClaw，一边把生活慢慢收回来.md",
+      "output": "2026-04-13-2026-复盘总结-2月：一边折腾OpenClaw，一边把生活慢慢收回来-5cebd8db.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-2026的分水岭：Skills把AI从聊天变成生产线.md",
+      "output": "2026-04-13-2026的分水岭：Skills把AI从聊天变成生产线-184bfdba.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-2月内容复盘：三条主线把账号写成一条生产线.md",
+      "output": "2026-04-13-2月内容复盘：三条主线把账号写成一条生产线-aa7f92d2.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-2月内容复盘：围绕-OpenClaw-折腾一个月，终于把“爽”变成“可控”.md",
+      "output": "2026-04-13-2月内容复盘：围绕-OpenClaw-折腾一个月，终于把“爽”变成“可控”-47230eae.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-2月复盘：围绕-OpenClaw-折腾优化，一个月把-Agent-从能用拉到可控.md",
+      "output": "2026-04-13-2月复盘：围绕-OpenClaw-折腾优化，一个月把-Agent-从能用拉到可控-39c91942.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI-Native-团队最小必要的-20-份文档：把共识写进仓库.md",
+      "output": "2026-04-13-AI-Native-团队最小必要的-20-份文档：把共识写进仓库-99244a80.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI-in-Software-Testing（补充内容翻译）.md",
+      "output": "2026-04-13-AI-in-Software-Testing（补充内容翻译）-c6bcf733.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI-会取代程序员吗？别问“取代”，先问你会不会被压扁.md",
+      "output": "2026-04-13-AI-会取代程序员吗？别问“取代”，先问你会不会被压扁-c568f0c5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI-把测试抬上桌：别被‘爽感’骗了,AI-淘汰的不是测试，是交出判断力的人.md",
+      "output": "2026-04-13-AI-把测试抬上桌：别被‘爽感’骗了,AI-淘汰的不是测试，是交出判断力的人-6919349f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI-时间里的测试法则：别让-Vibe-Coding-把你带沟里.md",
+      "output": "2026-04-13-AI-时间里的测试法则：别让-Vibe-Coding-把你带沟里-fbeaca4f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI-更新太快跟不上？问题不在你，是你缺个“过滤器”;-别再刷-AI-新闻了：真正的高手，只做这-3-件事.md",
+      "output": "2026-04-13-AI-更新太快跟不上？问题不在你，是你缺个“过滤器”;-别再刷-AI-新闻了：真正的高手，只做这-3-件事-15741a1d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI-测试不是不会写脚本，是你不敢信：Leapwork-调研把真相讲透了.md",
+      "output": "2026-04-13-AI-测试不是不会写脚本，是你不敢信：Leapwork-调研把真相讲透了-b599a142.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI-淘汰的不是测试，是交出判断力的人.md",
+      "output": "2026-04-13-AI-淘汰的不是测试，是交出判断力的人-50f7ffde.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI-疲劳是真实存在的：工程师用-AI-越多越累的底层原因与自救（v2）.md",
+      "output": "2026-04-13-AI-疲劳是真实存在的：工程师用-AI-越多越累的底层原因与自救（v2）-483b0867.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI会取代程序员吗？先看谁被压扁谁被放大.md",
+      "output": "2026-04-13-AI会取代程序员吗？先看谁被压扁谁被放大-39d292c2.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-AI时代最稀缺的不是技术，是“管AI”的能力.md",
+      "output": "2026-04-13-AI时代最稀缺的不是技术，是“管AI”的能力-b89ca99b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Agentic-Engineering-Patterns（Simon-Willison）：写代码变便宜后，工程师该怎么活.md",
+      "output": "2026-04-13-Agentic-Engineering-Patterns（Simon-Willison）：写代码变便宜后，工程师该怎么活-59c40ade.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Alan-Workspace-LLM-Wiki-专业Wiki编译器优化方案.md",
+      "output": "2026-04-13-Alan-Workspace-LLM-Wiki-专业Wiki编译器优化方案-d6c3d227.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Alan-Workspace-LLM-Wiki-完整体系搭建与功能介绍.md",
+      "output": "2026-04-13-Alan-Workspace-LLM-Wiki-完整体系搭建与功能介绍-df4e0532.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Alan-Workspace-LLM-Wiki-改造优化方案.md",
+      "output": "2026-04-13-Alan-Workspace-LLM-Wiki-改造优化方案-f4e53b93.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Anthropic-研究：用-AI-学新技能反而掉-17%？关键不在工具，在用法.md",
+      "output": "2026-04-13-Anthropic-研究：用-AI-学新技能反而掉-17%？关键不在工具，在用法-52c87c44.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Awesome-OpenClaw-使用案例：34-个真实场景，帮你把智能体从“会”变成“用得上”.md",
+      "output": "2026-04-13-Awesome-OpenClaw-使用案例：34-个真实场景，帮你把智能体从“会”变成“用得上”-0840c6e7.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-CLI-Anything：一行命令，让-Agent-接管那些原本只能手点的软件.md",
+      "output": "2026-04-13-CLI-Anything：一行命令，让-Agent-接管那些原本只能手点的软件-9b4ad0de.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-ClawFeed：把海量-RSS-Twitter-变成你的-AI-资讯流水线（附-OpenClaw-落地姿势）.md",
+      "output": "2026-04-13-ClawFeed：把海量-RSS-Twitter-变成你的-AI-资讯流水线（附-OpenClaw-落地姿势）-1acc41f1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-ClawX：把-OpenClaw-智能体从命令行搬到桌面.md",
+      "output": "2026-04-13-ClawX：把-OpenClaw-智能体从命令行搬到桌面-77fa5334.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Droid-Pilot：把-Android-UI-自动化交给-Agent，自己只管说人话.md",
+      "output": "2026-04-13-Droid-Pilot：把-Android-UI-自动化交给-Agent，自己只管说人话-f9235f68.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-GET-SHIT-DONE：把-Claude-Code-从“会写”变成“靠谱交付”.md",
+      "output": "2026-04-13-GET-SHIT-DONE：把-Claude-Code-从“会写”变成“靠谱交付”-d0795fce.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Hermes-agent-高级玩法.md",
+      "output": "2026-04-13-Hermes-agent-高级玩法-42753789.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-+-Codex-Agent-Swarm（v9）：可直接落地的-OpenClaw-cron-模板（babysit-+-Telegram-通知-+.md",
+      "output": "2026-04-13-OpenClaw-+-Codex-Agent-Swarm（v9）：可直接落地的-OpenClaw-cron-模板（babysit-+-Telegram-通知-+-a6f2c76c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-+-Codex-实战入门：怎么调、怎么用、什么时候该上多线程工作间.md",
+      "output": "2026-04-13-OpenClaw-+-Codex-实战入门：怎么调、怎么用、什么时候该上多线程工作间-ff8c15d8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-2026.2.19：Apple-Watch-进场，Agent-开始“可随身”-&-OpenClaw-2026.2.19.dmg-介绍.md",
+      "output": "2026-04-13-OpenClaw-2026.2.19：Apple-Watch-进场，Agent-开始“可随身”-&-OpenClaw-2026.2.19.dmg-介绍-c59b9db2.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-×-Obsidian-知识库搭建与运行机制实战.md",
+      "output": "2026-04-13-OpenClaw-×-Obsidian-知识库搭建与运行机制实战-1677fa46.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-×-OpenCode-两种用法：后台可控（B）与编排只看结果（C）.md",
+      "output": "2026-04-13-OpenClaw-×-OpenCode-两种用法：后台可控（B）与编排只看结果（C）-0c2e7545.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-×-OpenCode-实战：两套流程跑通（B-可控-C-省心）.md",
+      "output": "2026-04-13-OpenClaw-×-OpenCode-实战：两套流程跑通（B-可控-C-省心）-38048dd5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-×-OpenCode：两套模板直接抄：OpenClaw-编排-OpenCode（可控-B-省心-C）.md",
+      "output": "2026-04-13-OpenClaw-×-OpenCode：两套模板直接抄：OpenClaw-编排-OpenCode（可控-B-省心-C）-b2339388.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-×-OpenViking：把“长期记忆”从文件夹升级成可召回的外脑.md",
+      "output": "2026-04-13-OpenClaw-×-OpenViking：把“长期记忆”从文件夹升级成可召回的外脑-a695d597.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-主入口接入-Hermes-CLI-最小实现模板.md",
+      "output": "2026-04-13-OpenClaw-主入口接入-Hermes-CLI-最小实现模板-8cda48aa.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-优化复盘：从能跑，到可控，到可沉淀.md",
+      "output": "2026-04-13-OpenClaw-优化复盘：从能跑，到可控，到可沉淀-c80f7756.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-创始人加入-OpenAI：开源-Agent-被“收编”，意味着什么？.md",
+      "output": "2026-04-13-OpenClaw-创始人加入-OpenAI：开源-Agent-被“收编”，意味着什么？-195e35a6.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-创始人反着写代码：砍掉中间层，反而更快.md",
+      "output": "2026-04-13-OpenClaw-创始人反着写代码：砍掉中间层，反而更快-e4111ac3.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-多机器人实战：不用-agent-切来切去：私聊不同-Bot-就能换“专业助手”,-多-Gateway-才是防串味的硬解.md",
+      "output": "2026-04-13-OpenClaw-多机器人实战：不用-agent-切来切去：私聊不同-Bot-就能换“专业助手”,-多-Gateway-才是防串味的硬解-faa21b68.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-折腾之路：从领养到精养的阶段复盘.md",
+      "output": "2026-04-13-OpenClaw-折腾之路：从领养到精养的阶段复盘-1e6d5429.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-收获篇：从工具折腾到工作方式重构.md",
+      "output": "2026-04-13-OpenClaw-收获篇：从工具折腾到工作方式重构-cb4f1700.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-浏览器搜索与自动化：托管模式-vs-扩展中继，一篇搞懂.md",
+      "output": "2026-04-13-OpenClaw-浏览器搜索与自动化：托管模式-vs-扩展中继，一篇搞懂-73b47152.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-的使用收获、感想、启发与对测试工作的思考.md",
+      "output": "2026-04-13-OpenClaw-的使用收获、感想、启发与对测试工作的思考-176085c9.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-的记忆边界-memory、.learnings、AGENTS-到底怎么分？.md",
+      "output": "2026-04-13-OpenClaw-的记忆边界-memory、.learnings、AGENTS-到底怎么分？-d4a9a01c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-直接调用-Hermes-CLI-方案.md",
+      "output": "2026-04-13-OpenClaw-直接调用-Hermes-CLI-方案-369fa1f5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-系列导读：从工作方式重构到测试重新定位.md",
+      "output": "2026-04-13-OpenClaw-系列导读：从工作方式重构到测试重新定位-e6fa0a2a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-调用-Hermes-CLI-实现过程.md",
+      "output": "2026-04-13-OpenClaw-调用-Hermes-CLI-实现过程-ceb92696.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-调用-OpenCode-开发（Pythonpytest-版）：后台跑、可验收、可追踪.md",
+      "output": "2026-04-13-OpenClaw-调用-OpenCode-开发（Pythonpytest-版）：后台跑、可验收、可追踪-e9108ce4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-配置文件全解：AGENTS.md-SOUL.md-USER.md-MEMORY.md-TOOLS.md-HEARTBEAT.md",
+      "output": "2026-04-13-OpenClaw-配置文件全解：AGENTS.md-SOUL.md-USER.md-MEMORY.md-TOOLS.md-HEARTBEAT-4f63ca74.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-配置文件全解：AGENTS.md-SOUL.md-USER.md-MEMORY.md-到底在管啥？.md",
+      "output": "2026-04-13-OpenClaw-配置文件全解：AGENTS.md-SOUL.md-USER.md-MEMORY.md-到底在管啥？-fc550ca5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw-🦞-人虾情未了_2-OpenClaw-记忆何时写入与-QMD-使用说明.md",
+      "output": "2026-04-13-OpenClaw-🦞-人虾情未了_2-OpenClaw-记忆何时写入与-QMD-使用说明-6e67c479.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw×OpenCode：两套模板直接抄（可控-B-省心-C）｜结构重构版（不删减）.md",
+      "output": "2026-04-13-OpenClaw×OpenCode：两套模板直接抄（可控-B-省心-C）｜结构重构版（不删减）-fded14cb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw创始人进OpenAI：开源Agent的‘基金会化’，到底是利好还是收口？.md",
+      "output": "2026-04-13-OpenClaw创始人进OpenAI：开源Agent的‘基金会化’，到底是利好还是收口？-3b66e2bf.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenClaw实战：会话隔离、多Agent、接口化、定时增强.md",
+      "output": "2026-04-13-OpenClaw实战：会话隔离、多Agent、接口化、定时增强-212bd2bf.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-OpenSpec：AI-编码越来越强，为什么你反而更需要先写规格，再写代码？.md",
+      "output": "2026-04-13-OpenSpec：AI-编码越来越强，为什么你反而更需要先写规格，再写代码？-c2ef9fb8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Opus-4.6-vs-Codex-5.3：别吵了，按场景选.md",
+      "output": "2026-04-13-Opus-4.6-vs-Codex-5.3：别吵了，按场景选-37cdf6c1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-PPT版：teams-空间介绍与功能亮点.md",
+      "output": "2026-04-13-PPT版：teams-空间介绍与功能亮点-180685ec.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Run-a-skill-(artifactanalysis).md",
+      "output": "2026-04-13-Run-a-skill-(artifactanalysis)-e567cc2b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-SOUL.md（AI-简报官）.md",
+      "output": "2026-04-13-SOUL.md（AI-简报官）-6a893ad4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Seedance-2.0-技术拆解：四模态参考与分镜驱动.md",
+      "output": "2026-04-13-Seedance-2.0-技术拆解：四模态参考与分镜驱动-40cdedbb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Self-Improving-Agent：主动工作与用户参与边界说明.md",
+      "output": "2026-04-13-Self-Improving-Agent：主动工作与用户参与边界说明-2a815e90.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Skill-Creator-真正有用的地方：不是帮-AI-写代码，而是先让它守规矩.md",
+      "output": "2026-04-13-Skill-Creator-真正有用的地方：不是帮-AI-写代码，而是先让它守规矩-5a34af7e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Skill-Creator-终于自带测试了：以后调技能不再是玄学.md",
+      "output": "2026-04-13-Skill-Creator-终于自带测试了：以后调技能不再是玄学-de46c420.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Skill-Creator-让输出可预测：先把项目经验固化成-Skills.md",
+      "output": "2026-04-13-Skill-Creator-让输出可预测：先把项目经验固化成-Skills-b39db181.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Textream：macOS-上的隐形提词器,支持逐词高亮-+-语音自动滚动，让你不用背稿也能稳稳看镜头自然表达。.md",
+      "output": "2026-04-13-Textream：macOS-上的隐形提词器,支持逐词高亮-+-语音自动滚动，让你不用背稿也能稳稳看镜头自然表达。-4a21d75b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Toonflow：把网文变短剧的AI工厂，真在解决什么问题.md",
+      "output": "2026-04-13-Toonflow：把网文变短剧的AI工厂，真在解决什么问题-1d2740ef.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-TreeSearch：结构感知的文档检索（不靠向量，也不切-Chunk）.md",
+      "output": "2026-04-13-TreeSearch：结构感知的文档检索（不靠向量，也不切-Chunk）-41c36495.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-UI自动化的福音，GUI-Owl-1.5-系列小尺寸模型很能打.md",
+      "output": "2026-04-13-UI自动化的福音，GUI-Owl-1.5-系列小尺寸模型很能打-fa9206b5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Vibe-Coding-新范式：OpenClaw-+-OpenCode-组合拳怎么打？OpenClaw-的价值不是写代码：是把-opencode-变成可控流程.md",
+      "output": "2026-04-13-Vibe-Coding-新范式：OpenClaw-+-OpenCode-组合拳怎么打？OpenClaw-的价值不是写代码：是把-opencode-变成可控流程-e0ff15f5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-Vibe-Coding-真相：不是写爽，是控熵.md",
+      "output": "2026-04-13-Vibe-Coding-真相：不是写爽，是控熵-157c50e5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-YC-Vibe-Coding-实战手册：别让-AI-写嗨了.md",
+      "output": "2026-04-13-YC-Vibe-Coding-实战手册：别让-AI-写嗨了-fbcf49f3.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-openclaw-测试思考篇：AI-改写开发上游后，测试如何重新定位.md",
+      "output": "2026-04-13-openclaw-测试思考篇：AI-改写开发上游后，测试如何重新定位-ef140bcd.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-repo2skill：把-GitHub-仓库一键变成-Skill，这东西对-Agent-太实用了.md",
+      "output": "2026-04-13-repo2skill：把-GitHub-仓库一键变成-Skill，这东西对-Agent-太实用了-c9fea6ea.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-xxxxxxxxxx-flowchart-LR-OC[OpenClaw-2026.md",
+      "output": "2026-04-13-xxxxxxxxxx-flowchart-LR-OC[OpenClaw-2026-dc4d1fa0.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-‘洗车问题’全网翻车：AI-不缺常识，缺的是切题.md",
+      "output": "2026-04-13-‘洗车问题’全网翻车：AI-不缺常识，缺的是切题-cfc63eba.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-《专注的真相》读后感：转述能力不是口才，是清醒的肌肉,AI-时代的闭环：复盘不做，杠杆变加速器.md",
+      "output": "2026-04-13-《专注的真相》读后感：转述能力不是口才，是清醒的肌肉,AI-时代的闭环：复盘不做，杠杆变加速器-14bffb62.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-一、OpenClaw-优化过程：你实际做了什么.md",
+      "output": "2026-04-13-一、OpenClaw-优化过程：你实际做了什么-dd769252.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-一、文档结构.md",
+      "output": "2026-04-13-一、文档结构-66107430.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-两套AI短剧短视频工具分享-一个“网文→视频”，一个“多模态→分镜→口型”.md",
+      "output": "2026-04-13-两套AI短剧短视频工具分享-一个“网文→视频”，一个“多模态→分镜→口型”-944a298f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-人虾情未了-OpenClaw-记忆系统配置与运行状态说明.md",
+      "output": "2026-04-13-人虾情未了-OpenClaw-记忆系统配置与运行状态说明-719f0892.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-人虾情未了_3-OpenClaw-灵魂文件-记忆文件-规则文件分层优化方案.md",
+      "output": "2026-04-13-人虾情未了_3-OpenClaw-灵魂文件-记忆文件-规则文件分层优化方案-e3e98f76.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-什么是-Vibe-Coding-和-Vibe-Testing：把“氛围”变成可交付的工程.md",
+      "output": "2026-04-13-什么是-Vibe-Coding-和-Vibe-Testing：把“氛围”变成可交付的工程-ce6229ea.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-从2B到235B全开源！阿里GUI-Owl-1.5，重新定义多平台GUI智能体.md",
+      "output": "2026-04-13-从2B到235B全开源！阿里GUI-Owl-1.5，重新定义多平台GUI智能体-d85d7eff.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-从工具到共生：人和-AI-的三段关系.md",
+      "output": "2026-04-13-从工具到共生：人和-AI-的三段关系-bb8f24e4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-别再拿“总榜第一”当护身符了：我最近用-XSCT-Bench-给团队选模型，省了两周扯皮.md",
+      "output": "2026-04-13-别再拿“总榜第一”当护身符了：我最近用-XSCT-Bench-给团队选模型，省了两周扯皮-5180f5cd.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-别再收藏教程了：OpenCode-这套路线能让你真的上手.md",
+      "output": "2026-04-13-别再收藏教程了：OpenCode-这套路线能让你真的上手-f1096f76.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-别再调-Prompt-了：我用一套-Markdown，让-OpenClaw-40-天越用越聪明.md",
+      "output": "2026-04-13-别再调-Prompt-了：我用一套-Markdown，让-OpenClaw-40-天越用越聪明-5cc3f9b4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-如果用《光辉岁月》写一生：20岁到80岁，每一句歌词都是人生.md",
+      "output": "2026-04-13-如果用《光辉岁月》写一生：20岁到80岁，每一句歌词都是人生-a3237c82.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-我是如何搭建一支24小时不睡觉的AI代理团队的.md",
+      "output": "2026-04-13-我是如何搭建一支24小时不睡觉的AI代理团队的-41e1fd34.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-我是怎么让-OpenClaw-代理自己变聪明的：40天配置心法.md",
+      "output": "2026-04-13-我是怎么让-OpenClaw-代理自己变聪明的：40天配置心法-d559a8c5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-手动回归测试为什么还活着：以及-AI-怎么帮你“少跑冤枉路”.md",
+      "output": "2026-04-13-手动回归测试为什么还活着：以及-AI-怎么帮你“少跑冤枉路”-fb9f16b2.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-技术的青春期（全量精翻）：Dario-Amodei《The-Adolescence-of-Technology》逐段译注.md",
+      "output": "2026-04-13-技术的青春期（全量精翻）：Dario-Amodei《The-Adolescence-of-Technology》逐段译注-00448cd5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-技术的青春期：AI-把人类推到成年礼门口.md",
+      "output": "2026-04-13-技术的青春期：AI-把人类推到成年礼门口-f2a6c2ab.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-技术的青春期：Dario-Amodei-这篇长文把-AI-风险说透了.md",
+      "output": "2026-04-13-技术的青春期：Dario-Amodei-这篇长文把-AI-风险说透了-230ff858.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-把-OpenClaw-记忆系统装进团队：两套方案、一个底线、三条回滚线.md",
+      "output": "2026-04-13-把-OpenClaw-记忆系统装进团队：两套方案、一个底线、三条回滚线-5a0d375b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-把企微团队空间做成-AI-工作台.md",
+      "output": "2026-04-13-把企微团队空间做成-AI-工作台-1eefecee.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-把企微团队空间做成可治理可扩展的-AI-工作台.md",
+      "output": "2026-04-13-把企微团队空间做成可治理可扩展的-AI-工作台-0cee6ab4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-把企微团队空间做成可治理可扩展的AI工作台.md",
+      "output": "2026-04-13-把企微团队空间做成可治理可扩展的AI工作台-31557292.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-把企微团队空间做成可治理的-AI-工作台.md",
+      "output": "2026-04-13-把企微团队空间做成可治理的-AI-工作台-32ef2357.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-未来10年最值得学的技能：写作,-by-the-way-写作-vs-AI-生成.md",
+      "output": "2026-04-13-未来10年最值得学的技能：写作,-by-the-way-写作-vs-AI-生成-58e6568e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-每天烧上千美金的-AI-Coding-SOP（自用版）.md",
+      "output": "2026-04-13-每天烧上千美金的-AI-Coding-SOP（自用版）-3aa0b811.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-用-OpenClaw-管理-Obsidian：让吃灰知识库重新运转.md",
+      "output": "2026-04-13-用-OpenClaw-管理-Obsidian：让吃灰知识库重新运转-1d68ccdb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-真正先过时的，也许不是工具，而是那套靠人肉硬扛的工作方式.md",
+      "output": "2026-04-13-真正先过时的，也许不是工具，而是那套靠人肉硬扛的工作方式-ee26821b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-短视频别再手剪了：这套“桌面端工厂流水线”直接批量出片.md",
+      "output": "2026-04-13-短视频别再手剪了：这套“桌面端工厂流水线”直接批量出片-21d2cb66.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-程序猿-7-级进化：从-Copilot-到-OpenClaw，谁还在假装手写？AI-内卷时代：一个模型写，一个模型审.md",
+      "output": "2026-04-13-程序猿-7-级进化：从-Copilot-到-OpenClaw，谁还在假装手写？AI-内卷时代：一个模型写，一个模型审-243acad3.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-自我进化-AutoSkill-与-OpenClaw-集成落地实施方案.md",
+      "output": "2026-04-13-自我进化-AutoSkill-与-OpenClaw-集成落地实施方案-b4334667.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-让质量能力住进-IDE：用-Agent-Skills-把业务缺陷拦在键盘上.md",
+      "output": "2026-04-13-让质量能力住进-IDE：用-Agent-Skills-把业务缺陷拦在键盘上-d64e7c98.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-费曼转述、语写复盘、闭环与清醒思考：把“会说”练成底层能力.md",
+      "output": "2026-04-13-费曼转述、语写复盘、闭环与清醒思考：把“会说”练成底层能力-c695625f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-需求PRD-→-XMind-测试用例​.md",
+      "output": "2026-04-13-需求PRD-→-XMind-测试用例​-55a22caf.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-面向测试工程师的-OpenClaw-测试编排方案.md",
+      "output": "2026-04-13-面向测试工程师的-OpenClaw-测试编排方案-6df66a38.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-13-魔因漫创-moyin-creator：Seedance-2.0-的AI短剧流水线长什么样.md",
+      "output": "2026-04-13-魔因漫创-moyin-creator：Seedance-2.0-的AI短剧流水线长什么样-76546ed5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-14-Alan-Workspace-LLM-Wiki-完整体系-v2-0-升级说明.md",
+      "output": "2026-04-14-Alan-Workspace-LLM-Wiki-完整体系-v2-0-升级说明-252743eb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-14-OpenClaw-Active-Memory-主动记忆使用指南.md",
+      "output": "2026-04-14-OpenClaw-Active-Memory-主动记忆使用指南-4c472326.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-14-个人知识库-2-0-升级方案-基于-Karpathy-编译方法论.md",
+      "output": "2026-04-14-个人知识库-2-0-升级方案-基于-Karpathy-编译方法论-85aa5968.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-16-OpenClaw-vs-Hermes-Agent-辩论赛总结.md",
+      "output": "2026-04-16-OpenClaw-vs-Hermes-Agent-辩论赛总结-02952cdd.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-16-awesome-skills公众号文章初稿.md",
+      "output": "2026-04-16-awesome-skills公众号文章初稿-eebb515e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-16-学习使用-Claude-Desktop-应用的进度记录.md",
+      "output": "2026-04-16-学习使用-Claude-Desktop-应用的进度记录-f4c312c3.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-17-Why-you-stop-caring-mid-review-中文译读.md",
+      "output": "2026-04-17-Why-you-stop-caring-mid-review-中文译读-268fdbe7.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-18-01-Articles-01-Articles...-03-Projects-03-Projects...-04-M.md",
+      "output": "2026-04-18-01-Articles-01-Articles...-03-Projects-03-Projects...-04-M-b7ed8ee4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-18-aiflow-README解读-公众号号稿.md",
+      "output": "2026-04-18-aiflow-README解读-公众号号稿-52a02668.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-18-aiflow-rightstage-README解读-公众号稿-v1.md",
+      "output": "2026-04-18-aiflow-rightstage-README解读-公众号稿-v1-6ac56d91.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-18-autoresearch-README解读-公众号号稿.md",
+      "output": "2026-04-18-autoresearch-README解读-公众号号稿-c526baaf.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-18-awesome-codex-subagents-README解读-公众号号稿.md",
+      "output": "2026-04-18-awesome-codex-subagents-README解读-公众号号稿-de81d3e9.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-18-code-review-graph-README解读-公众号稿.md",
+      "output": "2026-04-18-code-review-graph-README解读-公众号稿-8969bf29.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-18-graphify-README解读-公众号号稿.md",
+      "output": "2026-04-18-graphify-README解读-公众号号稿-7c2cbfa1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-18-skill-craft-github-repo-wechat-article.md",
+      "output": "2026-04-18-skill-craft-github-repo-wechat-article-f6741f83.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-18-werss-cli-抓取公众号文章-工程化实践-v1.md",
+      "output": "2026-04-18-werss-cli-抓取公众号文章-工程化实践-v1-29f48573.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-18-即时通讯群里让-OpenClaw-和-Hermes-互相对话的配置手册.md",
+      "output": "2026-04-18-即时通讯群里让-OpenClaw-和-Hermes-互相对话的配置手册-cf8cacb0.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-19-AI-画图最烦的不是不会画,而是每种图都要换一套语法.md",
+      "output": "2026-04-19-AI-画图最烦的不是不会画,而是每种图都要换一套语法-1152b7f5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-19-OMX把Codex从能用拉到好用的实战指南.md",
+      "output": "2026-04-19-OMX把Codex从能用拉到好用的实战指南-250ee655.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-19-Obsidian-终于有一套能喂给-Claude-Code-Codex-和-OpenCode-的-Skills-仓库了.md",
+      "output": "2026-04-19-Obsidian-终于有一套能喂给-Claude-Code-Codex-和-OpenCode-的-Skills-仓库了-9564c3cb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-19-Obsidian旅行模板制作指南-v1.md",
+      "output": "2026-04-19-Obsidian旅行模板制作指南-v1-883298db.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-19-OpenClaw-Hermes-Obsidian-协作体系专题页.md",
+      "output": "2026-04-19-OpenClaw-Hermes-Obsidian-协作体系专题页-c2c23166.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-21-Alan-Workspace-目录重构方案.md",
+      "output": "2026-04-21-Alan-Workspace-目录重构方案-ff538dc8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-21-LLM-Wiki-这套系统到底有什么用-怎么用-以及下一步怎么改.md",
+      "output": "2026-04-21-LLM-Wiki-这套系统到底有什么用-怎么用-以及下一步怎么改-728d9d0a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-21-我有个任务,先调研,再规划.md",
+      "output": "2026-04-21-我有个任务,先调研,再规划-1ce7b18d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-22-GUI-Owl-1.5-UI自动化测试.md",
+      "output": "2026-04-22-GUI-Owl-1.5-UI自动化测试-bfd50b5f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-24-别再让AI工具互相打架了-Superpowers与gstack的全局路由协议.md",
+      "output": "2026-04-24-别再让AI工具互相打架了-Superpowers与gstack的全局路由协议-ddab1351.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-1.httpsgithub.comHBAI-LtdToonflow-app.md",
+      "output": "2026-04-25-1.httpsgithub.comHBAI-LtdToonflow-app-035a8ace.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-11-个-AI-Article-Bark-Code.md",
+      "output": "2026-04-25-11-个-AI-Article-Bark-Code-99c18208.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-AI-Agent-Automation-Code-Daily.md",
+      "output": "2026-04-25-AI-Agent-Automation-Code-Daily-75e52aab.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-AI-Article-Automation-Code-Daily.md",
+      "output": "2026-04-25-AI-Article-Automation-Code-Daily-222078f0.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-Agentic-Engineering-Patterns：写代码变便宜后，最贵的是“看不懂”.md",
+      "output": "2026-04-25-Agentic-Engineering-Patterns：写代码变便宜后，最贵的是“看不懂”-f7f5ded5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-Article-Project.md",
+      "output": "2026-04-25-Article-Project-911faad3.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-Claude-Code-源代码深度分析报告.md",
+      "output": "2026-04-25-Claude-Code-源代码深度分析报告-8750ae71.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-GitNexus：代码知识图谱-给-Agent-装上“代码神经系统”，让它别再瞎改.md",
+      "output": "2026-04-25-GitNexus：代码知识图谱-给-Agent-装上“代码神经系统”，让它别再瞎改-c81c5b96.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-Hermes-agent-高级玩法.md",
+      "output": "2026-04-25-Hermes-agent-高级玩法-a7060408.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-MCP-快不行了？CLI-才是人机共用的硬通货.md",
+      "output": "2026-04-25-MCP-快不行了？CLI-才是人机共用的硬通货-a717de6e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-Mac-终端启动慢到离谱？我以为电脑坏了，结果是我自己在.md",
+      "output": "2026-04-25-Mac-终端启动慢到离谱？我以为电脑坏了，结果是我自己在-974b632a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-OpenAI-Symphony：把Coding-Agent从人盯人，变成工单自动跑.md",
+      "output": "2026-04-25-OpenAI-Symphony：把Coding-Agent从人盯人，变成工单自动跑-108ba3f4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-OpenClaw-+-CodexClaude-Code-Agent-Swarm：一个人伪装成开发团队的完整搭建.md",
+      "output": "2026-04-25-OpenClaw-+-CodexClaude-Code-Agent-Swarm：一个人伪装成开发团队的完整搭建-56cc1cff.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-OpenClaw-Agent-速查表（6-角色）.md",
+      "output": "2026-04-25-OpenClaw-Agent-速查表（6-角色）-bb111074.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-OpenClaw-Hermes-触发词直连模板.md",
+      "output": "2026-04-25-OpenClaw-Hermes-触发词直连模板-04f9b938.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-OpenClaw-vs-Hermes-Agent-全面对比.md",
+      "output": "2026-04-25-OpenClaw-vs-Hermes-Agent-全面对比-b9bb4210.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-OpenClaw-三-Agent-团队协作方案.md",
+      "output": "2026-04-25-OpenClaw-三-Agent-团队协作方案-74e3cf45.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-OpenClaw-成本与上下文优化方案（2026-03-25）.md",
+      "output": "2026-04-25-OpenClaw-成本与上下文优化方案（2026-03-25）-819cac15.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-OpenCode-爆火：开源版-Claude-Code？但它真正卖的不是“更强”，是“更自由”（附-Oh-My-OpenCode-进阶）.md",
+      "output": "2026-04-25-OpenCode-爆火：开源版-Claude-Code？但它真正卖的不是“更强”，是“更自由”（附-Oh-My-OpenCode-进阶）-9301d18d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-OpenCode？Oh-My-OpenCode!!!.md",
+      "output": "2026-04-25-OpenCode？Oh-My-OpenCode!!!-e43215ad.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-OpenSpec-+-oh-my-opencode-+-superpowers-+-根目录-AGENTS.md-分工与工作流说明.md",
+      "output": "2026-04-25-OpenSpec-+-oh-my-opencode-+-superpowers-+-根目录-AGENTS.md-分工与工作流说明-a74fefba.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-Skill-Creator-真正有用的地方：不是帮-AI-写代码，而是先让它守规矩.md",
+      "output": "2026-04-25-Skill-Creator-真正有用的地方：不是帮-AI-写代码，而是先让它守规矩-1df8d5b4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-UI自动化的福音，GUI-Owl-1.5-系列小尺寸模型很能打.md",
+      "output": "2026-04-25-UI自动化的福音，GUI-Owl-1.5-系列小尺寸模型很能打-b07a37fa.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-[Alan-の手札]-AI-Testing-思考.md",
+      "output": "2026-04-25-[Alan-の手札]-AI-Testing-思考-8ffb8e3e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-teams-空间操作使用说明.md",
+      "output": "2026-04-25-teams-空间操作使用说明-db058265.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-《2026_IT-项目上线发版流程规范（详细版）》.md",
+      "output": "2026-04-25-《2026_IT-项目上线发版流程规范（详细版）》-c38e8d4b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-一、先给你结论版（你可以直接照着用）.md",
+      "output": "2026-04-25-一、先给你结论版（你可以直接照着用）-57a50a4e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-一个月把-vibe-coding-玩成了八线并行：爽过、怕过、也翻过.md",
+      "output": "2026-04-25-一个月把-vibe-coding-玩成了八线并行：爽过、怕过、也翻过-61773c57.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-一款不联网、不绑账号的笔记应用：Notepack，越用越安心.md",
+      "output": "2026-04-25-一款不联网、不绑账号的笔记应用：Notepack，越用越安心-bd1fff01.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-不是总结-Anthropic-说了什么，而是——.md",
+      "output": "2026-04-25-不是总结-Anthropic-说了什么，而是——-22734df7.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-全局-AGENTS-路由协议.md",
+      "output": "2026-04-25-全局-AGENTS-路由协议-abdec8c7.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-可以，这套方案能为测试工程师做的事很多，但前提是别把它理解成“让-AI-替你测”，而是：.md",
+      "output": "2026-04-25-可以，这套方案能为测试工程师做的事很多，但前提是别把它理解成“让-AI-替你测”，而是：-3e21c84e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-多兴趣不是通才，是你在用“学习”逃避交付.md",
+      "output": "2026-04-25-多兴趣不是通才，是你在用“学习”逃避交付-86b6e9c0.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-我整理了-7-个热门-Skills，但真心建议先看完这一段再用.md",
+      "output": "2026-04-25-我整理了-7-个热门-Skills，但真心建议先看完这一段再用-0b14e1c3.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-把AI编程工具从能聊变成真能干活.md",
+      "output": "2026-04-25-把AI编程工具从能聊变成真能干活-90cbdd4f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-测试策略能不能交给-AI？真相是：别让它拍板，但一定要用它算账.md",
+      "output": "2026-04-25-测试策略能不能交给-AI？真相是：别让它拍板，但一定要用它算账-c5281fb4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-用-Codex-装-Skill，再用-Skill-一键写公众号：5-分钟让-AI-给你打工（附踩坑提醒）.md",
+      "output": "2026-04-25-用-Codex-装-Skill，再用-Skill-一键写公众号：5-分钟让-AI-给你打工（附踩坑提醒）-f806a66e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-白领裁到一半、Hinton-劝去当水管工：AI-时代，真正的护城河在哪.md",
+      "output": "2026-04-25-白领裁到一半、Hinton-劝去当水管工：AI-时代，真正的护城河在哪-e1b88fa8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-默认模型怎么定？加一个备胎，你会睡得更香,-别再拿“总榜第一”当护身符：用-XSCT-Bench-选模型.md",
+      "output": "2026-04-25-默认模型怎么定？加一个备胎，你会睡得更香,-别再拿“总榜第一”当护身符：用-XSCT-Bench-选模型-17ad5920.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-📌-推荐公众号结构示例.md",
+      "output": "2026-04-25-📌-推荐公众号结构示例-6b9c118f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-25-🦞-Star-Office-UI-V2-已正式开源！OpenClaw龙虾状态可视化：团队协作少点追问,-把多-Agent-协作变成一间“像素办公室”，一眼看懂谁.md",
+      "output": "2026-04-25-🦞-Star-Office-UI-V2-已正式开源！OpenClaw龙虾状态可视化：团队协作少点追问,-把多-Agent-协作变成一间“像素办公室”，一眼看懂谁-f96dbee4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-26-AI-Code-Git-Memory-Note.md",
+      "output": "2026-04-26-AI-Code-Git-Memory-Note-a1d9b888.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-26-hermes-web-ui-公众号分享.md",
+      "output": "2026-04-26-hermes-web-ui-公众号分享-6c6d4dbd.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-26-一个-agent-记忆层-怎么在-claude-code-cursor-openclaw-之间复用.md",
+      "output": "2026-04-26-一个-agent-记忆层-怎么在-claude-code-cursor-openclaw-之间复用-30f9eb7f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-28-AI-token-账单终于能看明白了-tokscale.md",
+      "output": "2026-04-28-AI-token-账单终于能看明白了-tokscale-4b529c4b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-28-Mercury-Agent-把AI助手从会聊天拉到能长期干活.md",
+      "output": "2026-04-28-Mercury-Agent-把AI助手从会聊天拉到能长期干活-4bcdb93b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-28-仓库有代码但AI用不起来这个skill直接给你焊一套Agent施工规范+配电箱.md",
+      "output": "2026-04-28-仓库有代码但AI用不起来这个skill直接给你焊一套Agent施工规范+配电箱-120a74d3.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-28-刷到-harness-creator-这玩意我有点上头但也有边界.md",
+      "output": "2026-04-28-刷到-harness-creator-这玩意我有点上头但也有边界-491c2d22.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-04-30-从统一工作台到个人主阵地：AI工作空间的一次战略调整.md",
+      "output": "2026-04-30-从统一工作台到个人主阵地：AI工作空间的一次战略调整-a6b34fcc.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-03-Create-a-new-repository-Open-folder-as-vault-Use-this-t.md",
+      "output": "2026-05-03-Create-a-new-repository-Open-folder-as-vault-Use-this-t-012ece54.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-03-用免费模型白嫖Claude-Code的代理工具.md",
+      "output": "2026-05-03-用免费模型白嫖Claude-Code的代理工具-80d05e6b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-05-别再让Agent瞎写代码了：Matt-Pocock的Skills把工程素养塞回AI工作流.md",
+      "output": "2026-05-05-别再让Agent瞎写代码了：Matt-Pocock的Skills把工程素养塞回AI工作流-df68820b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-07-flow-kit-AI编程流程文档.md",
+      "output": "2026-05-07-flow-kit-AI编程流程文档-ec55f344.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-07-omlx-mac本地LLM推理服务器.md",
+      "output": "2026-05-07-omlx-mac本地LLM推理服务器-fa81fa33.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-07-sage-wiki-llm编译型知识库.md",
+      "output": "2026-05-07-sage-wiki-llm编译型知识库-5d6cc36d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-09-这仓库把AI-Agent高频脏活打包了.md",
+      "output": "2026-05-09-这仓库把AI-Agent高频脏活打包了-bf3a0b7d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-10-Miasma-终端工作流配置与改造说明.md",
+      "output": "2026-05-10-Miasma-终端工作流配置与改造说明-c97e615e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-14-把-Hermes-调教成-真能干活的-CTO-这项目把聊天机器人直接拧成了交付流水线.md",
+      "output": "2026-05-14-把-Hermes-调教成-真能干活的-CTO-这项目把聊天机器人直接拧成了交付流水线-1bd112f5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-15-Mac-M1-本地部署-MLX-Qwen3.5-9B-DeepSeek-V4-Flash-体验稿.md",
+      "output": "2026-05-15-Mac-M1-本地部署-MLX-Qwen3.5-9B-DeepSeek-V4-Flash-体验稿-1cf729f4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-15-Understand-Anything-网站风格分析.md",
+      "output": "2026-05-15-Understand-Anything-网站风格分析-c52a1586.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-17-agentmemory-让编码助手真记住事-而不是每次都像失忆.md",
+      "output": "2026-05-17-agentmemory-让编码助手真记住事-而不是每次都像失忆-1ac1b0d7.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-17-这套-agent-skills-不是帮你-vibe-coding-而是把开发流程重新拽回正轨.md",
+      "output": "2026-05-17-这套-agent-skills-不是帮你-vibe-coding-而是把开发流程重新拽回正轨-109e01f7.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-17-📝-CC-GUI（Claude-or-Codex.md",
+      "output": "2026-05-17-📝-CC-GUI（Claude-or-Codex-46de6518.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-18-CodeBurn-把AI编程烧钱账单摊开给你看.md",
+      "output": "2026-05-18-CodeBurn-把AI编程烧钱账单摊开给你看-9713e792.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-20-abtop、CodeBurn、Tokscale、CodexBar：终端 Token 监控-审计工具详解与对比.md",
+      "output": "2026-05-20-abtop、CodeBurn、Tokscale、CodexBar：终端 Token 监控-审计工具详解与对比-392d3f7e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-20-codex-resumable-development-rule.md",
+      "output": "2026-05-20-codex-resumable-development-rule-698bf60f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-23-Claude-Code最佳实践库解读.md",
+      "output": "2026-05-23-Claude-Code最佳实践库解读-a82297a5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-23-Codex-Goal-模板库.md",
+      "output": "2026-05-23-Codex-Goal-模板库-cb6de60b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-23-Codex-Goals-使用指南.md",
+      "output": "2026-05-23-Codex-Goals-使用指南-a724a365.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-23-Codex-Goals-持久目标指南.md",
+      "output": "2026-05-23-Codex-Goals-持久目标指南-b1a7b408.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-24-Agent-Skills-给AI编码加上工程师的流程护栏.md",
+      "output": "2026-05-24-Agent-Skills-给AI编码加上工程师的流程护栏-cd987376.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-24-CodeGraph-vs-Graphify-vs-code-review-graph-vs-GitNexus-怎么选.md",
+      "output": "2026-05-24-CodeGraph-vs-Graphify-vs-code-review-graph-vs-GitNexus-怎么选-801aefd1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-24-CodeGraph-让AI编码代理少读文件更省Token.md",
+      "output": "2026-05-24-CodeGraph-让AI编码代理少读文件更省Token-35870e5d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-24-Codex-Goals-使用指南与模板库.md",
+      "output": "2026-05-24-Codex-Goals-使用指南与模板库-c0fdba4c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-24-Obsidian-完整配置与启动优化指南.md",
+      "output": "2026-05-24-Obsidian-完整配置与启动优化指南-139499b8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-24-agent-skills-把-ai-编程变成可重复的工程流程.md",
+      "output": "2026-05-24-agent-skills-把-ai-编程变成可重复的工程流程-c99f9a65.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-24-rtk-给-claude-code-装一个-token-压缩机.md",
+      "output": "2026-05-24-rtk-给-claude-code-装一个-token-压缩机-25594d0d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-25-把知识库健康分从0救到10-一周OpenClaw与LLM-Wiki实战复盘.md",
+      "output": "2026-05-25-把知识库健康分从0救到10-一周OpenClaw与LLM-Wiki实战复盘-a1aef15e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-05-28-测试报告自动化实现文档.md",
+      "output": "2026-05-28-测试报告自动化实现文档-d5b22603.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-01-我一开始只是想做个文档问答后来发现测试知识库真正难的是证据链.md",
+      "output": "2026-06-03-01-我一开始只是想做个文档问答后来发现测试知识库真正难的是证据链-f1858af6.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-01-我给Agent做了一套测试框架第一件事不是调模型而是把评测流程拆开.md",
+      "output": "2026-06-03-01-我给Agent做了一套测试框架第一件事不是调模型而是把评测流程拆开-6dd38ab8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-02-我给测试知识库做智能问答时最重要的一步反而不是调用大模型.md",
+      "output": "2026-06-03-02-我给测试知识库做智能问答时最重要的一步反而不是调用大模型-c13fa761.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-02-我设计Agent测试框架时最想避免的是每接一个新Agent都重写一套评测.md",
+      "output": "2026-06-03-02-我设计Agent测试框架时最想避免的是每接一个新Agent都重写一套评测-0dfef3f6.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-03-Agent测试报告如果只告诉你通过率那基本等于没告诉你怎么改.md",
+      "output": "2026-06-03-03-Agent测试报告如果只告诉你通过率那基本等于没告诉你怎么改-4ccd405b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-03-文档能搜索还不够测试真正想知道的是这些东西之间有什么关系.md",
+      "output": "2026-06-03-03-文档能搜索还不够测试真正想知道的是这些东西之间有什么关系-56457b4a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-04-Agent评测最难的不是跑出一个分数而是让这个分数真的能指导下一轮迭代.md",
+      "output": "2026-06-03-04-Agent评测最难的不是跑出一个分数而是让这个分数真的能指导下一轮迭代-1832f8b4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-04-测试平台最该沉淀的不是报告而是需求用例Bug和代码之间的关系.md",
+      "output": "2026-06-03-04-测试平台最该沉淀的不是报告而是需求用例Bug和代码之间的关系-9eba6b92.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-05-我做了三个测试质量小工具后来发现它们不能单独存在.md",
+      "output": "2026-06-03-05-我做了三个测试质量小工具后来发现它们不能单独存在-2fbab8e1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-06-我把测试平台做成一堆工具后才发现用户真正要的是一张测试决策单.md",
+      "output": "2026-06-03-06-我把测试平台做成一堆工具后才发现用户真正要的是一张测试决策单-29dbdc63.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-07-AI给测试人员最有用的输出不是一段分析而是一张今天就能执行的清单.md",
+      "output": "2026-06-03-07-AI给测试人员最有用的输出不是一段分析而是一张今天就能执行的清单-5391a275.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-03-agent-test-framework公众号技术系列规划.md",
+      "output": "2026-06-03-agent-test-framework公众号技术系列规划-3040f0aa.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-06-AI代码写完没人验收Munk-AI想把真机测试也塞进闭环.md",
+      "output": "2026-06-06-AI代码写完没人验收Munk-AI想把真机测试也塞进闭环-156b309d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-06-CUA-扔掉 Appium？用 CUA 在 Android 沙箱里跑 AI 驱动的 UI 自动化测试.md",
+      "output": "2026-06-06-CUA-扔掉 Appium？用 CUA 在 Android 沙箱里跑 AI 驱动的 UI 自动化测试-ef7218db.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-06-Compound-Engineering-AI-Agent工程方法论.md",
+      "output": "2026-06-06-Compound-Engineering-AI-Agent工程方法论-d026eba0.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-06-OpenAI-Codex-config-toml-配置全解.md",
+      "output": "2026-06-06-OpenAI-Codex-config-toml-配置全解-dd774fa5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-06-SDD和TDD根本不是二选一一个管别做错东西一个管别把东西做错.md",
+      "output": "2026-06-06-SDD和TDD根本不是二选一一个管别做错东西一个管别把东西做错-3d6cef6e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-06-别再只盯着模型了这份Agent-Harness清单把真正影响交付的工程底座摊开了.md",
+      "output": "2026-06-06-别再只盯着模型了这份Agent-Harness清单把真正影响交付的工程底座摊开了-f9038c40.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-06-别再让通用Agent硬审大PR了阿里把代码审查拆成了确定性工程加AI.md",
+      "output": "2026-06-06-别再让通用Agent硬审大PR了阿里把代码审查拆成了确定性工程加AI-1401a0bb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-06-想搞懂Claude-Code别再只研究提示词这个项目把Harness拆成23节课.md",
+      "output": "2026-06-06-想搞懂Claude-Code别再只研究提示词这个项目把Harness拆成23节课-f5396101.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-06-架构图别再手搓了这个Claude-Skill把描述直接变成可交付HTML.md",
+      "output": "2026-06-06-架构图别再手搓了这个Claude-Skill把描述直接变成可交付HTML-2a1d7d78.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-06-笔记越写越多却越来越难找这个Obsidian插件让AI替你养Wiki.md",
+      "output": "2026-06-06-笔记越写越多却越来越难找这个Obsidian插件让AI替你养Wiki-f9ce6576.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-07-Karpathy用Claude编程几周后发现真正改变的不是写代码速度而是工程师的工作方式.md",
+      "output": "2026-06-07-Karpathy用Claude编程几周后发现真正改变的不是写代码速度而是工程师的工作方式-ac12c41b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-07-描述一句画图-fireworks-tech-graph.md",
+      "output": "2026-06-07-描述一句画图-fireworks-tech-graph-ce24aea4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-08-我做了三个测试质量小工具最后发现用户根本不想用工具.md",
+      "output": "2026-06-08-我做了三个测试质量小工具最后发现用户根本不想用工具-8bf47f76.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-09-牛马别再烧Token造平台了真正值钱的是你的工作流.md",
+      "output": "2026-06-09-牛马别再烧Token造平台了真正值钱的是你的工作流-265e967b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-10-Codebuff & Freebuff：一个把 Agent 编排成团队，一个把 AI 编程价格打到零.md",
+      "output": "2026-06-10-Codebuff & Freebuff：一个把 Agent 编排成团队，一个把 AI 编程价格打到零-93036420.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-20-小中登的年纪牛马们注意身体吧.md",
+      "output": "2026-06-20-小中登的年纪牛马们注意身体吧-dd6e31c1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-24-Orca-AI编排器深度解析.md",
+      "output": "2026-06-24-Orca-AI编排器深度解析-2c427731.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-28-ai_locust_framework_article.md",
+      "output": "2026-06-28-ai_locust_framework_article-b2e267ff.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-06-28-我给你的文章灌了杯去味剂.md",
+      "output": "2026-06-28-我给你的文章灌了杯去味剂-106b941c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-01-ai-viz-把可视化方法论直接装进AI脑子.md",
+      "output": "2026-07-01-ai-viz-把可视化方法论直接装进AI脑子-4e7189be.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-01-当AI编程已经能写几百行代码它能不能帮你画图.md",
+      "output": "2026-07-01-当AI编程已经能写几百行代码它能不能帮你画图-3ae1fd6d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-01-把Langfuse的ClickHouse换成真正的时序数据库.md",
+      "output": "2026-07-01-把Langfuse的ClickHouse换成真正的时序数据库-2ae420ed.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-01-用上这个工具你的AI Agent每月Token开销直接砍半.md",
+      "output": "2026-07-01-用上这个工具你的AI Agent每月Token开销直接砍半-056873d5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-02-不用再给每个项目重复配AI Agent了：一个仓库统一管理OpenCode和Pi.md",
+      "output": "2026-07-02-不用再给每个项目重复配AI Agent了：一个仓库统一管理OpenCode和Pi-94b41851.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-03-Context-Engineering-Skills.md",
+      "output": "2026-07-03-Context-Engineering-Skills-6f39f994.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-03-OpenAI-Codex-CLI-AGENTS.md.md",
+      "output": "2026-07-03-OpenAI-Codex-CLI-AGENTS.md-63fa2c30.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-03-xsoway-Skills-技能库.md",
+      "output": "2026-07-03-xsoway-Skills-技能库-479b887d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-03-从“看不懂的 AI 报告”到“测试评审问题清单”：一次需求质量分析模块的真实优化复盘.md",
+      "output": "2026-07-03-从“看不懂的 AI 报告”到“测试评审问题清单”：一次需求质量分析模块的真实优化复盘-1e5194fe.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-09-Comprehensive-Thinking-Skill-AI-深度思考框架.md",
+      "output": "2026-07-09-Comprehensive-Thinking-Skill-AI-深度思考框架-37fdd53e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-09-HTML-Anything-Agent-时代-HTML-编辑器.md",
+      "output": "2026-07-09-HTML-Anything-Agent-时代-HTML-编辑器-df57a6eb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-09-WeWrite-公众号-AI-写作全流程.md",
+      "output": "2026-07-09-WeWrite-公众号-AI-写作全流程-0352234b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-09-wechat_conversation_quality_eval_article.md",
+      "output": "2026-07-09-wechat_conversation_quality_eval_article-237dd8e6.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-14-codexU-macOS菜单栏Codex额度监控工具.md",
+      "output": "2026-07-14-codexU-macOS菜单栏Codex额度监控工具-03e4483b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-17-Codex-Hygiene-一个专治Codex桌面环境混乱的开源工具.md",
+      "output": "2026-07-17-Codex-Hygiene-一个专治Codex桌面环境混乱的开源工具-5b1cc0c3.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-17-中国独立开发者项目列表-一个不断更新的宝藏仓库.md",
+      "output": "2026-07-17-中国独立开发者项目列表-一个不断更新的宝藏仓库-bee3c622.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-17-从“让 LLM 看 Diff”到工程化 Code Review：一次真实的 OpenCodeReview 平台集成复盘.md",
+      "output": "2026-07-17-从“让 LLM 看 Diff”到工程化 Code Review：一次真实的 OpenCodeReview 平台集成复盘-e42b73f0.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-18-apk-auto-test-android-performance-stability-testing-tool.md",
+      "output": "2026-07-18-apk-auto-test-android-performance-stability-testing-tool-56a589f1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-20-TestZeus-Hercules-开源AI测试Agent.md",
+      "output": "2026-07-20-TestZeus-Hercules-开源AI测试Agent-d1826361.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-22-opencodex-Codex-通用-provider-代理.md",
+      "output": "2026-07-22-opencodex-Codex-通用-provider-代理-a05ab2e2.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-22-从硬规则到 LLM Judge：如何搭建一套可落地的 AI 客服评测系统.md",
+      "output": "2026-07-22-从硬规则到 LLM Judge：如何搭建一套可落地的 AI 客服评测系统-4690c5bc.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-24-AI-Agent-工程化工作区-从聊天到工程.md",
+      "output": "2026-07-24-AI-Agent-工程化工作区-从聊天到工程-bbbd42c8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-24-Agent-Reach-AI-Agent-互联网能力.md",
+      "output": "2026-07-24-Agent-Reach-AI-Agent-互联网能力-bf1f9a76.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-24-skill-up-Agent-Skill-评测-CLI-框架.md",
+      "output": "2026-07-24-skill-up-Agent-Skill-评测-CLI-框架-b4db9c65.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-27-sanyuan-skills.md",
+      "output": "2026-07-27-sanyuan-skills-0ccc2707.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-28-ai-agent-book.md",
+      "output": "2026-07-28-ai-agent-book-5da25b88.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-28-andrej-karpathy-skills.md",
+      "output": "2026-07-28-andrej-karpathy-skills-9d27fa31.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-28-codex-skill-mcp-cleanup.md",
+      "output": "2026-07-28-codex-skill-mcp-cleanup-d5063e53.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-29-ai-terminal-tools-comparison-codux-otty-terax-orca-kaku-cmux.md",
+      "output": "2026-07-29-ai-terminal-tools-comparison-codux-otty-terax-orca-kaku-cmux-413298da.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-29-codux-ai-programming-terminal.md",
+      "output": "2026-07-29-codux-ai-programming-terminal-06df2cba.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-29-no-ai-slop-remove-ai-writing-patterns.md",
+      "output": "2026-07-29-no-ai-slop-remove-ai-writing-patterns-a52cec8a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-29-spec-superflow-ai-programming-workflow.md",
+      "output": "2026-07-29-spec-superflow-ai-programming-workflow-610d407e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-29-企微IM-Agent自动化评测重构复盘.md",
+      "output": "2026-07-29-企微IM-Agent自动化评测重构复盘-42e437f1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-31-deepseek-v4-flash-responses-api-codex.md",
+      "output": "2026-07-31-deepseek-v4-flash-responses-api-codex-d7c6f0d8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-31-openskill-agent-self-evolution-research.md",
+      "output": "2026-07-31-openskill-agent-self-evolution-research-3577ffd5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-07-31-skill-up-agent-skill-eval-evolution-tool.md",
+      "output": "2026-07-31-skill-up-agent-skill-eval-evolution-tool-8c7bd3df.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-03-reverse-skill-ai-agent-security-router.md",
+      "output": "2026-08-03-reverse-skill-ai-agent-security-router-f2a368fd.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-04-pict-test-designer-v2.md",
+      "output": "2026-08-04-pict-test-designer-v2-514c94ec.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-05-Eval-Anything-AI评测框架.md",
+      "output": "2026-08-05-Eval-Anything-AI评测框架-df625eeb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-05-MarkerOn-屏幕标注工具.md",
+      "output": "2026-08-05-MarkerOn-屏幕标注工具-b3f3686c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-05-ShareX-截图工具.md",
+      "output": "2026-08-05-ShareX-截图工具-b1cdbf49.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-07-skillopt-裁判也会判错.md",
+      "output": "2026-08-07-skillopt-裁判也会判错-3f8a028c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-08-agent-governance-换了三个IDE后我不再让Agent靠记忆续命.md",
+      "output": "2026-08-08-agent-governance-换了三个IDE后我不再让Agent靠记忆续命-3685a6f0.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-08-wecom-eval-客服机器人最难测的不是答错一句话.md",
+      "output": "2026-08-08-wecom-eval-客服机器人最难测的不是答错一句话-08276562.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-09-Codex-Obsidian-外置记忆库.md",
+      "output": "2026-08-09-Codex-Obsidian-外置记忆库-e29db3fc.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-14-DeepSeek-Harness-dsh-开箱指南.md",
+      "output": "2026-08-14-DeepSeek-Harness-dsh-开箱指南-31254f5f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-15-DSH-vs-Codex-vs-ClaudeCode.md",
+      "output": "2026-08-15-DSH-vs-Codex-vs-ClaudeCode-14808695.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-15-DSH-插件开发与Skill迁移.md",
+      "output": "2026-08-15-DSH-插件开发与Skill迁移-efc0a617.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-15-DSH-插件推荐.md",
+      "output": "2026-08-15-DSH-插件推荐-56ffef97.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-15-DeepSeek-Harness-插件化铺设.md",
+      "output": "2026-08-15-DeepSeek-Harness-插件化铺设-9eb94482.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-15-DeepSeek-Harness-桌面端.md",
+      "output": "2026-08-15-DeepSeek-Harness-桌面端-753c8510.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-18-Pi-vs-DSH-上下文压缩同源对比.md",
+      "output": "2026-08-18-Pi-vs-DSH-上下文压缩同源对比-df5348de.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-18-Pi-vs-DeepSeek-Harness-全方位技术对比.md",
+      "output": "2026-08-18-Pi-vs-DeepSeek-Harness-全方位技术对比-0a424a07.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-20-7d-git-commit-规范校验.md",
+      "output": "2026-08-20-7d-git-commit-规范校验-4f10340a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-20-ai-native-scaffold.md",
+      "output": "2026-08-20-ai-native-scaffold-c751827e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-20-ccw-claude-code-workflow.md",
+      "output": "2026-08-20-ccw-claude-code-workflow-156c3122.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-20-hallmark-anti-ai-slop-design.md",
+      "output": "2026-08-20-hallmark-anti-ai-slop-design-b61029df.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-20-harness-starter-claude-code.md",
+      "output": "2026-08-20-harness-starter-claude-code-7efbb54c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-20-plugin-mcp-hooks-tool.md",
+      "output": "2026-08-20-plugin-mcp-hooks-tool-1c9fe404.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-21-OpenAI开源Codex-Harness.md",
+      "output": "2026-08-21-OpenAI开源Codex-Harness-c4220bc9.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-21-harness9-轻量级Go通用Agent框架.md",
+      "output": "2026-08-21-harness9-轻量级Go通用Agent框架-f160d290.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-22-harness9-local-first-go-agent-framework.md",
+      "output": "2026-08-22-harness9-local-first-go-agent-framework-e623881f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-22-一行 run() 干翻 50 行拼 JSON：Codex SDK 和 deepseek_harness，Python 到底该 import 谁.md",
+      "output": "2026-08-22-一行 run() 干翻 50 行拼 JSON：Codex SDK 和 deepseek_harness，Python 到底该 import 谁-0f17a769.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-23-CodexHost-把Pi-Claude-Code-DeepSeek全塞进Codex桌面.md",
+      "output": "2026-08-23-CodexHost-把Pi-Claude-Code-DeepSeek全塞进Codex桌面-f7d21e56.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-23-CodexResets-一个专门盯Codex重置按钮的网站.md",
+      "output": "2026-08-23-CodexResets-一个专门盯Codex重置按钮的网站-7d54832c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-23-PrimeAgent-能自己变强跑不停的CodingAgent.md",
+      "output": "2026-08-23-PrimeAgent-能自己变强跑不停的CodingAgent-8e0097ff.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-23-agent-skills-Addy-Osmani的24个生产级技能.md",
+      "output": "2026-08-23-agent-skills-Addy-Osmani的24个生产级技能-2c2f2876.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-25-FreeLLMAPI-把几十家免费大模型额度叠成一座池子.md",
+      "output": "2026-08-25-FreeLLMAPI-把几十家免费大模型额度叠成一座池子-1c18f4be.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-25-Vorssaint-一个菜单栏图标顶掉十二个收费Mac工具.md",
+      "output": "2026-08-25-Vorssaint-一个菜单栏图标顶掉十二个收费Mac工具-8dee21eb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-25-dsh-pentest-AI渗透测试工具有了可追溯的闭环.md",
+      "output": "2026-08-25-dsh-pentest-AI渗透测试工具有了可追溯的闭环-675e1925.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-25-report-validator-别再让大模型给自己判卷.md",
+      "output": "2026-08-25-report-validator-别再让大模型给自己判卷-d7e5b2fd.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-25-report-validator-没有黄金集怎么测试大模型抽出来的JSON.md",
+      "output": "2026-08-25-report-validator-没有黄金集怎么测试大模型抽出来的JSON-6a4055a1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-25-代码评审不是挑格式毛病-DeepSeek评审技能拆解.md",
+      "output": "2026-08-25-代码评审不是挑格式毛病-DeepSeek评审技能拆解-97b52bff.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-25-数据不会报错-用开源skill把Excel算数流程做对口.md",
+      "output": "2026-08-25-数据不会报错-用开源skill把Excel算数流程做对口-81e328ce.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-25-达尔文-skill-像训练模型一样优化Agent-Skills.md",
+      "output": "2026-08-25-达尔文-skill-像训练模型一样优化Agent-Skills-545344ca.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-27-Agent测评集-从感觉还行到一套能打分的尺子.md",
+      "output": "2026-08-27-Agent测评集-从感觉还行到一套能打分的尺子-99c7d399.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-27-Codex认证助手-本地导会话凭证成auth的Chrome扩展.md",
+      "output": "2026-08-27-Codex认证助手-本地导会话凭证成auth的Chrome扩展-11696569.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-27-codex-auth命令行多账号切换-Codex账号管理工具.md",
+      "output": "2026-08-27-codex-auth命令行多账号切换-Codex账号管理工具-6547a085.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-28-ADHD友好输出-ClaudeCode技能.md",
+      "output": "2026-08-28-ADHD友好输出-ClaudeCode技能-2c720367.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-28-CreatorBuddy-从选题到能发的成品-内容创作工具箱.md",
+      "output": "2026-08-28-CreatorBuddy-从选题到能发的成品-内容创作工具箱-445e8c40.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-28-FigEcho-把参考图的视觉风格变成可复用的配方.md",
+      "output": "2026-08-28-FigEcho-把参考图的视觉风格变成可复用的配方-22936025.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-29-AI每日简报-agents-radar-十个信源一份日报.md",
+      "output": "2026-08-29-AI每日简报-agents-radar-十个信源一份日报-036f165a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-08-31-AI决策可审计-semantica-可溯源可推理的知识路径基建.md",
+      "output": "2026-08-31-AI决策可审计-semantica-可溯源可推理的知识路径基建-0427b5d0.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-01-AI评测要能复核的底层-Semantica把可审计变成一张图.md",
+      "output": "2026-09-01-AI评测要能复核的底层-Semantica把可审计变成一张图-9b60d0be.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-01-Evals是不是新的单元测试-Awesome-Agent-Evals.md",
+      "output": "2026-09-01-Evals是不是新的单元测试-Awesome-Agent-Evals-300f4271.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-01-OpenGUI-让AI自己点真安卓-UI自动化测试新姿势.md",
+      "output": "2026-09-01-OpenGUI-让AI自己点真安卓-UI自动化测试新姿势-b597800c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-01-PromptCache-给LLM加一层语义缓存-让重复问题不再花钱.md",
+      "output": "2026-09-01-PromptCache-给LLM加一层语义缓存-让重复问题不再花钱-b7f5da53.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-01-Semantica-二手车AI定价决策留痕-可审计的图.md",
+      "output": "2026-09-01-Semantica-二手车AI定价决策留痕-可审计的图-96202d79.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-01-Semantica-能查账可审计AI底巢.md",
+      "output": "2026-09-01-Semantica-能查账可审计AI底巢-3c9daf41.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-01-给AI-agent写evals完整实操手册-三篇硬核拆解增强版.md",
+      "output": "2026-09-01-给AI-agent写evals完整实操手册-三篇硬核拆解增强版-e565989a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-02-Graph工程落地研发流程-从需求到上线怎么用.md",
+      "output": "2026-09-02-Graph工程落地研发流程-从需求到上线怎么用-e7b85d37.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-02-Memmy-让每个AI都记住同一个你-跨Agent记忆与任务延续.md",
+      "output": "2026-09-02-Memmy-让每个AI都记住同一个你-跨Agent记忆与任务延续-b2b2b37a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-02-Nowledge-把AI学习闭环做成可测评的agent.md",
+      "output": "2026-09-02-Nowledge-把AI学习闭环做成可测评的agent-1ad2ad07.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-02-OpenKnowledge-给AI搭个能一边编辑一边调agent的本地知识库.md",
+      "output": "2026-09-02-OpenKnowledge-给AI搭个能一边编辑一边调agent的本地知识库-5256cf57.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-02-zg-zvec-grep-让Agent自己会搜的本地统一检索层.md",
+      "output": "2026-09-02-zg-zvec-grep-让Agent自己会搜的本地统一检索层-a14494d1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-02-把Claude系统提示当规格书拆-测试工程师能从提示词标本里抄到什么.md",
+      "output": "2026-09-02-把Claude系统提示当规格书拆-测试工程师能从提示词标本里抄到什么-b6dcd69a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-02-把文档当代码一样治-doc-system-kb-builder-让文档漂移变成可回归的测试.md",
+      "output": "2026-09-02-把文档当代码一样治-doc-system-kb-builder-让文档漂移变成可回归的测试-67167c0a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-03-labuladong-算法笔记把刷题变成框架训练.md",
+      "output": "2026-09-03-labuladong-算法笔记把刷题变成框架训练-8dc0577d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-GPT6-Astra-AGI时代-改写整理.md",
+      "output": "2026-09-04-GPT6-Astra-AGI时代-改写整理-05a2c4e5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-OpenAI-Astra-秘密技术报道-付费墙解读.md",
+      "output": "2026-09-04-OpenAI-Astra-秘密技术报道-付费墙解读-a05f5859.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-agent-skills-Claude-Code插件市场.md",
+      "output": "2026-09-04-agent-skills-Claude-Code插件市场-ae7d2c98.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-agiledon-三件套-给编码Agent立规矩-生成重构测试.md",
+      "output": "2026-09-04-agiledon-三件套-给编码Agent立规矩-生成重构测试-f9173b8d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-ai-memory-AI-Agent-长期记忆-换工具不失忆.md",
+      "output": "2026-09-04-ai-memory-AI-Agent-长期记忆-换工具不失忆-2e95f81c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-content-skills短视频创作者内容系统.md",
+      "output": "2026-09-04-content-skills短视频创作者内容系统-c3b02ec6.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-garden-skills-把素材做成网页长文的Skill合集.md",
+      "output": "2026-09-04-garden-skills-把素材做成网页长文的Skill合集-af19321c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-humanizer-去AI味Skill-35条维基清单.md",
+      "output": "2026-09-04-humanizer-去AI味Skill-35条维基清单-dce622ff.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-skill-up-Agent-Skill-评测演进工具.md",
+      "output": "2026-09-04-skill-up-Agent-Skill-评测演进工具-219f2a73.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-wechat-article-writer公众号写作流水线.md",
+      "output": "2026-09-04-wechat-article-writer公众号写作流水线-ccdd7dad.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-04-wechat-writing-team公众号写作配图流水线.md",
+      "output": "2026-09-04-wechat-writing-team公众号写作配图流水线-b88cdd3b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-05-agent-device-真机自动化实测.md",
+      "output": "2026-09-05-agent-device-真机自动化实测-ca983fc6.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-05-skill-up-Agent-Skill也该有测试.md",
+      "output": "2026-09-05-skill-up-Agent-Skill也该有测试-027f3ea7.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-06-写作风格不是玄学-用28篇自己的文章蒸馏出一份写作DNA.md",
+      "output": "2026-09-06-写作风格不是玄学-用28篇自己的文章蒸馏出一份写作DNA-1ffb4ac6.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-08-AI写代码不听话-实测给agent套上需求审批编码流程的skill.md",
+      "output": "2026-09-08-AI写代码不听话-实测给agent套上需求审批编码流程的skill-a52c465d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-08-给-Agent-记忆跑-梯度下降-backpass-把会话日志变成可审的记忆编辑.md",
+      "output": "2026-09-08-给-Agent-记忆跑-梯度下降-backpass-把会话日志变成可审的记忆编辑-ec45b29a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-09-Harbor-从任务到奖励的Agent评测.md",
+      "output": "2026-09-09-Harbor-从任务到奖励的Agent评测-c73622da.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-09-代码变更测试范围分析-codex-skill.md",
+      "output": "2026-09-09-代码变更测试范围分析-codex-skill-7f625464.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-10-Harbor-二手车智能客服Agent评测.md",
+      "output": "2026-09-10-Harbor-二手车智能客服Agent评测-09a5dded.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-10-Locust压测不该止步于CSV-locust-perf-framework.md",
+      "output": "2026-09-10-Locust压测不该止步于CSV-locust-perf-framework-d244345b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-10-下单接口上线前压测-locust-perf-framework.md",
+      "output": "2026-09-10-下单接口上线前压测-locust-perf-framework-ae2b674f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-13-这是一个持续收录、整理和索引优质技术文章的个人学习库，也是一个可本地运行的 LLM Wiki 工作台.md",
+      "output": "2026-09-13-这是一个持续收录、整理和索引优质技术文章的个人学习库，也是一个可本地运行的 LLM Wiki 工作台-f24266ea.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
+      "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "Codex CLI vs  Codex App.md",
+      "output": "Codex CLI vs  Codex App-9f2f9a59.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
+      "output": "OpenClaw 优化复盘：从能跑，到可控，到可沉淀-fc8a4f28.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "SightFlow 是一个基于大模型 + 视觉模型驱动的桌面端 RPA Agent.md",
+      "output": "SightFlow 是一个基于大模型 + 视觉模型驱动的桌面端 RPA Agent-471954fc.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "从知识库问答到测试决策系统-2026-06-10.md",
+      "output": "从知识库问答到测试决策系统-2026-06-10-b5003364.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "建群-把openclaw & hermes agent 拉进来, 开聊 !.md",
+      "output": "建群-把openclaw & hermes agent 拉进来, 开聊 !-601cb977.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "我认真拆了一个 Awesome Skills 仓库，发现 AI Agent 真正的门槛已经不是模型了.md",
+      "output": "我认真拆了一个 Awesome Skills 仓库，发现 AI Agent 真正的门槛已经不是模型了-c192e5d6.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "真登一下，真受不了，小中登的年纪，牛马们注意身体吧.md",
+      "output": "真登一下，真受不了，小中登的年纪，牛马们注意身体吧-7d5623f2.md"
+    }
+  ]
+}
