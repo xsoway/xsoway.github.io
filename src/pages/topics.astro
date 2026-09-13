@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getArticles, topics, topicArticles } from '../lib/articles';
+const articles = await getArticles();
+---
+<BaseLayout title="专题"><section class="container"><p class="eyebrow">Topics</p><h1>专题</h1><p class="intro">从文章标题和摘要中自动归类；以后为文章补充标签时，专题会继续迭代。</p>{topics.map((topic) => { const posts = topicArticles(articles, topic.slug); return <section class="topic" id={topic.slug}><header><span>{topic.name}</span><p>{topic.description}</p><small>{posts.length} 篇文章</small></header><div>{posts.slice(0, 12).map((article) => <ArticleCard {article} />)}{posts.length > 12 && <a class="more" href={`/articles/?topic=${topic.slug}`}>在文章页查看全部 {posts.length} 篇 →</a>}</div></section> })}</section></BaseLayout>
+<style>section.container{max-width:980px;padding-top:4.5rem}h1{font-size:clamp(2.6rem,5vw,4rem);letter-spacing:-.055em;margin:.3rem 0}.intro{color:var(--muted);max-width:620px}.topic{display:grid;grid-template-columns:220px 1fr;gap:3rem;margin-top:5rem;scroll-margin-top:100px}.topic header{position:sticky;top:100px;align-self:start}.topic header span{font-size:1.4rem;font-weight:800;letter-spacing:-.03em}.topic header p,.topic header small{display:block;color:var(--muted);font-size:.82rem}.more{display:inline-block;margin-top:1.4rem;color:var(--accent);font-size:.85rem;font-weight:700}@media(max-width:720px){.topic{grid-template-columns:1fr;gap:1rem;margin-top:3.5rem}.topic header{position:static}}</style>

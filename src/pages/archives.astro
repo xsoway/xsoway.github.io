@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { articleYear, getArticles } from '../lib/articles';
+const articles = await getArticles();
+const groups = Object.entries(Object.groupBy(articles, articleYear));
+---
+<BaseLayout title="归档"><section class="container"><p class="eyebrow">Chronological archive</p><h1>归档</h1><p class="intro">按时间回看 {articles.length} 篇公开记录。</p>{groups.map(([year, posts]) => <section class="year"><h2>{year}<small>{posts!.length} 篇</small></h2>{posts!.map((article) => <ArticleCard {article} />)}</section>)}</section></BaseLayout>
+<style>section.container{max-width:880px;padding-top:4.5rem}h1{font-size:clamp(2.6rem,5vw,4rem);letter-spacing:-.055em;margin:.3rem 0}.intro{color:var(--muted)}.year{margin-top:4rem}.year h2{display:flex;align-items:center;gap:.8rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:1.2rem;color:var(--accent);border-bottom:2px solid var(--ink);padding-bottom:.5rem}.year small{font:inherit;font-size:.7rem;color:var(--muted)}</style>

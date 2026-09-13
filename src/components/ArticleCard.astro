@@ -1,6 +1,8 @@
 ---
-import { articleDate, articleTitle, articleUrl } from '../lib/articles';
+import { articleDate, articleTitle, articleTopics, articleUrl } from '../lib/articles';
 const { article } = Astro.props;
+const topics = articleTopics(article);
+const searchText = `${articleTitle(article)} ${article.data.description ?? ''} ${topics.map((topic) => topic.name).join(' ')}`.toLowerCase();
 ---
-<article><p>{articleDate(article)} {article.data.category && `· ${article.data.category}`}</p><h2><a href={articleUrl(article.id)}>{articleTitle(article)}</a></h2>{article.data.description && <div>{article.data.description}</div>}{article.data.tags?.length ? <small>{article.data.tags.slice(0,5).join(' · ')}</small> : null}</article>
-<style>article{padding:1.35rem 0;border-bottom:1px solid var(--line)}p,small{color:var(--muted);font-size:.85rem}p{margin:0 0 .25rem}h2{margin:0;font-size:1.2rem;line-height:1.45}small{display:block;margin-top:.7rem}</style>
+<article class="article-card" data-article data-topics={topics.map((topic) => topic.slug).join(' ')} data-search={searchText}><div class="article-meta"><time>{articleDate(article)}</time><span>·</span>{topics.map((topic) => <a href={`/topics/#${topic.slug}`}>{topic.name}</a>)}</div><h2><a href={articleUrl(article.id)}>{articleTitle(article)}</a></h2>{article.data.description && <p>{article.data.description}</p>}<a class="read-more" href={articleUrl(article.id)}>阅读全文 <span>→</span></a></article>
+<style>.article-card{padding:1.45rem 0;border-bottom:1px solid var(--line);transition:padding .18s ease}.article-card:hover{padding-left:.45rem}.article-meta{display:flex;flex-wrap:wrap;gap:.42rem;color:var(--muted);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem}.article-meta a{color:var(--accent)}h2{margin:.38rem 0;font-size:1.24rem;line-height:1.45;letter-spacing:-.02em}p{margin:.3rem 0 .7rem;color:var(--muted);font-size:.93rem}.read-more{font-size:.82rem;color:var(--accent);font-weight:700}.read-more span{transition:transform .18s ease;display:inline-block}.read-more:hover span{transform:translateX(.25rem)}</style>
