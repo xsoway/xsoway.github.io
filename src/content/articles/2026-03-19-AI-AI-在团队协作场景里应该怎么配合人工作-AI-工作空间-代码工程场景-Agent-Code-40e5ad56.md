@@ -1,0 +1,1545 @@
+---
+title: "AI-AI-在团队协作场景里应该怎么配合人工作-AI-工作空间-/-代码工程场景-Agent-Code"
+created: "2026-03-19"
+published: true
+---
+## 项目介绍
+
+这个项目借鉴了 OpenClaw 的 **灵魂文件 + 记忆文件 + 规则文件** 分层思路，设计出一套面向 **AI 工作空间 / 代码工程场景** 的通用结构化模板：
+
+让 AI 进入任意项目后，不再只是“临时聊天助手”，而是能快速拥有**稳定人格、明确规则、可持续记忆、可调用技能**的长期工作搭档。
+
+它的核心目标不是堆 prompt，而是把 AI 的工作方式**文件系统化、结构化、可迁移化**。
+
+───
+
+## 设计目标
+
+这套模板主要解决 5 个问题：
+
+1. ### **人格不稳定**
+
+不同会话、不同 IDE、不同 Agent 下，AI 风格容易漂移。
+
+2. ### **规则不统一**
+
+同一个项目里，AI 有时按你的习惯工作，有时按模型自己的默认习惯工作。
+
+3. ### **记忆不可持续**
+
+聊天结束后上下文丢失，项目经验、技术约定、踩坑记录难以沉淀。
+
+4. ### **能力不可复用**
+
+debug、review、refactor 这些高频工程动作，每次都要重新解释。
+
+5. ### **跨平台难迁移**
+
+在 OpenClaw、Trae、Codex、Cursor、Claude Code 等不同环境中，AI 工作方式无法复用。
+
+───
+
+## 核心思路
+
+项目采用“**文件即上下文、文件即规则、文件即记忆**”的设计理念，把 AI 的工作区拆成几层：
+
+1. ### 灵魂层（Soul Layer）
+
+定义 AI 是谁、怎么说话、怎么做事。
+
+核心文件： 
+
+• SOUL.md
+
+作用：
+
+• 规定人格
+
+• 规定表达风格
+
+• 规定行为边界
+
+• 保持长期稳定的工作姿态
+
+───
+
+2. ### 用户层（User Layer）
+
+定义 AI 在帮谁工作。
+
+核心文件：
+
+• USER.md
+
+作用：
+
+• 描述用户画像
+
+• 沟通偏好
+
+• 技术背景
+
+• 工作习惯
+
+───
+
+3. ### 规则层（Rule Layer）
+
+定义 AI 进入项目后应该遵守的工作方式。
+
+核心文件：
+
+• AGENTS.md
+
+• TEAM.md
+
+• REVIEW.md
+
+作用：
+
+• 规定启动先读什么
+
+• 规定记忆写入规则
+
+• 规定团队协作方式
+
+• 规定代码审查标准
+
+───
+
+4. ### 记忆层（Memory Layer）
+
+定义长期记忆、短期记忆和项目知识如何沉淀。
+
+核心文件：
+
+• MEMORY.md
+
+• memory/
+
+作用：
+
+• 管理长期知识
+
+• 管理当日工作日志
+
+• 管理项目状态、决策、经验和教训
+
+───
+
+5. ### 技能层（Skill Layer）
+
+定义一类任务如何被标准化处理。
+
+核心目录：
+
+• skills/
+
+作用：
+
+• 把高频工程动作沉淀成可复用 skill
+
+• 让 AI 在 debug、review、refactor 等场景下，按固定流程执行
+
+───
+
+6. ### 接入层（Bootstrap Layer）
+
+定义这套模板如何适配不同宿主环境。
+
+核心目录：
+
+• bootstrap/
+
+作用：
+
+• 面向 Trae、Codex、Cursor、Claude Code 等不同 IDE / Agent 平台提供启动引导
+
+• 保证同一套文件系统能跨平台复用
+
+───
+
+## 目录结构
+
+```text
+portable-agent-workspace/
+├── README.md
+├── SOUL.md
+├── USER.md
+├── AGENTS.md
+├── MEMORY.md
+├── TOOLS.md
+├── TEAM.md
+├── REVIEW.md
+├── CLAUDE.md
+├── src/
+│   └── .gitkeep
+├── bootstrap/
+│   ├── trae.md
+│   ├── codex.md
+│   ├── cursor.md
+│   └── claude-code.md
+├── examples/
+│   └── 记忆写入提示词.md
+├── references/
+│   └── skills.md
+├── skills/
+│   ├── code-review-skill/
+│   │   └── SKILL.md
+│   ├── debug-skill/
+│   │   └── SKILL.md
+│   └── refactor-skill/
+│       └── SKILL.md
+├── scripts/
+│   ├── init-workspace.sh
+│   ├── daily-log.sh
+│   ├── check-workspace.sh
+│   ├── memory-grep.sh
+│   └── recent-memory.sh
+└── memory/
+    ├── core.md
+    ├── user-prefs.md
+    ├── agent-notes.md
+    ├── _daily-template.md
+    ├── archive/
+    └── topics/
+        ├── projects.md
+        ├── decisions.md
+        └── lessons.md
+```
+
+## 主要功能
+
+### 一、三层记忆机制
+
+这是这套方案的核心之一。
+
+1. #### 会话记忆
+
+• 当前对话上下文
+
+• 用于正在进行的任务理解
+
+• 任务结束后容易丢失
+
+2. #### 每日记忆（Daily Memory）
+
+• 文件位置：memory/YYYY-MM-DD.md
+
+• 用于记录当天的工作过程、排障、改动、临时结论、待跟进事项
+
+• 属于短期工作日志层
+
+3. #### 长期记忆（Long-term Memory）
+
+• 文件位置：
+
+• memory/user-prefs.md
+
+• memory/agent-notes.md
+
+• memory/topics/*.md
+
+• 用于记录长期有效的信息：
+
+• 用户偏好
+
+• 项目状态
+
+• 技术决策
+
+• 踩坑经验
+
+• 团队规则
+
+#### 记忆机制的价值
+
+这意味着 AI 不再是“聊完就忘”，而是能逐步形成：
+
+• 项目知识
+
+• 协作经验
+
+• 个人偏好
+
+• 工程上下文
+
+───
+
+### 二、结构化 Skill 调用机制
+
+项目内置 skills/ 目录，用于存放可移植、可复用的技能。
+
+当前典型技能包括：
+
+• code-review-skill
+
+• debug-skill
+
+• refactor-skill
+
+#### Skill 的作用
+
+让 AI 在面对不同工程任务时，不是临场发挥，而是按照一套明确流程执行。
+
+例如：
+
+code-review-skill
+
+用于：
+
+• 代码审查
+
+• diff 分析
+
+• 风险识别
+
+• 给出验证建议
+
+debug-skill
+
+用于：
+
+• 错误定位
+
+• 根因分析
+
+• 日志解读
+
+• debug 计划制定
+
+refactor-skill
+
+用于：
+
+• 结构优化
+
+• 去重
+
+• 提升可维护性
+
+• 在不改变行为前提下重构代码
+
+#### 调用方式
+
+采用跨平台通用方式，不依赖宿主原生技能系统：
+
+• 使用 skill debug-skill 分析这个报错
+
+• 先读取 skills/refactor-skill/SKILL.md，再重构这个模块
+
+• 使用 skill code-review-skill 审查这次改动
+
+这样在 Trae、Codex、Cursor、Claude Code 中都能用。
+
+───
+
+### 三、项目初始化与自动化辅助
+
+为了让这套模板真正能接入工程，项目还提供了一组脚本：
+
+init-workspace.sh
+
+作用：
+
+• 一键把整套工作区模板复制到目标项目中
+
+check-workspace.sh
+
+作用：
+
+• 自动检查核心文件是否齐全
+
+daily-log.sh
+
+作用：
+
+• 自动生成当天 memory/YYYY-MM-DD.md
+
+memory-grep.sh
+
+作用：
+
+• 快速在记忆文件和规则文件中检索关键词
+
+recent-memory.sh
+
+作用：
+
+• 查看最近的 daily memory 记录
+
+───
+
+### 四、适合代码工程场景的默认工作流
+
+这套模板默认针对“开发者 / 代码工程”场景优化。
+
+AI 进入工程后，不是直接改代码，而是按规则工作：
+
+1. 先读 SOUL.md
+2. 再读 USER.md
+3. 再读 AGENTS.md
+4. 再读 MEMORY.md
+5. 再读当天与昨天的 daily memory
+6. 再查看项目状态和经验文件
+7. 最后才开始 debug / review / refactor / 实现任务
+
+这样能显著提升：
+
+• 行为稳定性
+
+• 项目上下文理解
+
+• 长期协作一致性
+
+───
+
+### 五、可移植、可复用、可扩展
+
+这个项目不是绑定某一个平台，而是尽量做成：
+
+• **可移植**
+
+• **可复制**
+
+• **可扩展**
+
+• **可团队化**
+
+当前优先兼容
+
+• Trae
+
+• Codex
+
+• Cursor
+
+• Claude Code
+
+当前设计原则
+
+• 不强依赖 QMD
+
+• 不强依赖 OpenClaw 专属能力
+
+• 优先使用 Markdown + 文件系统 + 搜索
+
+• 把高级能力（比如 QMD）视为增强层，而不是核心依赖
+
+这让它更适合作为一套通用 AI 工作空间模板，在不同 IDE 和不同项目中复用。
+
+───
+
+#### 项目价值总结
+
+这套方案的本质，不是“再写一份更长的 prompt”，而是：
+
+把 AI 的人格、规则、记忆、技能，从一次性对话经验，沉淀为一套可维护、可审计、可迁移的工程化工作空间。它适合：
+
+• 个人开发者
+
+• AI 编程场景
+
+• 团队协作场景
+
+• 想把 AI 从“聊天工具”变成“长期工程搭档”的人
+
+- -----
+
+## 实战示例
+
+### .场景 A：普通开发任务
+
+你在 Trae 里贴启动提示（可以用 bootstrap/trae.md 的内容），然后说：
+
+先读取 SOUL.md、USER.md、AGENTS.md、MEMORY.md，再告诉我这个项目你会怎么工作。
+
+预期效果：
+
+• 它会先按规则理解自己是谁
+
+• 知道是代码工程场景
+
+• 知道先读规则再干活
+
+你要点出来的价值
+
+“这一步很像给一个新同事做入职，不是直接上来就让它改代码。”
+
+───
+
+### 场景 B：写入记忆
+
+你可以对 Trae 说：
+
+• 记住：这个项目统一使用 pnpm，不使用 npm
+
+• 写进长期记忆：接口错误格式统一为 { code, message, data }
+
+• 记到今天日志：今天把登录模块拆成了 service 和 handler 两层
+
+然后展示：
+
+• memory/user-prefs.md
+
+• memory/topics/decisions.md
+
+• memory/2026-03-19.md
+
+这里要强调
+
+“记忆不是模型自己玄学地记住，而是落到文件里。”...
+
+### 场景 C：调用 skill
+
+比如：调试
+
+你说：
+
+• 使用 skill debug-skill 分析这个报错
+
+或
+
+• 先读取 skills/debug-skill/SKILL.md，再排查这个 failing test重构
+
+你说：
+
+• 使用 skill refactor-skill，在不改变行为的前提下整理这个模块review
+
+你说：
+
+• 使用 skill code-review-skill 审查这次改动
+
+这里要强调
+
+“我没有依赖某个 IDE 私有 skill API，而是用统一约定：
+
+点名 skill → 先读 SKILL.md → 按技能流程执行。”
+
+### 启动引导文件
+
+bootstrap/codex.md & trae.md ...
+
+用途：
+
+• 作为 trae 的启动引导 / 项目级上下文说明
+
+• 明确启动先读哪些文件
+
+• 明确查偏好 / 查项目 / 查经验的优先顺序
+
+• 明确记忆写入规则
+
+### 团队协作 TEAM.md
+
+portable-agent-workspace/TEAM.md
+
+用途：
+
+• 团队协作规则
+
+• 交付要求
+
+• 团队长期规则写入方式
+
+### 代码审查 REVIEW.md
+
+portable-agent-workspace/REVIEW.md
+
+用途：
+
+• 固定 review 检查项
+
+• 审查输出结构
+
+• 作为 code review skill 的基础规则
+
+### 技能调用说明
+
+portable-agent-workspace/references/skills.md
+
+这里定义了一个**跨平台通用调用约定**：
+
+使用某个 skill 的方式
+
+直接对 agent 说：
+
+• 使用 skill code-review-skill 审查这次改动
+
+• 先读取 skills/code-review-skill/SKILL.md，再 review 当前 diff
+
+• **使用 skill** debug-skill **分析这个报错**
+
+• **使用 skill** refactor-skill **在不改变行为的前提下整理这个模块**
+
+• **先读取** skills/debug-skill/SKILL.md**，再排查这个 failing test**
+
+• **先读取** skills/refactor-skill/SKILL.md**，再重构这个文件**
+
+portable-agent-workspace/skills/debug-skill/SKILL.md
+
+用途：
+
+• 根因分析
+
+• 日志/报错/失败测试排查
+
+• 生成 debug plan
+
+• 给出验证步骤
+
+───
+
+refactor-skill
+
+位置：
+
+portable-agent-workspace/skills/refactor-skill/SKILL.md
+
+用途：
+
+• 结构优化
+
+• 去重
+
+• 提升可维护性
+
+• 在**不改变行为**前提下整理代码
+
+───
+
+### 新增 src/ 目录
+
+• 存放接入项目的源码
+
+• 存放可迁移的基础代码资产
+
+• 存放与 skill 配套的示例源码
+
+• 存放团队通用脚手架源码
+
+### 在日常编码场景里，memory 怎么用
+
+在日常编码里，memory 不是聊天记录，而是工程记忆系统。
+
+memory/YYYY-MM-DD.md 记录今天发生了什么，
+
+memory/topics/*.md 和 memory/agent-notes.md 记录长期有效的知识。
+
+这样 AI 不是“聊完就忘”，而是能逐步形成项目记忆。───
+
+可以把它理解成两类：
+
+1. #### 长期记忆
+
+放**长期有效**的东西：
+
+• 项目约定
+
+• 技术栈
+
+• 包管理器
+
+• API 规范
+
+• 常见坑
+
+• 团队规则
+
+• review 标准
+
+对应文件：
+
+• MEMORY.md：索引入口
+
+• memory/user-prefs.md
+
+• memory/agent-notes.md
+
+• memory/topics/projects.md
+
+• memory/topics/decisions.md
+
+• memory/topics/lessons.md
+
+───
+
+2. #### 当天记忆
+
+放**今天发生的事**：
+
+• 今天改了什么
+
+• 遇到什么 bug
+
+• 排查过程
+
+• 临时结论
+
+• 待跟进事项
+
+对应文件：
+
+• memory/YYYY-MM-DD.md
+
+───
+
+### 一、日常编码里怎么用
+
+#### 场景 A：刚接手项目
+
+先让 agent 读：
+
+• SOUL.md
+
+• USER.md
+
+• AGENTS.md
+
+• MEMORY.md
+
+• memory/topics/projects.md
+
+作用
+
+让它先知道：
+
+• 项目是什么
+
+• 技术栈是什么
+
+• 默认工作流是什么
+
+• 之前有什么长期约定
+
+───
+
+#### 场景 B：今天开始开发
+
+先生成今天日志：
+
+bash scripts/daily-log.sh /path/to/project这样会有：
+
+memory/2026-03-18.md作用
+
+今天所有：
+
+• 改动
+
+• 排障
+
+• 决策
+
+• TODO
+
+都可以往这里写。
+
+───
+
+#### 场景 C：做着做着需要记住规则
+
+比如你发现：
+
+• 这个项目统一用 pnpm
+
+• 登录模块不能改接口格式
+
+• 所有测试前要先启动 Redis
+
+这类就该写进**长期记忆**，不是只留在聊天里。
+
+你可以直接对 agent 说：
+
+• 记住：这个项目统一使用 pnpm，不使用 npm
+
+• 写进长期记忆：登录接口返回格式不能变
+
+• 把这条经验记到 agent-notes：测试前先启动 Redis
+
+───
+
+#### 场景 D：今天排查了一个 bug
+
+比如你今天查出：
+
+• 现象：登录后 10 分钟掉线
+
+• 根因：cookie domain 配错
+
+• 处理：改成 .example.com
+
+• 后续：补回归测试
+
+这种优先写：
+
+• memory/YYYY-MM-DD.md
+
+如果这是会反复遇到的坑，再提炼进：
+
+• memory/topics/lessons.md
+
+或
+
+• memory/agent-notes.md
+
+───
+
+### 二、memory 怎么生成
+
+1. #### 自动生成今天文件
+
+最简单：
+
+bash scripts/daily-log.sh /path/to/project它会：
+
+• 按模板创建今天的 memory/YYYY-MM-DD.md
+
+• 如果已经存在，就跳过
+
+───
+
+2. #### 手动新建也可以
+
+比如：
+
+touch memory/2026-03-18.md但不推荐，因为没模板。
+
+───
+
+3. #### 初始化项目时一起准备好
+
+如果你先跑：
+
+bash scripts/init-workspace.sh /path/to/project再跑：
+
+bash /path/to/project/scripts/daily-log.sh /path/to/project就完成了：
+
+• 工作区接入
+
+• 今日日志初始化
+
+───
+
+### 三、memory 怎么写入
+
+#### 方法 1：让 agent 写
+
+这是最自然的。
+
+写今天日志
+
+你可以说：
+
+• 记到今天日志：今天把用户鉴权从 session 改成 JWT
+
+• 把这次排障写进 today memory
+
+• 记录今天的 bug 排查过程
+
+写长期记忆
+
+你可以说：
+
+• 记住：这个项目统一用 pnpm
+
+• 写进长期记忆：API 错误格式统一为 { code, message, data }
+
+• 把这个决策写进 decisions：后端 ORM 统一使用 Prisma
+
+───
+
+#### 方法 2：你手工写
+
+适合关键规则、关键项目背景。
+
+比如手工补：
+
+• memory/topics/projects.md
+
+• memory/topics/decisions.md
+
+这样最稳，也最可控。
+
+───
+
+### 四、编码场景下推荐写入策略
+
+#### 写到 daily memory 的内容
+
+适合写：
+
+• 今天做了什么
+
+• 改了哪些模块
+
+• 排查过程
+
+• 临时结论
+
+• 明天要继续什么
+
+• 相关命令 / 文件 / 链接
+
+不适合写：
+
+• 长期稳定规则
+
+• 团队长期约定
+
+• 不会变的项目知识
+
+───
+
+#### 写到长期 memory 的内容
+
+适合写：
+
+• 包管理器约定
+
+• 测试约定
+
+• 技术栈选择
+
+• 重要架构决策
+
+• 已验证的高频坑
+
+• 团队 review 标准
+
+不适合写：
+
+• 今天修了个一次性小 bug
+
+• 临时实验过程
+
+• 无复用价值的流水
+
+───
+
+### 五、最实用的一套工作流
+
+每天开始
+
+bash scripts/daily-log.sh /path/to/project做任务前
+
+让 agent 先读：
+
+• AGENTS.md
+
+• MEMORY.md
+
+• memory/topics/projects.md
+
+• 今天和昨天的 memory/YYYY-MM-DD.md
+
+做任务过程中
+
+有值得沉淀的内容，直接说：
+
+• 记到今天日志
+
+• 写进长期记忆
+
+• 更新 decision
+
+一天结束
+
+可以让 agent 帮你整理：
+
+• 今天完成了什么
+
+• 哪些值得进入长期记忆
+
+• 哪些还要跟进
+
+比如说：
+
+• 帮我整理今天的 daily memory
+
+• 把今天值得长期保留的内容提炼出来
+
+───
+
+### 六、总结
+
+#### 怎么用
+
+• 开工先读 memory
+
+• 过程中随时写 memory
+
+• 收工时整理 memory
+
+#### 怎么生成
+
+• 用 daily-log.sh 自动生成当天文件
+
+#### 怎么写入
+
+• 当天过程写 memory/YYYY-MM-DD.md
+
+• 长期规则写 memory/topics/*.md / agent-notes.md / user-prefs.md
+
+- -----
+
+## **编码场景下 memory 使用示例**
+
+行，我直接给你一套 **《编码场景下 memory 使用示例》**，你明天可以直接拿去讲、拿去演示。
+
+───
+
+编码场景下 memory 使用示例
+
+这套示例的目标是让大家一眼看懂：
+
+• 每天工作过程写到哪里
+
+• 长期项目信息写到哪里
+
+• 技术决策写到哪里
+
+• 踩坑经验写到哪里
+
+───
+
+1）memory/2026-03-19.md 示例
+
+这个文件代表：**今天发生了什么**。
+
+适合记录：
+
+• 今天做了哪些开发工作
+
+• 今天遇到的 bug
+
+• 排查过程
+
+• 临时结论
+
+• 待跟进事项
+
+```markdown
+\# 2026-03-19
+
+\## 今日概览
+
+\- 今日关键词：登录态、Cookie、Trae演示、portable-agent-workspace
+
+\- 一句话总结：完成了 demo 项目的工作区接入，并定位了登录态失效问题的根因。
+
+\## 今日完成
+
+\- 将 `portable-agent-workspace/` 初始化到 demo 项目根目录
+
+\- 补充了 `TEAM.md`、`REVIEW.md`、`skills/`、`src/` 等结构
+
+\- 新增 `debug-skill` 和 `refactor-skill`
+
+\- 验证 `init-workspace.sh`、`check-workspace.sh`、`daily-log.sh` 可正常运行
+
+\- 在 Trae 中完成了一轮接入演示测试
+
+\## 关键决策 / 变更
+
+\- 演示版本暂不接入 QMD，只使用 Markdown 文件 + grep / IDE 搜索
+
+\- skill 调用统一采用“显式点名 + 先读 SKILL.md”的便携方式
+
+\- 演示项目优先突出“人格 + 规则 + 记忆 + skills”四层结构
+
+\## 踩坑 / 异常
+
+\- 现象：登录后约 10 分钟 session 丢失
+
+\- 原因：Cookie 的 domain 配置错误，导致子域名场景下浏览器未正确带上 cookie
+
+\- 处理：将 cookie domain 改为 `.demo.local`
+
+\- 后续：需要补一条登录态相关回归验证步骤
+
+\## 值得沉淀到长期记忆
+
+\- 演示项目默认不依赖 QMD，先用文件系统方案讲清主结构
+
+\- skill 调用方式要尽量与宿主平台无关，降低迁移成本
+
+\- 接入代码工程时，优先把 `TEAM.md` 和 `REVIEW.md` 也带上
+
+\## 待跟进
+
+\- 准备分享时使用的口播版介绍
+
+\- 准备一份最小 demo 项目用于演示 debug / review / refactor
+
+\- 评估是否后续增加自动提炼 decisions / lessons 的脚本
+
+\## 备注 / 证据链
+
+\- 相关文件：
+
+\- `bootstrap/trae.md`
+
+\- `scripts/init-workspace.sh`
+
+\- `skills/debug-skill/SKILL.md`
+
+\- 相关命令：
+
+\- `bash scripts/init-workspace.sh /path/to/demo-project`
+
+\- `bash /path/to/demo-project/scripts/check-workspace.sh /path/to/demo-project`
+
+\- `bash /path/to/demo-project/scripts/daily-log.sh /path/to/demo-project`───
+```
+
+2）memory/topics/projects.md 示例
+
+这个文件代表：**项目的长期状态**。
+
+适合记录：
+
+• 项目做什么
+
+• 技术栈
+
+• 包管理器
+
+• 构建方式
+
+• 测试方式
+
+• 关键目录
+
+• 长期约束
+
+```markdown
+\# projects.md — 项目状态
+
+\> 本文件记录当前代码工程的长期状态、技术栈、目录结构和关键约束。
+
+\## portable-agent-workspace
+
+\- 项目定位：面向 AI 工作空间 / 代码工程场景的通用结构化模板
+
+\- 当前目标：构建一套可在 Trae、Codex、Cursor、Claude Code 中迁移使用的 Agent 工作区方案
+
+\- 核心思路：通过 `SOUL.md`、`USER.md`、`AGENTS.md`、`MEMORY.md`、`skills/` 等文件，把 AI 的工作方式工程化
+
+\## 技术 / 结构信息
+
+\- 项目类型：工作区模板 / 工程接入模板
+
+\- 主要形态：Markdown 文件 + shell 脚本 + skills 目录
+
+\- 包管理：无强制要求（接入到具体项目后继承项目自身工具链）
+
+\- 运行方式：主要通过宿主 IDE / Agent 读取文件工作
+
+\- 默认记忆方式：文件系统 + 搜索（暂不强依赖 QMD）
+
+\## 当前目录约定
+
+\- `SOUL.md`：人格定义
+
+\- `USER.md`：用户画像
+
+\- `AGENTS.md`：工作区规则
+
+\- `MEMORY.md`：长期记忆索引入口
+
+\- `TEAM.md`：团队协作规则
+
+\- `REVIEW.md`：代码审查标准
+
+\- `memory/`：记忆体系
+
+\- `skills/`：可复用技能
+
+\- `src/`：接入项目的源码或通用源码资产
+
+\- `scripts/`：初始化、日志、检查、搜索辅助脚本
+
+\- `bootstrap/`：多平台接入引导
+
+\## 当前已实现功能
+
+\- 一键初始化到目标项目
+
+\- 自动生成 daily memory
+
+\- 自动检查核心文件是否齐全
+
+\- grep / recent-memory 辅助脚本
+
+\- code-review / debug / refactor 三个示例 skill
+
+\- Trae / Codex / Cursor / Claude Code 的 bootstrap 引导
+
+\## 长期约束
+
+\- 核心方案要尽量保持平台无关，不把 OpenClaw 专有能力写死
+
+\- 默认方案优先依赖 Markdown + 文件系统 + 搜索
+
+\- QMD、向量索引等能力作为增强层，而不是必需前置───
+```
+
+3）memory/topics/decisions.md 示例
+
+这个文件代表：**项目里长期有效的决策**。
+
+适合记录：
+
+• 采用什么方案
+
+• 为什么这么做
+
+• 有什么影响
+
+• 必要时如何回滚
+
+```markdown
+
+\# decisions.md — 决策记录
+
+\> 本文件记录项目中的长期有效决策与原因。
+
+\## 2026-03-19 / 先做文件系统版，不强依赖 QMD
+
+\- 决策：第一版 `portable-agent-workspace` 先采用 Markdown 文件 + grep / IDE 搜索方案
+
+\- 原因：
+
+\- 更容易迁移到 Trae、Codex、Cursor、Claude Code
+
+\- 不依赖宿主平台额外能力
+
+\- 更适合作为通用模板分享和推广
+
+\- 影响：
+
+\- recall 主要依赖文件检索，而不是语义搜索
+
+\- 方案更简单，但也更稳定、可审计
+
+\- 后续：
+
+\- 如有需要，可在 OpenClaw 场景下追加 QMD 增强层
+
+\## 2026-03-19 / skills 采用显式调用协议
+
+\- 决策：skill 使用统一约定“显式点名 + 先读 `skills/<skill-name>/SKILL.md`”
+
+\- 原因：
+
+\- 不同 IDE 对 skills 的原生支持不同
+
+\- 统一协议更便于跨平台迁移
+
+\- 影响：
+
+\- skill 的触发更可控
+
+\- 不依赖某个平台的专有注册机制
+
+\## 2026-03-19 / 演示版本纳入 TEAM.md 和 REVIEW.md
+
+\- 决策：在工作区模板中加入 `TEAM.md` 和 `REVIEW.md`
+
+\- 原因：
+
+\- 代码工程场景不仅需要个人工作流，也需要团队协作规则和审查标准
+
+\- 演示时更能体现工程化价值
+
+\- 影响：
+
+\- Agent 在 review、协作和交付时行为更统一───
+```
+
+4）memory/topics/lessons.md 示例
+
+这个文件代表：**已经踩过的坑 / 可复用经验**。
+
+适合记录：
+
+• 反复出现的问题
+
+• 容易忘的注意事项
+
+• 调试经验
+
+• 迁移经验
+
+```markdown
+\# lessons.md — 历史教训 / 经验入口
+
+\> 本文件记录重复出现的问题、已踩过的坑、值得复用的经验。
+
+\## Lesson 1：不要把平台专有能力写死在通用模板里
+
+\- 场景：设计可移植的 AI 工作区模板
+
+\- 现象：如果把 QMD、OpenClaw hooks、平台专有命令直接作为核心能力，迁移到 Trae / Cursor / Codex 时会失效
+
+\- 根因：方案没有区分“核心层”和“增强层”
+
+\- 解决：
+
+\- 核心层只保留 Markdown + 文件系统 + 搜索
+
+\- 平台专有能力做成增强层
+
+\- 后续避免方式：
+
+\- 任何新增能力，先判断它是“通用能力”还是“宿主专有能力”
+
+\## Lesson 2：skill 的调用方式必须尽量通用
+
+\- 场景：在不同 IDE / Agent 环境中复用 skills
+
+\- 现象：不同宿主对 skill 的触发、注册、识别方式不一致
+
+\- 根因：缺少统一的调用协议
+
+\- 解决：
+
+\- 统一采用“显式点名 +
+```
+
+• memory/2026-03-19.md：**今天发生了什么**
+
+• projects.md：**这个项目长期是什么样**
+
+• decisions.md：**为什么这么做**
+
+• lessons.md：**以后别再踩同样的坑**
+
+───
+
+## 团队协作示例 team.md
+
+───
+
+### TEAM.md 示例
+
+```markdown
+\# TEAM.md
+
+\> 本文件定义团队协作场景下，Agent 在代码工程中的默认协作规则。
+
+\> 它不负责人格设定，不记录个人偏好，也不替代项目文档。
+
+\## 团队协作原则
+
+\- 优先遵循团队已有规范，不个人发挥
+
+\- 改动要可审查、可回滚、可验证
+
+\- 重要改动先说明影响范围，再执行
+
+\- 对外表态、跨团队沟通、提交正式文案前先确认
+
+\## 默认交付要求
+
+每次完成任务后，输出至少包含：
+
+1. 改了什么
+2. 为什么改
+3. 影响范围
+4. 如何验证
+5. 是否有回滚方案
+
+\## 分工意识
+
+在团队协作场景下，Agent 默认把任务拆成以下几类：
+
+\- 需求理解
+
+\- 方案设计
+
+\- 编码实现
+
+\- 代码审查
+
+\- 测试验证
+
+\- 文档补充
+
+\- 发布 / 交付说明
+
+如果当前任务只涉及其中一部分，不要擅自扩展成整条链路。
+
+\## 代码协作规则
+
+\- 优先遵循项目当前代码风格和目录结构
+
+\- 不擅自引入新的框架、库或架构模式
+
+\- 修改公共接口、数据库结构、部署流程前先提示风险
+
+\- 对已有代码做重构时，默认保持行为不变，除非明确要求改设计
+
+\## PR / Review 约定
+
+输出 review 或提交说明时，优先按以下结构组织：
+
+\- 背景
+
+\- 改动点
+
+\- 风险点
+
+\- 验证方式
+
+\- 后续建议
+
+\## 测试与验证
+
+\- 改动代码后，优先说明如何验证
+
+\- 如果无法本地验证，要明确指出缺什么条件
+
+\- 不把“理论上没问题”当作验证完成
+
+\## 记忆写入规则
+
+\### 适合写入长期记忆的内容
+
+\- 团队长期有效的开发约定
+
+\- 公共接口规范
+
+\- 提交流程
+
+\- Review 标准
+
+\- 发布规则
+
+\- 反复出现的协作问题和经验
+
+\### 适合写入当日日志的内容
+
+\- 今天做了哪些协作相关改动
+
+\- 今天 review 发现了什么问题
+
+\- 某次联调 / 排障的过程
+
+\- 需要后续跟进的事项
+
+\## 需要先确认的事项
+
+以下动作默认先确认，不直接执行：
+
+\- 删除大量文件
+
+\- 修改数据库结构
+
+\- 修改 CI/CD 配置
+
+\- 修改发布流程
+
+\- 替团队做公开表态
+
+\- 直接合并代码 / 覆盖分支
+
+\## 输出风格
+
+\- 团队协作场景下，优先清楚、准确、可执行
+
+\- 少情绪化表达，少空话
+
+\- 结论优先，细节随后───
+```
+
+### 这个 TEAM.md 是干什么的
+
+TEAM.md 不是写“团队介绍”，而是写：
+
+* *AI 在团队协作场景里应该怎么配合人工作。**也就是说，它定义的是：
+
+• 协作规则
+
+• 交付规范
+
+• 风险边界
+
+• 输出结构
+
+───
+
+### 它和别的文件有什么区别
+
+和 SOUL.md 的区别
+
+• SOUL.md：AI 是谁，怎么说话
+
+• TEAM.md：在团队里怎么做事
+
+和 AGENTS.md 的区别
+
+• AGENTS.md：整个工作区的运行规则
+
+• TEAM.md：多人协作时的额外规则
+
+和 REVIEW.md 的区别
+
+• TEAM.md：更宽，讲协作和交付
+
+• REVIEW.md：更窄，专门讲代码审查
+
+───
+
+### 什么场景特别适合用 TEAM.md
+
+比如这些：
+
+#### 场景 1：多人开发
+
+你不希望 AI 只按你个人习惯改代码，而是按团队约定来。
+
+#### 场景 2：要写 PR / review / 交付说明
+
+你希望它输出结构稳定，比如总是：
+
+• 背景
+
+• 改动点
+
+• 风险点
+
+• 验证方式
+
+#### 场景 3：涉及高风险改动
+
+比如：
+
+• 数据库
+
+• CI/CD
+
+• 发布流程
+
+• 公共接口
+
+你希望 AI 默认别乱来，要先提醒。
+
+───
+
+TEAM.md 的作用，是把“团队协作规范”从口头约定，变成 AI 可读取、可执行的工作规则。
+
+这样 AI 不只是一个会写代码的助手，而是一个懂团队配合方式的协作者。───
+
+TEAM.md = **团队协作规则文件**
+
+它约束 AI：
+
+• 怎么配合团队
+
+• 怎么汇报结果
+
+• 什么事不能擅自做
+
+• 什么信息值得沉淀成团队记忆
+

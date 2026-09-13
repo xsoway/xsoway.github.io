@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <style>
+      /* High-contrast, "safe layout" card — avoid any text clipping */
+      .hand { font-family: "Comic Sans MS","Comic Sans","PingFang SC","Microsoft YaHei","Noto Sans CJK SC", system-ui, sans-serif; }
+      .ink { stroke:#111827; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .sketch { stroke:#111827; stroke-width:3.2; stroke-linecap:round; stroke-linejoin:round; fill:none; opacity:0.45; }
+      .bg { fill:#FFFDF7; }
+      .marker { fill:#FFD54A; opacity:0.75; }
+      .title { font-size:56px; font-weight:900; }
+      .sub { font-size:20px; font-weight:900; }
+      .h2 { font-size:28px; font-weight:900; }
+      .small { font-size:18px; font-weight:900; }
+      .banner { fill:#111827; }
+      .bannerText { fill:#FFFFFF; font-size:22px; font-weight:900; }
+      .noteY { fill:#FFE28A; }
+      .noteB { fill:#BEE3FF; }
+      .noteG { fill:#CFF7D3; }
+      .shadow { opacity:0.08; fill:#000; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="720" class="bg"/>
+  <path d="M35 60 C 250 20, 480 18, 640 42 C 820 70, 980 20, 1165 55" class="sketch"/>
+
+  <!-- Header card (left) -->
+  <g>
+    <path d="M60 65 L 870 65 L 870 205 L 60 205 Z" fill="#FFFFFF" class="sketch" transform="translate(-2,1)"/>
+    <path d="M60 65 L 870 65 L 870 205 L 60 205 Z" fill="#FFFFFF" class="sketch" transform="translate(2,1)"/>
+    <path d="M60 65 L 870 65 L 870 205 L 60 205 Z" fill="#FFFFFF" class="ink"/>
+    <path d="M82 108 C 250 80, 450 78, 660 98 C 750 106, 810 118, 850 130 C 790 156, 660 168, 510 168 C 330 167, 200 150, 82 134 Z" class="marker"/>
+
+    <text x="92" y="140" class="hand title" fill="#111827">OpenClaw 配置文件全解</text>
+
+    <!-- Safe 2-line file list -->
+    <text x="94" y="175" class="hand sub" fill="#111827">AGENTS.md · SOUL.md · USER.md · MEMORY.md</text>
+    <text x="94" y="198" class="hand sub" fill="#111827">TOOLS.md · HEARTBEAT.md</text>
+  </g>
+
+  <!-- Robot sticker (right) -->
+  <g transform="translate(905,72)">
+    <path d="M12 12 L 252 12 L 252 188 L 12 188 Z" class="shadow"/>
+    <path d="M0 0 L 240 0 L 240 176 L 0 176 Z" fill="#FFFFFF" class="sketch" transform="translate(-2,1)"/>
+    <path d="M0 0 L 240 0 L 240 176 L 0 176 Z" fill="#FFFFFF" class="sketch" transform="translate(2,1)"/>
+    <path d="M0 0 L 240 0 L 240 176 L 0 176 Z" fill="#FFFFFF" class="ink"/>
+    <path d="M24 40 L 216 40 L 216 126 L 24 126 Z" fill="#F3F4F6" class="sketch" transform="translate(-2,1)"/>
+    <path d="M24 40 L 216 40 L 216 126 L 24 126 Z" fill="#F3F4F6" class="sketch" transform="translate(2,1)"/>
+    <path d="M24 40 L 216 40 L 216 126 L 24 126 Z" fill="#F3F4F6" class="ink"/>
+    <circle cx="78" cy="83" r="14" fill="#111827"/>
+    <circle cx="162" cy="83" r="14" fill="#111827"/>
+    <path d="M92 112 C 120 136, 138 136, 170 112" fill="none" stroke="#111827" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M120 -18 L120 0" class="sketch" transform="translate(-2,1)"/>
+    <path d="M120 -18 L120 0" class="sketch" transform="translate(2,1)"/>
+    <path d="M120 -18 L120 0" class="ink"/>
+    <circle cx="120" cy="-30" r="12" fill="#FF4D4D" class="ink"/>
+    <text x="18" y="162" class="hand small" fill="#111827">外挂大脑</text>
+  </g>
+
+  <!-- One-line mental model banner (split across 2 lines to avoid overflow) -->
+  <text x="70" y="265" class="hand h2" fill="#111827">一句话心智模型</text>
+  <g>
+    <path d="M60 285 L 1140 285 L 1140 365 L 60 365 Z" class="banner ink"/>
+    <text x="92" y="320" class="hand bannerText">规则写 AGENTS｜风格写 SOUL｜偏好写 USER｜记忆写 MEMORY</text>
+    <text x="92" y="350" class="hand bannerText">环境写 TOOLS｜巡检写 HEARTBEAT</text>
+  </g>
+
+  <!-- Sticky notes row (3 cards) with generous padding -->
+  <g>
+    <!-- SOUL -->
+    <path d="M70 400 L 380 400 L 380 545 L 70 545 Z" class="shadow"/>
+    <path d="M60 390 L 370 390 L 370 535 L 60 535 Z" class="sketch" transform="translate(-2,1)"/>
+    <path d="M60 390 L 370 390 L 370 535 L 60 535 Z" class="sketch" transform="translate(2,1)"/>
+    <path d="M60 390 L 370 390 L 370 535 L 60 535 Z" class="noteY ink"/>
+    <text x="84" y="430" class="hand" style="font-size:24px;font-weight:900;" fill="#111827">SOUL.md</text>
+    <text x="84" y="462" class="hand small" fill="#111827">怎么说话（风格层）</text>
+    <text x="84" y="492" class="hand small" fill="#111827">少废话 · 工程交付</text>
+    <text x="84" y="522" class="hand small" fill="#111827">敢指出 bug</text>
+
+    <!-- USER -->
+    <path d="M450 400 L 760 400 L 760 545 L 450 545 Z" class="shadow"/>
+    <path d="M440 390 L 750 390 L 750 535 L 440 535 Z" class="sketch" transform="translate(-2,1)"/>
+    <path d="M440 390 L 750 390 L 750 535 L 440 535 Z" class="sketch" transform="translate(2,1)"/>
+    <path d="M440 390 L 750 390 L 750 535 L 440 535 Z" class="noteB ink"/>
+    <text x="464" y="430" class="hand" style="font-size:24px;font-weight:900;" fill="#111827">USER.md</text>
+    <text x="464" y="462" class="hand small" fill="#111827">你是谁（偏好层）</text>
+    <text x="464" y="492" class="hand small" fill="#111827">称呼 · 时区</text>
+    <text x="464" y="522" class="hand small" fill="#111827">23:00 后静默</text>
+
+    <!-- AGENTS -->
+    <path d="M830 400 L 1140 400 L 1140 545 L 830 545 Z" class="shadow"/>
+    <path d="M820 390 L 1130 390 L 1130 535 L 820 535 Z" class="sketch" transform="translate(-2,1)"/>
+    <path d="M820 390 L 1130 390 L 1130 535 L 820 535 Z" class="sketch" transform="translate(2,1)"/>
+    <path d="M820 390 L 1130 390 L 1130 535 L 820 535 Z" class="noteG ink"/>
+    <text x="844" y="430" class="hand" style="font-size:24px;font-weight:900;" fill="#111827">AGENTS.md</text>
+    <text x="844" y="462" class="hand small" fill="#111827">开机流程（规则层）</text>
+    <text x="844" y="492" class="hand small" fill="#111827">先读谁 · 怎么做</text>
+    <text x="844" y="522" class="hand small" fill="#111827">群聊别抢话</text>
+  </g>
+
+  <!-- Footer line (safe, short) -->
+  <text x="70" y="610" class="hand h2" fill="#111827">目标：把你从「手动模式」升级成自动化</text>
+</svg>

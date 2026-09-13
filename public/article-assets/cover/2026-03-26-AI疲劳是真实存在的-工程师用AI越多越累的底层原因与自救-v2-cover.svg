@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#101b33"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="70" width="1040" height="490" rx="28" fill="#0f172a" opacity="0.82" stroke="#23304a"/>
+
+  <text x="120" y="150" fill="#e5e7eb" font-size="44" font-family="PingFang SC, Microsoft YaHei, Arial" font-weight="700">AI 疲劳是真实存在的</text>
+  <text x="120" y="205" fill="#cbd5e1" font-size="26" font-family="PingFang SC, Microsoft YaHei, Arial" font-weight="500">v2：生产更快，判断更贵</text>
+
+  <rect x="120" y="240" width="560" height="6" fill="url(#accent)" opacity="0.9"/>
+
+  <g font-family="PingFang SC, Microsoft YaHei, Arial" font-size="30" fill="#e5e7eb">
+    <text x="140" y="325">• Decision fatigue：小判断榨干你</text>
+    <text x="140" y="385">• AI 代码更难 review：每行都可疑</text>
+    <text x="140" y="445">• 核心技能：知道什么时候停</text>
+  </g>
+
+  <text x="120" y="530" fill="#94a3b8" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial">Source: siddhantkhare.com ·整理：Murph</text>
+</svg>

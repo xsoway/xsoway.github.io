@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <style>
+      .hand { font-family: "Comic Sans MS","Comic Sans","PingFang SC","Microsoft YaHei","Noto Sans CJK SC", system-ui, sans-serif; }
+      .ink { stroke:#111827; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .sketch { stroke:#111827; stroke-width:3.2; stroke-linecap:round; stroke-linejoin:round; fill:none; opacity:0.45; }
+      .bg { fill:#FFFDF7; }
+      .marker { fill:#FFD54A; opacity:0.75; }
+      .title { font-size:54px; font-weight:900; }
+      .subtitle { font-size:22px; font-weight:900; }
+      .h2 { font-size:28px; font-weight:900; }
+      .bullet { font-size:24px; font-weight:900; }
+      .small { font-size:18px; font-weight:900; }
+      .noteY { fill:#FFE28A; }
+      .noteB { fill:#BEE3FF; }
+      .noteG { fill:#CFF7D3; }
+      .shadow { opacity:0.08; fill:#000; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="720" class="bg"/>
+  <path d="M35 60 C 250 20, 480 18, 640 42 C 820 70, 980 20, 1165 55" class="sketch"/>
+
+  <!-- Header card (no article title; summary only) -->
+  <g>
+    <path d="M60 65 L 1140 65 L 1140 165 L 60 165 Z" fill="#FFFFFF" class="ink"/>
+    <path d="M82 98 C 280 74, 520 72, 900 86 C 1020 92, 1100 102, 1120 114 C 1050 138, 880 150, 650 150 C 380 148, 220 134, 82 120 Z" class="marker"/>
+
+    <!-- double stroke -->
+    <path d="M60 65 L 1140 65 L 1140 165 L 60 165 Z" class="sketch" transform="translate(2,1)"/>
+    <path d="M60 65 L 1140 65 L 1140 165 L 60 165 Z" class="sketch" transform="translate(-2,1)"/>
+
+    <!-- tag pills (up to 3) -->
+    <g>
+      <path d="M92 86 L 292 86 L 292 122 L 92 122 Z" fill="#111827" opacity="0.10"/>
+      <path d="M88 82 L 288 82 L 288 118 L 88 118 Z" fill="#FFFFFF" class="ink"/>
+      <text x="104" y="108" class="hand small" fill="#111827">ClawFeed</text>
+
+      <path d="M312 86 L 512 86 L 512 122 L 312 122 Z" fill="#111827" opacity="0.10"/>
+      <path d="M308 82 L 508 82 L 508 118 L 308 118 Z" fill="#FFFFFF" class="ink"/>
+      <text x="324" y="108" class="hand small" fill="#111827">RSS</text>
+
+      <path d="M532 86 L 732 86 L 732 122 L 532 122 Z" fill="#111827" opacity="0.10"/>
+      <path d="M528 82 L 728 82 L 728 118 L 528 118 Z" fill="#FFFFFF" class="ink"/>
+      <text x="544" y="108" class="hand small" fill="#111827">AI资讯</text>
+    </g>
+
+    <!-- punchline bubble (optional) -->
+    <path d="M760 84 Q 770 74 780 84 L 1090 84 Q 1110 84 1110 104 L 1110 122 Q 1110 142 1090 142 L 860 142 L 828 162 L 834 142 L 780 142 Q 760 142 760 122 L 760 104 Q 760 84 780 84 Z" class="noteY ink"/>
+    <path d="M760 84 Q 770 74 780 84 L 1090 84 Q 1110 84 1110 104 L 1110 122 Q 1110 142 1090 142 L 860 142 L 828 162 L 834 142 L 780 142 Q 760 142 760 122 L 760 104 Q 760 84 780 84 Z" class="sketch" transform="translate(2,1)"/>
+    <path d="M760 84 Q 770 74 780 84 L 1090 84 Q 1110 84 1110 104 L 1110 122 Q 1110 142 1090 142 L 860 142 L 828 162 L 834 142 L 780 142 Q 760 142 760 122 L 760 104 Q 760 84 780 84 Z" class="sketch" transform="translate(-2,1)"/>
+    <text x="790" y="121" class="hand bullet" fill="#111827">别刷了，开始“知道”</text>
+
+  </g>
+
+  <!-- Bullets as sticky notes -->
+  <g>
+    <!-- note 1 -->
+    <path d="M70 240 L 1130 240 L 1130 320 L 70 320 Z" class="shadow"/>
+    <path d="M60 230 L 1120 230 L 1120 310 L 60 310 Z" class="noteY ink"/>
+    <path d="M60 230 L 1120 230 L 1120 310 L 60 310 Z" class="sketch" transform="translate(2,1)"/>
+    <path d="M60 230 L 1120 230 L 1120 310 L 60 310 Z" class="sketch" transform="translate(-2,1)"/>
+    <text x="92" y="280" class="hand bullet" fill="#111827">① 多源信息变固定节奏</text>
+
+    <!-- note 2 -->
+    <path d="M70 350 L 1130 350 L 1130 430 L 70 430 Z" class="shadow"/>
+    <path d="M60 340 L 1120 340 L 1120 420 L 60 420 Z" class="noteB ink"/>
+    <path d="M60 340 L 1120 340 L 1120 420 L 60 420 Z" class="sketch" transform="translate(2,1)"/>
+    <path d="M60 340 L 1120 340 L 1120 420 L 60 420 Z" class="sketch" transform="translate(-2,1)"/>
+    <text x="92" y="390" class="hand bullet" fill="#111827">② 规则过滤 + 摘要结构化</text>
+
+    <!-- note 3 -->
+    <path d="M70 460 L 1130 460 L 1130 540 L 70 540 Z" class="shadow"/>
+    <path d="M60 450 L 1120 450 L 1120 530 L 60 530 Z" class="noteG ink"/>
+    <path d="M60 450 L 1120 450 L 1120 530 L 60 530 Z" class="sketch" transform="translate(2,1)"/>
+    <path d="M60 450 L 1120 450 L 1120 530 L 60 530 Z" class="sketch" transform="translate(-2,1)"/>
+    <text x="92" y="500" class="hand bullet" fill="#111827">③ OpenClaw cron 可自动跑</text>
+  </g>
+
+</svg>
