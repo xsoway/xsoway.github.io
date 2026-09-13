@@ -1,4 +1,4 @@
-import { cp, mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import process from 'node:process';
@@ -11,6 +11,7 @@ const sources = (process.env.ARTICLE_SOURCES ?? process.env.ARTICLE_SOURCE ?? `$
 const sourceLabel = new Map([[defaultSource, '主文章库'], [legacySource, '旧 Hexo 文章'], [reviewSource, '复盘归档']]);
 const contentDir = path.join(root, 'src/content/articles');
 const assetsDir = path.join(root, 'public/article-assets');
+const manifestFile = path.join(root, '.sync-manifest.json');
 const redactions = [
   [/[\\/]Users[\\/][^\s)`\]]+/g, '[本机路径已隐藏]'],
   [/attachment:[^\s)`\]]+/gi, '[附件未公开]'],
@@ -27,6 +28,7 @@ function metadata(text) {
   return { published: /^published:\s*true\s*$/m.test(header) };
 }
 function name(file) { return path.basename(file, '.md'); }
+function articleKey(article) { return `${article.source}:${path.relative(article.source, article.file)}`; }
 function publicAsset(relative) { return `/article-assets/${relative.split(path.sep).map(encodeURIComponent).join('/')}`; }
 function scalar(header, key) { return header.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'))?.[1]?.trim().replace(/^['"]|['"]$/g, '').replace(/\\*\\*/g, ''); }
 function list(header, key) {
@@ -87,8 +89,17 @@ async function copyAsset(reference, article, report) {
   return publicAsset(relative);
 }
 
+async function previousManifest() {
+  try {
+    const manifest = JSON.parse(await readFile(manifestFile, 'utf8'));
+    return Array.isArray(manifest.articles) ? manifest.articles : [];
+  } catch {
+    return [];
+  }
+}
+
 export async function syncArticles() {
-  const report = { sources: sources.map((source) => sourceLabel.get(source) ?? '自定义文章源'), included: [], skipped: [], warnings: [], errors: [], assets: 0 };
+  const report = { sources: sources.map((source) => sourceLabel.get(source) ?? '自定义文章源'), included: [], skipped: [], deleted: [], warnings: [], errors: [], assets: 0 };
   const candidates = [];
   for (const source of sources) {
     for (const file of await markdownFiles(source)) {
@@ -124,6 +135,21 @@ export async function syncArticles() {
       await writeFile(path.join(contentDir, `${article.id}.md`), text);
       report.included.push(path.relative(article.source, article.file));
     } catch (error) { report.errors.push({ file: path.relative(article.source, article.file), message: error.message }); }
+  }
+  if (!report.errors.length) {
+    const oldArticles = await previousManifest();
+    const currentKeys = new Set(candidates.map(articleKey));
+    const removed = oldArticles.filter(article => sources.includes(article.source) && !currentKeys.has(`${article.source}:${article.file}`));
+    for (const article of removed) {
+      const output = path.resolve(contentDir, article.output);
+      if (output.startsWith(`${contentDir}${path.sep}`)) {
+        await rm(output, { force: true });
+        report.deleted.push(article.output);
+      }
+    }
+    const retained = oldArticles.filter(article => !sources.includes(article.source));
+    const articles = candidates.map(article => ({ source: article.source, file: path.relative(article.source, article.file), output: `${article.id}.md` }));
+    await writeFile(manifestFile, `${JSON.stringify({ version: 1, articles: [...retained, ...articles] }, null, 2)}\n`);
   }
   await writeFile(path.join(root, '.sync-report.json'), `${JSON.stringify(report, null, 2)}\n`);
   if (report.errors.length) throw new Error(`同步失败：${report.errors.map(item => item.file).join(', ')}`);
