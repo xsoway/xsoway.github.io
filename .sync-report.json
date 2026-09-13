@@ -1,8 +1,6 @@
 {
   "sources": [
-    "主文章库",
-    "旧 Hexo 文章",
-    "复盘归档"
+    "主文章库"
   ],
   "included": [
     "2026-01-01-人工智能编程之方法调用结构样本（待办任务）.md",
@@ -128,13 +126,6 @@
     "2026-04-13-把企微团队空间做成可治理的-AI-工作台.md",
     "2026-04-13-未来10年最值得学的技能：写作,-by-the-way-写作-vs-AI-生成.md",
     "2026-04-13-每天烧上千美金的-AI-Coding-SOP（自用版）.md",
-    "2026-04-13-每日-Tech-Digest-复盘（2026-03-06）.md",
-    "2026-04-13-每日-Tech-Digest-复盘（2026-03-07）.md",
-    "2026-04-13-每日-Tech-Digest-复盘（2026-03-08）.md",
-    "2026-04-13-每日-Tech-Digest-复盘（2026-03-09）.md",
-    "2026-04-13-每日-Tech-Digest-复盘（2026-03-10）.md",
-    "2026-04-13-每日-Tech-Digest-复盘（2026-03-11）.md",
-    "2026-04-13-每日驾驶舱.md",
     "2026-04-13-用-OpenClaw-管理-Obsidian：让吃灰知识库重新运转.md",
     "2026-04-13-真正先过时的，也许不是工具，而是那套靠人肉硬扛的工作方式.md",
     "2026-04-13-短视频别再手剪了：这套“桌面端工厂流水线”直接批量出片.md",
@@ -249,10 +240,8 @@
     "2026-05-24-Obsidian-完整配置与启动优化指南.md",
     "2026-05-24-agent-skills-把-ai-编程变成可重复的工程流程.md",
     "2026-05-24-rtk-给-claude-code-装一个-token-压缩机.md",
-    "2026-05-25-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-05-25-把知识库健康分从0救到10-一周OpenClaw与LLM-Wiki实战复盘.md",
     "2026-05-28-测试报告自动化实现文档.md",
-    "2026-05-31-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-06-03-01-我一开始只是想做个文档问答后来发现测试知识库真正难的是证据链.md",
     "2026-06-03-01-我给Agent做了一套测试框架第一件事不是调模型而是把评测流程拆开.md",
     "2026-06-03-02-我给测试知识库做智能问答时最重要的一步反而不是调用大模型.md",
@@ -276,16 +265,13 @@
     "2026-06-06-架构图别再手搓了这个Claude-Skill把描述直接变成可交付HTML.md",
     "2026-06-06-笔记越写越多却越来越难找这个Obsidian插件让AI替你养Wiki.md",
     "2026-06-07-Karpathy用Claude编程几周后发现真正改变的不是写代码速度而是工程师的工作方式.md",
-    "2026-06-07-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-06-07-描述一句画图-fireworks-tech-graph.md",
     "2026-06-08-我做了三个测试质量小工具最后发现用户根本不想用工具.md",
     "2026-06-09-牛马别再烧Token造平台了真正值钱的是你的工作流.md",
     "2026-06-10-Codebuff & Freebuff：一个把 Agent 编排成团队，一个把 AI 编程价格打到零.md",
     "2026-06-20-小中登的年纪牛马们注意身体吧.md",
-    "2026-06-21-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-06-24-Orca-AI编排器深度解析.md",
     "2026-06-28-ai_locust_framework_article.md",
-    "2026-06-28-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-06-28-我给你的文章灌了杯去味剂.md",
     "2026-07-01-ai-viz-把可视化方法论直接装进AI脑子.md",
     "2026-07-01-当AI编程已经能写几百行代码它能不能帮你画图.md",
@@ -300,20 +286,17 @@
     "2026-07-09-HTML-Anything-Agent-时代-HTML-编辑器.md",
     "2026-07-09-WeWrite-公众号-AI-写作全流程.md",
     "2026-07-09-wechat_conversation_quality_eval_article.md",
-    "2026-07-12-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-07-14-codexU-macOS菜单栏Codex额度监控工具.md",
     "2026-07-17-Codex-Hygiene-一个专治Codex桌面环境混乱的开源工具.md",
     "2026-07-17-中国独立开发者项目列表-一个不断更新的宝藏仓库.md",
     "2026-07-17-从“让 LLM 看 Diff”到工程化 Code Review：一次真实的 OpenCodeReview 平台集成复盘.md",
     "2026-07-18-apk-auto-test-android-performance-stability-testing-tool.md",
-    "2026-07-19-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-07-20-TestZeus-Hercules-开源AI测试Agent.md",
     "2026-07-22-opencodex-Codex-通用-provider-代理.md",
     "2026-07-22-从硬规则到 LLM Judge：如何搭建一套可落地的 AI 客服评测系统.md",
     "2026-07-24-AI-Agent-工程化工作区-从聊天到工程.md",
     "2026-07-24-Agent-Reach-AI-Agent-互联网能力.md",
     "2026-07-24-skill-up-Agent-Skill-评测-CLI-框架.md",
-    "2026-07-26-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-07-27-sanyuan-skills.md",
     "2026-07-28-ai-agent-book.md",
     "2026-07-28-andrej-karpathy-skills.md",
@@ -326,7 +309,6 @@
     "2026-07-31-deepseek-v4-flash-responses-api-codex.md",
     "2026-07-31-openskill-agent-self-evolution-research.md",
     "2026-07-31-skill-up-agent-skill-eval-evolution-tool.md",
-    "2026-08-02-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-08-03-reverse-skill-ai-agent-security-router.md",
     "2026-08-04-pict-test-designer-v2.md",
     "2026-08-05-Eval-Anything-AI评测框架.md",
@@ -336,14 +318,12 @@
     "2026-08-08-agent-governance-换了三个IDE后我不再让Agent靠记忆续命.md",
     "2026-08-08-wecom-eval-客服机器人最难测的不是答错一句话.md",
     "2026-08-09-Codex-Obsidian-外置记忆库.md",
-    "2026-08-09-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-08-14-DeepSeek-Harness-dsh-开箱指南.md",
     "2026-08-15-DSH-vs-Codex-vs-ClaudeCode.md",
     "2026-08-15-DSH-插件开发与Skill迁移.md",
     "2026-08-15-DSH-插件推荐.md",
     "2026-08-15-DeepSeek-Harness-插件化铺设.md",
     "2026-08-15-DeepSeek-Harness-桌面端.md",
-    "2026-08-16-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-08-18-Pi-vs-DSH-上下文压缩同源对比.md",
     "2026-08-18-Pi-vs-DeepSeek-Harness-全方位技术对比.md",
     "2026-08-20-7d-git-commit-规范校验.md",
@@ -360,7 +340,6 @@
     "2026-08-23-CodexResets-一个专门盯Codex重置按钮的网站.md",
     "2026-08-23-PrimeAgent-能自己变强跑不停的CodingAgent.md",
     "2026-08-23-agent-skills-Addy-Osmani的24个生产级技能.md",
-    "2026-08-23-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-08-25-FreeLLMAPI-把几十家免费大模型额度叠成一座池子.md",
     "2026-08-25-Vorssaint-一个菜单栏图标顶掉十二个收费Mac工具.md",
     "2026-08-25-dsh-pentest-AI渗透测试工具有了可追溯的闭环.md",
@@ -376,7 +355,6 @@
     "2026-08-28-CreatorBuddy-从选题到能发的成品-内容创作工具箱.md",
     "2026-08-28-FigEcho-把参考图的视觉风格变成可复用的配方.md",
     "2026-08-29-AI每日简报-agents-radar-十个信源一份日报.md",
-    "2026-08-30-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-08-31-AI决策可审计-semantica-可溯源可推理的知识路径基建.md",
     "2026-09-01-AI评测要能复核的底层-Semantica把可审计变成一张图.md",
     "2026-09-01-Evals是不是新的单元测试-Awesome-Agent-Evals.md",
@@ -407,7 +385,6 @@
     "2026-09-05-agent-device-真机自动化实测.md",
     "2026-09-05-skill-up-Agent-Skill也该有测试.md",
     "2026-09-06-写作风格不是玄学-用28篇自己的文章蒸馏出一份写作DNA.md",
-    "2026-09-06-周报-本周OpenClaw与LLM-Wiki复盘.md",
     "2026-09-08-AI写代码不听话-实测给agent套上需求审批编码流程的skill.md",
     "2026-09-08-给-Agent-记忆跑-梯度下降-backpass-把会话日志变成可审的记忆编辑.md",
     "2026-09-09-Harbor-从任务到奖励的Agent评测.md",
@@ -415,8 +392,7 @@
     "2026-09-10-Harbor-二手车智能客服Agent评测.md",
     "2026-09-10-Locust压测不该止步于CSV-locust-perf-framework.md",
     "2026-09-10-下单接口上线前压测-locust-perf-framework.md",
-    "2026-09-13-周报-本周OpenClaw与LLM-Wiki复盘.md",
-    "2026-09-13-我把地铁里收藏的2000多篇文章编译成了一座LLM-Wiki.md",
+    "2026-09-13-这是一个持续收录、整理和索引优质技术文章的个人学习库，也是一个可本地运行的 LLM Wiki 工作台.md",
     "Claude Code 超时问题排查与解决方案（超详细版）.md",
     "Codex CLI vs  Codex App.md",
     "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
@@ -424,52 +400,7 @@
     "从知识库问答到测试决策系统-2026-06-10.md",
     "建群-把openclaw & hermes agent 拉进来, 开聊 !.md",
     "我认真拆了一个 Awesome Skills 仓库，发现 AI Agent 真正的门槛已经不是模型了.md",
-    "真登一下，真受不了，小中登的年纪，牛马们注意身体吧.md",
-    "2025-10-云南自驾.md",
-    "AI-project-prod-test-plan.md",
-    "Github-PicGo-jsDelivr.md",
-    "amy-birthday-0921.md",
-    "daily-notes-0901.md",
-    "domain-name-update.md",
-    "ganan-journey-2025-7.md",
-    "ghostty-config.md",
-    "llm-eval-chatbi-test-design.md",
-    "llm-eval-metrics.md",
-    "rag-faiss-llm实现的知识检索总结输出.md",
-    "working-day-flow.md",
-    "xmylog-new-online.md",
-    "虎跳峡徒步-10-2.md",
-    "40.01-Weekly/2026-04-12-周复盘.md",
-    "40.01-Weekly/2026-04-13-周复盘.md",
-    "40.01-Weekly/2026-04-18-周复盘.md",
-    "40.01-Weekly/2026-04-21-周复盘.md",
-    "40.01-Weekly/2026-04-25-周复盘.md",
-    "40.01-Weekly/2026-05-02-周复盘.md",
-    "40.01-Weekly/2026-05-03-周复盘.md",
-    "40.01-Weekly/2026-05-04-周复盘.md",
-    "40.01-Weekly/2026-05-14-周复盘.md",
-    "40.01-Weekly/2026-05-24-周复盘.md",
-    "40.01-Weekly/2026-05-25-周复盘.md",
-    "40.01-Weekly/2026-05-31-周复盘.md",
-    "40.01-Weekly/2026-06-07-周复盘.md",
-    "40.01-Weekly/2026-06-21-周复盘.md",
-    "40.01-Weekly/2026-06-28-周复盘.md",
-    "40.01-Weekly/2026-07-12-周复盘.md",
-    "40.01-Weekly/2026-07-19-周复盘.md",
-    "40.01-Weekly/2026-07-26-周复盘.md",
-    "40.01-Weekly/2026-08-02-周复盘.md",
-    "40.01-Weekly/2026-08-09-周复盘.md",
-    "40.01-Weekly/2026-08-16-周复盘.md",
-    "40.01-Weekly/2026-08-23-周复盘.md",
-    "40.01-Weekly/2026-08-30-周复盘.md",
-    "40.01-Weekly/2026-09-06-周复盘.md",
-    "40.01-Weekly/2026-09-13-周复盘.md",
-    "40.02-Monthly/2026-复盘总结-1月.md",
-    "40.02-Monthly/2026-复盘总结-2月.md",
-    "40.02-Monthly/2026-复盘总结-4月.md",
-    "40.02-Monthly/2026-复盘总结-6月.md",
-    "40.04-Annual/2025年终总结.md",
-    "40.04-Annual/2025年终总结_mermaid.md"
+    "真登一下，真受不了，小中登的年纪，牛马们注意身体吧.md"
   ],
   "skipped": [],
   "warnings": [
@@ -710,38 +641,6 @@
       "message": "缺失图片已替换为提示：./2026-02-17-cover.svg"
     },
     {
-      "file": "2026-04-13-每日-Tech-Digest-复盘（2026-03-06）.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-04-13-每日-Tech-Digest-复盘（2026-03-06）.md",
-      "message": "缺失图片已替换为提示：./2026-03-06-cover.svg"
-    },
-    {
-      "file": "2026-04-13-每日-Tech-Digest-复盘（2026-03-07）.md",
-      "message": "缺失图片已替换为提示：./2026-03-07-cover.svg"
-    },
-    {
-      "file": "2026-04-13-每日-Tech-Digest-复盘（2026-03-08）.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-04-13-每日-Tech-Digest-复盘（2026-03-08）.md",
-      "message": "缺失图片已替换为提示：./2026-03-08-cover.svg"
-    },
-    {
-      "file": "2026-04-13-每日-Tech-Digest-复盘（2026-03-09）.md",
-      "message": "缺失图片已替换为提示：./2026-03-09-cover.svg"
-    },
-    {
-      "file": "2026-04-13-每日-Tech-Digest-复盘（2026-03-10）.md",
-      "message": "缺失图片已替换为提示：./2026-03-10-cover.svg"
-    },
-    {
-      "file": "2026-04-13-每日-Tech-Digest-复盘（2026-03-11）.md",
-      "message": "缺失图片已替换为提示：./2026-03-11-cover.svg"
-    },
-    {
       "file": "2026-04-13-用-OpenClaw-管理-Obsidian：让吃灰知识库重新运转.md",
       "message": "已脱敏本机路径、附件引用或敏感令牌"
     },
@@ -866,67 +765,7 @@
       "message": "缺失图片已替换为提示：file:///Attachment.tiff"
     },
     {
-      "file": "2026-05-25-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-05-31-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-06-07-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-06-21-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-06-28-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-07-12-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-07-19-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-07-26-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-08-02-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-08-09-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-08-16-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-08-23-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-08-30-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
       "file": "2026-09-05-agent-device-真机自动化实测.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-09-06-周报-本周OpenClaw与LLM-Wiki复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-09-13-周报-本周OpenClaw与LLM-Wiki复盘.md",
       "message": "已脱敏本机路径、附件引用或敏感令牌"
     },
     {
@@ -936,514 +775,6 @@
     {
       "file": "建群-把openclaw & hermes agent 拉进来, 开聊 !.md",
       "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "ghostty-config.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-04-21-周复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-04-25-周复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-05-02-周复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-05-03-周复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-05-04-周复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-05-24-周复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-05-25-周复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-06-07-周复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-07-12-周复盘.md",
-      "message": "已脱敏本机路径、附件引用或敏感令牌"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/image-20260308133608764-2948172.png"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/image-20260308133631586-2948194.png"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/image-20260308135339454-2949222.png"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/image-20260308135831682-2949514.png"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/image-20260308135905941.png"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/034792c3283bf646e5bc8652b5a4cadf.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/41f396b889ad23d50e2308f02ab85486.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/f6673df7119c92fc76a493e7985b64ad.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/image-20260308140107523-2949670.png"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/4c78308dd5f77f78c5930f40880a6a7e.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/972ef58b72611fd4ef1b248827c80c9b.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/53ebc04858ab4719afece71b934747a0.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/4367233b21f0221379e314415a9082e2.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/abc9cc7df24e1675d6d943a1702b8f29.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/53b4b35403536fd1e792048f4132039d.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/c4574615142466f8db97d25d261c5129.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/5b968f60244620b12092aa7c4762db29.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/0c04238cfedd7036c37fda35adcccff6.jpg"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/image-20260308140703026-2950025.png"
-    },
-    {
-      "file": "2026-复盘总结-2月.md",
-      "message": "缺失图片已替换为提示：./2026-%E5%A4%8D%E7%9B%98%E6%80%BB%E7%BB%93-2%E6%9C%88.assets/image-20260308140724709-2950047.png"
-    },
-    {
-      "file": "2025年终总结.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251221083955_1625_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251229174818234-7001701.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251229180126414-7002489.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251229180216969-7002538.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251229101223242-6974364.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220105039240.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220105012409.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220104912892.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220105107454.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220105242169.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220105338046.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251229102134704-6974898.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251229102328446-6975011.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220105642256.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220105819431.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/78644bb5f442e825d366f3696363d8dd.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220105945246.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220150913621.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220152611980.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220110344095.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_103227_483.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220110931745.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220111008552.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251229103521625-6975724.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20250727141105132.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220111558113.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/63251753193597_.pic.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220111707889.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/62171752675734_.pic.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220111816361.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/62131752675374_.pic.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251220132128_1612_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_104640_761.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_104742_763.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220131750097.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_104753_176.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_104759_218.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_104803_617.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_104809_357.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251220132157_1619_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251221083955_1625_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251221083952_1624_34-6976766.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220133101737.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_105456_753.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_105503_089.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_105518_331.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_105522_117.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/63801753193860_.pic-6977138.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220133401375.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251221095437644.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220133640370.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220133743532.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220133914485.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220134043144.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%2525E5%2525BE%2525AE%2525E4%2525BF%2525A1%2525E5%25259B%2525BE%2525E7%252589%252587_20251008124107_3447_104.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%25E5%25BE%25AE%25E4%25BF%25A1%25E5%259B%25BE%25E7%2589%2587_20251008124130_3451_104.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220133839761.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%25E5%25BE%25AE%25E4%25BF%25A1%25E5%259B%25BE%25E7%2589%2587_20251008200902_3457_104.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220134327849.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220134552568.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%25E5%25BE%25AE%25E4%25BF%25A1%25E5%259B%25BE%25E7%2589%2587_20251007225010_3380_104_compressed.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220140057343.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220140123875.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220140210521.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220134522397.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220134625993.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220135203736.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220140426697.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220140516833.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220140544359.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251221105653394.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220140644249.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251220140657740.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251229154156516-6994118-6994122.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/0ae4ab98daf7380f9386b5e90b13aef4.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/757da32ea0a50fd95ec55455a20c6c82.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/72394db8ffbcf2d80025d0062d8d2c02.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/1cb92a14f23211dab523256478f0261f.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251220104212_1607_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251220103645_1595_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251221111419870.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251221115200_1631_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251221190402_1632_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：../../../Downloads/2025-05-24%20142831.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251221192021_1639_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251221192017_1638_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251221140802183.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251229174603932-7001566.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251221205046713.png"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_105421_904.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251220111113_1609_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_110724_915.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_110923_598.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251220132134_1613_34.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_111018_912.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-12-29_110716_784-7001275.jpg"
-    },
-    {
-      "file": "2025年终总结_mermaid.md",
-      "message": "缺失图片已替换为提示：./2025%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.assets/image-20251229172221847-7000143.png"
     }
   ],
   "errors": [],
