@@ -19,6 +19,28 @@ const tagDefinitions = [
   { slug: 'life-travel', name: '生活与旅行', pattern: /旅行|徒步|云南|生日|日常|随感|生活|电影|音乐|跑步/i },
 ] as const;
 
+const detailTagDefinitions = [
+  { slug: 'detail-openclaw', name: 'OpenClaw', pattern: /openclaw/i },
+  { slug: 'detail-codex', name: 'Codex', pattern: /codex/i },
+  { slug: 'detail-claude-code', name: 'Claude Code', pattern: /claude\s*code/i },
+  { slug: 'detail-skills', name: 'Skills', pattern: /skill/i },
+  { slug: 'detail-agent', name: 'Agent', pattern: /agent|智能体/i },
+  { slug: 'detail-llm', name: 'LLM', pattern: /llm|大模型/i },
+  { slug: 'detail-rag', name: 'RAG', pattern: /rag|检索增强/i },
+  { slug: 'detail-mcp', name: 'MCP', pattern: /mcp/i },
+  { slug: 'detail-testing', name: '测试', pattern: /测试|test/i },
+  { slug: 'detail-evaluation', name: '模型评测', pattern: /评测|eval/i },
+  { slug: 'detail-performance', name: '性能测试', pattern: /压测|性能|locust/i },
+  { slug: 'detail-automation', name: '自动化', pattern: /自动化/i },
+  { slug: 'detail-knowledge-base', name: '知识库', pattern: /知识库|wiki/i },
+  { slug: 'detail-obsidian', name: 'Obsidian', pattern: /obsidian/i },
+  { slug: 'detail-writing', name: '写作', pattern: /写作|公众号|文章/i },
+  { slug: 'detail-github', name: 'GitHub', pattern: /github/i },
+  { slug: 'detail-python', name: 'Python', pattern: /python/i },
+  { slug: 'detail-review', name: '复盘', pattern: /复盘|review/i },
+  { slug: 'detail-travel', name: '旅行', pattern: /旅行|徒步|自驾|云南/i },
+] as const;
+
 export async function getArticles() {
   const articles = await getCollection('articles');
   return articles.sort((a, b) => (b.data.created?.getTime() ?? 0) - (a.data.created?.getTime() ?? 0));
@@ -37,4 +59,10 @@ export function articleTopics(article: Article) {
 export function topicArticles(articles: Article[], slug: string) { return articles.filter((article) => articleTopics(article).some((topic) => topic.slug === slug)); }
 export function articleTags(article: Article) { return tagDefinitions.filter((tag) => tag.pattern.test(articleTagText(article))); }
 export function getTags(articles: Article[]) { return tagDefinitions.map((tag) => ({ ...tag, count: articles.filter((article) => articleTags(article).some((item) => item.slug === tag.slug)).length })).filter((tag) => tag.count > 0); }
-export function tagArticles(articles: Article[], slug: string) { return articles.filter((article) => articleTags(article).some((tag) => tag.slug === slug)); }
+export function articleDetailTags(article: Article) { return detailTagDefinitions.filter((tag) => tag.pattern.test(articleTagText(article))); }
+export function getTagCloud(articles: Article[]) { return detailTagDefinitions.map((tag) => ({ ...tag, count: articles.filter((article) => articleDetailTags(article).some((item) => item.slug === tag.slug)).length })).filter((tag) => tag.count >= 2).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh-CN')); }
+export function getAllTags(articles: Article[]) { return [...getTags(articles), ...getTagCloud(articles)]; }
+export function tagArticles(articles: Article[], slug: string) {
+  const tag = [...tagDefinitions, ...detailTagDefinitions].find((item) => item.slug === slug);
+  return tag ? articles.filter((article) => tag.pattern.test(articleTagText(article))) : [];
+}

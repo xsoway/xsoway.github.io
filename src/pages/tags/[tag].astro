@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
-import { getArticles, getTags, tagArticles } from '../../lib/articles';
+import { getAllTags, getArticles, tagArticles } from '../../lib/articles';
 
 export async function getStaticPaths() {
   const articles = await getArticles();
-  return getTags(articles).map((tag) => ({ params: { tag: tag.slug }, props: { tag } }));
+  return getAllTags(articles).map((tag) => ({ params: { tag: tag.slug }, props: { tag } }));
 }
 
 const { tag } = Astro.props;
