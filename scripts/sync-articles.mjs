@@ -147,7 +147,7 @@ export async function syncArticles() {
   await mkdir(assetsDir, { recursive: true });
   for (const article of candidates) {
     try {
-      let text = normalizeFrontmatter(article.text, article.file, true, article.source === defaultSource);
+      let text = normalizeFrontmatter(article.text, article.file, true);
       for (const [pattern, replacement] of redactions) {
         const next = text.replace(pattern, replacement);
         if (next !== text) report.warnings.push({ file: path.basename(article.file), message: '已脱敏本机路径、附件引用或敏感令牌' });

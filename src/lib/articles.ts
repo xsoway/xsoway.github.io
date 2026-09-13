@@ -60,9 +60,25 @@ export function topicArticles(articles: Article[], slug: string) { return articl
 export function articleTags(article: Article) { return tagDefinitions.filter((tag) => tag.pattern.test(articleTagText(article))); }
 export function getTags(articles: Article[]) { return tagDefinitions.map((tag) => ({ ...tag, count: articles.filter((article) => articleTags(article).some((item) => item.slug === tag.slug)).length })).filter((tag) => tag.count > 0); }
 export function articleDetailTags(article: Article) { return detailTagDefinitions.filter((tag) => tag.pattern.test(articleTagText(article))); }
-export function getTagCloud(articles: Article[]) { return detailTagDefinitions.map((tag) => ({ ...tag, count: articles.filter((article) => articleDetailTags(article).some((item) => item.slug === tag.slug)).length })).filter((tag) => tag.count >= 2).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh-CN')); }
+function tagSlug(name: string) { return `raw-${name.trim().toLocaleLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/gi, '-').replace(/^-+|-+$/g, '')}`; }
+export function getTagCloud(articles: Article[]) {
+  const tags = new Map<string, { name: string; count: number }>();
+  for (const article of articles) for (const value of article.data.tags ?? []) {
+    const name = value.trim();
+    if (!name) continue;
+    const key = name.toLocaleLowerCase();
+    const tag = tags.get(key) ?? { name, count: 0 };
+    tag.count++;
+    tags.set(key, tag);
+  }
+  return [...tags.values()]
+    .filter((tag) => tag.count >= 2 && [...tag.name].length <= 24)
+    .map((tag) => ({ ...tag, slug: tagSlug(tag.name) }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh-CN'));
+}
 export function getAllTags(articles: Article[]) { return [...getTags(articles), ...getTagCloud(articles)]; }
 export function tagArticles(articles: Article[], slug: string) {
+  if (slug.startsWith('raw-')) return articles.filter((article) => (article.data.tags ?? []).some((tag) => tagSlug(tag) === slug));
   const tag = [...tagDefinitions, ...detailTagDefinitions].find((item) => item.slug === slug);
   return tag ? articles.filter((article) => tag.pattern.test(articleTagText(article))) : [];
 }
