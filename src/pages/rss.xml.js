@@ -1,0 +1,2 @@
+import rss from '@astrojs/rss'; import { getArticles, articleTitle, articleUrl } from '../lib/articles';
+export async function GET(context){const articles=await getArticles();return rss({title:'Alan Hsu',description:'AI、测试工程与知识工具的实践笔记。',site:context.site,items:articles.map(article=>({title:articleTitle(article),pubDate:article.data.created,description:article.data.description,link:articleUrl(article.id)}))});}

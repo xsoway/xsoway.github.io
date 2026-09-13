@@ -1,0 +1,6 @@
+---
+import { articleDate, articleTitle, articleUrl } from '../lib/articles';
+const { article } = Astro.props;
+---
+<article><p>{articleDate(article)} {article.data.category && `· ${article.data.category}`}</p><h2><a href={articleUrl(article.id)}>{articleTitle(article)}</a></h2>{article.data.description && <div>{article.data.description}</div>}{article.data.tags?.length ? <small>{article.data.tags.slice(0,5).join(' · ')}</small> : null}</article>
+<style>article{padding:1.35rem 0;border-bottom:1px solid var(--line)}p,small{color:var(--muted);font-size:.85rem}p{margin:0 0 .25rem}h2{margin:0;font-size:1.2rem;line-height:1.45}small{display:block;margin-top:.7rem}</style>
