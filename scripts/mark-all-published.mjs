@@ -1,7 +1,7 @@
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
-const source = '/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles';
+const source = path.resolve(process.env.ARTICLE_SOURCE ?? '/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles');
 let changed = 0;
 let unchanged = 0;
 
