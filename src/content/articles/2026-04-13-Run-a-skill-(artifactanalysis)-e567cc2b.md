@@ -1,6 +1,8 @@
 ---
 title: "这个 GitHub 项目，把产品经理的方法论直接喂给 AI 了"
-created: "2026-04-13"
+created: "2026-04-11"
+tags: ["KnowledgeBase","GitHub","ProductManagement","AI","Skills","WeChatArticle","Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 昨晚刷 GitHub 的时候，我又看到一个看起来像“提示词大礼包”的仓库。

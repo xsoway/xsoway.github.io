@@ -1,6 +1,8 @@
 ---
 title: "每天烧上千美金的 AI Coding SOP（自用版）"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片

@@ -1,6 +1,8 @@
 ---
 title: "Codex Hygiene：一个专治 Codex 桌面环境混乱的开源工具"
 created: "2026-07-17"
+tags: ["KnowledgeBase","Codex","Hygiene","开源项目","AI","LLM","效率工具"]
+category: "技术分享"
 published: true
 ---
 

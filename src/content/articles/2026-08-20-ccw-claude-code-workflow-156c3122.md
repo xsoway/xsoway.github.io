@@ -1,6 +1,8 @@
 ---
 title: "JSON 驱动的多智能体框架：这个开源项目用 37 个 Skill 把 Claude Code 变成了一个开发团队"
 created: "2026-08-20"
+tags: ["Claude Code","AI","多智能体","工作流","开源工具","编排","开发框架"]
+category: "技术分享"
 published: true
 ---
 

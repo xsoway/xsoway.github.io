@@ -1,6 +1,8 @@
 ---
 title: "Agentic Engineering Patterns（Simon Willison）：写代码变便宜后，工程师该怎么活"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片

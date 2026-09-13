@@ -1,6 +1,8 @@
 ---
 title: "Alan-Workspace LLM Wiki 完整体系 v2.0 升级说明"
 created: "2026-04-14"
+tags: ["KnowledgeBase","LLMWiki","OpenClaw","Obsidian","KnowledgeManagement","PersonalOps","WikiCompiler"]
+category: "Articles"
 published: true
 ---
 
@@ -410,23 +412,6 @@ flowchart TD
 
 ---
 
-## References
-- Obsidian-Brain-OS 总览
-- LLM Wiki
-- [LLM Wiki 完整体系搭建与功能介绍](/articles/2026-04-13-Alan-Workspace-LLM-Wiki-%E5%AE%8C%E6%95%B4%E4%BD%93%E7%B3%BB%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D-df4e0532/)
-- [LLM Wiki 专业 Wiki 编译器优化方案](/articles/2026-04-13-Alan-Workspace-LLM-Wiki-%E4%B8%93%E4%B8%9AWiki%E7%BC%96%E8%AF%91%E5%99%A8%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-d6c3d227/)
-- [LLM Wiki 改造优化方案](/articles/2026-04-13-Alan-Workspace-LLM-Wiki-%E6%94%B9%E9%80%A0%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88-f4e53b93/)
-
----
-
-## 爆款标题备选
-
-1. 《Alan-Workspace LLM Wiki v2.0 完全指南：从 0 到 1 搭建你的个人知识管理体系》
-2. 《增量编译 + cron 定时 + Inbox 智能处理：LLM Wiki v2.0 升级说明》
-3. 《放弃 launchd，拥抱 cron：我的 LLM Wiki 定时任务改造之路》
-4. 《从 Raw 到 Wiki：专业 Wiki 编译器的分阶段实现方案》
-5. 《LLM Wiki v2.0 实战：三层知识架构 + Daily Brief + 扩展 Lint》
-
-## 推荐标签
+## 
 
 `#KnowledgeBase` `#LLMWiki` `#OpenClaw` `#Obsidian` `#KnowledgeManagement` `#PersonalOps` `#WikiCompiler` `#个人知识管理` `#AI助手` `#效率工具`

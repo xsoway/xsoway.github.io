@@ -1,6 +1,8 @@
 ---
 title: "AI 回答复杂问题总在敷衍？这项目让 Agent 像大师一样五重审视"
 created: "2026-07-09"
+tags: ["KnowledgeBase","思维框架","全面思考","ComprehensiveThinking","Agent","工具推荐"]
+category: "工具推荐"
 published: true
 ---
 

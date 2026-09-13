@@ -1,6 +1,8 @@
 ---
 title: "一文讲透 OpenClaw：到底该用 Multi-Agent，还是主 Agent + Sub-Agent？"
-created: "2026-04-13"
+created: "2026-04-03"
+tags: ["KnowledgeBase","OpenClaw","Agent","MultiAgent","SubAgent","Routing","Orchestration","Draft"]
+category: "Articles"
 published: true
 ---
 ## 先给结论

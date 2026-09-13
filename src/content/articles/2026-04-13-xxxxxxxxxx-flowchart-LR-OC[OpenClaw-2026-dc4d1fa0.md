@@ -1,6 +1,8 @@
 ---
 title: "xxxxxxxxxx flowchart LR  OC[OpenClaw 2026"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 ```mermaid

@@ -1,6 +1,8 @@
 ---
 title: "即时通讯群里让 OpenClaw 和 Hermes 互相对话的配置手册"
 created: "2026-04-18"
+tags: ["KnowledgeBase","OpenClaw","Hermes","MultiAgent","EngineeringPractice","Documentation"]
+category: "Articles"
 published: true
 ---
 
@@ -488,14 +490,6 @@ openclaw gateway restart
 - 群里明确约定点名方式
 - 把“谁会被普通群消息触发”这件事单独设计清楚
 
-## 爆款标题备选
-
-1. 即时通讯群里同时接入 OpenClaw 和 Hermes，这套双 Agent 配置我是怎么跑通的
-2. 如何让 OpenClaw 和 Hermes 在同一个群里互相对话
-3. OpenClaw + Hermes 双 Bot 实战：一个群里的多 Agent 配置手册
-4. 别再把 Hermes 硬塞进 OpenClaw 了，双 Bot 协作的正确姿势
-5. 从 bot token 到 groupPolicy，OpenClaw 和 Hermes 同群对话的完整排坑指南
-
-## 推荐标签
+## 
 
 `#OpenClaw` `#Hermes` `#即时通讯机器人` `#MultiAgent` `#EngineeringPractice` `#Documentation` `#AI自动化` `#配置手册`

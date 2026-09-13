@@ -1,6 +1,8 @@
 ---
 title: "这玩意把 AI 代码审查从‘全仓乱扫’拉回了‘精准点名’：code-review-graph 读后实测感"
 created: "2026-04-18"
+tags: ["KnowledgeBase","GitHub","AI编程","CodeReview","MCP"]
+category: "- Notes"
 published: true
 ---
 

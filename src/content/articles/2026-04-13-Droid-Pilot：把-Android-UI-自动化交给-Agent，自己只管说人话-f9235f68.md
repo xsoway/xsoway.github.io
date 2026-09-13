@@ -1,6 +1,8 @@
 ---
 title: "Droid Pilot：把 Android UI 自动化交给 Agent，自己只管说人话"
-created: "2026-04-13"
+created: "2026-04-05"
+tags: ["Android","UIAutomation","Agent","ClaudeCode","Testing","uiautomator2","pytest","Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # Droid Pilot：把 Android UI 自动化交给 Agent，自己只管说人话
@@ -164,5 +166,6 @@ Droid Pilot 的优点是它把“先建体系”这件事前置到探索阶段�
 
 说说你选哪个，以及你们项目里最难自动化的那一段 UI 是啥。
 
-## 推荐标签
+
+
 #Android #UI自动化 #ClaudeCode #Agent #测试工程 #uiautomator2 #pytest #PageObject #自动化测试 #测试报告

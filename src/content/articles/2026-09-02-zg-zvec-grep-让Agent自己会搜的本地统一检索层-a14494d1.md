@@ -1,6 +1,8 @@
 ---
 title: "zg（zvec-grep）：让 Agent 自己会搜代码库的本地统一检索层"
 created: "2026-09-02"
+tags: ["AI","Agent","检索","BM25","向量检索","本地优先","RAG","开源","测试","评测"]
+category: "技术分享"
 published: true
 ---
 

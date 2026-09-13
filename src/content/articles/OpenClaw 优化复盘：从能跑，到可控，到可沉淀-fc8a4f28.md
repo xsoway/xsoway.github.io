@@ -1,5 +1,8 @@
 ---
 title: "OpenClaw 优化复盘：从能跑，到可控，到可沉淀"
+created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # OpenClaw 优化复盘：从能跑，到可控，到可沉淀

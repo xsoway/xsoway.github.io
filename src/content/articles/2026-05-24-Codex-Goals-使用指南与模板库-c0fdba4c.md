@@ -1,6 +1,8 @@
 ---
 title: "Codex Goals：把“继续做下去”变成一份可验收的 /goal（附模板库）"
 created: "2026-05-24"
+tags: ["KnowledgeBase","Codex","Goals","Agent","Workflow","Template","Testing"]
+category: "Articles"
 published: true
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: "你有 60 个 Agent Skill 却还在手改？Karpathy 那套训练思路，被搬来优化 Skill 了"
 created: "2026-08-25"
+tags: ["KnowledgeBase","Agent","SKILL格式","AI工程","自动化","提示词优化","开源项目"]
+category: "技术分享"
 published: true
 ---
 

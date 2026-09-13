@@ -1,6 +1,8 @@
 ---
 title: "Karpathy 用 Claude 编程几周后发现，真正改变的不是写代码速度，而是工程师的工作方式"
 created: "2026-06-07"
+tags: ["KnowledgeBase","WeChat","ClaudeCode","Codex","AICoding","Agent","SoftwareEngineering"]
+category: "公众号文章"
 published: true
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: "没有黄金集，怎么测试大模型抽出来的 JSON？"
 created: "2026-08-25"
+tags: ["LLM测试","结构化抽取","差分测试","LLMJudge","Python","pytest","测试方案"]
+category: "技术分享"
 published: true
 ---
 

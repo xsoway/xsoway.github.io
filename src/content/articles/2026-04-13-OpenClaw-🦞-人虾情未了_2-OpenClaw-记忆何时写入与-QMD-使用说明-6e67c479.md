@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw 🦞 人虾情未了_2: OpenClaw 记忆何时写入与 QMD 使用说明"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 ---

@@ -1,6 +1,8 @@
 ---
 title: "YC Vibe Coding 实战手册：别让 AI 写嗨了"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片
@@ -354,27 +356,6 @@ Tests:
 
 ---
 
-## 封面3要点
-- 写代码不如控熵
-- 小步提交保命
-- E2E 当守门员
 
-## 封面素材
-- punchline: 别让模型写嗨了
-- tags: VibeCoding/AI编程/Git测试
-- layout: auto
 
-## 爆款标题备选（任选其一）
-1. AI 编程最怕的不是写错，是写嗨：YC 这套控熵法太顶
-2. 别让 Cursor 一路狂奔：Vibe Coding 的正确打开方式
-3. 用 AI 写代码的人，最后都得学会这件事：干净的 Git
-4. 单测救不了 Vibe Coding：为什么 YC 更推 E2E
-5. 规划文档 + 打勾提交：把 AI 当队友管起来
-6. 模型开始胡说八道怎么办？最省时间的处理方式其实很暴力
-7. 老框架为什么更适合 AI？答案一点都不浪漫
-8. Vibe Coding 实操清单：照着做，少走一大半弯路
-9. AI 负责出分力，你负责出脑子：YC 工作流拆解
-10. 不是写代码，是管理风险：Vibe Coding 的真实含义
-
-#标签
 #VibeCoding #AI编程 #Cursor #Windsurf #Claude #Git #E2E测试 #工程效率

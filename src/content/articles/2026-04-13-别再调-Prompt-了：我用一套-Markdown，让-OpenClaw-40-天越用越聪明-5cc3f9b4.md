@@ -1,6 +1,8 @@
 ---
 title: "别再调 Prompt 了：我用一套 Markdown，让 OpenClaw 40 天越用越聪明"
-created: "2026-04-13"
+created: "2026-04-06"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # 别再调 Prompt 了：我用一套 Markdown，让 OpenClaw 40 天越用越聪明

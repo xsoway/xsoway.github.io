@@ -1,6 +1,8 @@
 ---
 title: "给 Claude Code 加两个 Agent Skill：装好 agent-skills，让它画架构图、自己造技能"
 created: "2026-09-04"
+tags: ["KnowledgeBase","ClaudeCode","AgentSkills","插件市场","Drawio"]
+category: "AI-Agent"
 published: true
 ---
 

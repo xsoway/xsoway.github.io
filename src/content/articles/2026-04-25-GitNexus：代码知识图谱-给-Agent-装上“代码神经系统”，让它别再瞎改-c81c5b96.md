@@ -1,6 +1,8 @@
 ---
 title: "GitNexus：代码知识图谱-给 Agent 装上“代码神经系统”，让它别再瞎改"
-created: "2026-04-25"
+created: "2026-04-13"
+tags: ["Inbox","OpenClaw","Agent","Code","Git","Memory","Project","Review","Testing","看不全","给 agent 补一个“代码神经系统”"]
+category: "Notes"
 published: true
 ---
 > 图片资源未同步：未命名图片

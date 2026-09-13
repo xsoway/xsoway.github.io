@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw × Obsidian 知识库搭建与运行机制实战"
-created: "2026-04-13"
+created: "2026-03-25"
+tags: ["KnowledgeBase","OpenClaw","Obsidian","QMD","Automation","Cron","ModelRouting","ContextPruning","Draft"]
+category: "Articles"
 published: true
 ---
 # OpenClaw × Obsidian 知识库搭建与运行机制实战
@@ -282,16 +284,6 @@ openclaw memory index --force
 
 最终效果是：AI 不再是一次性聊天窗口，而是一个能持续维护你的 Obsidian 知识库的长期助手。
 
----
-
-## 爆款标题备选
-
-1. OpenClaw × Obsidian 实战：把聊天碎片自动“长”成可检索知识库
-2. 从一次性对话到长期记忆：我用 OpenClaw + Obsidian 搭了套智能知识库
-3. OpenClaw 住进 Obsidian：QMD 检索 + Cron 治理 + frontmatter 标准化一条龙
-4. 别再手工整理笔记：OpenClaw + Obsidian + CLI 的工程化落地方案
-5. 一套可持续的 AI 第二大脑：本地优先、可回滚、可知识图谱化
-
-## 推荐标签
+## 
 
 `#OpenClaw` `#Obsidian` `#QMD` `#Automation` `#Cron` `#KnowledgeManagement` `#EngineeringPractice` `#AIAgent` `#SecondBrain`

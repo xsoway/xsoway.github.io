@@ -1,6 +1,8 @@
 ---
 title: "AI 辅助开发半年后，我把自己踩的坑写成了一套工作区框架"
 created: "2026-07-24"
+tags: ["KnowledgeBase","AI","Agent","工程化","工作区","经验分享","测试","DevOps"]
+category: "技术分享"
 published: true
 ---
 

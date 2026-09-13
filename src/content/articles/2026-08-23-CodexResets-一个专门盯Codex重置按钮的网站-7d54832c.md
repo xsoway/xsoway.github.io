@@ -1,6 +1,8 @@
 ---
 title: "Codex 额度没了别慌，有人专门帮你盯着\"重置按钮"
 created: "2026-08-23"
+tags: ["KnowledgeBase","Codex","OpenAI","工具链","开发工具","用量限额"]
+category: "工具链"
 published: true
 ---
 

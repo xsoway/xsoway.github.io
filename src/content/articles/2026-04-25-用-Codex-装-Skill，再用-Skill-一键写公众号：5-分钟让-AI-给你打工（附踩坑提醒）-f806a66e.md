@@ -1,6 +1,8 @@
 ---
-title: "用 Codex 装 Skill，再用 Skill 一键写公众号：5 分钟让 AI 给你打工（附踩坑提醒）"
+title: "**用 Codex 装 Skill，再用 Skill 一键写公众号：5 分钟让 AI 给你打工（附踩坑提醒）**"
 created: "2026-04-25"
+tags: ["1）创建 Skill 文件夹","AI","Article","Code","Project","Prompt","SKILL","Skill","skill-creator","skill-installer","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # **用 Codex 装 Skill，再用 Skill 一键写公众号：5 分钟让 AI 给你打工（附踩坑提醒）**

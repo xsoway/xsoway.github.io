@@ -1,6 +1,8 @@
 ---
 title: "不用再为一套 Agent 框架装一堆依赖：harness9 把「本地优先 + 插件 + 人工兜底」塞进一个 Go 项目"
 created: "2026-08-21"
+tags: ["Agent","开源框架","Go","ReAct","Tool-Calling","Hooks","Human-in-the-Loop","本地优先","工程化","公众号"]
+category: "技术分享"
 published: true
 ---
 

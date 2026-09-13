@@ -1,6 +1,8 @@
 ---
 title: "公众号文章全流程管家：wechat-article-writer 怎么把「选题到发布」串成一条流水线"
 created: "2026-09-04"
+tags: ["KnowledgeBase","公众号运营","AI写作","AgentSkill","内容生产"]
+category: "AI-Agent"
 published: true
 ---
 

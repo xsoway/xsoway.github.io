@@ -1,6 +1,8 @@
 ---
 title: "全局 AGENTS 路由协议"
 created: "2026-04-25"
+tags: ["AI","Agent","Code","Project","Review","Skill","Testing","OpenClaw"]
+category: "Articles"
 published: true
 ---
 全局 AGENTS 路由协议，让 `Superpowers` 与 `gstack` 明确分工，避免双重自动触发、重复接管流程、或相互覆盖默认控制权。

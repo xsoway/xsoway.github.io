@@ -1,6 +1,8 @@
 ---
 title: "AI Agent 拿到 APK 不知道用 jadx 还是 Frida？这个开源项目把逆向/渗透技能打包成了\"路由系统\""
 created: "2026-08-03"
+tags: ["KnowledgeBase","开源项目","AI Agent","逆向工程","渗透测试","安全工具","MCP","Claude Code"]
+category: "技术分享"
 published: true
 ---
 

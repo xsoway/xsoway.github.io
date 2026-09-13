@@ -1,6 +1,8 @@
 ---
 title: "GET SHIT DONE：把 Claude Code 从“会写”变成“靠谱交付”"
-created: "2026-04-13"
+created: "2026-04-05"
+tags: ["KnowledgeBase","AIEngineering","ContextEngineering","SpecDrivenDevelopment","ClaudeCode","OpenCode","GeminiCLI","Codex","Cursor","Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # GET SHIT DONE：把 Claude Code 从“会写”变成“靠谱交付”
@@ -294,5 +296,6 @@ Git 分支策略也能配：none / phase / milestone。
 
 先在一个返工最多的存量项目里装 GSD（建议 local），跑一次 map-codebase，再走一遍 phase 1 的 discuss→plan→execute→verify；观察两件事：返工次数是否下降、上下文成本是否更可控；最后再决定是否开启 auto-advance，以及是否用 yolo 模式。
 
-## 末尾 推荐标签（不少于5个）
+
+
 #GSD #ClaudeCode #上下文工程 #ContextRot #规格驱动开发 #SpecDrivenDevelopment #AI编程 #工程化AI协作 #PlanExecuteVerify #CLI工具

@@ -1,6 +1,8 @@
 ---
 title: "每次开新终端都要重讲一遍上下文？aiflow 这套 100 行内方案把这事治了"
 created: "2026-04-18"
+tags: ["KnowledgeBase","GitHub","AI编程","上下文工程","工作流"]
+category: "- Notes"
 published: true
 ---
 

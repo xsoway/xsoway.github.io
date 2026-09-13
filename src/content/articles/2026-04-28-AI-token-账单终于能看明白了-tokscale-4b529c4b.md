@@ -1,6 +1,8 @@
 ---
 title: "AI token 账单终于能看明白了：这个开源工具把 OpenClaw、Codex、Claude Code 全给你摊平了"
 created: "2026-04-28"
+tags: ["KnowledgeBase","AI","Token","OpenClaw","Codex","ClaudeCode","Cursor","GitHubProject","WeChatArticle"]
+category: "Articles"
 published: true
 ---
 

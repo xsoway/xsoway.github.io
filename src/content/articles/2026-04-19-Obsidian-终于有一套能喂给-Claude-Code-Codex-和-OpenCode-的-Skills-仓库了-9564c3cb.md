@@ -1,6 +1,8 @@
 ---
 title: "Obsidian 终于有一套能喂给 Claude Code、Codex 和 OpenCode 的 Skills 仓库了"
 created: "2026-04-19"
+tags: ["Obsidian","AgentSkills","ClaudeCode","Codex","OpenCode","GitHub","Skills"]
+category: "- Notes"
 published: true
 ---
 

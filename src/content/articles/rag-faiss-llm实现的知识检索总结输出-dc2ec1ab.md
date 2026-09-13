@@ -2,7 +2,8 @@
 title: "rag-faiss-llm实现的知识检索总结输出"
 created: "2025-10-16"
 description: "文本 → 向量化 → 向量检索 → LLM问答 → 输出答案"
-tags: ["RAG","FAISS"]
+tags: ["- RAG"]
+category: "uncategorized"
 published: true
 ---
 

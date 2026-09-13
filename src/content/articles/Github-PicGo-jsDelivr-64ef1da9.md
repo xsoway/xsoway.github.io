@@ -2,7 +2,8 @@
 title: "Github+PicGo+jsDelivr"
 created: "2025-08-02"
 description: "图床搭建 Github+PicGo+jsDelivr"
-tags: ["图床"]
+tags: ["- 图床"]
+category: "uncategorized"
 published: true
 ---
 

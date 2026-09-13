@@ -1,6 +1,8 @@
 ---
 title: "为什么你的 AI Agent 总在“偷偷做事”？Mercury 把先问再做、长期记忆、成本治理做成了底层"
 created: "2026-04-28"
+tags: ["KnowledgeBase","AIAgent","MercuryAgent","CLI","Telegram","SecondBrain"]
+category: "文章"
 published: true
 ---
 

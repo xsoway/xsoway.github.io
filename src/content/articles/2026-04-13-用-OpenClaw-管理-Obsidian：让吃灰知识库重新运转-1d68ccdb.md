@@ -1,6 +1,8 @@
 ---
 title: "用 OpenClaw 管理 Obsidian：让吃灰知识库重新运转"
-created: "2026-04-13"
+created: "2026-04-06"
+tags: ["KnowledgeBase","Obsidian","OpenClaw","Workflow","Agent","Cron","Draft"]
+category: "Articles"
 published: true
 ---
 # 用 OpenClaw 管理 Obsidian：让吃灰知识库重新运转

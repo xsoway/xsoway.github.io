@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw创始人进OpenAI：开源Agent的‘基金会化’，到底是利好还是收口？"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片

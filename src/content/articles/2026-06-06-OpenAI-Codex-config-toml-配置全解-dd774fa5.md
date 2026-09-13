@@ -1,6 +1,8 @@
 ---
 title: "OpenAI Codex config.toml 配置全解 —— 一份可复制的示例配置文件深度解读"
 created: "2026-06-06"
+tags: ["KnowledgeBase","Codex","OpenAI","配置","TOML","AI-Agent","CLI"]
+category: "技术文档"
 published: true
 ---
 
@@ -434,12 +436,6 @@ flowchart TD
 
 ---
 
-## 爆款标题备选
-
-1. **OpenAI Codex config.toml 完全指南：从入门到生产环境**
-2. **一份 config.toml 管住 AI Agent 的安全、模型和体验——Codex 配置深度拆解**
-3. **抄走就能用的 Codex 配置模板：200+ 行 TOML 逐行解读**
-
-## 推荐标签
+## 
 
 `#OpenAI` `#Codex` `#config` `#TOML` `#AI-Agent` `#CLI` `#安全配置` `#MCP` `#沙箱` `#DevTools`

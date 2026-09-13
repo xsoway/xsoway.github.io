@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw 配置文件全解：AGENTS.md / SOUL.md / USER.md / MEMORY.md / TOOLS.md / HEARTBEAT"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 ![](/article-assets/cover/2026-02-08-openclaw-config-files.svg)

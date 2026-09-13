@@ -1,6 +1,8 @@
 ---
 title: "技术的青春期：Dario Amodei 这篇长文把 AI 风险说透了"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片

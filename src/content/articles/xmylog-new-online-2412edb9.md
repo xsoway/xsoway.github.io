@@ -2,8 +2,8 @@
 title: "xmylog_new_online"
 created: "2025-06-28"
 description: "published: true"
-tags: ["hexo","xmylog"]
-category: "随笔感想"
+tags: ["- hexo"]
+category: "- 随笔感想"
 published: true
 ---
 

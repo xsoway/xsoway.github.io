@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw 系列导读：从工作方式重构到测试重新定位"
 created: "2026-04-13"
+tags: ["OpenClaw","AIAgent","Testing","WorkflowDesign","KnowledgeManagement","TechnicalWriting","Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # OpenClaw 系列导读：从工作方式重构到测试重新定位

@@ -1,6 +1,8 @@
 ---
 title: "Compound Engineering —— 让每次工程工作都比上次更容易的 AI Agent 方法论与插件体系"
 created: "2026-06-06"
+tags: ["KnowledgeBase","Compound-Engineering","AI-Agent","Claude-Code","Codex","工程方法论","Skill"]
+category: "技术文档"
 published: true
 ---
 
@@ -225,12 +227,6 @@ Compound Engineering 的核心价值不在于"让 AI 写代码更快"，而在�
 
 ---
 
-## 爆款标题备选
-
-1. **Compound Engineering：Every 公司如何用 37 个 AI Skill 把软件开发变成复利游戏**
-2. **80% 规划 + 20% 执行 —— 一套让 AI Agent 越用越聪明的工程方法论**
-3. **从脑暴到沉淀：拆解 Compound Engineering 的 8 步 AI 开发闭环**
-
-## 推荐标签
+## 
 
 `#CompoundEngineering` `#AI-Agent` `#ClaudeCode` `#Codex` `#工程方法论` `#Skill` `#知识沉淀` `#AI编程` `#代码审查`

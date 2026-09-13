@@ -2,8 +2,8 @@
 title: "working_day_flow"
 created: "2025-09-04"
 description: "人生轨迹(一天的流水), 看看这一天在干啥"
-tags: ["日常","流水账"]
-category: "生活记录"
+tags: ["- 日常"]
+category: "- 生活记录"
 published: true
 ---
 

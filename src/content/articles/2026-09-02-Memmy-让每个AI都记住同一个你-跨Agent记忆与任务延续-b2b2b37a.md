@@ -1,6 +1,8 @@
 ---
 title: "Memmy：让每个 AI 记住同一个你——跨 Agent 的记忆与任务延续"
 created: "2026-09-02"
+tags: ["AI","LLM","agent评测","记忆","跨Agent","知识库","开源","测试","个人AI"]
+category: "技术分享"
 published: true
 ---
 

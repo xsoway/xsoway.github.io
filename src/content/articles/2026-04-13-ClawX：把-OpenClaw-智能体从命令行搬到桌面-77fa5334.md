@@ -1,6 +1,8 @@
 ---
 title: "ClawX：把 OpenClaw 智能体从命令行搬到桌面"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片

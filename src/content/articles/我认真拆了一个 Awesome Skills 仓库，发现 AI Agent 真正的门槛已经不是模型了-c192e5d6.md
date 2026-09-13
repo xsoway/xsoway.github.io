@@ -1,5 +1,8 @@
 ---
 title: "我认真拆了一个 Awesome Skills 仓库，发现 AI Agent 真正的门槛已经不是模型了"
+created: "2026-04-16"
+tags: ["KnowledgeBase","AI","AIAgent","AgentSkill","OpenClaw","PromptEngineering","WorkflowDesign","技术写作","公众号文章"]
+category: "文章"
 published: true
 ---
 

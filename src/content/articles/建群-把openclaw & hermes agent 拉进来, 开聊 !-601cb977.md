@@ -1,5 +1,8 @@
 ---
 title: "Telegram 群里让 OpenClaw 和 Hermes 互相对话的配置手册"
+created: "2026-04-18"
+tags: ["- KnowledgeBase"]
+category: "Articles"
 published: true
 ---
 

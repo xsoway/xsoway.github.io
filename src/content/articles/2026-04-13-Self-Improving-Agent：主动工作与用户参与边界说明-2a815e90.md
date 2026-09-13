@@ -1,6 +1,8 @@
 ---
 title: "Self-Improving Agent：主动工作与用户参与边界说明"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # Self-Improving Agent：主动工作与用户参与边界说明

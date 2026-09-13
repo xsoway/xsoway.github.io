@@ -1,6 +1,8 @@
 ---
 title: "Awesome Skills：为什么 AI Agent 的下一站，不是更大的模型，而是更好的 Skills"
 created: "2026-04-16"
+tags: ["KnowledgeBase","AI","AIAgent","AgentSkill","PromptEngineering","WorkflowDesign","技术写作","公众号文章"]
+category: "文章"
 published: true
 ---
 
@@ -422,14 +424,6 @@ Skills 决定这个上限，能不能变成稳定结果、变成团队资产、�
 
 ---
 
-## 爆款标题备选
-
-1. Awesome Skills：为什么 AI Agent 的下一站，不是更大的模型，而是更好的 Skills
-2. 别只盯着模型升级了，AI Agent 真正的差距正在转向 Skill System
-3. 从 Prompt 到 Skill：AI Agent 为什么需要一套可复用的能力系统
-4. 我看完 awesome-skills 后的判断：未来 AI Agent 拼的是工作流，不只是模型
-5. 同样的大模型，为什么有人能稳定交付，有人只能偶尔灵光一现？
-
-## 推荐标签
+## 
 
 `#AIAgent` `#AgentSkill` `#PromptEngineering` `#WorkflowDesign` `#Automation` `#KnowledgeManagement` `#OpenClaw` `#技术写作`

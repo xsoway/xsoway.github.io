@@ -1,6 +1,8 @@
 ---
 title: "Agent Skills：给 AI 编码加上工程师的流程护栏"
 created: "2026-05-24"
+tags: ["KnowledgeBase","GitHub","AI","Agent","Workflow","Testing","Security"]
+category: "AI/DevWorkflow"
 published: true
 ---
 

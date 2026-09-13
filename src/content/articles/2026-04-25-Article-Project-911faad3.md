@@ -1,6 +1,8 @@
 ---
 title: "Article-Project"
 created: "2026-04-25"
+tags: ["Article","Project","Note","Inbox","OpenClaw"]
+category: "Notes"
 published: true
 ---
 ```

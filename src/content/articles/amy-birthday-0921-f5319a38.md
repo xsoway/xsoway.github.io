@@ -2,7 +2,8 @@
 title: "amy_birthday_0921"
 created: "2025-09-21"
 description: "Amy birthday 0921"
-category: "Amy"
+tags: ["Amy"]
+category: "- - 生活记录"
 published: true
 ---
 

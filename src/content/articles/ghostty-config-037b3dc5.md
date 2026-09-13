@@ -2,8 +2,8 @@
 title: "ghostty终端工具,主题,配置文件设置备份"
 created: "2025-07-30"
 description: "ghostty终端工具,主题,配置文件设置备份"
-tags: ["配置文件"]
-category: "终端工具"
+tags: ["- 配置文件"]
+category: "- - 技术整理"
 published: true
 ---
 

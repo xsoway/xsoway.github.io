@@ -1,6 +1,8 @@
 ---
 title: "Nowledge：把 AI 从'说得比谁都快'，变成'学完真能带走'的那个学习 Agent"
 created: "2026-09-02"
+tags: ["KnowledgeBase","Nowledge","Agent评测","信源判断","学习闭环","知识库","Agent开发"]
+category: "技术文章"
 published: true
 ---
 

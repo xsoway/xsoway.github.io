@@ -1,6 +1,8 @@
 ---
 title: "Agentic Engineering Patterns：写代码变便宜后，最贵的是“看不懂”"
-created: "2026-04-25"
+created: "2026-04-13"
+tags: ["Inbox","OpenClaw","AI","Agent","Code","Note","Project","Prompt","Testing","交付新代码几乎免费，但交付好代码依然昂贵。"]
+category: "Notes"
 published: true
 ---
 > 图片资源未同步：未命名图片

@@ -1,6 +1,8 @@
 ---
 title: "让 Agent 把你的长文、复盘做成一张能看的网页——一个 Skill 就够"
 created: "2026-09-04"
+tags: ["KnowledgeBase","公众号","AgentSkill","网页排版","内容生产","前端","ConardLi"]
+category: "文章"
 published: true
 ---
 

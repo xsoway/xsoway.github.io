@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw 创始人加入 OpenAI：开源 Agent 被“收编”，意味着什么？"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # OpenClaw 创始人加入 OpenAI：开源 Agent 被“收编”，意味着什么？

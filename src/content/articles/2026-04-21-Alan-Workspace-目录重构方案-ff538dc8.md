@@ -1,6 +1,8 @@
 ---
 title: "Alan-Workspace 目录重构方案"
 created: "2026-04-21"
+tags: ["KnowledgeBase","Workspace","Obsidian","OpenClaw","Hermes","InformationArchitecture"]
+category: "项目文档"
 published: true
 ---
 

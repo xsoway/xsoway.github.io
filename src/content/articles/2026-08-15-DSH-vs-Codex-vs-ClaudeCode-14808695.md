@@ -1,6 +1,8 @@
 ---
 title: "都是 Coding Agent 的壳，DeepSeek Harness、OpenAI Codex、Claude Code 到底差在哪"
 created: "2026-08-15"
+tags: ["Articles","DeepSeek","dsh","Codex","ClaudeCode","Agent","开源","对比"]
+category: "Articles"
 published: true
 ---
 

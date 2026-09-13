@@ -1,6 +1,8 @@
 ---
 title: "AI 评测不能只给个分——Semantica 把\"它为啥这么判\"做成可复核的图"
 created: "2026-09-01"
+tags: ["KnowledgeBase","AI","Graph","agent评测","审计","知识图谱","开源","质量"]
+category: "技术分享"
 published: true
 ---
 

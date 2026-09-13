@@ -2,8 +2,8 @@
 title: "模型评测 _意图识别_ 关键指标详解"
 created: "2025-07-25"
 description: "模型评测 意图识别 关键指标详解 -> 准确率,精确率,召回率,F1分数"
-tags: ["LLM_eval","模型评测"]
-category: "模型评测"
+tags: ["- LLM_eval"]
+category: "- - 技术整理"
 published: true
 ---
 

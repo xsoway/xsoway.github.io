@@ -1,6 +1,8 @@
 ---
 title: "周报 - 2026-W22"
 created: "2026-05-31"
+tags: ["KnowledgeBase","WeeklyReview","OpenClaw","LLM-Wiki","Obsidian","Wechat"]
+category: "WeeklyReview"
 published: true
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: "CUA —— 计算机使用 Agent 平台解读及 UI/Android 自动化测试落地实践"
 created: "2026-06-06"
+tags: ["KnowledgeBase","CUA","Computer-Use","UI-Automation","Android-Testing","Agent","Sandbox"]
+category: "技术文档"
 published: true
 ---
 
@@ -347,6 +349,6 @@ CUA 不是一个单纯的"AI 操作电脑"玩具项目，它的组件矩阵切�
 
 [GitHub - trycua/cua: Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows). · GitHub](https://github.com/trycua/cua)
 
-## 推荐标签
+## 
 
 `#CUA` `#ComputerUse` `#UI自动化` `#Android测试` `#AI-Agent` `#沙箱` `#视觉测试` `#Appium` `#测试平台`

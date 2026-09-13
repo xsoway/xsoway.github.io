@@ -1,6 +1,8 @@
 ---
-title: "OpenCode？Oh My OpenCode!!!"
+title: "**OpenCode？Oh My OpenCode!!!**"
 created: "2026-04-25"
+tags: ["1）告别上下文焦虑","1）安装 OpenCode","1）开源免费：白嫖不是目的，安全感才是","1）快速入门","2）不站队：它不逼你信仰充值","2）像人类一样思考和工作","2）实战案例","2）配置 API Key（让它真的能干活）","3）无缝集成与扩展","3）终端原生：给命令行党留点尊严","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # **OpenCode？Oh My OpenCode!!!**

@@ -1,6 +1,8 @@
 ---
 title: "知识库全靠手动整理？sage-wiki 让 LLM 帮你把文档编译成 wiki"
 created: "2026-05-07"
+tags: ["- KnowledgeBase"]
+category: "- Articles"
 published: true
 ---
 

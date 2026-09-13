@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw Active Memory 主动记忆使用指南"
 created: "2026-04-14"
+tags: ["KnowledgeBase","OpenClaw","ActiveMemory","AI助手","记忆系统","技术教程"]
+category: "技术教程"
 published: true
 ---
 
@@ -105,7 +107,7 @@ Active Memory 使用两个门控：
 2. **严格的运行时资格**
    - 即使启用和定向，主动记忆只在符合条件的交互式持久化聊天会话中运行
 
-实际规则：
+   实际规则：
 ```
 插件已启用
 +
@@ -486,14 +488,6 @@ Active Memory 特别适合：
 
 ---
 
-## 爆款标题备选
-
-1. 《OpenClaw 2026.4.12 新特性：Active Memory 主动记忆完全指南》
-2. 《让 AI 自然记起你：OpenClaw Active Memory 使用实战》
-3. 《从被动到主动：OpenClaw 记忆系统的重大升级》
-4. 《不用再说"记住这个"：Active Memory 一键配置指南》
-5. 《OpenClaw Active Memory 深度解析：原理、配置与最佳实践》
-
-## 推荐标签
+## 
 
 `#OpenClaw` `#ActiveMemory` `#AI助手` `#记忆系统` `#技术教程` `#LLM` `#AI应用` `#个人助理` `#效率工具` `#技术分享`

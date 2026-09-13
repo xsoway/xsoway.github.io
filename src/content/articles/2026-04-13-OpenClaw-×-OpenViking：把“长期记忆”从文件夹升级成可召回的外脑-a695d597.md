@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw × OpenViking：把“长期记忆”从文件夹升级成可召回的外脑"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片
@@ -221,5 +223,5 @@ Env vars:
 
 ---
 
-## 
+
 #OpenClaw #OpenViking #Memory #Agent

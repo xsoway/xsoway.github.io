@@ -1,6 +1,8 @@
 ---
 title: "未命名"
 created: "2026-05-03"
+tags: ["Create a new repository","Open folder as vault","Use this template","10 个开箱即用的 AI 技能（Skills）","22 种原子化卡片模板","7 个主目录的信息架构","AI","AI 协作工具","AI 技能","Agent","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # 📝 未命名

@@ -1,6 +1,8 @@
 ---
 title: "Skill Creator 终于自带测试了：以后调技能不再是玄学"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 ![](./2026-03-15-Skill Creator 终于自带测试了-以后调技能不再是玄学-cover.svg)
@@ -80,6 +82,6 @@ published: true
 
 - 如果你是经常写 Skill 的人，建议去官方文档里看看这个 Evals 功能怎么用，先从 3-5 个测试用例跑起来；如果你之前被触发率折磨过，现在可以试着用 A/B 测试对比新旧描述版本，用数据而不是直觉来判断改版效果；如果你想进一步提升内容质量，可以尝试把技能描述写得更有场景感——"用户可能在什么情况下问"比"这个技能能做什么"更有效。
 
-#推荐标签
+
 
 AI工具/Agent开发/技能工程/测试驱动开发/Anthropic/Skill Creator

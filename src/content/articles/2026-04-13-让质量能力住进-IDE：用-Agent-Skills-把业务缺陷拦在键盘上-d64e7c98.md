@@ -1,6 +1,8 @@
 ---
 title: "让质量能力住进 IDE：用 Agent Skills 把业务缺陷拦在键盘上"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片
@@ -447,5 +449,6 @@ if msg.Type == "Marketing" {
 
 然后——就这？就这！
 
-## 推荐标签
+
+
 #质量左移 #IDE内质量 #AgentSkills #TRAE #业务缺陷 #测试工程化 #研发效率

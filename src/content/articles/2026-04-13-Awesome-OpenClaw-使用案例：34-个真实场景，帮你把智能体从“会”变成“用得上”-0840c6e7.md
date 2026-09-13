@@ -1,6 +1,8 @@
 ---
 title: "Awesome OpenClaw 使用案例：34 个真实场景，帮你把智能体从“会”变成“用得上”"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片

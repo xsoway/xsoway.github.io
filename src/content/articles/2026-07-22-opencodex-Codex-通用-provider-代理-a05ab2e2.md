@@ -1,6 +1,8 @@
 ---
 title: "opencodex：一个包，让 Codex 和 Claude Code 能跑任意 LLM"
 created: "2026-07-22"
+tags: ["KnowledgeBase","opencodex","Codex","Claude Code","LLM","开源项目","代理"]
+category: "Tech"
 published: true
 ---
 

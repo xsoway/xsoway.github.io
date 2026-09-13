@@ -1,6 +1,8 @@
 ---
 title: "让 AI 自己打开 App 点完整个流程：agent-device 真机自动化实测"
 created: "2026-09-05"
+tags: ["KnowledgeBase","WeChat","AIAgent","移动端测试","Agent自动化"]
+category: "AI-Agent"
 published: true
 ---
 

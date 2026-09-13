@@ -1,6 +1,8 @@
 ---
 title: "repo2skill：把 GitHub 仓库一键变成 Skill，这东西对 Agent 太实用了"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 ![](./2026-03-14-repo2skill：把 GitHub 仓库一键变成 Skill，这东西对 Agent 太实用了-v1-cover.svg)

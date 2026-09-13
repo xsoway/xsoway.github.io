@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getArticles, getTags, tagArticles } from '../../lib/articles';
+
+export async function getStaticPaths() {
+  const articles = await getArticles();
+  return getTags(articles).map((tag) => ({ params: { tag: tag.slug }, props: { tag } }));
+}
+
+const { tag } = Astro.props;
+const articles = tagArticles(await getArticles(), tag.slug);
+---
+<BaseLayout title={tag.name}><section class="container"><a class="back" href="/tags/">← 全部标签</a><p class="eyebrow">Tag</p><h1>{tag.name}</h1><p class="intro">共 {articles.length} 篇文章</p><div>{articles.map((article) => <ArticleCard {article} />)}</div></section></BaseLayout>
+<style>section{max-width:880px;padding-top:4.5rem}.back{color:var(--accent);font-size:.85rem;font-weight:700}h1{font-size:clamp(2.6rem,5vw,4rem);letter-spacing:-.055em;margin:.7rem 0 .2rem}.intro{color:var(--muted);margin:0}</style>

@@ -1,6 +1,8 @@
 ---
 title: "Alan-Workspace LLM Wiki 完整体系搭建与功能介绍"
 created: "2026-04-13"
+tags: ["LLMWiki","OpenClaw","Obsidian","KnowledgeManagement","PersonalOps"]
+category: "Articles"
 published: true
 ---
 

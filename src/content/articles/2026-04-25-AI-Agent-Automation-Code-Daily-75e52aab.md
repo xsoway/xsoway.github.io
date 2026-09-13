@@ -1,6 +1,8 @@
 ---
 title: "AI-Agent-Automation-Code-Daily"
 created: "2026-04-25"
+tags: ["AI","Agent","Automation","Code","Daily","Memory","Note","Project","Review","主要职责","OpenClaw"]
+category: "Articles"
 published: true
 ---
 | 模式                | 一句话                                  | 调用方式                                     | Session        | 方向             | 同步/异步      |

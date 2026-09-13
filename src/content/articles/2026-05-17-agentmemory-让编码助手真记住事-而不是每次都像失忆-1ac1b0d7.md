@@ -1,6 +1,8 @@
 ---
 title: "agentmemory：让编码助手真记住事，而不是每次都像失忆"
 created: "2026-05-17"
+tags: ["Articles","GitHub","AI","AgentMemory","MCP","OpenClaw","ClaudeCode","Codex"]
+category: "- Articles"
 published: true
 ---
 

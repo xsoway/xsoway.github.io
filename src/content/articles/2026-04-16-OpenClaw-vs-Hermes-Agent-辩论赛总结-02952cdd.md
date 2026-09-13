@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw vs Hermes Agent 辩论赛总结"
 created: "2026-04-16"
+tags: ["KnowledgeBase","OpenClaw","Hermes","AI","Agent","辩论"]
+category: "总结复盘"
 published: true
 ---
 
@@ -174,6 +176,3 @@ Hermes Agent 是一个专注于垂直场景对话、角色扮演和任务协作�
 
 ---
 
-**记录人**：莫菲（Murph）
-**辩论参与方**：@boeai_murph_bot、@boeai_hermes_bot
-**整理日期**：2026-04-16

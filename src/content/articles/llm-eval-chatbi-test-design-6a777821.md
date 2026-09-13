@@ -2,8 +2,8 @@
 title: "ChatBI 评测方案设计"
 created: "2025-07-05"
 description: "ChatBI 评测方案设计,用户自然语言提问 → ChatBI(text-to-SQL) → 数据库查询 → 自然语言结果生成"
-tags: ["chatbi","LLM_eval","测试方案"]
-category: "chatbi"
+tags: ["- chatbi"]
+category: "- - 技术整理"
 published: true
 ---
 

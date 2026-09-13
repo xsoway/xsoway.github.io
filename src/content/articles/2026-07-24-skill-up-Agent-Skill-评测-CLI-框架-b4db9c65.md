@@ -1,6 +1,8 @@
 ---
 title: "从\"手写 YAML 试半天\"到\"一条命令跑评测\"：阿里 skill-up 把 Agent Skill 评测做成了 CLI"
 created: "2026-07-24"
+tags: ["KnowledgeBase","开源项目","Agent","Skill","评测","CLI","DevOps"]
+category: "技术分享"
 published: true
 ---
 

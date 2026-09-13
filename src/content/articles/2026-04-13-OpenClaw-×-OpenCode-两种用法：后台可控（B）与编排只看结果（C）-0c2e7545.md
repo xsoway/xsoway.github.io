@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw × OpenCode 两种用法：后台可控（B）与编排只看结果（C）"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片
@@ -266,24 +268,4 @@ sessions_spawn task:"
 
 ---
 
-## 封面3要点
-
-- B：后台可控
-- C：只看结果
-- pytest 定验收
-
-## 封面素材
-
-- punchline: 让Agent可控
-- tags: OpenClaw/OpenCode/pytest
-- layout: auto
-
-## 爆款标题备选（任选其一）
-
-1. OpenClaw 调 OpenCode：两套工作流（可控版 B / 省心版 C）
-2. 别再问“怎么结合”：照这套跑，OpenCode 才像队友
-3. 后台可控 vs 只看结果：OpenClaw 编排 OpenCode 的正确姿势
-4. pytest -q 写死验收：Agent 就不敢嘴硬
-5. 从 B 到 C：把终端 Agent 变成可交付的后台任务
-
-**推荐标签**：#OpenClaw #OpenCode #Python #pytest #AI编程
+#OpenClaw #OpenCode #Python #pytest #AI编程

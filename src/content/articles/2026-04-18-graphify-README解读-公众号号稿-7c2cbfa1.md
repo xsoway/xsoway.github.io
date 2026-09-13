@@ -1,6 +1,8 @@
 ---
 title: "AI 一上来就 grep 全仓太蠢了，这个项目想先给它画一张会思考的知识图谱"
 created: "2026-04-18"
+tags: ["- GitHub"]
+category: "- Notes"
 published: true
 ---
 

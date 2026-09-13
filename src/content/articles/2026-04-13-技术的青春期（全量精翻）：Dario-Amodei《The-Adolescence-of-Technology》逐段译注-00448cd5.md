@@ -1,6 +1,8 @@
 ---
 title: "技术的青春期（全量精翻）：Dario Amodei《The Adolescence of Technology》逐段译注"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片

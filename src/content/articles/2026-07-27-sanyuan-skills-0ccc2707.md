@@ -1,6 +1,8 @@
 ---
 title: "6 个 Skill，把 AI Agent 终端变成真正的\"专家\"——三元 Skills 开源项目实测"
 created: "2026-07-27"
+tags: ["GitHub","AI-Agent","Claude-Code","Cursor","Skill","开源项目","技术分享"]
+category: "技术分享"
 published: true
 ---
 

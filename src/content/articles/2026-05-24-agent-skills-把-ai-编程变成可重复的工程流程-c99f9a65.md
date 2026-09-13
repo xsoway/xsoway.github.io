@@ -1,6 +1,8 @@
 ---
 title: "Agent Skills：把 AI 编程从“随缘输出”变成可重复的工程流程"
 created: "2026-05-24"
+tags: ["KnowledgeBase","GitHub","Agent","AI","Engineering","Workflow","Testing"]
+category: "AI 工程化"
 published: true
 ---
 

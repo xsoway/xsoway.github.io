@@ -1,6 +1,8 @@
 ---
 title: "DeepSeek Harness 深度体验：一个让你重新认识 Agent 框架的东西"
 created: "2026-08-14"
+tags: ["Articles","DeepSeek","dsh","Agent","Harness","Cordis"]
+category: "Articles"
 published: true
 ---
 

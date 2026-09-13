@@ -1,6 +1,8 @@
 ---
 title: "CodeGraph vs Graphify vs code-review-graph vs GitNexus：4 个“代码知识图谱”工具怎么选？"
 created: "2026-05-24"
+tags: ["KnowledgeBase","GitHub","AI","MCP","CodeGraph","Graphify","CodeReview","GitNexus","ClaudeCode","Cursor","Codex","HermesAgent"]
+category: "GitHubProject"
 published: true
 ---
 

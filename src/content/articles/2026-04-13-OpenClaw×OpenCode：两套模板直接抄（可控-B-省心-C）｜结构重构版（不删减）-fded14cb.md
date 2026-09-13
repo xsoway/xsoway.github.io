@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw×OpenCode：两套模板直接抄（可控 B / 省心 C）｜结构重构版（不删减）"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片

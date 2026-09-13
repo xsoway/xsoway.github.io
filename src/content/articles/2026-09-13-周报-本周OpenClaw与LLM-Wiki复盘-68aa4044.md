@@ -1,6 +1,8 @@
 ---
 title: "周报 - 2026-W37"
 created: "2026-09-13"
+tags: ["KnowledgeBase","WeeklyReview","OpenClaw","LLM-Wiki","Obsidian","Wechat"]
+category: "WeeklyReview"
 published: true
 ---
 
@@ -72,7 +74,7 @@ published: true
   - [2026-02-08-别追热点：用过滤器终结AI落后感 (copy)](/articles/2026-02-08-%E5%88%AB%E8%BF%BD%E7%83%AD%E7%82%B9%EF%BC%9A%E7%94%A8%E8%BF%87%E6%BB%A4%E5%99%A8%E7%BB%88%E7%BB%93AI%E8%90%BD%E5%90%8E%E6%84%9F%20(copy)-2f5bf022/)
   - [2026-03-22-面向测试工程师的-OpenClaw-测试编排方案](/articles/2026-03-22-%E9%9D%A2%E5%90%91%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84-OpenClaw-%E6%B5%8B%E8%AF%95%E7%BC%96%E6%8E%92%E6%96%B9%E6%A1%88-56157264/)
   - [2026-03-29-真正先过时的，也许不是工具，而是那套靠人肉硬扛的工作方式-v2](/articles/2026-03-29-%E7%9C%9F%E6%AD%A3%E5%85%88%E8%BF%87%E6%97%B6%E7%9A%84%EF%BC%8C%E4%B9%9F%E8%AE%B8%E4%B8%8D%E6%98%AF%E5%B7%A5%E5%85%B7%EF%BC%8C%E8%80%8C%E6%98%AF%E9%82%A3%E5%A5%97%E9%9D%A0%E4%BA%BA%E8%82%89%E7%A1%AC%E6%89%9B%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F-v2-6569fdec/)
-  - [2026-03-29-真正先过时的，也许不是工具，而是那套靠人肉硬扛的工作方式](/articles/2026-03-29-%E7%9C%9F%E6%AD%A3%E5%85%88%E8%BF%87%E6%97%B6%E7%9A%84%EF%BC%8C%E4%B9%9F%E8%AE%B8%E4%B8%8D%E6%98%AF%E5%B7%A5%E5%85%B7%EF%BC%8C%E8%80%8C%E6%98%AF%E9%82%A3%E5%A5%97%E9%9D%A0%E4%BA%BA%E8%82%89%E7%A1%AC%E6%89%9B%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F-f8d041e7/)
+  - 2026-03-29-真正先过时的，也许不是工具，而是那套靠人肉硬扛的工作方式
   - [2026-04-13-Vibe-Coding-真相：不是写爽，是控熵](/articles/2026-04-13-Vibe-Coding-%E7%9C%9F%E7%9B%B8%EF%BC%9A%E4%B8%8D%E6%98%AF%E5%86%99%E7%88%BD%EF%BC%8C%E6%98%AF%E6%8E%A7%E7%86%B5-157c50e5/)
 - **系统/脚本（70-System）**：
   - SKILL

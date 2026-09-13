@@ -1,6 +1,8 @@
 ---
 title: "OpenKnowledge：给 AI 搭一个能一边编辑、一边让 agent 动手的本地知识库"
 created: "2026-09-02"
+tags: ["AI","Agent","知识库","LLM-wiki","LLM","Markdown","MCP","本地优先","开源","测试"]
+category: "技术分享"
 published: true
 ---
 

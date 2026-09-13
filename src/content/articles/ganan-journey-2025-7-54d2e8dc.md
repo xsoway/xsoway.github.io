@@ -2,8 +2,8 @@
 title: "甘南自驾_2025_7"
 created: "2025-07-27"
 description: "published: true"
-tags: ["甘南","自驾","暑假"]
-category: "自驾"
+tags: ["- 甘南"]
+category: "- 户外旅行"
 published: true
 ---
 

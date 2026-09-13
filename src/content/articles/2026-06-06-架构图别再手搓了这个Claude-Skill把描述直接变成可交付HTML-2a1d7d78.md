@@ -1,6 +1,8 @@
 ---
 title: "架构图别再手搓了：这个 Claude Skill 把描述直接变成可交付 HTML"
 created: "2026-06-06"
+tags: ["KnowledgeBase","WeChat","GitHub","Claude","ClaudeCode","ArchitectureDiagram","HTML","SVG"]
+category: "公众号文章"
 published: true
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: "学习使用 Claude Desktop 应用的进度记录"
 created: "2026-04-16"
+tags: ["AI","Code","Project","上下文窗口","体验优化","初次设置","利用系统快捷键","安装过程","官方下载地址","定期整理","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # 学习使用 Claude Desktop 应用的进度记录

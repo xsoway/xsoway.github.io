@@ -1,6 +1,8 @@
 ---
 title: "Alan-Workspace LLM Wiki 专业 Wiki 编译器优化方案"
 created: "2026-04-13"
+tags: ["LLMWiki","OpenClaw","Obsidian","KnowledgeCompiler"]
+category: "Articles"
 published: true
 ---
 

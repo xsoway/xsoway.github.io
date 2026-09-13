@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw + Codex Agent Swarm（v9）：可直接落地的 OpenClaw cron 模板（babysit + Telegram 通知 +"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 ![](./2026-03-07-OpenClaw+Codex-ClaudeCode Agent Swarm：一个人伪装成开发团队的完整搭建-v9-cover.svg)

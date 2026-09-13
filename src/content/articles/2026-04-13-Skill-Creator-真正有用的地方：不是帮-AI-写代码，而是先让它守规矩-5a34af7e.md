@@ -1,6 +1,8 @@
 ---
 title: "Skill Creator 真正有用的地方：不是帮 AI 写代码，而是先让它守规矩"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 ![](./2026-03-14-Skill Creator 真正有用的地方：不是帮 AI 写代码，而是先让它守规矩-v1-cover.svg)

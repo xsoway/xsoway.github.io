@@ -1,6 +1,8 @@
 ---
 title: "别再盯着 AI 一步步改代码了，这个项目想把 Claude Code / Codex 直接拧成‘自动进化循环’"
 created: "2026-04-18"
+tags: ["- GitHub"]
+category: "- Notes"
 published: true
 ---
 

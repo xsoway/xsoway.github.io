@@ -1,6 +1,8 @@
 ---
 title: "CLI-Anything：一行命令，让 Agent 接管那些原本只能手点的软件"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 ![](./2026-03-14-CLI-Anything：一行命令，让 Agent 接管那些原本只能手点的软件-v1-cover.svg)

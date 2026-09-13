@@ -1,6 +1,9 @@
 ---
 title: "Code Review Skill"
 created: "2026-01-23"
+description: "Skill for handling PR code reviews. Use when triggered by a PR review comment, review request, or when asked to review code changes. Provides workflow for reading review comments, understanding feedback, and iterating on changes."
+tags: ["AI","Address-all-comments","Code","Commit-and-push","Communicate-clearly","Correctness","Git","Make-the-requested-changes","Note","Performance","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # Code Review Skill

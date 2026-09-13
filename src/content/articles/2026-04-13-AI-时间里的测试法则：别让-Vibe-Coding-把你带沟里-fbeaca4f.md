@@ -1,6 +1,8 @@
 ---
 title: "AI 时间里的测试法则：别让 Vibe Coding 把你带沟里"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片

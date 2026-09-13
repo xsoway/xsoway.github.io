@@ -1,6 +1,8 @@
 ---
 title: "AI-AI-在团队协作场景里应该怎么配合人工作-AI-工作空间-/-代码工程场景-Agent-Code"
 created: "2026-03-19"
+tags: ["AI","AI-在团队协作场景里应该怎么配合人工作","AI-工作空间-/-代码工程场景","Agent","Code","Daily","Git","Memory","Note","OpenClaw"]
+category: "Articles"
 published: true
 ---
 ## 项目介绍

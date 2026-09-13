@@ -1,6 +1,8 @@
 ---
 title: "Codebuff & Freebuff：一个把 Agent 编排成团队，一个把 AI 编程价格打到零"
 created: "2026-06-10"
+tags: ["KnowledgeBase","WeChat","GitHub","Codebuff","Freebuff","AIAgent","MultiAgent","CodingAgent","AgentWorkflow"]
+category: "公众号文章"
 published: true
 ---
 

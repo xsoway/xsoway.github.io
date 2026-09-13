@@ -1,6 +1,8 @@
 ---
 title: "以后每次新建项目，不用再跟 AI 重复说技术栈了：一个 Claude Code 模板搞定"
 created: "2026-08-20"
+tags: ["Claude Code","AI","工程化","模板","Harness","开源工具","DevOps","开发效率"]
+category: "技术分享"
 published: true
 ---
 

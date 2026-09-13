@@ -1,6 +1,8 @@
 ---
 title: "92 个实验、10 章正文、全开源：这本 AI Agent 书把工程细节全摊开了"
 created: "2026-07-28"
+tags: ["KnowledgeBase","AI","Agent","开源书籍","LLM","MCP","RAG","多模态","多Agent"]
+category: "技术分享"
 published: true
 ---
 

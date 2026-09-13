@@ -1,6 +1,8 @@
 ---
 title: "程序猿 7 级进化：从 Copilot 到 OpenClaw，谁还在假装手写？AI 内卷时代：一个模型写，一个模型审"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 > 图片资源未同步：未命名图片

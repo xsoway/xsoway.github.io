@@ -1,6 +1,8 @@
 ---
 title: "刷到 harness-creator 这玩意，我有点上头，但也有边界"
 created: "2026-04-28"
+tags: ["KnowledgeBase","AIAgent","HarnessEngineering","GitHub项目拆解","公众号草稿"]
+category: "文章"
 published: true
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: "周报 - 2026-W30"
 created: "2026-07-26"
+tags: ["KnowledgeBase","WeeklyReview","OpenClaw","LLM-Wiki","Obsidian","Wechat"]
+category: "WeeklyReview"
 published: true
 ---
 

@@ -2,8 +2,8 @@
 title: "AI_project_prod_test_plan"
 created: "2025-09-04"
 description: "整理了下AI智能项目上线后,如何巡检,回归的测试设计方案"
-tags: ["模型评测","AI智能测试"]
-category: "模型评测"
+tags: ["- 模型评测"]
+category: "- 技术整理"
 published: true
 ---
 

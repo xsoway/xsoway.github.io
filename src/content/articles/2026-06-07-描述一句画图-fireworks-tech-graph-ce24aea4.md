@@ -1,6 +1,8 @@
 ---
 title: "描述一句就能出架构图？fireworks-tech-graph 把画图变成了说话"
 created: "2026-06-07"
+tags: ["AI工具","技术绘图","架构图","SVG","Agent","开源项目"]
+category: "Articles"
 published: true
 ---
 
@@ -282,6 +284,6 @@ fireworks-tech-graph/
 
 最直接的一条：正在写公众号技术稿的你，现在就可以敲 `npx skills add yizhiyanhua-ai/fireworks-tech-graph` 装好，再 `pip install cairosvg`，然后跑一张风格 2 的图试试手感。如果主要做公司内部文档，优先试风格 4，白底极简在 Confluence 和 Notion 里最不违和。准备做技术分享 PPT 的话，用风格 5 的磨砂玻璃质感或者风格 8 的暗黑奢华风，导一张 1920px 的 PNG 贴进 Keynote，层次感比你自己手画强一个数量级。写 Anthropic 或 OpenAI 相关内容的时候直接用对应品牌风格，风格 6 和风格 7 分别匹配 Claude 和 OpenAI 的官方视觉语言，这种一致性是没办法用语言描述的「专业感」。最后画 UML 的时候先翻一眼上面的风格推荐，选对风格再跑，别跑完发现风格不对又重来。
 
-## 推荐标签
+
 
 `AI工具` `技术绘图` `架构图` `SVG` `Agent` `开源项目` `fireworks-tech-graph` `RAG` `Multi-Agent` `公众号配图`

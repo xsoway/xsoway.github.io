@@ -1,6 +1,8 @@
 ---
 title: "笔记越写越多却越来越难找？这个 Obsidian 插件让 AI 替你养 Wiki"
 created: "2026-06-06"
+tags: ["KnowledgeBase","WeChat","GitHub","Obsidian","LLMWiki","KnowledgeGraph","PKM","Karpathy"]
+category: "公众号文章"
 published: true
 ---
 

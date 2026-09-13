@@ -1,6 +1,8 @@
 ---
 title: "OpenClaw + ACP 调用方式与 Codex 实战示例"
 created: "2026-04-13"
+tags: ["OpenClaw","ACP","Codex","OpenCode","AIAgent","TechnicalWriting","Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # OpenClaw + Codex 实战入门：怎么调、怎么用、什么时候该上多线程工作间

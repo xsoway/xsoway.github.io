@@ -1,6 +1,8 @@
 ---
 title: "AI in Software Testing（补充内容翻译）"
 created: "2026-04-13"
+tags: ["Draft","OpenClaw"]
+category: "Articles"
 published: true
 ---
 # AI in Software Testing（补充内容翻译）

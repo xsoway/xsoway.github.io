@@ -2,8 +2,8 @@
 title: "domain_name_update-xsoul.life"
 created: "2025-09-01"
 description: "离开乏味的皮囊，自由的灵魂在路上 xsoul.life"
-tags: ["域名"]
-category: "hexo"
+tags: ["- 域名"]
+category: "- - 技术整理"
 published: true
 ---
 
