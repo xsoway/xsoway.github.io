@@ -18,9 +18,10 @@ git push origin main
 
 ## 自动更新
 
-`npm run publish` 会在有公开文章变更时完成同步、构建、提交和推送。可选的 macOS 定时任务每 10 分钟执行一次：
+`npm run publish` 会在有公开文章变更时完成同步、构建、提交和推送。macOS 定时任务会在每天本地时间 09:30 扫描 `01-Articles`，并仅在内容有变化时发布：
 
 ```bash
-cp ops/com.xsoway.blog-sync.plist ~/Library/LaunchAgents/
+chmod +x scripts/run-scheduled-publish.sh
+cp ops/com.xsoway.blog-sync.plist ~/Library/LaunchAgents/com.xsoway.blog-sync.plist
 launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.xsoway.blog-sync.plist
 ```
