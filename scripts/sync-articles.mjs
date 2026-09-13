@@ -13,6 +13,7 @@ const sourceLabel = new Map([[defaultSource, '主文章库'], [legacySource, '�
 const contentDir = path.join(root, 'src/content/articles');
 const assetsDir = path.join(root, 'public/article-assets');
 const manifestFile = path.join(root, '.sync-manifest.json');
+const exclusionsFile = path.join(root, '.article-exclusions.json');
 const redactions = [
   [/[\\/]Users[\\/][^\s)`\]]+/g, '[本机路径已隐藏]'],
   [/attachment:[^\s)`\]]+/gi, '[附件未公开]'],
@@ -48,14 +49,14 @@ function list(header, key) {
   }
   return values;
 }
-function normalizeFrontmatter(text, file, includeMetadata = false) {
+function normalizeFrontmatter(text, file, includeMetadata = false, titleFromFilename = false) {
   const fallbackTitle = name(file);
   const fallbackDate = fallbackTitle.match(/^(\d{4}-\d{2}-\d{2})/)?.[1];
   if (!text.startsWith('---\n')) return `---\ntitle: ${JSON.stringify(fallbackTitle)}${fallbackDate ? `\ncreated: ${JSON.stringify(fallbackDate)}` : ''}\npublished: true\n---\n\n${text}`;
   const end = text.indexOf('\n---', 4);
   if (end < 0) return `---\ntitle: ${JSON.stringify(fallbackTitle)}${fallbackDate ? `\ncreated: ${JSON.stringify(fallbackDate)}` : ''}\npublished: true\n---\n\n${text}`;
   const header = text.slice(4, end);
-  const title = scalar(header, 'title') || fallbackTitle;
+  const title = titleFromFilename ? fallbackTitle : (scalar(header, 'title') || fallbackTitle);
   const date = scalar(header, 'created')?.match(/^\d{4}-\d{2}-\d{2}/)?.[0] || (includeMetadata ? scalar(header, 'date')?.match(/^\d{4}-\d{2}-\d{2}/)?.[0] : undefined) || fallbackDate;
   if (!includeMetadata) return `---\ntitle: ${JSON.stringify(title)}${date ? `\ncreated: ${JSON.stringify(date)}` : ''}\npublished: true\n---${text.slice(end + 4)}`;
   const tags = list(header, 'tags');
@@ -99,12 +100,21 @@ async function previousManifest() {
   }
 }
 
-async function knownOutputNames() {
+async function excludedSlugs() {
+  try {
+    const exclusions = JSON.parse(await readFile(exclusionsFile, 'utf8'));
+    return new Set(exclusions.slugs ?? []);
+  } catch {
+    return new Set();
+  }
+}
+
+async function knownOutputNames(excluded) {
   const known = [];
   for (const source of allSources) {
     for (const file of await markdownFiles(source)) {
       const text = await readFile(file, 'utf8');
-      if (metadata(text).published || source === reviewSource) {
+      if ((metadata(text).published || source === reviewSource) && !excluded.has(name(file))) {
         const slug = name(file);
         const hash = createHash('sha256').update(slug).digest('hex').slice(0, 8);
         const id = known.some(article => article.slug === slug) ? `${slug}-${createHash('sha256').update(source).digest('hex').slice(0, 8)}-${hash}` : `${slug}-${hash}`;
@@ -117,11 +127,13 @@ async function knownOutputNames() {
 
 export async function syncArticles() {
   const report = { sources: sources.map((source) => sourceLabel.get(source) ?? '自定义文章源'), included: [], skipped: [], deleted: [], warnings: [], errors: [], assets: 0 };
+  const excluded = await excludedSlugs();
   const candidates = [];
   for (const source of sources) {
     for (const file of await markdownFiles(source)) {
       const text = await readFile(file, 'utf8');
-      if (!metadata(text).published && source !== reviewSource) report.skipped.push(path.relative(source, file));
+      if (excluded.has(name(file))) report.skipped.push(path.relative(source, file));
+      else if (!metadata(text).published && source !== reviewSource) report.skipped.push(path.relative(source, file));
       else {
         const slug = name(file);
         const hash = createHash('sha256').update(slug).digest('hex').slice(0, 8);
@@ -135,7 +147,7 @@ export async function syncArticles() {
   await mkdir(assetsDir, { recursive: true });
   for (const article of candidates) {
     try {
-      let text = normalizeFrontmatter(article.text, article.file, true);
+      let text = normalizeFrontmatter(article.text, article.file, true, article.source === defaultSource);
       for (const [pattern, replacement] of redactions) {
         const next = text.replace(pattern, replacement);
         if (next !== text) report.warnings.push({ file: path.basename(article.file), message: '已脱敏本机路径、附件引用或敏感令牌' });
@@ -168,7 +180,7 @@ export async function syncArticles() {
     const articles = candidates.map(article => ({ source: article.source, file: path.relative(article.source, article.file), output: `${article.id}.md` }));
     await writeFile(manifestFile, `${JSON.stringify({ version: 1, articles: [...retained, ...articles] }, null, 2)}\n`);
     if (sources.length === 1 && sources[0] === defaultSource) {
-      const known = await knownOutputNames();
+      const known = await knownOutputNames(excluded);
       for (const entry of await readdir(contentDir, { withFileTypes: true })) {
         if (!entry.isFile() || !entry.name.endsWith('.md') || known.has(entry.name)) continue;
         await rm(path.join(contentDir, entry.name));
