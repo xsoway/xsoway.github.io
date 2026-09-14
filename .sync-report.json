@@ -393,6 +393,7 @@
     "2026-09-10-Locust压测不该止步于CSV-locust-perf-framework.md",
     "2026-09-10-下单接口上线前压测-locust-perf-framework.md",
     "2026-09-13-这是一个持续收录、整理和索引优质技术文章的个人学习库，也是一个可本地运行的 LLM Wiki 工作台.md",
+    "2026-09-14-博客三迁之后我又回到了GitHub.md",
     "Claude Code 超时问题排查与解决方案（超详细版）.md",
     "Codex CLI vs  Codex App.md",
     "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
@@ -402,7 +403,9 @@
     "我认真拆了一个 Awesome Skills 仓库，发现 AI Agent 真正的门槛已经不是模型了.md",
     "真登一下，真受不了，小中登的年纪，牛马们注意身体吧.md"
   ],
-  "skipped": [],
+  "skipped": [
+    "2026-09-14-读-Deep-Agents-实战-正经教你给-Agent-划边界的一门课.md"
+  ],
   "deleted": [],
   "warnings": [
     {
