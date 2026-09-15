@@ -393,6 +393,7 @@
     "2026-09-10-Locust压测不该止步于CSV-locust-perf-framework.md",
     "2026-09-10-下单接口上线前压测-locust-perf-framework.md",
     "2026-09-13-这是一个持续收录、整理和索引优质技术文章的个人学习库，也是一个可本地运行的 LLM Wiki 工作台.md",
+    "2026-09-14-一次本地HTML编辑器开发复盘.md",
     "2026-09-14-博客三迁之后我又回到了GitHub.md",
     "Claude Code 超时问题排查与解决方案（超详细版）.md",
     "Codex CLI vs  Codex App.md",
@@ -771,6 +772,10 @@
     {
       "file": "2026-09-05-agent-device-真机自动化实测.md",
       "message": "已脱敏本机路径、附件引用或敏感令牌"
+    },
+    {
+      "file": "2026-09-14-一次本地HTML编辑器开发复盘.md",
+      "message": "缺失图片已替换为提示：../../../../Library/Containers/com.wiheads.paste/Data/tmp/images/Xnip%20Helper%202026-09-15%2008.35.46.png"
     },
     {
       "file": "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
