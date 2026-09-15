@@ -23,5 +23,6 @@ git push origin main
 ```bash
 chmod +x scripts/run-scheduled-publish.sh
 cp ops/com.xsoway.blog-sync.plist ~/Library/LaunchAgents/com.xsoway.blog-sync.plist
+launchctl bootout gui/$(id -u)/com.xsoway.blog-sync 2>/dev/null || true
 launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.xsoway.blog-sync.plist
 ```

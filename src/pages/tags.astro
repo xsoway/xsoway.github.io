@@ -1,8 +1,37 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getArticles, getTags } from '../lib/articles';
+import { getArticles, getTagCloud } from '../lib/articles';
 const articles = await getArticles();
-const tags = getTags(articles);
+const cloud = getTagCloud(articles);
+const maxCount = Math.max(...cloud.map((tag) => tag.count), 1);
+const cloudWords = cloud.map((tag) => ({ text: tag.name, href: `/tags/${tag.slug}/`, count: tag.count }));
 ---
-<BaseLayout title="标签"><section class="container"><p class="eyebrow">Index</p><h1>标签</h1><p>标签来自文章的 <code>tags</code>，以及文章末尾的 <code>#标签</code>；<code>draft</code> 不会显示。</p><div class="tags">{tags.map((tag) => <a href={`/tags/${tag.slug}/`}>{tag.name}<small>{tag.count}</small></a>)}</div></section></BaseLayout>
-<style>section{max-width:880px;padding-top:4.5rem}h1{font-size:clamp(2.6rem,5vw,4rem);letter-spacing:-.055em;margin:.3rem 0}p{color:var(--muted)}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em}.tags{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}.tags a{border:1px solid var(--line);padding:.55rem .7rem;font-size:.88rem;background:var(--paper)}.tags a:hover{border-color:var(--accent);background:var(--accent-soft);color:var(--ink)}small{margin-left:.55rem;color:var(--accent);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.7rem}</style>
+<BaseLayout title="标签"><section class="container"><p class="eyebrow">Index</p><h1>标签</h1><p>标签来自文章的 <code>tags</code> 和文章末尾的 <code>#标签</code>；路径、句子和超长中文短语会自动过滤。</p><section class="cloud-section"><p class="eyebrow">Tag cloud</p><h2>标签词云</h2><p>文字大小代表使用次数，点击即可查看对应文章。</p><div class="cloud" data-words={JSON.stringify(cloudWords)} data-max-count={maxCount} aria-label="文章标签词云"></div><noscript><p class="fallback">词云需要 JavaScript；请启用 JavaScript 后查看。</p></noscript></section></section></BaseLayout>
+<script>
+  import cloud from 'd3-cloud';
+
+  type Word = { text: string; href: string; count: number; size?: number; x?: number; y?: number; rotate?: number };
+  const root = document.querySelector<HTMLElement>('.cloud');
+  const colors = ['#007f7a', '#2f6f9f', '#9b6a48', '#6f9e63', '#b25b75'];
+  if (root) {
+    const words: Word[] = JSON.parse(root.dataset.words ?? '[]');
+    const maxCount = Number(root.dataset.maxCount ?? 1);
+    const namespace = 'http://www.w3.org/2000/svg';
+    const render = () => {
+      const width = Math.max(280, root.clientWidth);
+      const height = Math.min(620, Math.max(360, width * .7));
+      root.replaceChildren(); root.style.height = `${height}px`;
+      cloud<Word>().size([width, height]).words(words.map((word) => ({ ...word, size: 13 + Math.sqrt(word.count / maxCount) * 34 }))).padding(2).rotate(() => 0).font('PingFang SC, Microsoft YaHei, sans-serif').fontSize((word) => word.size ?? 13).on('end', (placed) => {
+        const svg = document.createElementNS(namespace, 'svg');
+        svg.setAttribute('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`); svg.setAttribute('role', 'img');
+        for (const [index, word] of placed.entries()) {
+          const link = document.createElementNS(namespace, 'a'); link.setAttribute('href', word.href); link.setAttribute('aria-label', `${word.text}：${word.count} 篇文章`);
+          const text = document.createElementNS(namespace, 'text'); text.setAttribute('x', String(word.x)); text.setAttribute('y', String(word.y)); text.setAttribute('text-anchor', 'middle'); text.setAttribute('transform', `rotate(${word.rotate ?? 0} ${word.x} ${word.y})`); text.setAttribute('fill', colors[index % colors.length]); text.setAttribute('font-size', String(word.size)); text.textContent = word.text; link.append(text); svg.append(link);
+        }
+        root.append(svg);
+      }).start();
+    };
+    new ResizeObserver(render).observe(root);
+  }
+</script>
+<style>section{max-width:880px;padding-top:4.5rem}h1{font-size:clamp(2.6rem,5vw,4rem);letter-spacing:-.055em;margin:.3rem 0}h2{margin:.25rem 0;font-size:clamp(1.7rem,3vw,2.35rem);letter-spacing:-.045em}p{color:var(--muted)}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em}.cloud-section{margin-top:3.5rem;padding-top:2rem;border-top:1px solid var(--line)}.cloud-section>p:last-of-type{margin-top:.3rem;font-size:.9rem}.cloud{width:100%;margin-top:1.8rem;background:radial-gradient(circle at center,color-mix(in srgb,var(--accent-soft) 50%,var(--paper)) 0%,var(--wash) 68%,transparent 69%);border-bottom:1px solid var(--line)}.cloud :global(svg){display:block;width:100%;height:100%;overflow:visible}.cloud :global(text){font-weight:650;cursor:pointer;transition:opacity .16s ease}.cloud :global(a:hover text),.cloud :global(a:focus-visible text){opacity:.62}.fallback{font-size:.85rem}@media (max-width:600px){.cloud{margin-inline:-.25rem;width:calc(100% + .5rem)}}</style>

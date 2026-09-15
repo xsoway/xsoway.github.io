@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { normalizeTag } from './tag-filter.mjs';
 
 export type Article = CollectionEntry<'articles'>;
 
@@ -43,8 +44,8 @@ function hashtagTags(article: Article) {
 }
 export function articleTags(article: Article) {
   return [...article.data.tags ?? [], ...hashtagTags(article)]
-    .map((tag) => tag.trim().replace(/[，。；、,.;:!！？?）)】\]]+$/u, ''))
-    .filter((tag) => tag && tag.toLocaleLowerCase() !== 'draft');
+    .map(normalizeTag)
+    .filter((tag): tag is string => tag !== null);
 }
 export function getTags(articles: Article[]) {
   const tags = new Map<string, { name: string; count: number }>();
@@ -59,6 +60,9 @@ export function getTags(articles: Article[]) {
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh-CN'));
 }
 export function getAllTags(articles: Article[]) { return getTags(articles); }
+export function getTagCloud(articles: Article[]) {
+  return getTags(articles).filter((tag) => tag.count >= 2).slice(0, 120);
+}
 export function tagArticles(articles: Article[], slug: string) {
   return articles.filter((article) => articleTags(article).some((tag) => tagSlug(tag) === slug));
 }
