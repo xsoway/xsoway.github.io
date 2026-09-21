@@ -401,6 +401,7 @@
     "2026-09-16-headroom-AI越用越贵问题出在把冗余和关键一起喂进去.md",
     "2026-09-16-hypit-让-AI-视频变成可复用资产.md",
     "2026-09-16-loop-engineering-与其每次手打prompt不如设计一个系统替你跑.md",
+    "2026-09-20-写完SKILLmd之后Agent-Skill才刚刚开始.md",
     "Claude Code 超时问题排查与解决方案（超详细版）.md",
     "Codex CLI vs  Codex App.md",
     "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
@@ -782,6 +783,10 @@
     {
       "file": "2026-09-14-一次本地HTML编辑器开发复盘.md",
       "message": "缺失图片已替换为提示：../../../../Library/Containers/com.wiheads.paste/Data/tmp/images/Xnip%20Helper%202026-09-15%2008.35.46.png"
+    },
+    {
+      "file": "2026-09-20-写完SKILLmd之后Agent-Skill才刚刚开始.md",
+      "message": "已脱敏本机路径、附件引用或敏感令牌"
     },
     {
       "file": "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
