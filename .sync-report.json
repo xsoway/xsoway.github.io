@@ -401,7 +401,8 @@
     "2026-09-16-headroom-AI越用越贵问题出在把冗余和关键一起喂进去.md",
     "2026-09-16-hypit-让-AI-视频变成可复用资产.md",
     "2026-09-16-loop-engineering-与其每次手打prompt不如设计一个系统替你跑.md",
-    "2026-09-20-写完SKILLmd之后Agent-Skill才刚刚开始.md",
+    "2026-09-20-skill-spec让skill技能生成更加规范及可控.md",
+    "2026-09-21-接盘不熟的业务线，我从生产代码反查业务规则.md",
     "Claude Code 超时问题排查与解决方案（超详细版）.md",
     "Codex CLI vs  Codex App.md",
     "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
@@ -412,9 +413,12 @@
     "真登一下，真受不了，小中登的年纪，牛马们注意身体吧.md"
   ],
   "skipped": [
-    "2026-09-14-读-Deep-Agents-实战-正经教你给-Agent-划边界的一门课.md"
+    "2026-09-14-读-Deep-Agents-实战-正经教你给-Agent-划边界的一门课.md",
+    "2026-09-22-AI-UI-test-移动端-自动化测试工具汇总&横向对比.md"
   ],
-  "deleted": [],
+  "deleted": [
+    "2026-09-20-写完SKILLmd之后Agent-Skill才刚刚开始-5d022c09.md"
+  ],
   "warnings": [
     {
       "file": "2026-02-08-OpenClaw配置文件全解：AGENTS_SOUL_USER_MEMORY怎么配才像外挂大脑_副本3.md",
@@ -785,7 +789,7 @@
       "message": "缺失图片已替换为提示：../../../../Library/Containers/com.wiheads.paste/Data/tmp/images/Xnip%20Helper%202026-09-15%2008.35.46.png"
     },
     {
-      "file": "2026-09-20-写完SKILLmd之后Agent-Skill才刚刚开始.md",
+      "file": "2026-09-20-skill-spec让skill技能生成更加规范及可控.md",
       "message": "已脱敏本机路径、附件引用或敏感令牌"
     },
     {
