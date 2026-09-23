@@ -414,11 +414,10 @@
   ],
   "skipped": [
     "2026-09-14-读-Deep-Agents-实战-正经教你给-Agent-划边界的一门课.md",
-    "2026-09-22-AI-UI-test-移动端-自动化测试工具汇总&横向对比.md"
+    "2026-09-22-AI-UI-test-移动端-自动化测试工具汇总&横向对比.md",
+    "2026-09-22-jev-全网吹爆的Jev让子弹飞几天后我看到了一个421M开源兄弟.md"
   ],
-  "deleted": [
-    "2026-09-20-写完SKILLmd之后Agent-Skill才刚刚开始-5d022c09.md"
-  ],
+  "deleted": [],
   "warnings": [
     {
       "file": "2026-02-08-OpenClaw配置文件全解：AGENTS_SOUL_USER_MEMORY怎么配才像外挂大脑_副本3.md",
