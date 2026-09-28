@@ -410,6 +410,8 @@
     "2026-09-24-echo-me-skill-把自己蒸馏成可运行的Skill.md",
     "2026-09-24-开源发布别再拍脑袋：oss-release-prep-把能不能发拆成一张张有证据的清单.md",
     "2026-09-25-我把-Obsidian-知识库做成了开源脚手架：目录、规范、脚本和定时任务一步到位.md",
+    "2026-09-27-macOS27更新完Adobe全家桶又全体崩溃亲测救回.md",
+    "2026-09-27-周复盘.md",
     "Claude Code 超时问题排查与解决方案（超详细版）.md",
     "Codex CLI vs  Codex App.md",
     "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
@@ -422,7 +424,8 @@
   "skipped": [
     "2026-09-14-读-Deep-Agents-实战-正经教你给-Agent-划边界的一门课.md",
     "2026-09-22-AI-UI-test-移动端-自动化测试工具汇总&横向对比.md",
-    "2026-09-22-jev-全网吹爆的Jev让子弹飞几天后我看到了一个421M开源兄弟.md"
+    "2026-09-22-jev-全网吹爆的Jev让子弹飞几天后我看到了一个421M开源兄弟.md",
+    "agent-evaluation-complete-guide.md"
   ],
   "deleted": [],
   "warnings": [
