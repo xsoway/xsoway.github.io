@@ -2048,6 +2048,21 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-28-hindsight-agent-memory-拆解.md",
+      "output": "2026-09-28-hindsight-agent-memory-拆解-5e305799.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-29-laya判定器-从安装到实测的一轮完整探索.md",
+      "output": "2026-09-29-laya判定器-从安装到实测的一轮完整探索-85a34b26.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-09-29-laya判定器实测-和BERT相似度模型放同一张桌上比优势在哪.md",
+      "output": "2026-09-29-laya判定器实测-和BERT相似度模型放同一张桌上比优势在哪-aba3144e.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
       "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
     },
