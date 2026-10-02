@@ -2068,6 +2068,26 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-01-magpie 和 CC Switch，两个多 Agent 配置管理工具的取舍.md",
+      "output": "2026-10-01-magpie 和 CC Switch，两个多 Agent 配置管理工具的取舍-6fa6be2d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-01-一个用AI学习的开源系统：它把“理解”做成工程.md",
+      "output": "2026-10-01-一个用AI学习的开源系统：它把“理解”做成工程-ef1da5ad.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-01-多 Agent 模型管理工具 magpie：一个菜单栏，管好所有 Agent 该用哪个模型.md",
+      "output": "2026-10-01-多 Agent 模型管理工具 magpie：一个菜单栏，管好所有 Agent 该用哪个模型-28aef9f9.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-01-陌生系统的测试从哪开始.md",
+      "output": "2026-10-01-陌生系统的测试从哪开始-18434471.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
       "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
     },
