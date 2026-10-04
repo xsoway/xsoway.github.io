@@ -2103,6 +2103,16 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-04-开源项目解读：它把每个AI同事都配了一台自己的电脑.md",
+      "output": "2026-10-04-开源项目解读：它把每个AI同事都配了一台自己的电脑-b9eb1cec.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-04-开源项目解读：它给每个AI同事都配了一台自己的电脑.md",
+      "output": "2026-10-04-开源项目解读：它给每个AI同事都配了一台自己的电脑-d6789bc8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
       "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
     },
