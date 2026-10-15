@@ -2168,6 +2168,61 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-手绘画风提示词配方库解读：21套画风，还带验收合同.md",
+      "output": "2026-10-15-手绘画风提示词配方库解读：21套画风，还带验收合同-ba624d14.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测-发布标题候选.md",
+      "output": "2026-10-15-智能问数评测-发布标题候选-83ecd5e9.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测-系列阅读与发布顺序.md",
+      "output": "2026-10-15-智能问数评测-系列阅读与发布顺序-3678d370.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测01-智能问数评测路线：入口怎么选，SQL和受控IR怎样对照.md",
+      "output": "2026-10-15-智能问数评测01-智能问数评测路线：入口怎么选，SQL和受控IR怎样对照-a79b39fe.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测02-从企微问题到查询交付：智能问数的十二个观察节点.md",
+      "output": "2026-10-15-智能问数评测02-从企微问题到查询交付：智能问数的十二个观察节点-4b92c2fe.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测03-主Agent、数据权限与系统安全：从意图检查到故障恢复.md",
+      "output": "2026-10-15-智能问数评测03-主Agent、数据权限与系统安全：从意图检查到故障恢复-4f95c069.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测04-问数、分析、报告与记忆：用独立真值逐层验收.md",
+      "output": "2026-10-15-智能问数评测04-问数、分析、报告与记忆：用独立真值逐层验收-6fd9400d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测05-智能问数回归与数据集：从变更影响到可比较的执行.md",
+      "output": "2026-10-15-智能问数评测05-智能问数回归与数据集：从变更影响到可比较的执行-4da379d5.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测06-评测框架怎样接入智能问数：从Case到证据与发布门禁.md",
+      "output": "2026-10-15-智能问数评测06-评测框架怎样接入智能问数：从Case到证据与发布门禁-0682c0c2.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测07-首次智能问数评测适配：工具箱、框架扩展与Harness Loop.md",
+      "output": "2026-10-15-智能问数评测07-首次智能问数评测适配：工具箱、框架扩展与Harness Loop-3075b714.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测08-专用智能问数平台，为什么要重新考虑Agent基座.md",
+      "output": "2026-10-15-智能问数评测08-专用智能问数平台，为什么要重新考虑Agent基座-ac28d92f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
       "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
     },
