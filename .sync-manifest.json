@@ -2178,6 +2178,11 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测-指标与术语索引.md",
+      "output": "2026-10-15-智能问数评测-指标与术语索引-0fc1f764.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "2026-10-15-智能问数评测-系列阅读与发布顺序.md",
       "output": "2026-10-15-智能问数评测-系列阅读与发布顺序-3678d370.md"
     },
@@ -2218,8 +2223,73 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
-      "file": "2026-10-15-智能问数评测08-专用智能问数平台，为什么要重新考虑Agent基座.md",
-      "output": "2026-10-15-智能问数评测08-专用智能问数平台，为什么要重新考虑Agent基座-ac28d92f.md"
+      "file": "2026-10-15-智能问数评测08-一次问数请求怎样测：沿A到D1定义输入、证据和断言.md",
+      "output": "2026-10-15-智能问数评测08-一次问数请求怎样测：沿A到D1定义输入、证据和断言-a756f0e2.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测09-五类测试怎样落地：把设计、构建、跑批和复核做成工作包.md",
+      "output": "2026-10-15-智能问数评测09-五类测试怎样落地：把设计、构建、跑批和复核做成工作包-21a6f84a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测10-固定一个测试账号，怎样批量验证六种数据权限.md",
+      "output": "2026-10-15-智能问数评测10-固定一个测试账号，怎样批量验证六种数据权限-dcc81f55.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测11-自然语言条件怎样评测：从人工标注到归一化与多轮状态.md",
+      "output": "2026-10-15-智能问数评测11-自然语言条件怎样评测：从人工标注到归一化与多轮状态-1ff5e82c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测12-报表怎样成为问数参考：条件采集、问法改写与独立对账.md",
+      "output": "2026-10-15-智能问数评测12-报表怎样成为问数参考：条件采集、问法改写与独立对账-19960798.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测13-交付与安全怎样联合验收：从事实核对到故障恢复.md",
+      "output": "2026-10-15-智能问数评测13-交付与安全怎样联合验收：从事实核对到故障恢复-17e80e41.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测14-测试怎样按阶段落地：依赖、人工复核、复测与交付.md",
+      "output": "2026-10-15-智能问数评测14-测试怎样按阶段落地：依赖、人工复核、复测与交付-cc9ab6da.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测15-专用智能问数的基座怎样选：从产品职责到架构不变量.md",
+      "output": "2026-10-15-智能问数评测15-专用智能问数的基座怎样选：从产品职责到架构不变量-336a6d7c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测16-Agent项目为什么难维护：把运行时耦合变成可验证的架构问题.md",
+      "output": "2026-10-15-智能问数评测16-Agent项目为什么难维护：把运行时耦合变成可验证的架构问题-0266316d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测17-Hermes加固、服务抽离与应用编排：三条路线怎样公平比较.md",
+      "output": "2026-10-15-智能问数评测17-Hermes加固、服务抽离与应用编排：三条路线怎样公平比较-3c366712.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测18-OpenAI Agents SDK、LangGraph与普通应用：问数框架怎样选型验证.md",
+      "output": "2026-10-15-智能问数评测18-OpenAI Agents SDK、LangGraph与普通应用：问数框架怎样选型验证-81ad6ff7.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测19-问数应用架构怎样落到代码：可信上下文、任务API、状态与缓存.md",
+      "output": "2026-10-15-智能问数评测19-问数应用架构怎样落到代码：可信上下文、任务API、状态与缓存-5a1329f8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测20-可测试的问数架构：依赖替身、逐节点断言与迁移复用.md",
+      "output": "2026-10-15-智能问数评测20-可测试的问数架构：依赖替身、逐节点断言与迁移复用-309c1e7c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-15-智能问数评测21-问数平台怎样迁移：同条件PoC、单路交付与可验证回滚.md",
+      "output": "2026-10-15-智能问数评测21-问数平台怎样迁移：同条件PoC、单路交付与可验证回滚-9dc57621.md"
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
