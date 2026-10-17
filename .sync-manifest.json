@@ -2293,6 +2293,11 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-16-Testkube-把测试搬进K8s的开放测试平台.md",
+      "output": "2026-10-16-Testkube-把测试搬进K8s的开放测试平台-25a03c50.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
       "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
     },

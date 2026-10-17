@@ -461,6 +461,7 @@
     "2026-10-15-智能问数评测19-问数应用架构怎样落到代码：可信上下文、任务API、状态与缓存.md",
     "2026-10-15-智能问数评测20-可测试的问数架构：依赖替身、逐节点断言与迁移复用.md",
     "2026-10-15-智能问数评测21-问数平台怎样迁移：同条件PoC、单路交付与可验证回滚.md",
+    "2026-10-16-Testkube-把测试搬进K8s的开放测试平台.md",
     "Claude Code 超时问题排查与解决方案（超详细版）.md",
     "Codex CLI vs  Codex App.md",
     "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
@@ -474,7 +475,6 @@
     "2026-09-14-读-Deep-Agents-实战-正经教你给-Agent-划边界的一门课.md",
     "2026-09-22-AI-UI-test-移动端-自动化测试工具汇总&横向对比.md",
     "2026-09-22-jev-全网吹爆的Jev让子弹飞几天后我看到了一个421M开源兄弟.md",
-    "2026-10-15-AI-api-test-harness_01 接口自动化测试框架-有LLM却不靠LLM.md",
     "2026-10-15-AI-api-test-harness_02 声明式用例-一份YAML搞定接口测试.md",
     "2026-10-15-AI-api-test-harness_03 跑起来与读报告-判闸-hermetic-能力矩阵.md",
     "2026-10-15-AI-api-test-harness_04 LLM是助手不是司机-意图调度与四Agent.md",
@@ -482,12 +482,11 @@
     "2026-10-15-AI-api-test-harness_06 失败治理-先分类再动手别把红灯洗绿.md",
     "2026-10-15-AI-api-test-harness_07 预测分析与本地可观测-接口会退化看板自己灌.md",
     "2026-10-15-AI-api-test-harness_08 把一个业务接进harness-脚手架到CI判闸.md",
+    "2026-10-15-atuo-api-test-harness_01 接口自动化测试框架-有LLM却不靠LLM.md",
     "agent-evaluation-complete-guide.md",
     "公众号-接口测试框架系列-方案.md"
   ],
-  "deleted": [
-    "2026-10-15-智能问数评测08-专用智能问数平台，为什么要重新考虑Agent基座-ac28d92f.md"
-  ],
+  "deleted": [],
   "warnings": [
     {
       "file": "2026-02-08-OpenClaw配置文件全解：AGENTS_SOUL_USER_MEMORY怎么配才像外挂大脑_副本3.md",
