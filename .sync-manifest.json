@@ -2303,8 +2303,43 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-21-HarnessRouter解读：一条把编码Agent做成可插拔后端的协议.md",
+      "output": "2026-10-21-HarnessRouter解读：一条把编码Agent做成可插拔后端的协议-cf615e2f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-21-Headroom解读：给Agent的上下文装一个压缩层，压缩不丢判断依据.md",
+      "output": "2026-10-21-Headroom解读：给Agent的上下文装一个压缩层，压缩不丢判断依据-d59446e0.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-21-Zed解读：90k星的开源编辑器，敢让多个AI Agent同时开工.md",
+      "output": "2026-10-21-Zed解读：90k星的开源编辑器，敢让多个AI Agent同时开工-bb65b3b8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-21-e2e解读：让AI去跑E2E测试，还要它可复现、可控成本、不泄密.md",
+      "output": "2026-10-21-e2e解读：让AI去跑E2E测试，还要它可复现、可控成本、不泄密-cadd0188.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-21-new-term-radar解读：它把新名字出现当天的提前量做成了工程.md",
+      "output": "2026-10-21-new-term-radar解读：它把新名字出现当天的提前量做成了工程-3762f853.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "2026-10-21-testsprite-cli解读：终于有人给Agent写代码这件事配了个验收层.md",
       "output": "2026-10-21-testsprite-cli解读：终于有人给Agent写代码这件事配了个验收层-280f71ec.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-21-找到bug只是最轻的一步：从bug报告到beta构建的证据链.md",
+      "output": "2026-10-21-找到bug只是最轻的一步：从bug报告到beta构建的证据链-1395ef3b.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-21-推理框架是什么：DeepInfer在后台干了啥.md",
+      "output": "2026-10-21-推理框架是什么：DeepInfer在后台干了啥-37fc20af.md"
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
