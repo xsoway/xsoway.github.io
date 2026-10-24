@@ -99,7 +99,7 @@ docker run -d --name harnessrouter \
 容器内部是三段进程，只有控制台端口对外：
 
 ```mermaid
-flowchart LR
+flowchart TD
     U[你的产品/浏览器] -->|唯一对外端口| C[Console :3000 管理界面]
     C -->|同源代理| G[Gateway :8080 Responses API + 生命周期]
     G -->|loopback| R[Runner :8081 在会话工作区跑 harness]

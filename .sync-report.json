@@ -498,9 +498,7 @@
     "agent-evaluation-complete-guide.md",
     "公众号-接口测试框架系列-方案.md"
   ],
-  "deleted": [
-    "2026-10-15-智能问数评测08-一次问数请求怎样测：沿A到D1定义输入、证据和断言-a756f0e2.md"
-  ],
+  "deleted": [],
   "warnings": [
     {
       "file": "2026-02-08-OpenClaw配置文件全解：AGENTS_SOUL_USER_MEMORY怎么配才像外挂大脑_副本3.md",
