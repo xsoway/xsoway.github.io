@@ -1,7 +1,7 @@
 ---
 title: "Zed 解读：90k 星的开源编辑器，敢让多个 AI Agent 同时开工"
 created: "2026-10-21"
-tags: ["KnowledgeBase","技术解读","编辑器","Rust","AI Agent","ACP","多人协作","测试工程"]
+tags: ["KnowledgeBase","技术解读","编辑器","Rust","AI Agent","ACP","多人协作","测试工程","ADE","Orca","工具评测"]
 category: "技术解读"
 published: true
 ---
@@ -22,6 +22,51 @@ published: true
 | Zed | Rust + 自研 GPU 引擎 | 编辑器本体免费 | macOS/Linux/Windows（网页暂无） | 原生快 + 多人协作 + 自带 Agent | 原生支持多个 Agent 并行、多工作区 |
 
 单看每一行，Zed 不像谁出了绝招：VS Code 免费、Cursor 聚焦 AI、JetBrains 重构强。它的组合拳在别处——**同时做到"原生性能 + 真多人实时编辑 + 一个开放的 AI 协议把各家 Agent 都收进来"**。这几件事单拿一样都不稀奇，凑在同一个开源编辑器里就不多了。
+
+## 当前热门的 AI 编程工具，怎么比
+
+上面那张表是"编辑器打架"，但 2025 到 2026 真正热的，其实是一条新赛道：**专门为跑 AI Agent 造的"Agent 开发环境"**。它和传统编辑器的区别在立意——传统编辑器默认"人写代码、AI 辅助"，Agent 环境默认"AI 写代码、人监督编排"。Zed 正好卡在这两者中间（它既是编辑器，又自带一个 Agent），所以把它和这波新工具放在一起看，才能看清它的位置。
+
+下面这张表挑了几个近几年关注度最高的，横向对比它们的定位、收费和"能并行几个 Agent"这件事：
+
+| 工具 | 类型 | 底层 | 花钱吗 | 核心定位 | 多 Agent 并行 |
+| --- | --- | --- | --- | --- | --- |
+| Cursor | AI IDE | 基于 VS Code 改 | 免费档 + Pro $20/月 | 把 AI 编辑深度做进原生体验 | 有限，重心在单 Agent 对话 |
+| Windsurf（Antigravity） | AI IDE | 自研 | 免费档 + 订阅 | Cascade 上下文连续 + 工作流/记忆分层 | 支持多 Agent，Cascade 串流 |
+| Trae（字节） | AI IDE | 基于 VS Code 改 | 免费为主 | 国内可用、中文体验好、模型多 | 有限，以单 Agent 为主 |
+| Claude Code | CLI Agent | 终端原生 | 自带订阅 + 使用费 | 终端里的深度 Agent，长任务能跑很久 | 一名额内可开多任务，靠 terminal 多开 |
+| Codex CLI（OpenAI） | CLI Agent | 终端原生 | API 按量付费 | 终端 Agent，代码生成为主 | 单任务为主 |
+| Orca（Stably AI） | ADE（Agent 编排工作台） | 桌面 IDE + 远程 | 开源，Agent 自带订阅 | 把多个 Agent **并排装进一个窗口**，每个任务开独立 git worktree | **原生多 Agent 并行**，无限分屏盯进度 |
+| Zed | 编辑器 + Agent | Rust + 自研 GPU | 编辑器免费，Pro $10/月 | 原生快 + 多人协作 + ACP 开放协议 | 原生多 Agent 并行、多工作区 |
+
+## 单说 Orca：为什么它和 Zed 是同一条赛道
+
+这波新工具里，和 Zed 最"撞车"也最能说明问题的是 **Orca**（Stably AI 出品，YC 孵化，开源，GitHub 上已 6.6k+ star）。它给自己的定位是 **ADE（Agent Development Environment）**，不是 IDE。
+
+Orca 的核心主张就是字面意思：**把多个 AI 编程 Agent 并排装进同一个窗口**。每个任务有独立的 git worktree、独立的 agent 终端、独立的浏览器标签页，于是你可以：
+
+- 让三个 Agent 同时去解同一个 bug，最后挑表现最好的那个结果；
+- 让 Agent A 改模块一、Agent B 改模块二，各自在 worktree 里跑，互不干扰；
+- 远程跑 Agent——接 SSH、自托管 Orca server、或按需租一台云 VM，本地只管看进度和评审；
+- 拿到 AI 生成的 diff 后，认认真真评审过再决定合并哪个方案。
+
+它刻意声明自己"不是模型、不是 git 替代品、不是托管 VPS"：Agent 用你自己订阅的（Claude Code、Codex、Cursor CLI、OpenCode 等），每个 worktree 都是真的 git worktree，默认跑在你的桌面，远程算力用的是你自己掌控的机器。目标用户是"已经靠写代码吃饭、把 AI 当杠杆而不是替代品"的人——它要求你读 diff、在意 commit、保持 worktree 整洁。
+
+## 拿 Orca 和 Zed 对着看
+
+两个工具都在解决同一个问题——"一个人开一堆 Agent 并行干活还不出乱子"——但切入角度相反：
+
+| 维度 | Zed | Orca |
+| --- | --- | --- |
+| 起点 | 从"编辑器"出发，Agent 是长出来的能力 | 从"Agent 编排"出发，编辑器只是界面 |
+| 并行机制 | 多 Agent + 多工作区，靠 ACP 协议收各家 Agent | 每任务独立 git worktree + 独立终端分屏，直接编排 |
+| 协作 | 自带多人实时协作、语音、频道 | 偏向"一个人指挥多 Agent"，不主打真人协作 |
+| 开放协议 | 主导 ACP，把"接哪个 Agent"做成工程决策 | 自带订阅的 Agent 编排，更看重隔离与评审 |
+| 最典型的场景 | 团队里结对编程、实时评审 + 并行 AI | 单人规范评审 AI 产出的 diff、多方案对决 |
+
+一句话：**Zed 的"多 Agent"长在协作和协议上，Orca 的"多 Agent"长在编排和隔离上。** 想要多人实时协作、又不想锁死 AI 厂商，Zed 更对路；想要一个人严格管理并行 Agent 的产出、把每个 diff 审清楚，Orca 更直接。两者本质都是"让 AI Agent 成为可观测、可并行的协作者"——这恰恰是测试工程最关心的方向。
+
+当然，热度归热度，落地还是要看团队。这些新工具迭代极快（Orca 的 changelog 每月都有新能力），本文的对比基于写稿时的公开资料，选型前建议对照官网再核一遍价格和能力。
 
 ## 它是什么
 

@@ -465,12 +465,13 @@
     "2026-10-18-周复盘.md",
     "2026-10-21-HarnessRouter解读：一条把编码Agent做成可插拔后端的协议.md",
     "2026-10-21-Headroom解读：给Agent的上下文装一个压缩层，压缩不丢判断依据.md",
-    "2026-10-21-Zed解读：90k星的开源编辑器，敢让多个AI Agent同时开工.md",
+    "2026-10-21-Zed解读：90k星的开源编辑器，敢让多个AI Agent同时开工,同款ADE工具横向对比.md",
     "2026-10-21-e2e解读：让AI去跑E2E测试，还要它可复现、可控成本、不泄密.md",
     "2026-10-21-new-term-radar解读：它把新名字出现当天的提前量做成了工程.md",
     "2026-10-21-testsprite-cli解读：终于有人给Agent写代码这件事配了个验收层.md",
     "2026-10-21-找到bug只是最轻的一步：从bug报告到beta构建的证据链.md",
     "2026-10-21-推理框架是什么：DeepInfer在后台干了啥.md",
+    "2026-10-24-开源解读：阿里云把企业Agent落地经验开放成手册.md",
     "Claude Code 超时问题排查与解决方案（超详细版）.md",
     "Codex CLI vs  Codex App.md",
     "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
@@ -498,7 +499,9 @@
     "agent-evaluation-complete-guide.md",
     "公众号-接口测试框架系列-方案.md"
   ],
-  "deleted": [],
+  "deleted": [
+    "2026-10-21-Zed解读：90k星的开源编辑器，敢让多个AI Agent同时开工-bb65b3b8.md"
+  ],
   "warnings": [
     {
       "file": "2026-02-08-OpenClaw配置文件全解：AGENTS_SOUL_USER_MEMORY怎么配才像外挂大脑_副本3.md",
