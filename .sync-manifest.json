@@ -2348,6 +2348,36 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-25-Agent-Entry-CLI解读：给现有Python项目一个主Agent终端入口 1.md",
+      "output": "2026-10-25-Agent-Entry-CLI解读：给现有Python项目一个主Agent终端入口 1-7842245d.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-25-Agent-Entry-CLI解读：给现有Python项目一个主Agent终端入口.md",
+      "output": "2026-10-25-Agent-Entry-CLI解读：给现有Python项目一个主Agent终端入口-68ad2054.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-25-开源解读：它把小程序的E2E测试搬进了普通浏览器.md",
+      "output": "2026-10-25-开源解读：它把小程序的E2E测试搬进了普通浏览器-62966680.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-26-Harness²解读：让Agent的harness递归地改进自己.md",
+      "output": "2026-10-26-Harness²解读：让Agent的harness递归地改进自己-ec424117.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-26-HiRoute-给Agent省钱的路由器.md",
+      "output": "2026-10-26-HiRoute-给Agent省钱的路由器-4553bfb7.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-26-autoevals解读：把AI输出的评分做成一条0到1的流水线.md",
+      "output": "2026-10-26-autoevals解读：把AI输出的评分做成一条0到1的流水线-5c2555f1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
       "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
     },

@@ -1,8 +1,8 @@
 ---
 title: "推理框架是什么：DeepInfer在后台干了啥"
 created: "2026-10-21"
-tags: ["AI","DeepSeek","DeepInfer","推理框架","开源","大模型"]
-category: "公众号文章"
+tags: ["KnowledgeBase","技术解读","AI","DeepSeek","DeepInfer","推理框架","开源","大模型"]
+category: "技术解读"
 published: true
 ---
 
