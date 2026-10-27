@@ -72,6 +72,7 @@ HiRoute 提供四种路由模式：固定模型、难度路由、自定义分支
 - 内置判断模型要连一家支持的服务（百炼、OpenRouter Jev、TypeSafe 或兼容接口），连接需要凭据；不想用内置的可以自建扩展服务。
 - 缓存能不能命中，还取决于上游模型服务商的缓存规则和生命周期，不是路由器单方面能保证的。
 
-仓库地址：`https://github.com/higress-group/HiRoute`。常规活交给便宜模型、难的留给主力，这种分工方式对 AI 测试和日常业务都有地方能套上。
+仓库地址：`https://github.com/higress-group/HiRoute`。
+常规活交给便宜模型、难的留给主力，这种分工方式对 AI 测试和日常业务都有地方能套上。
 
 #HiRoute #模型路由 #Claude #Codex #AI测试 #成本优化 #Agent

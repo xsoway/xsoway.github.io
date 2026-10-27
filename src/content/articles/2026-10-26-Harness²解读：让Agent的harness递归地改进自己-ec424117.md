@@ -137,6 +137,6 @@ flowchart LR
 
 仓库地址：<https://github.com/google-research/harness2>；论文：<https://arxiv.org/abs/2610.14224>。
 
-## 标签
+
 
 `#Harness` `#递归自改进` `#Agent工程` `#google-research` `#开源项目解读` `#论文解读` `#技术解读`
