@@ -151,6 +151,11 @@ README 要求详细信息包含 `Skills (1) better-harness`。之后在需要分
 
 实际起步可以只选一次已经完成的任务：限定目标与证据范围，生成报告，挑一个有依据的问题改进，再在下一次同类任务中观察。暂时不用追求一张漂亮的高分表，先留下最后一次修改之后的验证结果。
 
-来源：[项目中文 README](https://github.com/QoderAI/better-harness/blob/main/README.zh-CN.md) · [规范工作流](https://github.com/QoderAI/better-harness/blob/main/skills/better-harness/SKILL.md) · [评估模型](https://github.com/QoderAI/better-harness/blob/main/models/agent-work-loop.md) · [修复协议](https://github.com/QoderAI/better-harness/blob/main/skills/better-harness/references/finding-bound-fix.md) · [宿主适配矩阵](https://github.com/QoderAI/better-harness/blob/main/docs/adapters/README.md)
+来源：
+· [项目中文 README]https://github.com/QoderAI/better-harness/blob/main/README.zh-CN.md 
+· [规范工作流]https://github.com/QoderAI/better-harness/blob/main/skills/better-harness/SKILL.md
+· [评估模型]https://github.com/QoderAI/better-harness/blob/main/models/agent-work-loop.md
+· [修复协议]https://github.com/QoderAI/better-harness/blob/main/skills/better-harness/references/finding-bound-fix.md
+· [宿主适配矩阵]https://github.com/QoderAI/better-harness/blob/main/docs/adapters/README.md
 
 #BetterHarness #Agent #测试开发 #AI编程 #工作流

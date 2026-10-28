@@ -141,6 +141,12 @@ cp 01-slash-commands/optimize.md /path/to/your-project/.claude/commands/
 
 学习的起点可以很小：打开 `optimize.md`，读懂它要求输出什么，再找一段熟悉的代码试用。完成之后，留下经过修订的指令、问题记录和验证结果。下一次任务到来时，能继续用的材料就在那里。
 
-来源：[项目中文 README](https://github.com/luongnv89/claude-howto/blob/main/zh/README.md) · [学习路线图](https://github.com/luongnv89/claude-howto/blob/main/zh/LEARNING-ROADMAP.md) · [性能审查模板](https://github.com/luongnv89/claude-howto/blob/main/01-slash-commands/optimize.md) · [代码审查 Skill](https://github.com/luongnv89/claude-howto/blob/main/03-skills/code-review-specialist/SKILL.md) · [项目记忆模板](https://github.com/luongnv89/claude-howto/blob/main/02-memory/project-CLAUDE.md) · [Claude Code 官方 Skills 文档](https://code.claude.com/docs/en/skills)
+来源：
+[项目中文 README]https://github.com/luongnv89/claude-howto/blob/main/zh/README.md 
+[学习路线图]https://github.com/luongnv89/claude-howto/blob/main/zh/LEARNING-ROADMAP.md
+[性能审查模板]https://github.com/luongnv89/claude-howto/blob/main/01-slash-commands/optimize.md
+[代码审查 Skill]https://github.com/luongnv89/claude-howto/blob/main/03-skills/code-review-specialist/SKILL.md
+[项目记忆模板]https://github.com/luongnv89/claude-howto/blob/main/02-memory/project-CLAUDE.md
+[Claude Code 官方 Skills 文档]https://code.claude.com/docs/en/skills
 
 #ClaudeCode #Skills #测试开发 #AI编程 #工作流
