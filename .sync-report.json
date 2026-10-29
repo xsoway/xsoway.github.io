@@ -498,7 +498,7 @@
     "2026-10-15-AI-api-test-harness_03 跑起来与读报告-判闸-hermetic-能力矩阵.md",
     "2026-10-15-AI-api-test-harness_04 LLM是助手不是司机-意图调度与四Agent.md",
     "2026-10-15-AI-api-test-harness_05 自主进化闭环-框架怎么自己长用例不失控.md",
-    "2026-10-15-AI-api-test-harness_06 失败治理-先分类再动手别把红灯洗绿.md",
+    "2026-10-15-AI-api-test-harness_06 失败治理- 接口测试失败，先回答它属于哪一类,再动手别把红灯洗绿.md",
     "2026-10-15-AI-api-test-harness_07 预测分析与本地可观测-接口会退化看板自己灌.md",
     "2026-10-15-AI-api-test-harness_08 把一个业务接进harness-脚手架到CI判闸.md",
     "2026-10-15-atuo-api-test-harness_01 接口自动化测试框架-有LLM却不靠LLM.md",
