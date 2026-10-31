@@ -506,6 +506,9 @@
     "2026-10-21-agent-engineering-工程里接上DSH之前先决定谁来当主Agent-old.md",
     "2026-10-21-agent-engineering-工程里接上DSH之前先决定谁来当主Agent.md",
     "2026-10-21-agent-sdk-DSH_Pi与OpenAI_Agents_SDK系统对比.md",
+    "2026-10-30-Pi-Bifrost源码解读：把\"聊天记录发哪个模型\"做成一条看得见的决策链.md",
+    "2026-10-31-HelixHarness-架构分析与QAT-CLI借鉴.md",
+    "2026-10-31-HelixHarness：滴滴开源了一套 AI Coding Harness，Agent 研发开始有了工程规范和质量闭环.md",
     "agent-evaluation-complete-guide.md",
     "公众号-接口测试框架系列-方案.md"
   ],
