@@ -2398,6 +2398,21 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-30-Pi-Bifrost源码解读：把\"聊天记录发哪个模型\"做成一条看得见的决策链.md",
+      "output": "2026-10-30-Pi-Bifrost源码解读：把\"聊天记录发哪个模型\"做成一条看得见的决策链-8dc84968.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-10-31-HelixHarness：滴滴开源了一套 AI Coding Harness，Agent 研发开始有了工程规范和质量闭环.md",
+      "output": "2026-10-31-HelixHarness：滴滴开源了一套 AI Coding Harness，Agent 研发开始有了工程规范和质量闭环-bdadf20f.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-02-tty7：折腾了那么多 AI 终端，想要的其实就这么简单.md",
+      "output": "2026-11-02-tty7：折腾了那么多 AI 终端，想要的其实就这么简单-a4804aa1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
       "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
     },
