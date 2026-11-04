@@ -2413,6 +2413,26 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-03-Goss：用一份YAML检查服务器和Docker容器.md",
+      "output": "2026-11-03-Goss：用一份YAML检查服务器和Docker容器-e9cd6ff8.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-03-OpenObserve：把日志指标和链路追踪放在一起.md",
+      "output": "2026-11-03-OpenObserve：把日志指标和链路追踪放在一起-356dff95.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-03-TraceVista：让Agent执行过程有据可查.md",
+      "output": "2026-11-03-TraceVista：让Agent执行过程有据可查-b0a33466.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-04-样格：从公众号文章提取排版样式，少一点手工试错.md",
+      "output": "2026-11-04-样格：从公众号文章提取排版样式，少一点手工试错-308142a4.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
       "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
     },
