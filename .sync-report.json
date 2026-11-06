@@ -489,6 +489,8 @@
     "2026-11-03-OpenObserve：把日志指标和链路追踪放在一起.md",
     "2026-11-03-TraceVista：让Agent执行过程有据可查.md",
     "2026-11-04-样格：从公众号文章提取排版样式，少一点手工试错.md",
+    "2026-11-05-hyperfine-2.0：把命令行性能对比做成可重复的测试.md",
+    "2026-11-05-quiet.md：本地富文本编辑器与Agent共用文件的另一种方式.md",
     "Claude Code 超时问题排查与解决方案（超详细版）.md",
     "Codex CLI vs  Codex App.md",
     "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
@@ -514,6 +516,7 @@
     "2026-10-21-agent-engineering-工程里接上DSH之前先决定谁来当主Agent.md",
     "2026-10-21-agent-sdk-DSH_Pi与OpenAI_Agents_SDK系统对比.md",
     "2026-10-31-HelixHarness-架构分析与QAT-CLI借鉴.md",
+    "2026-11-05-Pi-Oh-My-Pi-Prime-Agent-开发者编码工具横向评测.md",
     "agent-evaluation-complete-guide.md",
     "公众号-接口测试框架系列-方案.md"
   ],

@@ -2433,6 +2433,16 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-05-hyperfine-2.0：把命令行性能对比做成可重复的测试.md",
+      "output": "2026-11-05-hyperfine-2.0：把命令行性能对比做成可重复的测试-1a37159c.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-05-quiet.md：本地富文本编辑器与Agent共用文件的另一种方式.md",
+      "output": "2026-11-05-quiet.md：本地富文本编辑器与Agent共用文件的另一种方式-3f9c8f02.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
       "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
     },
