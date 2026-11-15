@@ -2463,6 +2463,36 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-14-Forest Editorial Design 开源：让 AI 排版有一套可复用的规则.md",
+      "output": "2026-11-14-Forest Editorial Design 开源：让 AI 排版有一套可复用的规则-8257eb13.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-14-oh-my-hermes-给Hermes-Agent叠一层同事调度.md",
+      "output": "2026-11-14-oh-my-hermes-给Hermes-Agent叠一层同事调度-29c5f922.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-14-用 Horizon 做技术晨报：新闻看变化，长文看方法.md",
+      "output": "2026-11-14-用 Horizon 做技术晨报：新闻看变化，长文看方法-3a6e9c38.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-14-笔记留在本地，AI可以换：Tolaria的知识库设计.md",
+      "output": "2026-11-14-笔记留在本地，AI可以换：Tolaria的知识库设计-5c67f02a.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-14-腾讯开源的LoopForge-让Agent按流程交付.md",
+      "output": "2026-11-14-腾讯开源的LoopForge-让Agent按流程交付-3ea77660.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-15-QAT 非平台化测试助手开发实施方案.md",
+      "output": "2026-11-15-QAT 非平台化测试助手开发实施方案-dba6dc19.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "Claude Code 超时问题排查与解决方案（超详细版）.md",
       "output": "Claude Code 超时问题排查与解决方案（超详细版）-0ed7f3bb.md"
     },
