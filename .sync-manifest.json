@@ -2488,8 +2488,23 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-15-Agent-Loop-SDD-TDD-工程化闭环技术方案.md",
+      "output": "2026-11-15-Agent-Loop-SDD-TDD-工程化闭环技术方案-5d6daa25.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-15-HelixHarness-深度研究与QAT-CLI架构评估.md",
+      "output": "2026-11-15-HelixHarness-深度研究与QAT-CLI架构评估-597b8517.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "2026-11-15-QAT 非平台化测试助手开发实施方案.md",
       "output": "2026-11-15-QAT 非平台化测试助手开发实施方案-dba6dc19.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-15-中文概率决策模型-回概率不吐字的 AI：意图识别、分流、审核，为什么该给这类任务换一个小模型.md",
+      "output": "2026-11-15-中文概率决策模型-回概率不吐字的 AI：意图识别、分流、审核，为什么该给这类任务换一个小模型-0bc6a2e6.md"
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
