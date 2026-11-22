@@ -2498,6 +2498,11 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-15-Loop-Engineering-项目解析与QAT扩展实施方案.md",
+      "output": "2026-11-15-Loop-Engineering-项目解析与QAT扩展实施方案-ce17b459.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "2026-11-15-QAT 非平台化测试助手开发实施方案.md",
       "output": "2026-11-15-QAT 非平台化测试助手开发实施方案-dba6dc19.md"
     },
@@ -2505,6 +2510,11 @@
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "2026-11-15-中文概率决策模型-回概率不吐字的 AI：意图识别、分流、审核，为什么该给这类任务换一个小模型.md",
       "output": "2026-11-15-中文概率决策模型-回概率不吐字的 AI：意图识别、分流、审核，为什么该给这类任务换一个小模型-0bc6a2e6.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-21-auto-api-test-harness 面向 Agent 的 API 测试与用例演进框架.md",
+      "output": "2026-11-21-auto-api-test-harness 面向 Agent 的 API 测试与用例演进框架-9e90a07a.md"
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
