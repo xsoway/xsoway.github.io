@@ -505,13 +505,13 @@
     "2026-11-15-Loop-Engineering-项目解析与QAT扩展实施方案.md",
     "2026-11-15-QAT 非平台化测试助手开发实施方案.md",
     "2026-11-15-中文概率决策模型-回概率不吐字的 AI：意图识别、分流、审核，为什么该给这类任务换一个小模型.md",
-    "2026-11-21-auto-api-test-harness 面向 Agent 的 API 测试与用例演进框架.md",
     "2026-11-22-Fastfetch为什么能接棒neofetch-把开机信息卡做成C语言精品.md",
     "2026-11-22-witr-当你终于想追问这个进程到底为什么在跑时它把因果链交到你手上.md",
     "2026-11-22-一个-base-url-调五十家：Agent2API把客户端登录态做成网关.md",
     "2026-11-22-卡神出品token羊毛限领.md",
     "2026-11-22-每天六万credits：Clixad把免费AI编程的账摊开算.md",
     "2026-11-24-生图也能验收：当「画得好不好」需要有可复核的证据链.md",
+    "2026-11-25-xcodex + 模拟器自动化测试 iphone duo.md",
     "Claude Code 超时问题排查与解决方案（超详细版）.md",
     "Codex CLI vs  Codex App.md",
     "OpenClaw 优化复盘：从能跑，到可控，到可沉淀.md",
@@ -542,10 +542,13 @@
     "2026-11-15-Codex-OMP-Pi搭配GPT-6.1-Sol：谁最省Token，谁更能打.md",
     "2026-11-16-QAT-CLI-全生命周期测试智能助手-产品规划.md",
     "2026-11-16-QAT-CLI-全生命周期测试智能助手产品设计方案.md",
+    "2026-11-21-auto-api-test-harness 面向 Agent 的 API 测试与用例演进框架.md",
     "agent-evaluation-complete-guide.md",
     "公众号-接口测试框架系列-方案.md"
   ],
-  "deleted": [],
+  "deleted": [
+    "2026-11-21-auto-api-test-harness 面向 Agent 的 API 测试与用例演进框架-9e90a07a.md"
+  ],
   "warnings": [
     {
       "file": "2026-02-08-OpenClaw配置文件全解：AGENTS_SOUL_USER_MEMORY怎么配才像外挂大脑_副本3.md",

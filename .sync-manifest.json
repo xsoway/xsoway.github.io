@@ -2513,11 +2513,6 @@
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
-      "file": "2026-11-21-auto-api-test-harness 面向 Agent 的 API 测试与用例演进框架.md",
-      "output": "2026-11-21-auto-api-test-harness 面向 Agent 的 API 测试与用例演进框架-9e90a07a.md"
-    },
-    {
-      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "2026-11-22-Fastfetch为什么能接棒neofetch-把开机信息卡做成C语言精品.md",
       "output": "2026-11-22-Fastfetch为什么能接棒neofetch-把开机信息卡做成C语言精品-fab5fa4e.md"
     },
@@ -2545,6 +2540,11 @@
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
       "file": "2026-11-24-生图也能验收：当「画得好不好」需要有可复核的证据链.md",
       "output": "2026-11-24-生图也能验收：当「画得好不好」需要有可复核的证据链-ae5f75c1.md"
+    },
+    {
+      "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
+      "file": "2026-11-25-xcodex + 模拟器自动化测试 iphone duo.md",
+      "output": "2026-11-25-xcodex + 模拟器自动化测试 iphone duo-e9f68340.md"
     },
     {
       "source": "/Users/xulanzhong/Desktop/my-ai-workspace/Alan-Workspace/01-Articles",
