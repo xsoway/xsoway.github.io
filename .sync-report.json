@@ -546,9 +546,7 @@
     "agent-evaluation-complete-guide.md",
     "公众号-接口测试框架系列-方案.md"
   ],
-  "deleted": [
-    "2026-11-21-auto-api-test-harness 面向 Agent 的 API 测试与用例演进框架-9e90a07a.md"
-  ],
+  "deleted": [],
   "warnings": [
     {
       "file": "2026-02-08-OpenClaw配置文件全解：AGENTS_SOUL_USER_MEMORY怎么配才像外挂大脑_副本3.md",
